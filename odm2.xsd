@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<xs:schema xmlns:OpenClinica="http://www.openclinica.org/ns/odm_ext_v130/v3.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenClinicaRules="http://www.openclinica.org/ns/rules/v3.1" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.cdisc.org/ns/odm/v1.3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.openclinica.org/ns/odm_ext_v130/v3.1" />
+  <xs:element name="ODM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Study">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GlobalVariables">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="StudyName" type="xs:string" />
+                    <xs:element name="StudyDescription" type="xs:string" />
+                    <xs:element name="ProtocolName" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="BasicDefinitions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="MeasurementUnit">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Symbol">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="TranslatedText" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OID" type="xs:string" use="required" />
+                        <xs:attribute name="Name" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="MetaDataVersion">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Protocol">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="StudyEventRef">
+                            <xs:complexType>
+                              <xs:attribute name="StudyEventOID" type="xs:string" use="required" />
+                              <xs:attribute name="OrderNumber" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Mandatory" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="StudyEventDef">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="FormRef">
+                            <xs:complexType>
+                              <xs:attribute name="FormOID" type="xs:string" use="required" />
+                              <xs:attribute name="Mandatory" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OID" type="xs:string" use="required" />
+                        <xs:attribute name="Name" type="xs:string" use="required" />
+                        <xs:attribute name="Repeating" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="FormDef">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ItemGroupRef">
+                            <xs:complexType>
+                              <xs:attribute name="ItemGroupOID" type="xs:string" use="required" />
+                              <xs:attribute name="Mandatory" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element ref="OpenClinica:FormDetails" />
+                        </xs:sequence>
+                        <xs:attribute name="OID" type="xs:string" use="required" />
+                        <xs:attribute name="Name" type="xs:string" use="required" />
+                        <xs:attribute name="Repeating" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ItemGroupDef">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="ItemRef">
+                            <xs:complexType>
+                              <xs:attribute name="ItemOID" type="xs:string" use="required" />
+                              <xs:attribute name="OrderNumber" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Mandatory" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element ref="OpenClinica:ItemGroupDetails" />
+                        </xs:sequence>
+                        <xs:attribute name="OID" type="xs:string" use="required" />
+                        <xs:attribute name="Name" type="xs:string" use="required" />
+                        <xs:attribute name="Repeating" type="xs:string" use="required" />
+                        <xs:attribute name="SASDatasetName" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="ItemDef">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Question">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="TranslatedText" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute ref="OpenClinica:QuestionNumber" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="MeasurementUnitRef">
+                            <xs:complexType>
+                              <xs:attribute name="MeasurementUnitOID" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="RangeCheck">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="CheckValue" type="xs:unsignedByte" />
+                                <xs:element name="MeasurementUnitRef">
+                                  <xs:complexType>
+                                    <xs:attribute name="MeasurementUnitOID" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="ErrorMessage">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="TranslatedText" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="Comparator" type="xs:string" use="required" />
+                              <xs:attribute name="SoftHard" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element ref="OpenClinica:ItemDetails" />
+                        </xs:sequence>
+                        <xs:attribute name="OID" type="xs:string" use="required" />
+                        <xs:attribute name="Name" type="xs:string" use="required" />
+                        <xs:attribute name="DataType" type="xs:string" use="required" />
+                        <xs:attribute name="Length" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="SignificantDigits" type="xs:unsignedByte" use="optional" />
+                        <xs:attribute name="SASFieldName" type="xs:string" use="required" />
+                        <xs:attribute name="Comment" type="xs:string" use="required" />
+                        <xs:attribute ref="OpenClinica:FormOIDs" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element ref="OpenClinica:StudyDetails" />
+                  </xs:sequence>
+                  <xs:attribute name="OID" type="xs:string" use="required" />
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="OID" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdminData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="User">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="FullName" type="xs:string" />
+                    <xs:element name="FirstName" type="xs:string" />
+                    <xs:element name="LastName" type="xs:string" />
+                    <xs:element name="Organization" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="OID" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="StudyOID" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ClinicalData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SubjectData">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="StudyEventData">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="FormData">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ItemGroupData">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="ItemData">
+                                        <xs:complexType>
+                                          <xs:sequence minOccurs="0">
+                                            <xs:element name="MeasurementUnitRef">
+                                              <xs:complexType>
+                                                <xs:attribute name="MeasurementUnitOID" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="ItemOID" type="xs:string" use="required" />
+                                          <xs:attribute name="Value" type="xs:decimal" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="ItemGroupOID" type="xs:string" use="required" />
+                                    <xs:attribute name="TransactionType" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="FormOID" type="xs:string" use="required" />
+                              <xs:attribute ref="OpenClinica:Version" use="required" />
+                              <xs:attribute ref="OpenClinica:InterviewerName" use="required" />
+                              <xs:attribute ref="OpenClinica:InterviewDate" use="required" />
+                              <xs:attribute ref="OpenClinica:Status" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="StudyEventOID" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="SubjectKey" type="xs:string" use="required" />
+                  <xs:attribute ref="OpenClinica:StudySubjectID" use="required" />
+                  <xs:attribute ref="OpenClinica:Status" use="required" />
+                  <xs:attribute ref="OpenClinica:DateOfBirth" use="required" />
+                  <xs:attribute ref="OpenClinica:Sex" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="StudyOID" type="xs:string" use="required" />
+            <xs:attribute name="MetaDataVersionOID" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="FileOID" type="xs:string" use="required" />
+      <xs:attribute name="Description" type="xs:string" use="required" />
+      <xs:attribute name="CreationDateTime" type="xs:dateTime" use="required" />
+      <xs:attribute name="FileType" type="xs:string" use="required" />
+      <xs:attribute name="ODMVersion" type="xs:decimal" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Decode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TranslatedText" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
