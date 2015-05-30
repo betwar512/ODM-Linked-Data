@@ -1,16 +1,22 @@
 package com.mycompany.app;
 import java.io.File;
 import java.util.List;
+import javax.xml.bind.*;
+import org.cdisc.ns.odm.v1.*;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
-
-import org.cdisc.ns.odm.v1.ODM;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionStudy;
 public class JaxBinder {
 
+	//itemDef
+	public List<ODMcomplexTypeDefinitionItemDef> catchItemDef(ODMcomplexTypeDefinitionMetaDataVersion metaData){
+		
+		
+	List<ODMcomplexTypeDefinitionItemDef> itemDef=metaData.getItemDef();
+		
+	
+		return itemDef;
+		
+	}
+	
 
 	//returning metaData belong to study
 	public ODMcomplexTypeDefinitionMetaDataVersion catchMetaData(List<ODMcomplexTypeDefinitionStudy> study){
@@ -20,6 +26,8 @@ public class JaxBinder {
 	
 		return metaData;
 	}
+	
+	
 	
 	//return Study belong to Xml file 
 	public List<ODMcomplexTypeDefinitionStudy> catchStudy(String inputFile){
