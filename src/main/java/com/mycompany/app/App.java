@@ -41,8 +41,13 @@ public class App
     
 
     	JaxBinder myJax=new JaxBinder();
+
     //	List<ODMcomplexTypeDefinitionStudy> study=
     		//	myJax.catchStudy("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");	
+
+    	
+    //	List<ODMcomplexTypeDefinitionStudy> study=myJax.catchStudy("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");	
+
     	
     //	ODMcomplexTypeDefinitionMetaDataVersion metaData=myJax.catchMetaData(study);
     	ODMcomplexTypeDefinitionClinicalData clinicalData=
@@ -60,9 +65,10 @@ public class App
     	   
   	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemGroupData>> i=itemGroups.entrySet().iterator();i.hasNext();){
    		
+
     		Entry<String, ODMcomplexTypeDefinitionItemGroupData> itemGroup= i.next();
     	ODMcomplexTypeDefinitionItemGroupData	it= itemGroup.getValue();
-    		
+    	
     	String mapKey=itemGroup.getKey();
    		String itemOid= it.getItemGroupOID();
    		String subjectKey=mapKey +"/"+itemOid;
@@ -81,6 +87,7 @@ public class App
    			
    		}
   	
+  	//Create RDF model for Items
   	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemData>> itemDatas=items.entrySet().iterator();itemDatas.hasNext();){
   		
   		Entry<String, ODMcomplexTypeDefinitionItemData> item=itemDatas.next();
@@ -92,7 +99,7 @@ public class App
   		
   		String valu=item.getValue().getValue();
          ODMcomplexTypeDefinitionMeasurementUnitRef mesur=item.getValue().getMeasurementUnitRef();
-         if(mesur!=null){
+         if(mesur!=null){  //ToString method throws exception if catches  null value
 	String mesurUnit=mesur.getMeasurementUnitOID().toString();
 	
 	model.createResource(key)
@@ -103,7 +110,7 @@ public class App
   		model.createResource(key)
   		.addProperty(ItemOid, itemid)
   		.addProperty(value, valu);
-  		//.addProperty(messurmentUnit, mesurUnit);
+
 	  }
   	}
   	
@@ -111,7 +118,7 @@ public class App
 	
 	try{
   
-  String syntax = "TURTLE"; // also try "N-TRIPLE" and "TURTLE"
+  String syntax = "TURTLE"; // also try "N-TRIPLE" 
   StringWriter out = new StringWriter();
   model.write(out, syntax);
   String result = out.toString();
@@ -129,9 +136,6 @@ System.out.println(result);
     		System.out.println("Failed: " + e); 
     		} 
 
-
-    		
-    		
     
     }
 }
