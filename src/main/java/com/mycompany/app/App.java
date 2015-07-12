@@ -1,4 +1,5 @@
 package com.mycompany.app;
+import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -124,6 +125,12 @@ public class App
   model.write(out, syntax);
   String result = out.toString();
  
+  
+  String fileName = "july12_RDF_first_Try.rdf";
+  FileWriter output = new FileWriter( fileName );
+  
+  model.write( output, "TURTLE" );
+  output.close();
  // RDFDataMgr.write(System.out, model, "N-Triples") ;
 System.out.println(result);
     
