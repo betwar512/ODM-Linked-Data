@@ -1,0 +1,589 @@
+<SS_9/SE_CLINIC1/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "136" .
+
+<SS_10/SE_HOME1/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_CLINIC2/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_CLINIC3/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC3/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_CLINIC2/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "140" .
+
+<SS_9/SE_CLINIC3/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_HOME1/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_CLINIC2/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "137" .
+
+<SS_10/SE_HOME9/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_HOME9/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_CLINIC1/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075/I_MEDIC_MEDICATIONROUTE>
+        <lcdc:ItemGroupOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_CLINIC3/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "139" .
+
+<SS_9/SE_CLINIC3/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "136" .
+
+<SS_11/SE_HOME8/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_HOME3/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_CLINIC1/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075/I_MEDIC_MEDICATIONROUTE>
+        <lcdc:ItemGroupOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_HOME2/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC1/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC2/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_HOME7/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_CLINIC4/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075/I_MEDIC_MEDICATIONROUTE>
+        <lcdc:ItemGroupOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc:Value>         "1" .
+
+<SS_10/SE_HOME5/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME9/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_HOME2/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_HOME4/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_CLINIC4/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_CLINIC1/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdc:ItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdc:itemGroupRepeatKey>  "2" .
+
+<SS_11/SE_CLINIC1/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME1/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_HOME4/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_HOME7/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC3/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075/I_MEDIC_MEDICATIONROUTE>
+        <lcdc:ItemGroupOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_CLINIC1/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "142" .
+
+<SS_8/SE_HOME1/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_HOME3/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME6/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_HOME9/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_10/SE_CLINIC1/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_CLINIC2/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_CLINIC2/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC1/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_CLINIC3/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_CLINIC3/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_HOME8/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_HOME6/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC4/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_HOME8/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC1/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "134" .
+
+<SS_9/SE_CLINIC2/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_CLINIC2/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME5/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_HOME7/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "2" .
+
+<SS_11/SE_CLINIC4/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_CLINIC2/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "136" .
+
+<SS_8/SE_HOME9/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_10/SE_HOME8/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC4/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC3/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "138" .
+
+<SS_11/SE_CLINIC3/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "134" .
+
+<SS_9/SE_CLINIC2/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_HOME6/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_HOME7/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC4/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "134" .
+
+<SS_8/SE_HOME8/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_CLINIC4/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "134" .
+
+<SS_8/SE_CLINIC1/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_HOME6/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "2" .
+
+<SS_10/SE_CLINIC1/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdc:ItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdc:itemGroupRepeatKey>  "2" .
+
+<SS_9/SE_HOME8/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "3" .
+
+<SS_10/SE_CLINIC3/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_HOME2/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPART_8890>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPART_8890" ;
+        <lcdc:Value>         "2" .
+
+<SS_11/SE_HOME5/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_HOME7/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_CLINIC4/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME9/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_HOME1/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_HOME4/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_CLINIC1/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC2/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME6/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_CLINIC3/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdc:ItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdc:itemGroupRepeatKey>  "3" .
+
+<SS_11/SE_HOME3/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_10/SE_HOME3/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_CLINIC1/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC1/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "140" .
+
+<SS_11/SE_CLINIC2/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME5/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "2" .
+
+<SS_11/SE_HOME2/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC2/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS/I_BLOOD_SODIUM>
+        <lcdc:ItemGroupOID>        "I_BLOOD_SODIUM" ;
+        <lcdc:MeasurementUnitOID>  "MU_MMOLL" ;
+        <lcdc:Value>               "139" .
+
+<SS_11/SE_HOME2/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_CLINIC1/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_HOME4/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_10/SE_CLINIC3/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_CLINIC4/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_10/SE_HOME2/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_HOME5/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_CLINIC1/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_CLINIC3/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_CLINIC4/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_HOME1/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME4/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_CLINIC4/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "2" .
+
+<SS_10/SE_HOME5/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_10/SE_HOME7/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_HOME7/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_CLINIC3/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC4/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_CLINIC1/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_HOME4/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_HOME6/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_HOME4/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "3" .
+
+<SS_8/SE_HOME6/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_CLINIC3/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC3/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME3/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC4/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC4/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdc:ItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdc:itemGroupRepeatKey>  "2" .
+
+<SS_10/SE_HOME3/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_HOME9/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_HOME6/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC2/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC1/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdc:ItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdc:itemGroupRepeatKey>  "3" .
+
+<SS_10/SE_CLINIC1/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_HOME5/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_CLINIC1/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdc:ItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdc:itemGroupRepeatKey>  "3" .
+
+<SS_11/SE_HOME5/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME8/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_HOME2/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_HOME4/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_10/SE_HOME1/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_8/SE_HOME8/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_10/SE_CLINIC1/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdc:ItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_8/SE_HOME3/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_10/SE_CLINIC1/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075/I_MEDIC_MEDICATIONROUTE>
+        <lcdc:ItemGroupOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_HOME1/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_HOME7/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_9/SE_HOME3/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "3" .
+
+<SS_10/SE_CLINIC2/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_9/SE_HOME2/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378/I_VITAL_READINGSBODYPOSITION_1915>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc:Value>         "2" .
+
+<SS_8/SE_CLINIC3/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_CLINIC1/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075/I_MEDIC_MEDICATIONROUTE>
+        <lcdc:ItemGroupOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc:Value>         "1" .
+
+<SS_11/SE_HOME9/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdc:ItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdc:itemGroupRepeatKey>  "1" .
+
+<SS_11/SE_CLINIC2/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT/I_VITAL_READINGSBODYPOSITION>
+        <lcdc:ItemGroupOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc:Value>         "1" .
