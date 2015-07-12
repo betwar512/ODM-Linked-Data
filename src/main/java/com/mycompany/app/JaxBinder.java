@@ -6,7 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+
 import javax.xml.bind.*;
+
 import org.cdisc.ns.odm.v1.*;
 
 public class JaxBinder {
@@ -223,25 +225,33 @@ public class JaxBinder {
 	 * return type List<ODMcomplexTypeDefinitionItemData>
 	 *  
 	 *  */
-//	public List<ODMcomplexTypeDefinitionItemData> getItemsList(ODMcomplexTypeDefinitionItemGroupData groupData){
-//		
-//		List<ODMcomplexTypeDefinitionItemData> items=new ArrayList<ODMcomplexTypeDefinitionItemData>();
-//		
-//		
-//		groupData.get
-//		
-//		for(Iterator<ODMcomplexTypeDefinitionItemData> q=groupData.iterator();q.hasNext();){
-//			
-//			ODMcomplexTypeDefinitionItemData item=q.next();
-//		
-//				items.add(item);
-//			
-//				}//item
-//		
-//		return items;
-//	}
-//	
+public Map<String,ODMcomplexTypeDefinitionItemData> getItemsList(Map<String,ODMcomplexTypeDefinitionItemGroupData> groupData){
 	
+	
+	
+	Map<String,ODMcomplexTypeDefinitionItemData> itemData=new HashMap<String,ODMcomplexTypeDefinitionItemData>();
+	
+	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemGroupData>> g=groupData.entrySet().iterator();g.hasNext();){
+		Entry<String, ODMcomplexTypeDefinitionItemGroupData> itemMap=g.next();
+		
+		String key=itemMap.getKey();
+		
+		String itemGroupId=itemMap.getValue().getItemGroupOID();
+		
+		
+		String mapKey=key + "/"+itemGroupId;
+		for(Iterator<ODMcomplexTypeDefinitionItemData> it=itemMap.getValue().getItemDataGroup().iterator();it.hasNext();)
+		{
+			 
+			ODMcomplexTypeDefinitionItemData items= it.next();	
+			itemData.put(mapKey, items);
+			  		  
+		}
+	}
+	
+	return itemData;
+	
+ }
 	
 }
 

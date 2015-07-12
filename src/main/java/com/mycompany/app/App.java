@@ -7,22 +7,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.jena.riot.Lang;
-import org.apache.jena.riot.RDFDataMgr;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionFormData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemGroupData;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionStudy;
+import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef;
 
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.vocabulary.VCARD;
 import com.mycompany.app.lcdc.Lcdc;
 /**
  * Hello world!
@@ -40,15 +34,15 @@ public class App
      	
     	Property itemGroupRepeatKey1=model.createProperty("lcdc:", Lcdc.itemGroupRepeatKey);
     	Property itemGroupOid=model.createProperty("lcdc:",Lcdc.itemGroupOID);
+    //	List<String> itemGroupOIdList=new ArrayList<String>();
     	
-    	List<String> itemGroupOIdList=new ArrayList<String>();
-    	
-    	
-    	
+    	Property ItemOid=model.createProperty("lcdc: ", Lcdc.itemOid);
+    	Property value=model.createProperty("lcdc:",Lcdc.value);
+    	Property messurmentUnit=model.createProperty("lcdc:",Lcdc.measurementUnitOID);
     	
     	
     	try{
-    	// TODO Auto-generated method stub
+    
 
     	JaxBinder myJax=new JaxBinder();
     	
@@ -68,12 +62,15 @@ public class App
     	//Get ItemGroups with Key 
    	Map<String, ODMcomplexTypeDefinitionItemGroupData>itemGroups=myJax.getItemGroupData(forms);
    	
+   	//Get Items with Uri keys 
+   	Map<String, ODMcomplexTypeDefinitionItemData> items=myJax.getItemsList(itemGroups);
+   	
+   	
+   	
     	   
   	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemGroupData>> i=itemGroups.entrySet().iterator();i.hasNext();){
    		
     		Entry<String, ODMcomplexTypeDefinitionItemGroupData> itemGroup= i.next();
-   		   		
-    		
     	ODMcomplexTypeDefinitionItemGroupData	it= itemGroup.getValue();
     		
 ////    		//
@@ -89,21 +86,40 @@ public class App
     	model.createResource(subjectKey)
     	.addProperty(itemGroupRepeatKey1,itemGroupRepeatKey)
     	.addProperty(itemGroupOid, itemOid);
-    	
-    	
-   
-    	
-   		itemGroupOIdList.add(subjectKey);  	
+
    			
    		}
   	
-  	InfModel inf = ModelFactory.createRDFSModel(model);
-    
-  Resource a=inf.getResource(itemGroupOIdList.get(0));
+  	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemData>> itemDatas=items.entrySet().iterator();itemDatas.hasNext();){
+  		
+  		Entry<String, ODMcomplexTypeDefinitionItemData> item=itemDatas.next();
+  		
+  		String mapKey=item.getKey();
+  				String itemid=item.getValue().getItemOID();
+  				String key=mapKey+"/"+itemid;
+  	
+  		
+  		String valu=item.getValue().getValue();
+         ODMcomplexTypeDefinitionMeasurementUnitRef mesur=item.getValue().getMeasurementUnitRef();
+         if(mesur!=null){
+	String mesurUnit=mesur.getMeasurementUnitOID().toString();
+	
+	model.createResource(key)
+		.addProperty(itemGroupOid, itemid)
+		.addProperty(value, valu)
+		.addProperty(messurmentUnit, mesurUnit);
+	}else{
+  		model.createResource(key)
+  		.addProperty(itemGroupOid, itemid)
+  		.addProperty(value, valu);
+  		//.addProperty(messurmentUnit, mesurUnit);
+	}
+  	}
+  	
+  	
+  	
   
-  
-  
-  String syntax = "RDF/XML-ABBREV"; // also try "N-TRIPLE" and "TURTLE"
+  String syntax = "TURTLE"; // also try "N-TRIPLE" and "TURTLE"
   StringWriter out = new StringWriter();
   model.write(out, syntax);
   String result = out.toString();
@@ -114,13 +130,7 @@ System.out.println(result);
     	} catch (Exception e) { 
     		System.out.println("Failed: " + e); 
     		} 
-    	
-    	
-    	 
-    
-    	
-    	
-    	
+
     	
 //    	
 //    	
