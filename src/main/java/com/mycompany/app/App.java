@@ -1,23 +1,18 @@
 package com.mycompany.app;
 import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionFormData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemGroupData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef;
-
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.Resource;
 import com.mycompany.app.lcdc.Lcdc;
 /**
  * Hello world!
@@ -106,15 +101,15 @@ public class App
 	String mesurUnit=mesur.getMeasurementUnitOID().toString();
 	
 	model.createResource(key)
-		.addProperty(itemGroupOid, itemid)
+		.addProperty(ItemOid, itemid)
 		.addProperty(value, valu)
 		.addProperty(messurmentUnit, mesurUnit);
 	}else{
   		model.createResource(key)
-  		.addProperty(itemGroupOid, itemid)
+  		.addProperty(ItemOid, itemid)
   		.addProperty(value, valu);
   		//.addProperty(messurmentUnit, mesurUnit);
-	}
+	  }
   	}
   	
   	
@@ -126,7 +121,7 @@ public class App
   String result = out.toString();
  
   
-  String fileName = "july12_RDF_first_Try.rdf";
+  String fileName = "july12_RDF_ItemGroup_item.rdf";
   FileWriter output = new FileWriter( fileName );
   
   model.write( output, "TURTLE" );
