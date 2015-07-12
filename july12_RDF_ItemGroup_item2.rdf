@@ -1,0 +1,8 @@
+<SS_7/SE_DAY1/F_VITALSIGNS_V10/IG_VITAL_UNGROUPED>
+        <lcdc:ItemGroupOID>        "IG_VITAL_UNGROUPED" ;
+        <lcdc:itemGroupRepeatKey>  "" .
+
+<SS_7/SE_DAY1/F_VITALSIGNS_V10/IG_VITAL_UNGROUPED/I_VITAL_ABDOMINALCIRCUMFERENCE>
+        <lcdc: ItemOID>            "I_VITAL_ABDOMINALCIRCUMFERENCE" ;
+        <lcdc:MeasurementUnitOID>  "MU_CMS" ;
+        <lcdc:Value>               "80" .

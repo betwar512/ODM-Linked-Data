@@ -20,44 +20,38 @@ import com.mycompany.app.lcdc.Lcdc;
  */
 public class App 
 {
+
+	
     public static void main( String[] args )
     {
     	
     	
     	//Model
     	Model model=ModelFactory.createDefaultModel();
-    	
+   
      	
     	Property itemGroupRepeatKey1=model.createProperty("lcdc:", Lcdc.itemGroupRepeatKey);
-    	Property itemGroupOid=model.createProperty("lcdc:",Lcdc.itemGroupOID);
-    //	List<String> itemGroupOIdList=new ArrayList<String>();
-    	
+    	Property itemGroupOid=model.createProperty("lcdc:",Lcdc.itemGroupOID);	
     	Property ItemOid=model.createProperty("lcdc: ", Lcdc.itemOid);
     	Property value=model.createProperty("lcdc:",Lcdc.value);
     	Property messurmentUnit=model.createProperty("lcdc:",Lcdc.measurementUnitOID);
     	
-    	
-    	try{
+    
+    		
     
 
     	JaxBinder myJax=new JaxBinder();
-    	
     //	List<ODMcomplexTypeDefinitionStudy> study=
-    			myJax.catchStudy("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");	
+    		//	myJax.catchStudy("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");	
     	
     //	ODMcomplexTypeDefinitionMetaDataVersion metaData=myJax.catchMetaData(study);
     	ODMcomplexTypeDefinitionClinicalData clinicalData=
-    			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
-    	
-    	
+    			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_InitialExtract_2015-04-15-101034016.xml");
+    
     	//GetForms with Key
     	 Map<String,List<ODMcomplexTypeDefinitionFormData>> forms=  myJax.getForms(clinicalData);
-    	 
-    	 
-    	 
     	//Get ItemGroups with Key 
-   	Map<String, ODMcomplexTypeDefinitionItemGroupData>itemGroups=myJax.getItemGroupData(forms);
-   	
+   	Map<String, ODMcomplexTypeDefinitionItemGroupData>itemGroups=myJax.getItemGroupData(forms);	
    	//Get Items with Uri keys 
    	Map<String, ODMcomplexTypeDefinitionItemData> items=myJax.getItemsList(itemGroups);
    	
@@ -69,14 +63,15 @@ public class App
     		Entry<String, ODMcomplexTypeDefinitionItemGroupData> itemGroup= i.next();
     	ODMcomplexTypeDefinitionItemGroupData	it= itemGroup.getValue();
     		
-////    		//
-////    		// Test the method and get the ItemGroupId + ItemGroupRepeatKey
-////    		//Added to list of strings 	
     	String mapKey=itemGroup.getKey();
    		String itemOid= it.getItemGroupOID();
    		String subjectKey=mapKey +"/"+itemOid;
    		
-    	String itemGroupRepeatKey=it.getItemGroupRepeatKey();
+    	String itemGroupRepeatKey="";
+    	itemGroupRepeatKey="";
+    	if(it.getItemGroupRepeatKey()!=null){
+    		itemGroupRepeatKey=it.getItemGroupRepeatKey();
+    	}
     		
     		//Add to model 
     	model.createResource(subjectKey)
@@ -113,7 +108,8 @@ public class App
   	}
   	
   	
-  	
+	
+	try{
   
   String syntax = "TURTLE"; // also try "N-TRIPLE" and "TURTLE"
   StringWriter out = new StringWriter();
@@ -121,7 +117,7 @@ public class App
   String result = out.toString();
  
   
-  String fileName = "july12_RDF_ItemGroup_item.rdf";
+  String fileName = "july12_RDF_ItemGroup_item2.rdf";
   FileWriter output = new FileWriter( fileName );
   
   model.write( output, "TURTLE" );
@@ -133,36 +129,7 @@ System.out.println(result);
     		System.out.println("Failed: " + e); 
     		} 
 
-    	
-//    	
-//    	
-//    	String personURI    = "http://somewhere/JohnSmith";
-//    	String givenName    = "John";
-//    	String familyName   = "Smith";
-//    	String fullName     = givenName + " " + familyName;
-//
-//    	// create an empty Model
-//    	Model model = ModelFactory.createDefaultModel();
-//
-//    	
-//    	model.createResource(personURI);
-//    	
-    	
-    	
-    	
-    	// create the resource
-    	//   and add the properties cascading style
-//    	Resource johnSmith
-//    	  = model.createResource(personURI)
-   //	         .addProperty(VCARD.FN, fullName)
-//    	         .addProperty(VCARD.N,
-//    	                      model.createResource()
-//    	                           .addProperty(VCARD.Given, givenName)
-//    	                           .addProperty(VCARD.Family, familyName));
-//    
-    	
-    	
-    	
+
     		
     		
     
