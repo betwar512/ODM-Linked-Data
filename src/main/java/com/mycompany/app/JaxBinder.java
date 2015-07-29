@@ -8,8 +8,14 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import javax.xml.bind.*;
-
 import org.cdisc.ns.odm.v1.*;
+
+
+
+/**
+ * @author Abbas.h.Safaie
+ * 
+ * */
 
 public class JaxBinder {
 
@@ -30,16 +36,17 @@ public class JaxBinder {
 		
 	}
 	
-	
-	public void catchitem(List<ODMcomplexTypeDefinitionItemDef> itemDef){
+	/*
+	public void catchItem(List<ODMcomplexTypeDefinitionItemDef> itemDef){
 		
 	for(ODMcomplexTypeDefinitionItemDef item : itemDef){
-		
+	
 	
 		
 	     }
 
 	}
+	*/
 	
 	
 	
@@ -126,10 +133,7 @@ public class JaxBinder {
 	
 	
 	
-	/*
-	 * 
-	 * 
-	 * 
+	/* 
 	 * Forms as an Array of Arrays
 	 * return Map <String , forms>
 	 * */
@@ -139,12 +143,12 @@ public class JaxBinder {
 		Map<String,List<ODMcomplexTypeDefinitionFormData>>  formsDataKey = new HashMap<String,List<ODMcomplexTypeDefinitionFormData>>();
 	
 		List<ODMcomplexTypeDefinitionSubjectData> subjectData=clinicalData.getSubjectData();
-
 		for(Iterator<ODMcomplexTypeDefinitionSubjectData> i = subjectData.iterator(); i.hasNext();){
 			
 			ODMcomplexTypeDefinitionSubjectData subject=i.next();
-			
+	
 			//subjectKey
+			
 		String subjectkey=	subject.getSubjectKey();
 			
 			
@@ -157,6 +161,7 @@ public class JaxBinder {
 			//EvenData 
 		ODMcomplexTypeDefinitionStudyEventData studyEventData= j.next();
 			//List of forms 
+		
 		  List<ODMcomplexTypeDefinitionFormData> formData=  studyEventData.getFormData();
 		  //Key for eventOID
 		  String eventOID=studyEventData.getStudyEventOID();
@@ -177,7 +182,7 @@ public class JaxBinder {
 	/*
 	 * getItemGroup data
 	 * 
-	 *  
+	 *  return: Map<Key,ItemGroups>
 	 *  
 	 *  */
 	public Map<String, ODMcomplexTypeDefinitionItemGroupData> getItemGroupData( Map<String,List<ODMcomplexTypeDefinitionFormData>>  formsDataKey){
@@ -220,9 +225,9 @@ public class JaxBinder {
 	
 	
 	
-	/*get Items belong to the Group
+	/*get Items belong to the ItemGroup
 	 * 
-	 * return type List<ODMcomplexTypeDefinitionItemData>
+	 * return type List<ODMcomplexTypeDefinitionItemData>=Items
 	 *  
 	 *  */
 public Map<String,ODMcomplexTypeDefinitionItemData> getItemsList(Map<String,ODMcomplexTypeDefinitionItemGroupData> groupData){

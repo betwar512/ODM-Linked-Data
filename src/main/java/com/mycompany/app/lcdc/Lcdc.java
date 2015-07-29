@@ -1,5 +1,8 @@
 package com.mycompany.app.lcdc;
-
+/**
+ * @author Abbas.h.Safaie
+ * 
+ * */
 public final class Lcdc {
 
       	public static final String dateStarted="DateStarted";
@@ -15,6 +18,7 @@ public final class Lcdc {
       	//Events
 		public static final String studyEventOID="StudyEventOID";
 		public static final String 	subjectAgeAtEvent="subjectAgetAtEvent";
+		public static final String customDate="customerDate";
 		//Form 
 		public static final String formOID="FormOID";
 		

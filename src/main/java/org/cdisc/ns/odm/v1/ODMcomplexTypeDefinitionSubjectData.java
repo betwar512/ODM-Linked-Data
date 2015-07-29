@@ -72,6 +72,7 @@ public class ODMcomplexTypeDefinitionSubjectData {
     @XmlAttribute(name = "TransactionType")
     protected TransactionType transactionType;
 
+
     /**
      * Gets the value of the auditRecord property.
      * 
@@ -273,5 +274,7 @@ public class ODMcomplexTypeDefinitionSubjectData {
     public void setTransactionType(TransactionType value) {
         this.transactionType = value;
     }
+    
+    
 
 }

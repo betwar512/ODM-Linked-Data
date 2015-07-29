@@ -1,5 +1,7 @@
-//Auth: abbas.h.Safaie
-
+/**
+ * @author Abbas.h.Safaie
+ * 
+ * */
 package com.mycompany.app.lcdc;
 
 

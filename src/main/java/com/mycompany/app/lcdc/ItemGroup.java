@@ -3,7 +3,7 @@ package com.mycompany.app.lcdc;
 
 /**
  * @author Abbas.h.Safaie
- * Extended data cube Medication
+ * Extended data cube Mediation
  *
  */
 public final class ItemGroup {
