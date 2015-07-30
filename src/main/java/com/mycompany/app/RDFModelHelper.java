@@ -52,8 +52,6 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	
 	Property itemGroupRepeatKey1=model.createProperty("lcdc:", Lcdc.itemGroupRepeatKey);
 	Property itemGroupOid=model.createProperty("lcdc:",Lcdc.itemGroupOID);	
-	Property comment=model.createProperty("comment:", "comment");
-	
 	   //Create RDF sets for GroupItems
 	  	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemGroupData>> i=itemGroups.entrySet().iterator();i.hasNext();){  		
 	       Entry<String, ODMcomplexTypeDefinitionItemGroupData> itemGroup= i.next();
@@ -66,17 +64,12 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	    	if(it.getItemGroupRepeatKey()!=null){
 	    		itemGroupRepeatKey=it.getItemGroupRepeatKey();
 	    	}	
-	    	//Create Comment
-	    	StringCustomHelper stringHelper=new StringCustomHelper();
-	    	
-	    String comm=stringHelper.Comment(subjectKey);
-	    	
-	    	
+	  
 	    		//Add to model 
 	    	model.createResource(subjectKey)
 	    	.addProperty(itemGroupRepeatKey1,itemGroupRepeatKey)
-	    	.addProperty(itemGroupOid, itemOid)
-	    	.addProperty(comment,comm);		
+	    	.addProperty(itemGroupOid, itemOid);
+	    			
 	   		}
 		}
 
@@ -87,6 +80,7 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
     	Property value=model.createProperty("lcdc:",Lcdc.value);
     //	Property customerBla=model.createProperty(Lcdc.customDate);
     	Property messurmentUnit=model.createProperty("lcdc:",Lcdc.measurementUnitOID);
+    	Property comment=model.createProperty("rdfs:", "comment");
     	
     	
 		//Create RDF model for Items
@@ -98,19 +92,24 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	  		String itemid=item.getValue().getItemOID();
 	  		String key=mapKey+"/"+itemid;
 	  		String valu=item.getValue().getValue();
+	  	  	//Create Comment
+	    	StringCustomHelper stringHelper=new StringCustomHelper();	
+	        String comm=stringHelper.Comment(key);
 	        ODMcomplexTypeDefinitionMeasurementUnitRef mesur=item.getValue().getMeasurementUnitRef();
-	        
 	         if(mesur!=null){  //ToString method throws exception if catches  null value
 	     	String mesurUnit=mesur.getMeasurementUnitOID().toString();
-		
-		model.createResource(key)
+	     	
+	    
+	     	//Create model
+	    	model.createResource(key)
 			.addProperty(ItemOid, itemid)
 			.addProperty(value, valu)
-			.addProperty(messurmentUnit, mesurUnit);
+			.addProperty(messurmentUnit, mesurUnit)
+	    	.addProperty(comment,comm);
 		}else{
 	  		model.createResource(key)
 	  		.addProperty(ItemOid, itemid)
-	  		.addProperty(value, valu);
+	  		.addProperty(value, valu).addProperty(comment,comm);
 
 		  }
 	  	}	

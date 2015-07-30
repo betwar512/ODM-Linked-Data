@@ -1,15 +1,6 @@
 package com.mycompany.app;
 import java.io.FileWriter;
 import java.io.StringWriter;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionFormData;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemGroupData;
 import com.hp.hpl.jena.rdf.model.Model;
 /**
  * @author Abbas.h.Safaie
@@ -64,7 +55,7 @@ public class App
   String result = out.toString();
  
   
-  String fileName = "July30_RDF_newModel.rdf";
+  String fileName = "July31_RDF_newModel.rdf";
   FileWriter output = new FileWriter( fileName );
   
   model2.write( output, "TURTLE" );

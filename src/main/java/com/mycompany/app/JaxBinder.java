@@ -141,7 +141,6 @@ public class JaxBinder {
 	public  Map<String,List<ODMcomplexTypeDefinitionFormData>> getForms(ODMcomplexTypeDefinitionClinicalData clinicalData){
 		
 		Map<String,List<ODMcomplexTypeDefinitionFormData>>  formsDataKey = new HashMap<String,List<ODMcomplexTypeDefinitionFormData>>();
-	
 		List<ODMcomplexTypeDefinitionSubjectData> subjectData=clinicalData.getSubjectData();
 		for(Iterator<ODMcomplexTypeDefinitionSubjectData> i = subjectData.iterator(); i.hasNext();){
 			
