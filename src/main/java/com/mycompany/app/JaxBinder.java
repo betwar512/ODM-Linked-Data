@@ -141,7 +141,7 @@ public class JaxBinder {
 	public  Map<String,List<ODMcomplexTypeDefinitionFormData>> getForms(ODMcomplexTypeDefinitionClinicalData clinicalData){
 		
 		
-		String base="<base_uri/subject/";
+		
 		String phase="Phase/";
 		
 		
@@ -170,7 +170,7 @@ public class JaxBinder {
 		  //Key for eventOID
 		  String eventOID=studyEventData.getStudyEventOID();
 		  //MapKey 
-		String  customeKey=base + subjectkey + "/" + phase + eventOID;
+		String  customeKey= subjectkey + "/" + phase + eventOID;
 
 		  formsDataKey.put(customeKey,formData);
 		  

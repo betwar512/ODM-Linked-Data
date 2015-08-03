@@ -10,6 +10,7 @@ import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionFormData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemGroupData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef;
+
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
@@ -90,10 +91,10 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	  	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemData>> itemDatas=items.entrySet().iterator();itemDatas.hasNext();){
 	  		
 	  		Entry<String, ODMcomplexTypeDefinitionItemData> item=itemDatas.next();
-	  		
+	  		String base="<base_uri/subject/";
 	  		String mapKey=item.getKey();
 	  		String itemid=item.getValue().getItemOID();
-	  		String key=mapKey+"/"+itemid;
+	  		String key= mapKey+"/"+itemid;
 	  		String valu=item.getValue().getValue();
 	  	  	//Create Comment
 	    	StringCustomHelper stringHelper=new StringCustomHelper();	
@@ -102,9 +103,9 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	         if(mesur!=null){  //ToString method throws exception if catches  null value
 	     	String mesurUnit=mesur.getMeasurementUnitOID().toString();
 	     	
-	    
+	     String		base_Uri=base+key;
 	     	//Create model
-	    	model.createResource(key)
+	    	model.createResource(base_Uri)
 			.addProperty(ItemOid, itemid)
 			.addProperty(value, valu)
 			.addProperty(messurmentUnit, mesurUnit)

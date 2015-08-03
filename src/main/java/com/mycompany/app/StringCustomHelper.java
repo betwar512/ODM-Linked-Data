@@ -48,7 +48,7 @@ public class StringCustomHelper {
 		}
 		
 		//Event 
-		String[] eventParts=keys[1].split("_");
+		String[] eventParts=keys[2].split("_");
 		String event=eventParts[eventParts.length-1].toLowerCase();
 		
 		//Final Comment
