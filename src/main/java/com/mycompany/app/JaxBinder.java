@@ -140,6 +140,11 @@ public class JaxBinder {
 	
 	public  Map<String,List<ODMcomplexTypeDefinitionFormData>> getForms(ODMcomplexTypeDefinitionClinicalData clinicalData){
 		
+		
+		String base="<base_uri/subject/";
+		String phase="Phase/";
+		
+		
 		Map<String,List<ODMcomplexTypeDefinitionFormData>>  formsDataKey = new HashMap<String,List<ODMcomplexTypeDefinitionFormData>>();
 		List<ODMcomplexTypeDefinitionSubjectData> subjectData=clinicalData.getSubjectData();
 		for(Iterator<ODMcomplexTypeDefinitionSubjectData> i = subjectData.iterator(); i.hasNext();){
@@ -165,7 +170,7 @@ public class JaxBinder {
 		  //Key for eventOID
 		  String eventOID=studyEventData.getStudyEventOID();
 		  //MapKey 
-		String  customeKey=subjectkey + "/" + eventOID;
+		String  customeKey=base + subjectkey + "/" + phase + eventOID;
 
 		  formsDataKey.put(customeKey,formData);
 		  

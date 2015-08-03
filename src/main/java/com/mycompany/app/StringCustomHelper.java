@@ -96,7 +96,7 @@ public class StringCustomHelper {
 	}
 	
 /*	
-	//Check string in Numeric or not Only for Latin words 
+	//Check string in Numeric or not, Only works for Latin words 
 	public static boolean numericChecker(String str)  
 	{  
 	  try  
