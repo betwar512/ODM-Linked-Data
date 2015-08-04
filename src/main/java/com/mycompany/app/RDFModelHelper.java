@@ -13,8 +13,9 @@ import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.mycompany.app.lcdc.Lcdc;
+import com.hp.hpl.jena.vocabulary.RDFS;
+import com.mycompany.app.lcdc.ItemGroup;
+import com.mycompany.app.lcdc.Items;
 
 /**
  * @author Abbas H Safaie
@@ -24,7 +25,7 @@ import com.mycompany.app.lcdc.Lcdc;
  */
 public class RDFModelHelper {
 
-	
+	private static final String base="base_uri/subject/";
 	//Create Model and return it 
   public Model createModel(){
 		
@@ -54,8 +55,7 @@ public class RDFModelHelper {
   
 public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> itemGroups,Model model){
 	
-	Property itemGroupRepeatKey1=model.createProperty("lcdc:", Lcdc.itemGroupRepeatKey);
-	Property itemGroupOid=model.createProperty("lcdc:",Lcdc.itemGroupOID);	
+
 	   //Create RDF sets for GroupItems
 	  	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemGroupData>> i=itemGroups.entrySet().iterator();i.hasNext();){  		
 	       Entry<String, ODMcomplexTypeDefinitionItemGroupData> itemGroup= i.next();
@@ -70,9 +70,9 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	    	}	
 	  
 	    		//Add to model 
-	    	model.createResource(subjectKey)
-	    	.addProperty(itemGroupRepeatKey1,itemGroupRepeatKey)
-	    	.addProperty(itemGroupOid, itemOid);
+	    	model.createResource(base+subjectKey)
+	    	.addProperty(ItemGroup.itemGroupRepeatKey,itemGroupRepeatKey)
+	    	.addProperty(ItemGroup.itemGroupOID, itemOid);
 	    			
 	   		}
 		}
@@ -80,40 +80,35 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	//Add Item to RDF model 
 	public void addItems(Map<String, ODMcomplexTypeDefinitionItemData> items,Model model){
 
-		Property ItemOid=model.createProperty("lcdc: ", Lcdc.itemOid);
-    	Property value=model.createProperty("lcdc:",Lcdc.value);
-    //	Property customerBla=model.createProperty(Lcdc.customDate);
-    	Property messurmentUnit=model.createProperty("lcdc:",Lcdc.measurementUnitOID);
-    	Property comment=model.createProperty("rdfs:", "comment");
-    	
-    	
+    	String itemString="variable/";
 		//Create RDF model for Items
 	  	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemData>> itemDatas=items.entrySet().iterator();itemDatas.hasNext();){
 	  		
 	  		Entry<String, ODMcomplexTypeDefinitionItemData> item=itemDatas.next();
-	  		String base="<base_uri/subject/";
+	  	
 	  		String mapKey=item.getKey();
 	  		String itemid=item.getValue().getItemOID();
-	  		String key= mapKey+"/"+itemid;
+	  		String key= mapKey+"/"+itemString + itemid;
 	  		String valu=item.getValue().getValue();
 	  	  	//Create Comment
 	    	StringCustomHelper stringHelper=new StringCustomHelper();	
 	        String comm=stringHelper.Comment(key);
 	        ODMcomplexTypeDefinitionMeasurementUnitRef mesur=item.getValue().getMeasurementUnitRef();
 	         if(mesur!=null){  //ToString method throws exception if catches  null value
-	     	String mesurUnit=mesur.getMeasurementUnitOID().toString();
-	     	
-	     String		base_Uri=base+key;
-	     	//Create model
+	     	String mesurUnit=mesur.getMeasurementUnitOID().toString();	
+	        String base_Uri=base+key;
+	
+	     
 	    	model.createResource(base_Uri)
-			.addProperty(ItemOid, itemid)
-			.addProperty(value, valu)
-			.addProperty(messurmentUnit, mesurUnit)
-	    	.addProperty(comment,comm);
+			.addProperty(Items.itemOid, itemid)
+			.addProperty(Items.value, valu)
+			.addProperty(Items.measurementUnitOID, mesurUnit)
+	    	.addProperty(RDFS.comment,comm);
 		}else{
 	  		model.createResource(key)
-	  		.addProperty(ItemOid, itemid)
-	  		.addProperty(value, valu).addProperty(comment,comm);
+	  		.addProperty(Items.itemOid, itemid)
+	  		.addProperty(Items.value, valu)
+	  		.addProperty(RDFS.comment,comm);
 
 		  }
 	  	}	

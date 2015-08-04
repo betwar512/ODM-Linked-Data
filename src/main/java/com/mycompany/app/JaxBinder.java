@@ -181,8 +181,6 @@ public class JaxBinder {
 	}
 	
 	
-	
-	
 	/*
 	 * getItemGroup data
 	 * 
@@ -191,6 +189,7 @@ public class JaxBinder {
 	 *  */
 	public Map<String, ODMcomplexTypeDefinitionItemGroupData> getItemGroupData( Map<String,List<ODMcomplexTypeDefinitionFormData>>  formsDataKey){
 		
+		String formString="form/"; //String to create Uri 
 		
 		
 		Map<String,ODMcomplexTypeDefinitionItemGroupData> itemGroupsReturn = new HashMap<String,ODMcomplexTypeDefinitionItemGroupData>();
@@ -207,7 +206,7 @@ public class JaxBinder {
 		     //FormOId key 
 		    String formOid= fo.getFormOID();
 		    
-		    String mapKey= key+"/"+formOid;
+		    String mapKey= key+"/"+ formString +formOid;
 		    
 		    
 		     //get itemGroup
@@ -237,9 +236,8 @@ public class JaxBinder {
 public Map<String,ODMcomplexTypeDefinitionItemData> getItemsList(Map<String,ODMcomplexTypeDefinitionItemGroupData> groupData){
 	
 	
-	
+	String itemGroupString="itemGroup/";
 	Map<String,ODMcomplexTypeDefinitionItemData> itemData=new HashMap<String,ODMcomplexTypeDefinitionItemData>();
-	
 	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemGroupData>> g=groupData.entrySet().iterator();g.hasNext();){
 		Entry<String, ODMcomplexTypeDefinitionItemGroupData> itemMap=g.next();
 		
@@ -248,7 +246,7 @@ public Map<String,ODMcomplexTypeDefinitionItemData> getItemsList(Map<String,ODMc
 		String itemGroupId=itemMap.getValue().getItemGroupOID();
 		
 		
-		String mapKey=key + "/"+itemGroupId;
+		String mapKey=key + "/" + itemGroupString + itemGroupId;
 		for(Iterator<ODMcomplexTypeDefinitionItemData> it=itemMap.getValue().getItemDataGroup().iterator();it.hasNext();)
 		{
 			 

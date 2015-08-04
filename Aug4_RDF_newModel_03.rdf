@@ -1,0 +1,747 @@
+<base_uri/subject/SS_9/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_9/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home8'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "3" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_11/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home6'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "2" .
+
+<SS_9/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home4'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '11', from Event 'clinic2'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "136" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC3/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdcItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdcitemGroupRepeatKey>  "3" .
+
+<SS_11/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home2'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_10/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '8', from Event 'clinic3'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "139" .
+
+<SS_8/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '8', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_11/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home8'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_9/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home6'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_8/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home6'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_10/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home4'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "3" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '9', from Event 'clinic3'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "136" .
+
+<SS_11/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '11', from Event 'clinic4'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '8', from Event 'clinic2'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "140" .
+
+<SS_8/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home8'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdcItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdcitemGroupRepeatKey>  "3" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_10/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home6'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_8/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home4'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC4/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdcItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdcitemGroupRepeatKey>  "2" .
+
+<SS_10/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/variable/I_MEDIC_MEDICATIONROUTE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medicationroute', from Subject '10', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_10/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home2'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '10', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "140" .
+
+<SS_9/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home3'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "3" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_11/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home1'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_11/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '11', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_10/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '10', from Event 'clinic2'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_10/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '10', from Event 'clinic3'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_10/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home8'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_11/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '11', from Event 'clinic2'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '11', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "134" .
+
+<base_uri/subject/SS_11/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_11/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '11', from Event 'clinic3'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_10/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '10', from Event 'clinic4'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_8/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodypart 8890', from Subject '8', from Event 'home2'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPART_8890" ;
+        <lcdc-schema#Value>    "2" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_11/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home7'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_9/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home5'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "2" .
+
+<base_uri/subject/SS_8/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC4/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '10', from Event 'clinic4'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "134" .
+
+<base_uri/subject/SS_9/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_11/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/variable/I_MEDIC_MEDICATIONROUTE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medicationroute', from Subject '11', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_11/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home3'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_9/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home1'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_9/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_9/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_11/Phase/SE_CLINIC3/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/variable/I_MEDIC_MEDICATIONROUTE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medicationroute', from Subject '11', from Event 'clinic3'." ;
+        <lcdc-schema#ItemOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC4/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '11', from Event 'clinic4'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "134" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '9', from Event 'clinic2'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "137" .
+
+<SS_11/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home9'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_9/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home7'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '10', from Event 'clinic3'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "138" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdcItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdcitemGroupRepeatKey>  "2" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '8', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "142" .
+
+<SS_11/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home5'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_8/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home3'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_10/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_10/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '10', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC4/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_10/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home1'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_11/Phase/SE_CLINIC4/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/variable/I_MEDIC_MEDICATIONROUTE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medicationroute', from Subject '11', from Event 'clinic4'." ;
+        <lcdc-schema#ItemOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '9', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "136" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdcItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdcitemGroupRepeatKey>  "3" .
+
+<SS_9/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home9'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_8/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home9'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_9/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '9', from Event 'clinic4'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "2" .
+
+<base_uri/subject/SS_8/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_9/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_10/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home7'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "2" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_8/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home5'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_8/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_9/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
+        <lcdcItemGroupOID>        "IG_MEDIC_MEDICATIONS_1075" ;
+        <lcdcitemGroupRepeatKey>  "2" .
+
+<SS_10/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home3'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_8/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home1'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_9/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_8/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/variable/I_MEDIC_MEDICATIONROUTE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medicationroute', from Subject '8', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_10/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home9'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_8/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home7'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_10/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home5'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_8/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_9/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '9', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_8/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '8', from Event 'clinic2'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_9/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '9', from Event 'clinic2'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_8/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '8', from Event 'clinic3'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_11/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home4'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '11', from Event 'clinic3'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "134" .
+
+<SS_9/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home2'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <lcdc-schema#Value>    "2" .
+
+<SS_9/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '9', from Event 'clinic3'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<SS_8/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'readingsbodyposition', from Subject '8', from Event 'clinic4'." ;
+        <lcdc-schema#ItemOID>  "I_VITAL_READINGSBODYPOSITION" ;
+        <lcdc-schema#Value>    "1" .
+
+<base_uri/subject/SS_8/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_10/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'sodium', from Subject '10', from Event 'clinic2'." ;
+        <lcdc-schema#ItemOID>  "I_BLOOD_SODIUM" ;
+        <lcdc-schema#MeasurementUnitOID>
+                "MU_MMOLL" ;
+        <lcdc-schema#Value>    "139" .
+
+<base_uri/subject/SS_9/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_9/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_8/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
+        <lcdcItemGroupOID>        "IG_VITAL_CONTEXT_4378" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<base_uri/subject/SS_11/Phase/SE_CLINIC4/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
+        <lcdcItemGroupOID>        "IG_BLOOD_MEASUREMENTS" ;
+        <lcdcitemGroupRepeatKey>  "1" .
+
+<SS_9/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/variable/I_MEDIC_MEDICATIONROUTE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medicationroute', from Subject '9', from Event 'clinic1'." ;
+        <lcdc-schema#ItemOID>  "I_MEDIC_MEDICATIONROUTE" ;
+        <lcdc-schema#Value>    "1" .
