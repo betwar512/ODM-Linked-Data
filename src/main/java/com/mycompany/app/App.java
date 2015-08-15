@@ -13,33 +13,6 @@ public class App
     public static void main( String[] args )
     {
     	
-//    	//GetForms with Key
-//    	 Map<String,List<ODMcomplexTypeDefinitionFormData>> forms=  myJax.getForms(clinicalData);
-//    	//Get ItemGroups with Key 
-//   	Map<String, ODMcomplexTypeDefinitionItemGroupData>itemGroups=myJax.getItemGroupData(forms);	
-//   	//Get Items with Uri keys 
-//   	Map<String, ODMcomplexTypeDefinitionItemData> items=myJax.getItemsList(itemGroups);
-//   	
-//   	
-//   	//RDF for Form 
-//   	for(Iterator<Entry<String, List<ODMcomplexTypeDefinitionFormData>>> y=forms.entrySet().iterator();y.hasNext();){
-//   		
-//   		
-//   		Entry<String, List<ODMcomplexTypeDefinitionFormData>> selectedFrom=y.next();
-//   		
-//   	            List<ODMcomplexTypeDefinitionFormData> formData=	selectedFrom.getValue();
-//   	            
-//   	            for(Iterator<ODMcomplexTypeDefinitionFormData> ft=formData.iterator();ft.hasNext();){
-//   	            	
-//   	            	
-//   	             ODMcomplexTypeDefinitionFormData ft2= ft.next();
-//   	             ft2.getFormOID();
-//   	          
-//   	            	
-//   	            }
-//   	        
-//   		
-//   	}
 
 
  
@@ -55,7 +28,7 @@ public class App
   String result = out.toString();
  
   
-  String fileName = "Aug4_RDF_newModel_05.rdf";
+  String fileName = "Aug10_RDF_newModel_01.rdf";
   FileWriter output = new FileWriter( fileName );
   
   model2.write( output, "TURTLE" );

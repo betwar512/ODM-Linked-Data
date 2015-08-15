@@ -37,6 +37,8 @@ public class RDFModelHelper {
 
     	ODMcomplexTypeDefinitionClinicalData clinicalData=
     			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
+    	
+    	myJax.makeItemsObjects(clinicalData);
     	//GetForms with Key
     	 Map<String,List<ODMcomplexTypeDefinitionFormData>> forms=  myJax.getForms(clinicalData);
     	//Get ItemGroups with Key 
@@ -69,8 +71,10 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	    		itemGroupRepeatKey=it.getItemGroupRepeatKey();
 	    	}	
 	  
+	    	
+	    	String base_Uri=base+subjectKey;
 	    		//Add to model 
-	    	model.createResource(base+subjectKey)
+	    	model.createResource(base_Uri)
 	    	.addProperty(ItemGroup.itemGroupRepeatKey,itemGroupRepeatKey)
 	    	.addProperty(ItemGroup.itemGroupOID, itemOid);
 	    			
@@ -88,15 +92,17 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	  	
 	  		String mapKey=item.getKey();
 	  		String itemid=item.getValue().getItemOID();
+	  		
 	  		String key= mapKey+"/"+itemString + itemid;
 	  		String valu=item.getValue().getValue();
 	  	  	//Create Comment
 	    	StringCustomHelper stringHelper=new StringCustomHelper();	
 	        String comm=stringHelper.Comment(key);
 	        ODMcomplexTypeDefinitionMeasurementUnitRef mesur=item.getValue().getMeasurementUnitRef();
+	        String base_Uri=base+key;
 	         if(mesur!=null){  //ToString method throws exception if catches  null value
 	     	String mesurUnit=mesur.getMeasurementUnitOID().toString();	
-	        String base_Uri=base+key;
+	        
 	
 	     
 	    	model.createResource(base_Uri)
@@ -105,7 +111,7 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 			.addProperty(Items.measurementUnitOID, mesurUnit)
 	    	.addProperty(RDFS.comment,comm);
 		}else{
-	  		model.createResource(key)
+	  		model.createResource(base_Uri)
 	  		.addProperty(Items.itemOid, itemid)
 	  		.addProperty(Items.value, valu)
 	  		.addProperty(RDFS.comment,comm);

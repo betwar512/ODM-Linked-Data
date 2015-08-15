@@ -1,5 +1,6 @@
 package com.mycompany.app;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.EmptyStackException;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -8,6 +9,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import javax.xml.bind.*;
+
 import org.cdisc.ns.odm.v1.*;
 
 
@@ -238,6 +240,7 @@ public Map<String,ODMcomplexTypeDefinitionItemData> getItemsList(Map<String,ODMc
 	
 	String itemGroupString="itemGroup/";
 	Map<String,ODMcomplexTypeDefinitionItemData> itemData=new HashMap<String,ODMcomplexTypeDefinitionItemData>();
+
 	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemGroupData>> g=groupData.entrySet().iterator();g.hasNext();){
 		Entry<String, ODMcomplexTypeDefinitionItemGroupData> itemMap=g.next();
 		
@@ -260,6 +263,73 @@ public Map<String,ODMcomplexTypeDefinitionItemData> getItemsList(Map<String,ODMc
 	
  }
 	
+
+
+//List of items 
+public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalData clinicalData){
+	
+	
+	
+	ArrayList<ItemDetail> itemsDto=new ArrayList<ItemDetail>();
+
+		//subjectData 
+	
+	List<ODMcomplexTypeDefinitionSubjectData> subjectData=clinicalData.getSubjectData();
+	
+	//make GroupItemOut 
+	for(Iterator<ODMcomplexTypeDefinitionSubjectData> i = subjectData.iterator(); i.hasNext();){
+		
+		ODMcomplexTypeDefinitionSubjectData subject=i.next();
+
+		//subjectKey
+		
+	//String subjectkey=	subject.getSubjectKey();
+		
+		
+		//Subject study event Data
+	List<ODMcomplexTypeDefinitionStudyEventData> data=	subject.getStudyEventData();
+	
+		//get forms 
+	for(Iterator<ODMcomplexTypeDefinitionStudyEventData> j=data.iterator();j.hasNext();){
+		
+		//EvenData 
+	ODMcomplexTypeDefinitionStudyEventData studyEventData= j.next();
+		//List of forms 
+	  List<ODMcomplexTypeDefinitionFormData> formData=  studyEventData.getFormData();
+	  //Key for eventOID
+	//  String eventOID=studyEventData.getStudyEventOID();
+
+	  for(Iterator<ODMcomplexTypeDefinitionFormData> k=formData.iterator();k.hasNext();){ 
+		  ODMcomplexTypeDefinitionFormData form=k.next(); 
+		  List<ODMcomplexTypeDefinitionItemGroupData> itemGroupData=form.getItemGroupData();
+		  for(Iterator<ODMcomplexTypeDefinitionItemGroupData> g=itemGroupData.iterator();g.hasNext();){
+			  //ItemGroup
+			  ODMcomplexTypeDefinitionItemGroupData itemGroup= g.next();
+			
+			  //DTO Object
+			  ItemDetail itemDto=new ItemDetail();
+			  itemDto.itemGroupOid=itemGroup.getItemGroupOID();
+			  itemDto.itemRepeatKey=itemGroup.getItemGroupRepeatKey();
+			  itemDto.items=itemGroup.getItemDataGroup();
+			  	//ItemsDto ArrayList 
+			  itemsDto.add(itemDto);
+		  
+		  }//ItemGroupData
+	  }//FormData
+	 }
+	}
+	
+	return itemsDto;
 }
+
+
+
+
+}
+
+
+
+
+
 
 
