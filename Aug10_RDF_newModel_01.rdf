@@ -1,15 +1,3 @@
-<base_uri/subject/SS_9/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_8/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home9'." ;
@@ -28,12 +16,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "136" .
 
-<base_uri/subject/SS_8/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_8/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home5'." ;
@@ -41,12 +23,6 @@
                 "I_VITAL_READINGSBODYPOSITION_1915" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
-
-<base_uri/subject/SS_11/Phase/SE_CLINIC3/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_MEDIC_MEDICATIONS_1075" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "3" .
 
 <base_uri/subject/SS_10/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
@@ -72,12 +48,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_10/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_8/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'sodium', from Subject '8', from Event 'clinic3'." ;
@@ -87,48 +57,6 @@
                 "MU_MMOLL" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "139" .
-
-<base_uri/subject/SS_11/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_10/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_10/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
 
 <base_uri/subject/SS_9/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
         <http://www.w3.org/2000/01/rdf-schema#comment>
@@ -146,18 +74,6 @@
         <http://csiro.org/2015/01/lcdc-schema#ItemOID>
                 "I_MEDIC_MEDICATIONROUTE" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
                 "1" .
 
 <base_uri/subject/SS_9/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
@@ -202,18 +118,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "2" .
 
-<base_uri/subject/SS_10/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_MEDIC_MEDICATIONS_1075" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "3" .
-
 <base_uri/subject/SS_11/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home6'." ;
@@ -230,12 +134,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_11/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_11/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home2'." ;
@@ -243,12 +141,6 @@
                 "I_VITAL_READINGSBODYPOSITION_1915" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
-
-<base_uri/subject/SS_11/Phase/SE_CLINIC4/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_MEDIC_MEDICATIONS_1075" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "2" .
 
 <base_uri/subject/SS_9/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
@@ -267,18 +159,6 @@
                 "MU_MMOLL" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "140" .
-
-<base_uri/subject/SS_10/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_10/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
 
 <base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/variable/I_MEDIC_MEDICATIONROUTE>
         <http://www.w3.org/2000/01/rdf-schema#comment>
@@ -304,18 +184,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_9/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_10/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_11/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home8'." ;
@@ -330,24 +198,6 @@
         <http://csiro.org/2015/01/lcdc-schema#ItemOID>
                 "I_MEDIC_MEDICATIONROUTE" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
-                "1" .
-
-<base_uri/subject/SS_10/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_10/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
                 "1" .
 
 <base_uri/subject/SS_9/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
@@ -375,12 +225,6 @@
                 "MU_MMOLL" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "134" .
-
-<base_uri/subject/SS_11/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
 
 <base_uri/subject/SS_9/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
         <http://www.w3.org/2000/01/rdf-schema#comment>
@@ -414,12 +258,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_11/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_11/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition', from Subject '11', from Event 'clinic1'." ;
@@ -436,12 +274,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_8/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_9/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition', from Subject '9', from Event 'clinic4'." ;
@@ -449,12 +281,6 @@
                 "I_VITAL_READINGSBODYPOSITION" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "2" .
-
-<base_uri/subject/SS_8/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
 
 <base_uri/subject/SS_11/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
         <http://www.w3.org/2000/01/rdf-schema#comment>
@@ -470,18 +296,6 @@
         <http://csiro.org/2015/01/lcdc-schema#ItemOID>
                 "I_VITAL_READINGSBODYPOSITION" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
                 "1" .
 
 <base_uri/subject/SS_10/Phase/SE_CLINIC4/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
@@ -516,30 +330,6 @@
         <http://csiro.org/2015/01/lcdc-schema#ItemOID>
                 "I_VITAL_READINGSBODYPOSITION_1915" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
                 "1" .
 
 <base_uri/subject/SS_10/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
@@ -578,12 +368,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_8/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_10/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'sodium', from Subject '10', from Event 'clinic3'." ;
@@ -601,12 +385,6 @@
                 "I_VITAL_READINGSBODYPOSITION_1915" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
-
-<base_uri/subject/SS_10/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_MEDIC_MEDICATIONS_1075" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "2" .
 
 <base_uri/subject/SS_8/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
         <http://www.w3.org/2000/01/rdf-schema#comment>
@@ -626,24 +404,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_10/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_10/Phase/SE_CLINIC4/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition', from Subject '9', from Event 'clinic1'." ;
@@ -660,12 +420,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_10/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_10/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '10', from Event 'home8'." ;
@@ -674,42 +428,12 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_10/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_10/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_10/Phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/variable/I_VITAL_READINGSBODYPOSITION>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition', from Subject '10', from Event 'clinic1'." ;
         <http://csiro.org/2015/01/lcdc-schema#ItemOID>
                 "I_VITAL_READINGSBODYPOSITION" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
                 "1" .
 
 <base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
@@ -722,12 +446,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "136" .
 
-<base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_MEDIC_MEDICATIONS_1075" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "3" .
-
 <base_uri/subject/SS_9/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home3'." ;
@@ -735,30 +453,6 @@
                 "I_VITAL_READINGSBODYPOSITION_1915" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "3" .
-
-<base_uri/subject/SS_8/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_HOME4/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
 
 <base_uri/subject/SS_11/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
@@ -768,54 +462,12 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_11/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/IG_MEDIC_MEDICATIONS_1075>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_MEDIC_MEDICATIONS_1075" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "2" .
-
 <base_uri/subject/SS_9/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home9'." ;
         <http://csiro.org/2015/01/lcdc-schema#ItemOID>
                 "I_VITAL_READINGSBODYPOSITION_1915" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
                 "1" .
 
 <base_uri/subject/SS_9/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
@@ -826,24 +478,12 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "2" .
 
-<base_uri/subject/SS_9/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_11/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home9'." ;
         <http://csiro.org/2015/01/lcdc-schema#ItemOID>
                 "I_VITAL_READINGSBODYPOSITION_1915" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
                 "1" .
 
 <base_uri/subject/SS_9/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
@@ -870,24 +510,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_10/Phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_11/Phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '11', from Event 'home1'." ;
@@ -904,12 +526,6 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_10/Phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_9/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '9', from Event 'home7'." ;
@@ -924,12 +540,6 @@
         <http://csiro.org/2015/01/lcdc-schema#ItemOID>
                 "I_VITAL_READINGSBODYPOSITION_1915" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
                 "1" .
 
 <base_uri/subject/SS_11/Phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM>
@@ -950,24 +560,12 @@
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "1" .
 
-<base_uri/subject/SS_10/Phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/IG_VITAL_CONTEXT>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
 <base_uri/subject/SS_8/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 "This observation is about 'readingsbodyposition 1915', from Subject '8', from Event 'home3'." ;
         <http://csiro.org/2015/01/lcdc-schema#ItemOID>
                 "I_VITAL_READINGSBODYPOSITION_1915" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_HOME8/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
                 "1" .
 
 <base_uri/subject/SS_11/Phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
@@ -995,36 +593,6 @@
                 "MU_MMOLL" ;
         <http://csiro.org/2015/01/lcdc-schema#Value>
                 "139" .
-
-<base_uri/subject/SS_9/Phase/SE_HOME9/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_HOME5/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_9/Phase/SE_HOME6/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_11/Phase/SE_CLINIC4/form/F_BLOODCOLLECT_V10/IG_BLOOD_MEASUREMENTS>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_BLOOD_MEASUREMENTS" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
-
-<base_uri/subject/SS_8/Phase/SE_HOME2/form/F_VITALSIGNSHO_V10/IG_VITAL_CONTEXT_4378>
-        <http://csiro.org/2015/300/lcdc-schema#ItemGroupOID>
-                "IG_VITAL_CONTEXT_4378" ;
-        <http://csiro.org/2015/300/lcdc-schema#itemGroupRepeatKey>
-                "1" .
 
 <base_uri/subject/SS_10/Phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/variable/I_VITAL_READINGSBODYPOSITION_1915>
         <http://www.w3.org/2000/01/rdf-schema#comment>

@@ -113,11 +113,16 @@ public class JaxBinder {
 			try{
 			
 				org.cdisc.ns.odm.v1.ObjectFactory factory=new org.cdisc.ns.odm.v1.ObjectFactory();
+				org.openclinica.ns.odm_ext_v130.v3.ObjectFactory factory2=new org.openclinica.ns.odm_ext_v130.v3.ObjectFactory();
 				
 				JAXBContext myJaxb=JAXBContext.newInstance
-						(factory.getClass());
+						(factory2.getClass());
+				
 			    Unmarshaller u = 
 			            myJaxb.createUnmarshaller();
+			    Object openClinic=u.unmarshal(new File(inputFile));
+			    
+			    
 			    org.cdisc.ns.odm.v1.ODM o=(ODM) u.unmarshal(new File(inputFile));
 			    System.out.println("o created");
 			   List<ODMcomplexTypeDefinitionClinicalData> clinicalData=o.getClinicalData();

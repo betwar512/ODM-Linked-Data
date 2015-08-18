@@ -16,9 +16,6 @@ public class ItemDetail {
 	//list of Items 
 	public List<ODMcomplexTypeDefinitionItemData> items;  
 
-	
-	
-	
 	public String getItemGroupOid() {
 		return itemGroupOid;
 	}

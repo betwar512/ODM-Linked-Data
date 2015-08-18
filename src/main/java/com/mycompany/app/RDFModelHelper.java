@@ -47,14 +47,14 @@ public class RDFModelHelper {
     	 Map<String, ODMcomplexTypeDefinitionItemData> items=myJax.getItemsList(itemGroups);
     	
     	 addItems(items,model);
-    	 addItemGroups(itemGroups,model);
+    	// addItemGroups(itemGroups,model);
     	 
          return model;
 	}
 	
   
   
-  
+/*  
 public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> itemGroups,Model model){
 	
 
@@ -80,7 +80,9 @@ public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> ite
 	    			
 	   		}
 		}
-
+*/
+  
+  
 	//Add Item to RDF model 
 	public void addItems(Map<String, ODMcomplexTypeDefinitionItemData> items,Model model){
 
