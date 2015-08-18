@@ -113,14 +113,14 @@ public class JaxBinder {
 			try{
 			
 				org.cdisc.ns.odm.v1.ObjectFactory factory=new org.cdisc.ns.odm.v1.ObjectFactory();
-				org.openclinica.ns.odm_ext_v130.v3.ObjectFactory factory2=new org.openclinica.ns.odm_ext_v130.v3.ObjectFactory();
+			//	org.openclinica.ns.odm_ext_v130.v3.ObjectFactory factory2=new org.openclinica.ns.odm_ext_v130.v3.ObjectFactory();
 				
 				JAXBContext myJaxb=JAXBContext.newInstance
-						(factory2.getClass());
+						(factory.getClass());
 				
 			    Unmarshaller u = 
 			            myJaxb.createUnmarshaller();
-			    Object openClinic=u.unmarshal(new File(inputFile));
+			    
 			    
 			    
 			    org.cdisc.ns.odm.v1.ODM o=(ODM) u.unmarshal(new File(inputFile));
@@ -286,9 +286,8 @@ public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalDa
 		
 		ODMcomplexTypeDefinitionSubjectData subject=i.next();
 
-		//subjectKey
-		
-	//String subjectkey=	subject.getSubjectKey();
+		//subjectKey	
+	String subjectkey=	subject.getSubjectKey();
 		
 		
 		//Subject study event Data
@@ -301,11 +300,17 @@ public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalDa
 	ODMcomplexTypeDefinitionStudyEventData studyEventData= j.next();
 		//List of forms 
 	  List<ODMcomplexTypeDefinitionFormData> formData=  studyEventData.getFormData();
+	  
 	  //Key for eventOID
-	//  String eventOID=studyEventData.getStudyEventOID();
+	  String eventOID=studyEventData.getStudyEventOID();
 
 	  for(Iterator<ODMcomplexTypeDefinitionFormData> k=formData.iterator();k.hasNext();){ 
 		  ODMcomplexTypeDefinitionFormData form=k.next(); 
+		  
+		  
+		  //FormOID Captures here 
+		  String formOidCapture= form.getFormOID();
+		  
 		  List<ODMcomplexTypeDefinitionItemGroupData> itemGroupData=form.getItemGroupData();
 		  for(Iterator<ODMcomplexTypeDefinitionItemGroupData> g=itemGroupData.iterator();g.hasNext();){
 			  //ItemGroup
@@ -313,6 +318,10 @@ public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalDa
 			
 			  //DTO Object
 			  ItemDetail itemDto=new ItemDetail();
+			  //Set properties
+			  itemDto.subjectKey=subjectkey;
+			  itemDto.eventOid=eventOID;
+			  itemDto.formOid=formOidCapture;
 			  itemDto.itemGroupOid=itemGroup.getItemGroupOID();
 			  itemDto.itemRepeatKey=itemGroup.getItemGroupRepeatKey();
 			  itemDto.items=itemGroup.getItemDataGroup();
@@ -322,13 +331,12 @@ public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalDa
 		  }//ItemGroupData
 	  }//FormData
 	 }
-	}
-	
-	return itemsDto;
-}
+	}	
+		return itemsDto;
+ }
 
 
-
+//End of Class 
 
 }
 

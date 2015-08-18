@@ -6,7 +6,22 @@ import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 
 public class ItemDetail {
 
-	
+	public String subjectKey;
+	public String getSubjectKey() {
+		return subjectKey;
+	}
+	public void setSubjectKey(String subjectKey) {
+		this.subjectKey = subjectKey;
+	}
+	public String getEventOid() {
+		return eventOid;
+	}
+	public void setEventOid(String eventOid) {
+		this.eventOid = eventOid;
+	}
+
+	public String eventOid;
+	public String formOid;
 	//ItemGroup key 
 	public String itemGroupOid;
 	
@@ -16,6 +31,16 @@ public class ItemDetail {
 	//list of Items 
 	public List<ODMcomplexTypeDefinitionItemData> items;  
 
+	
+	public String getFormOid(){
+		
+		return formOid;
+	}
+	public void setFomrOid(String formOid){
+		
+		this.formOid=formOid;
+	}
+	
 	public String getItemGroupOid() {
 		return itemGroupOid;
 	}
