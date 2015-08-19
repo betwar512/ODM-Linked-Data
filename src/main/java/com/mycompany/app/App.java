@@ -28,7 +28,7 @@ public class App
   String result = out.toString();
  
   
-  String fileName = "Aug10_RDF_newModel_01.rdf";
+  String fileName = "Aug19_RDF_newModel_03.rdf";
   FileWriter output = new FileWriter( fileName );
   
   model2.write( output, "TURTLE" );

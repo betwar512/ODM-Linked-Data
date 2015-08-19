@@ -305,17 +305,14 @@ public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalDa
 	  String eventOID=studyEventData.getStudyEventOID();
 
 	  for(Iterator<ODMcomplexTypeDefinitionFormData> k=formData.iterator();k.hasNext();){ 
-		  ODMcomplexTypeDefinitionFormData form=k.next(); 
-		  
-		  
+		  ODMcomplexTypeDefinitionFormData form=k.next();   
 		  //FormOID Captures here 
 		  String formOidCapture= form.getFormOID();
-		  
 		  List<ODMcomplexTypeDefinitionItemGroupData> itemGroupData=form.getItemGroupData();
+		  
 		  for(Iterator<ODMcomplexTypeDefinitionItemGroupData> g=itemGroupData.iterator();g.hasNext();){
 			  //ItemGroup
 			  ODMcomplexTypeDefinitionItemGroupData itemGroup= g.next();
-			
 			  //DTO Object
 			  ItemDetail itemDto=new ItemDetail();
 			  //Set properties

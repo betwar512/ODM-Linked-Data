@@ -1,5 +1,6 @@
 package com.mycompany.app;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -16,6 +17,7 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.vocabulary.RDFS;
 import com.mycompany.app.lcdc.ItemGroup;
 import com.mycompany.app.lcdc.Items;
+import com.mycompany.app.lcdc.Lcdc;
 
 /**
  * @author Abbas H Safaie
@@ -38,22 +40,59 @@ public class RDFModelHelper {
     	ODMcomplexTypeDefinitionClinicalData clinicalData=
     			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
     	
-    	myJax.makeItemsObjects(clinicalData);
     	//GetForms with Key
-    	 Map<String,List<ODMcomplexTypeDefinitionFormData>> forms=  myJax.getForms(clinicalData);
+    	// Map<String,List<ODMcomplexTypeDefinitionFormData>> forms=  myJax.getForms(clinicalData);
     	//Get ItemGroups with Key 
-    	 Map<String, ODMcomplexTypeDefinitionItemGroupData>itemGroups=myJax.getItemGroupData(forms);	
+    	// Map<String, ODMcomplexTypeDefinitionItemGroupData>itemGroups=myJax.getItemGroupData(forms);	
       	//Get Items with Uri keys 
-    	 Map<String, ODMcomplexTypeDefinitionItemData> items=myJax.getItemsList(itemGroups);
-    	
-    	 addItems(items,model);
+    	// Map<String, ODMcomplexTypeDefinitionItemData> items=myJax.getItemsList(itemGroups);
+    	ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData);
+    //	addItems(items,model);
     	// addItemGroups(itemGroups,model);
-    	 
+    	 itemDtoModel(itemDtos,model);
          return model;
 	}
 	
   
   
+  //Create model with return Object ItemDtos
+  public void itemDtoModel(ArrayList<ItemDetail> itemDtos,Model model){
+	  
+	  String itemRepeatKey="";
+	  
+
+	  
+	 for (ItemDetail itemDetail : itemDtos) {
+		 
+		 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
+		 		String formOid=itemDetail.formOid;
+		 		String itemGroupOid=itemDetail.itemGroupOid;
+		 		
+		 		
+		 		if(	itemDetail.itemRepeatKey ==null){
+		 			
+		 			itemRepeatKey="";
+		 		}else{
+		 			
+		 			itemRepeatKey=itemDetail.itemRepeatKey;
+		 		}
+		 	
+		 		System.out.println(itemList.size());
+		
+		 		for (ODMcomplexTypeDefinitionItemData item : itemList) {
+	
+		 			String itemOid=item.getItemOID();
+		 			 model.createResource(base+formOid+"/"+itemGroupOid+"/"+itemOid)
+		 			.addProperty(Lcdc.itemOid,itemOid)
+		 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)
+		 	    	.addProperty(Lcdc.formOID,formOid)
+		 	    	.addProperty(Lcdc.itemGroupRepeatKey,itemRepeatKey);
+		 	    
+		 	}
+		 }
+	 }
+	  
+
 /*  
 public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> itemGroups,Model model){
 	
