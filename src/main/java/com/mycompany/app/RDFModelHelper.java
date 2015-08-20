@@ -30,14 +30,44 @@ public class RDFModelHelper {
 	private static final String base="base_uri/subject/";
 	//Create Model and return it 
 	
+	//chack for Uri dataset type 
+	public String uriDataset(String str){
+		String returnStr="";
+		
+	 final String blood="BLOOD";
+	final String vital="VITAL";
+	final String medic="MEDIC";
+	
+	String[] comparStrs=str.split("_");
+	
+	String comparStr=comparStrs[1];
+	
+	//Compare String 
+		if(comparStr.equals(blood)){
+			returnStr=blood;
+		}else if(comparStr.equals(vital)){
+			returnStr=vital;
+		}else if(comparStr.equals(medic)){
+			returnStr=medic;
+		}
+		
+		
+		return returnStr.toLowerCase();
+		
+	}
+	
+	
+	
 	//Generate Uri 
 	public String uriCustomMaker(ItemDetail item){
 
-		String baseUri=": http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/";
-		
-		
+		String baseUri=": http://aehrc-ci.it.csiro.au/dataset/";		
+		String version="20150713";
+		String dataset=uriDataset(item.itemGroupOid);
 		// <base_uri/subject/SS_9/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemgroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM> 
-		String uri=baseUri+ "subject/"+ item.subjectKey+"/phase/"+item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid+"/RepeatKey/"+item.itemRepeatKey+"/variable/";
+		String uri=baseUri+dataset+"/lcdc/"+version+"/subject/"+ item.subjectKey+"/phase/"+
+		item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid+
+		"/RepeatKey/"+item.itemRepeatKey+"/variable/";
 		
 		return uri;
 		
