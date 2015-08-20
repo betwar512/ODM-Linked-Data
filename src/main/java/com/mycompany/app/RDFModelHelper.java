@@ -92,7 +92,7 @@ public class RDFModelHelper {
     // Model
     //================================================================================
 
-  public HashMap<String,Model> createModel(){
+  public HashMap<String,Model> sliceModels(){
 		
 		
 		//Model
@@ -140,7 +140,7 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 	HashMap<String,Model> models=new HashMap<String,Model>();
 	
 	HashMap<String, List<ItemDetail>> groupItemDtos=groupBySubjectKey(itemDtos);
-	int i=0;
+	
 	for (Entry<String, List<ItemDetail>> entry : groupItemDtos.entrySet()) {
 		
 		Model sliceModel =ModelFactory.createDefaultModel();
