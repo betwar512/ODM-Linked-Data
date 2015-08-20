@@ -27,8 +27,11 @@ import com.mycompany.app.lcdc.Lcdc;
  */
 public class RDFModelHelper {
 
-	private static final String base="base_uri/subject/";
-	//Create Model and return it 
+	   //================================================================================
+    // Uri 
+    //================================================================================
+
+	
 	
 	//chack for Uri dataset type 
 	public String uriDataset(String str){
@@ -50,10 +53,7 @@ public class RDFModelHelper {
 		}else if(comparStr.equals(medic)){
 			returnStr=medic;
 		}
-		
-		
 		return returnStr.toLowerCase();
-		
 	}
 	
 	
@@ -73,6 +73,12 @@ public class RDFModelHelper {
 		
 	}
 	
+	
+	
+	   //================================================================================
+    // Model
+    //================================================================================
+
   public Model createModel(){
 		
 		
