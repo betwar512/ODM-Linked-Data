@@ -29,6 +29,20 @@ public class RDFModelHelper {
 
 	private static final String base="base_uri/subject/";
 	//Create Model and return it 
+	
+	//Generate Uri 
+	public String uriCustomMaker(ItemDetail item){
+
+		String baseUri=": http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/";
+		
+		
+		// <base_uri/subject/SS_9/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemgroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM> 
+		String uri=baseUri+ "subject/"+ item.subjectKey+"/phase/"+item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid+"/RepeatKey/"+item.itemRepeatKey+"/variable/";
+		
+		return uri;
+		
+	}
+	
   public Model createModel(){
 		
 		
@@ -64,6 +78,11 @@ public class RDFModelHelper {
 	  
 	 for (ItemDetail itemDetail : itemDtos) {
 		 
+		 //Create base Uri 
+		 String uri =uriCustomMaker(itemDetail);
+		 
+		 
+		 
 		 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
 		 		String formOid=itemDetail.formOid;
 		 		String itemGroupOid=itemDetail.itemGroupOid;
@@ -82,7 +101,7 @@ public class RDFModelHelper {
 		 		for (ODMcomplexTypeDefinitionItemData item : itemList) {
 	
 		 			String itemOid=item.getItemOID();
-		 			 model.createResource(base+formOid+"/"+itemGroupOid+"/"+itemOid)
+		 			 model.createResource(uri+itemOid)
 		 			.addProperty(Lcdc.itemOid,itemOid)
 		 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)
 		 	    	.addProperty(Lcdc.formOID,formOid)
