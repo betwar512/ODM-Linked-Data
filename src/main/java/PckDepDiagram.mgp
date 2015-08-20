@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="com.mycompany.app" x="311" y="474">
+        <DependencyLink destination="org.cdisc.ns.odm.v1"/>
+        <DependencyLink destination="com.mycompany.app.lcdc"/>
+    </Package>
+    <Package name="com.mycompany.app.lcdc" x="352" y="544"/>
+    <Package name="org.cdisc.ns.odm.v1" x="407" y="396">
+        <DependencyLink destination="org.w3._2000._09.xmldsig_"/>
+    </Package>
+    <Package name="org.openclinica.ns.odm_ext_v130.v3" x="332" y="262">
+        <DependencyLink destination="org.cdisc.ns.odm.v1"/>
+    </Package>
+    <Package name="org.w3._2000._09.xmldsig_" x="537" y="463"/>
+</PackageAnalysis>
