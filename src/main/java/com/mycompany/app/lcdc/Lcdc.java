@@ -11,7 +11,7 @@ public class Lcdc {
 	
 
 	//Base Uri for RDF Source
-protected static final String uri ="http://aehrc-ci.it.csiro.au/property/cardio/lcdc/20150713/lcdc-schema#";
+protected static final String uri ="http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#";
 
 //Resource base
  protected static final Resource resource( String local )

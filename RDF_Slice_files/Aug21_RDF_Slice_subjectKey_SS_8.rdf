@@ -1,0 +1,2861 @@
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME_1720>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime 1720', from Subject '8', from Event 'home2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime 1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME_1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@895e367" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "09:00" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_4036>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 4036', from Subject '8', from Event 'home8'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@329dbdbf" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "78" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1335>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1335', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1335" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1335" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@26adfd2d" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "121" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart 8890', from Subject '8', from Event 'home1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart 8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART_8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_8662>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 8662', from Subject '8', from Event 'home7'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4d518b32" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "91" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME_1720>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime 1720', from Subject '8', from Event 'home5'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime 1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME_1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4a00d9cf" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "09:45" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1220>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1220', from Subject '8', from Event 'home2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@1130520d" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "119" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_LDL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood ldl', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ldl" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_LDL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@5f0fd5a0" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "3.1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_8662>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 8662', from Subject '8', from Event 'home2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@463fd068" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "90" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_IRON>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood iron', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "iron" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_IRON" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@2bec854f" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "25" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/2/variable//Key/2/variable/I_MEDIC_MEDICATIONENDDATE_2617>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationenddate 2617', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationenddate 2617" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONENDDATE_2617" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2015-03-12" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "2" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1220>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1220', from Subject '8', from Event 'home7'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4c012563" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "118" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/1/variable//Key/1/variable/I_MEDIC_MEDICATIONSTARTDATE_6157>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationstartdate 6157', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationstartdate 6157" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONSTARTDATE_6157" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2015-02-01" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_LDL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood ldl', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ldl" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_LDL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@3fce8fd9" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "3" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart 8890', from Subject '8', from Event 'home2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart 8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART_8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEIGHT_3150>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital height 3150', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "height 3150" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEIGHT_3150" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@f627d13" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "175" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME_1720>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime 1720', from Subject '8', from Event 'home8'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime 1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME_1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@20d7d6fb" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:05" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY_4404>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby 4404', from Subject '8', from Event 'home7'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby 4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY_4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart 8890', from Subject '8', from Event 'home3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart 8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART_8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_37>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 37', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 37" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_37" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@1df8b5b8" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "80" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_WHITEBLOODCELL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood whitebloodcell', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "whitebloodcell" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_WHITEBLOODCELL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@5e21e98f" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "4.9" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/2/variable//Key/2/variable/I_MEDIC_MEDICATIONDOSEFORM_3200>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationdoseform 3200', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationdoseform 3200" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONDOSEFORM_3200" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "2" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_UNGROUPED_9389/RepeatKey/null/variable//Key/null/variable/I_BLOOD_COLLECTIONTIME>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood collectiontime', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "collectiontime" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_UNGROUPED_9389" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_COLLECTIONTIME" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@7f284218" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:20" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart 8890', from Subject '8', from Event 'home4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart 8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART_8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEIGHT_3150>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital height 3150', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "height 3150" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEIGHT_3150" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@7bf3a5d8" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "175" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_4036>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 4036', from Subject '8', from Event 'home3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@7a3793c7" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "76" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_7515>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 7515', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 7515" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_7515" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@189cbd7c" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "93" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/2/variable//Key/2/variable/I_MEDIC_MEDICATIONROUTE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationroute', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationroute" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONROUTE" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "2" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart 8890', from Subject '8', from Event 'home5'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart 8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART_8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1220>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1220', from Subject '8', from Event 'home6'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@6736fa8d" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "117" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1335>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1335', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1335" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1335" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@2663e964" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "123" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/2/variable//Key/2/variable/I_MEDIC_MEDICATIONCODE_1591>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationcode 1591', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationcode 1591" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONCODE_1591" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "139321000036102" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "2" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood sodium', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "sodium" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_SODIUM" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@7d94beb9" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "140" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY_4404>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby 4404', from Subject '8', from Event 'home9'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby 4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY_4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart 8890', from Subject '8', from Event 'home6'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart 8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART_8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@3224a577" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "09:40" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME_1720>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime 1720', from Subject '8', from Event 'home3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime 1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME_1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@651aed93" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "09:30" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_TRIGLYCERIDES>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood triglycerides', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "triglycerides" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_TRIGLYCERIDES" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@72ade7e3" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "0.8" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart 8890', from Subject '8', from Event 'home7'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart 8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART_8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME_1720>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime 1720', from Subject '8', from Event 'home6'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime 1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME_1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@1cb346ea" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "09:45" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/2/variable//Key/2/variable/I_MEDIC_MEDICATIONFREQ_7034>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationfreq 7034', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationfreq 7034" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONFREQ_7034" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "5" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "2" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_BMI_6271>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital bmi 6271', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bmi 6271" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_BMI_6271" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "24.16" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart 8890', from Subject '8', from Event 'home8'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart 8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART_8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_BMI_6271>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital bmi 6271', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bmi 6271" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_BMI_6271" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "24.49" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1220>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1220', from Subject '8', from Event 'home5'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@1cd629b3" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "119" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/2/variable//Key/2/variable/I_MEDIC_MEDICATIONSTARTDATE_6157>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationstartdate 6157', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationstartdate 6157" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONSTARTDATE_6157" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2015-03-05" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "2" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_7515>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 7515', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 7515" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_7515" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@3116c353" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "94" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_8662>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 8662', from Subject '8', from Event 'home6'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@50313382" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "89" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/2/variable//Key/2/variable/I_MEDIC_MEDICATIONDOSEUNIT_2971>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationdoseunit 2971', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationdoseunit 2971" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONDOSEUNIT_2971" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "6" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "2" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_WHITEBLOODCELL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood whitebloodcell', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "whitebloodcell" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_WHITEBLOODCELL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@2a7ed1f" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "5.0" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_BMI_6271>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital bmi 6271', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bmi 6271" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_BMI_6271" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "24.49" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART_8890>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart 8890', from Subject '8', from Event 'home9'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart 8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART_8890" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_4036>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 4036', from Subject '8', from Event 'home1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@748741cb" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "76" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1335>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1335', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1335" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1335" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@560348e6" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "121" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_37>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 37', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 37" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_37" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@48b67364" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "81" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_8662>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 8662', from Subject '8', from Event 'home8'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@7354b8c5" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "90" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY_4404>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby 4404', from Subject '8', from Event 'home2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby 4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY_4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_8662>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 8662', from Subject '8', from Event 'home3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@42b3b079" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "91" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_WEIGHT_6650>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital weight 6650', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "weight 6650" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_WEIGHT_6650" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4e928fbf" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "75" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME_1720>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime 1720', from Subject '8', from Event 'home1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime 1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME_1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@295cf707" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:00" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1220>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1220', from Subject '8', from Event 'home9'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4ef782af" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "120" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEIGHT_3150>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital height 3150', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "height 3150" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEIGHT_3150" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@205d38da" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "175" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_CHOLESTEROL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood cholesterol', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "cholesterol" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_CHOLESTEROL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@7ba8c737" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "5.1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/1/variable//Key/1/variable/I_MEDIC_MEDICATIONCODE_1591>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationcode 1591', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationcode 1591" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONCODE_1591" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "41832011000036106" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_TRIGLYCERIDES>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood triglycerides', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "triglycerides" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_TRIGLYCERIDES" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@1890516e" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "0.9" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_UNGROUPED_9389/RepeatKey/null/variable//Key/null/variable/I_BLOOD_COLLECTIONTIME>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood collectiontime', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "collectiontime" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_UNGROUPED_9389" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_COLLECTIONTIME" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@14f232c4" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_37>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 37', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 37" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_37" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@6ea2bc93" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "82" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY_4404>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby 4404', from Subject '8', from Event 'home4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby 4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY_4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_GLUCOSE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood glucose', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "glucose" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_GLUCOSE" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@3fa247d1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "4.9" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1335>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1335', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1335" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1335" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4fa1c212" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "123" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4d6025c5" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:20" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_UNGROUPED_9005/RepeatKey/null/variable//Key/null/variable/I_MEDIC_ONTOLOGYVERSION_7814>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic ontologyversion 7814', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ontologyversion 7814" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_UNGROUPED_9005" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_ONTOLOGYVERSION_7814" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "20150131" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_7515>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 7515', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 7515" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_7515" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@23202fce" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "92" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/1/variable//Key/1/variable/I_MEDIC_MEDICATIONNAME_2443>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationname 2443', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationname 2443" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONNAME_2443" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "Fosamax 5 mg tablet: uncoated, 8" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPART>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodypart', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodypart" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPART" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_WHITEBLOODCELL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood whitebloodcell', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "whitebloodcell" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_WHITEBLOODCELL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@93081b6" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "5.1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@6f3187b0" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:00" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY_4404>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby 4404', from Subject '8', from Event 'home6'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby 4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY_4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_HDL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood hdl', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hdl" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_HDL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@15a04efb" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1.7" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_IRON>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood iron', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "iron" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_IRON" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@64e7619d" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "25" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_CHOLESTEROL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood cholesterol', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "cholesterol" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_CHOLESTEROL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@5f20155b" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "4.8" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_UNGROUPED_9005/RepeatKey/null/variable//Key/null/variable/I_MEDIC_ONTOLOGYID_5156>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic ontologyid 5156', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ontologyid 5156" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_UNGROUPED_9005" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_ONTOLOGYID_5156" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "900062011000036108" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/1/variable//Key/1/variable/I_MEDIC_MEDICATIONDOSE_1998>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationdose 1998', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationdose 1998" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONDOSE_1998" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "5" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_IRON>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood iron', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "iron" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_IRON" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@609bcfb6" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "24.5" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_HAEMOGLOBIN>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood haemoglobin', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "haemoglobin" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_HAEMOGLOBIN" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@13bc8645" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "156" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1220>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1220', from Subject '8', from Event 'home1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@2e32ccc5" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "119" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood sodium', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "sodium" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_SODIUM" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@31edaa7d" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "142" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/1/variable//Key/1/variable/I_MEDIC_MEDICATIONROUTE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationroute', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationroute" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONROUTE" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_WEIGHT_6650>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital weight 6650', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "weight 6650" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_WEIGHT_6650" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@37911f88" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "74" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_4036>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 4036', from Subject '8', from Event 'home6'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@52815fa3" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "75" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_LDL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood ldl', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ldl" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_LDL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@16c069df" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "3" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY_4404>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby 4404', from Subject '8', from Event 'home8'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby 4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY_4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_8662>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 8662', from Subject '8', from Event 'home9'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@479cbee5" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "93" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_4036>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 4036', from Subject '8', from Event 'home9'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@11d8ae8b" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "81" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_8662>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 8662', from Subject '8', from Event 'home4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@5456afaa" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "92" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_WEIGHT_6650>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital weight 6650', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "weight 6650" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_WEIGHT_6650" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@6950ed69" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "75" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/1/variable//Key/1/variable/I_MEDIC_MEDICATIONDOSEFORM_3200>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationdoseform 3200', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationdoseform 3200" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONDOSEFORM_3200" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_CHOLESTEROL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood cholesterol', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "cholesterol" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_CHOLESTEROL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@2cb2fc20" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "5.0" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition 1915', from Subject '8', from Event 'home1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition 1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_GLUCOSE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood glucose', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "glucose" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_GLUCOSE" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@51a9ad5e" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "5.0" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME_1720>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime 1720', from Subject '8', from Event 'home9'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime 1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME_1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@59e2d8e3" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "09:00" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_REDBLOODCELL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood redbloodcell', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "redbloodcell" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_REDBLOODCELL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4ea5b703" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "4.82" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@44be0077" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:00" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_HAEMOGLOBIN>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood haemoglobin', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "haemoglobin" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_HAEMOGLOBIN" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@72ef8d15" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "154" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_8662>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 8662', from Subject '8', from Event 'home1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@3e44f2a5" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "90" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_BMI_6271>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital bmi 6271', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bmi 6271" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_BMI_6271" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "24.49" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_SODIUM>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood sodium', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "sodium" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_SODIUM" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@495ee280" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "139" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition 1915', from Subject '8', from Event 'home3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition 1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_UNGROUPED_9389/RepeatKey/null/variable//Key/null/variable/I_BLOOD_COLLECTIONTIME>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood collectiontime', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "collectiontime" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_UNGROUPED_9389" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_COLLECTIONTIME" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@2205a05d" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_4036>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 4036', from Subject '8', from Event 'home4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@bb9e6dc" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "79" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME1/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY_4404>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby 4404', from Subject '8', from Event 'home1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby 4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY_4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_REDBLOODCELL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood redbloodcell', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "redbloodcell" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_REDBLOODCELL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@6aa8e115" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "4.80" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/2/variable//Key/2/variable/I_MEDIC_MEDICATIONNAME_2443>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationname 2443', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationname 2443" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONNAME_2443" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "Tamsulosin Hydrochloride SR (Sandoz) 400 microgram tablet: modified release, 10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "2" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition 1915', from Subject '8', from Event 'home4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition 1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_7515>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 7515', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 7515" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_7515" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@7c3fdb62" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "92" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/1/variable//Key/1/variable/I_MEDIC_MEDICATIONENDDATE_2617>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationenddate 2617', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationenddate 2617" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONENDDATE_2617" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "2015-03-30" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_4036>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 4036', from Subject '8', from Event 'home7'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@14a50707" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "76" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1220>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1220', from Subject '8', from Event 'home4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4dd6fd0a" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "119" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC4/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_ABDOMINALCIRCUMFERENCE_5194>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital abdominalcircumference 5194', from Subject '8', from Event 'clinic4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "abdominalcircumference 5194" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_ABDOMINALCIRCUMFERENCE_5194" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@352ff4da" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "88" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition 1915', from Subject '8', from Event 'home5'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition 1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME4/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME_1720>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime 1720', from Subject '8', from Event 'home4'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime 1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME_1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@6692b6c6" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:00" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/1/variable//Key/1/variable/I_MEDIC_MEDICATIONDOSEUNIT_2971>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationdoseunit 2971', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationdoseunit 2971" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONDOSEUNIT_2971" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME6/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition 1915', from Subject '8', from Event 'home6'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition 1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTIME_1720>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstime 1720', from Subject '8', from Event 'home7'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstime 1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTIME_1720" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4bd31064" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "10:00" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/2/variable//Key/2/variable/I_MEDIC_MEDICATIONDOSE_1998>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationdose 1998', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationdose 1998" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONDOSE_1998" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "2" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_REDBLOODCELL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood redbloodcell', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "redbloodcell" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_REDBLOODCELL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@24c22fe" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "4.86" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_WEIGHT_6650>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital weight 6650', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "weight 6650" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_WEIGHT_6650" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@42e25b0b" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "75" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEIGHT_3150>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital height 3150', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "height 3150" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEIGHT_3150" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@7b993c65" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "175" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_HAEMOGLOBIN>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood haemoglobin', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "haemoglobin" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_HAEMOGLOBIN" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@407a7f2a" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "155" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_ABDOMINALCIRCUMFERENCE_5194>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital abdominalcircumference 5194', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "abdominalcircumference 5194" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_ABDOMINALCIRCUMFERENCE_5194" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@6f1c29b7" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "88" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY_4404>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby 4404', from Subject '8', from Event 'home3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby 4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY_4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME7/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition 1915', from Subject '8', from Event 'home7'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition 1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_MEDICATIONGR_V103/itemGroup/IG_MEDIC_MEDICATIONS_1075/RepeatKey/1/variable//Key/1/variable/I_MEDIC_MEDICATIONFREQ_7034>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'medic medicationfreq 7034', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "medicationfreq 7034" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_MEDICATIONGR_V103" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_MEDIC_MEDICATIONS_1075" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_MEDIC_MEDICATIONFREQ_7034" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME3/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1220>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1220', from Subject '8', from Event 'home3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@1b266842" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "118" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition 1915', from Subject '8', from Event 'home8'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition 1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_ABDOMINALCIRCUMFERENCE_5194>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital abdominalcircumference 5194', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "abdominalcircumference 5194" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_ABDOMINALCIRCUMFERENCE_5194" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@39b43d60" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "90" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME2/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_4036>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 4036', from Subject '8', from Event 'home2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@5f77d0f9" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "77" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME8/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_SYSTOLICBP_1220>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital systolicbp 1220', from Subject '8', from Event 'home8'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "systolicbp 1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_SYSTOLICBP_1220" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@e3c0e40" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "119" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_CONTEXT/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_HDL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood hdl', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hdl" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_HDL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@723e88f9" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1.6" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME9/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSBODYPOSITION_1915>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingsbodyposition 1915', from Subject '8', from Event 'home9'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingsbodyposition 1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSBODYPOSITION_1915" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_HEARTRATE_8662>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital heartrate 8662', from Subject '8', from Event 'home5'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "heartrate 8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_HEARTRATE_8662" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@39d76cb5" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "91" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_GLUCOSE>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood glucose', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "glucose" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_GLUCOSE" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@cd1e646" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "4.6" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC2/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_HDL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood hdl', from Subject '8', from Event 'clinic2'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hdl" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_HDL" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@239105a8" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1.8" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_37>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 37', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 37" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_37" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@3336e6b6" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "79" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_READINGS_8016/RepeatKey/1/variable//Key/1/variable/I_VITAL_DIASTOLICBP_4036>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital diastolicbp 4036', from Subject '8', from Event 'home5'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "diastolicbp 4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS_8016" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_DIASTOLICBP_4036" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@589da3f3" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "79" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC3/form/F_BLOODCOLLECT_V10/itemGroup/IG_BLOOD_MEASUREMENTS/RepeatKey/1/variable//Key/1/variable/I_BLOOD_TRIGLYCERIDES>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'blood triglycerides', from Subject '8', from Event 'clinic3'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "triglycerides" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_BLOODCOLLECT_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_BLOOD_MEASUREMENTS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_BLOOD_TRIGLYCERIDES" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@4f4c4b1a" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "0.7" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_HOME5/form/F_VITALSIGNSHO_V10/itemGroup/IG_VITAL_CONTEXT_4378/RepeatKey/1/variable//Key/1/variable/I_VITAL_READINGSTAKENBY_4404>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital readingstakenby 4404', from Subject '8', from Event 'home5'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "readingstakenby 4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSHO_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_CONTEXT_4378" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_READINGSTAKENBY_4404" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "1" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .
+
+<: http://aehrc-ci.it.csiro.au/slice/SS_8/lcdc/20150713/subject/SS_8/phase/SE_CLINIC1/form/F_VITALSIGNSCL_V10/itemGroup/IG_VITAL_READINGS/RepeatKey/1/variable//Key/1/variable/I_VITAL_ABDOMINALCIRCUMFERENCE_5194>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "This observation is about 'vital abdominalcircumference 5194', from Subject '8', from Event 'clinic1'." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "abdominalcircumference 5194" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#FormOID>
+                "F_VITALSIGNSCL_V10" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemGroupOID>
+                "IG_VITAL_READINGS" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#ItemOID>
+                "I_VITAL_ABDOMINALCIRCUMFERENCE_5194" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#MeasurementUnitOID>
+                "org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef@6dd7b5a3" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#Value>
+                "90" ;
+        <http://aehrc-ci.it.csiro.au/property/lcdc/20150713/lcdc-schema#itemGroupRepeatKey>
+                "1" .

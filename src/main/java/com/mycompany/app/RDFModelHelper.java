@@ -1,22 +1,15 @@
 package com.mycompany.app;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Map.Entry;
 
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionFormData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemGroupData;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMeasurementUnitRef;
-
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.vocabulary.RDFS;
-import com.mycompany.app.lcdc.ItemGroup;
-import com.mycompany.app.lcdc.Items;
 import com.mycompany.app.lcdc.Lcdc;
 
 /**
@@ -33,11 +26,11 @@ public class RDFModelHelper {
 
 	
 	
-	//chack for Uri dataset type 
+	//Check for Uri dataset type 
 	public String uriDataset(String str){
 		String returnStr="";
 		
-	 final String blood="BLOOD";
+	final String blood="BLOOD";
 	final String vital="VITAL";
 	final String medic="MEDIC";
 	
@@ -58,28 +51,48 @@ public class RDFModelHelper {
 	
 	
 	
-	//Generate Uri 
-	public String uriCustomMaker(ItemDetail item){
-
+	//Generate Uri for Dataset
+	public String uriDataset(ItemDetail item){
+		
+		String uriComplete;
 		String baseUri=": http://aehrc-ci.it.csiro.au/dataset/";		
 		String version="20150713";
 		String dataset=uriDataset(item.itemGroupOid);
-		// <base_uri/subject/SS_9/phase/SE_CLINIC1/form/F_BLOODCOLLECT_V10/itemgroup/IG_BLOOD_MEASUREMENTS/variable/I_BLOOD_SODIUM> 
 		String uri=baseUri+dataset+"/lcdc/"+version+"/subject/"+ item.subjectKey+"/phase/"+
-		item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid+
-		"/RepeatKey/"+item.itemRepeatKey+"/variable/";
-		
-		return uri;
+		item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid;
+		//Key optional
+		if(item.itemGroupOid.length()>0)
+		 uriComplete=uri+"/Key/"+item.itemRepeatKey+"/variable/";
+		else
+			uriComplete=uri+"/variable/";
+		return uriComplete;
 		
 	}
 	
 	
+	//Generate Uri for Slice
+	public String uriSlice(ItemDetail item){
+		String uriComplete;
+		String baseUri=": http://aehrc-ci.it.csiro.au/slice/";		
+		String version="20150713";
+		String uri=baseUri+item.subjectKey+"/lcdc/"+version+"/subject/"+ item.subjectKey+"/phase/"+
+		item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid+
+		"/RepeatKey/"+item.itemRepeatKey+"/variable/";
+		//Key optional
+				if(item.itemGroupOid.length()>0)
+				 uriComplete=uri+"/Key/"+item.itemRepeatKey+"/variable/";
+				else
+					uriComplete=uri+"/variable/";
+				
+		return uriComplete;
+		
+	}
 	
 	   //================================================================================
     // Model
     //================================================================================
 
-  public Model createModel(){
+  public HashMap<String,Model> createModel(){
 		
 		
 		//Model
@@ -89,41 +102,128 @@ public class RDFModelHelper {
 
     	ODMcomplexTypeDefinitionClinicalData clinicalData=
     			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
-    	
-    	//GetForms with Key
-    	// Map<String,List<ODMcomplexTypeDefinitionFormData>> forms=  myJax.getForms(clinicalData);
-    	//Get ItemGroups with Key 
-    	// Map<String, ODMcomplexTypeDefinitionItemGroupData>itemGroups=myJax.getItemGroupData(forms);	
-      	//Get Items with Uri keys 
-    	// Map<String, ODMcomplexTypeDefinitionItemData> items=myJax.getItemsList(itemGroups);
     	ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData);
-    //	addItems(items,model);
-    	// addItemGroups(itemGroups,model);
-    	 itemDtoModel(itemDtos,model);
-         return model;
+  
+    	HashMap<String,Model> sliceModels=sliceRdf(itemDtos);
+    	// completeRdf(itemDtos,model);
+         return sliceModels;
 	}
 	
   
+  //Grouping by SubjectKey
+  public HashMap<String, List<ItemDetail>> groupBySubjectKey(ArrayList<ItemDetail> itemDetails){
+	  
+	  
+	  HashMap<String, List<ItemDetail>> hashMap=new HashMap<String, List<ItemDetail>>();
+	  
+	  for(ItemDetail itemDetail:itemDetails){
+		  
+		  
+		  if(!hashMap.containsKey(itemDetail.subjectKey)){
+	          List<ItemDetail> list= new ArrayList<ItemDetail>();
+	          list.add(itemDetail);
+	      hashMap.put(itemDetail.subjectKey,list);
+	      }
+	      else
+	          hashMap.get(itemDetail.subjectKey).add(itemDetail);
+		  
+	    }
+		  
+	  return hashMap;
+	  }
+
+  
+  
+  //Slice RDF Model 
+public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
+	//Create models 
+	HashMap<String,Model> models=new HashMap<String,Model>();
+	
+	HashMap<String, List<ItemDetail>> groupItemDtos=groupBySubjectKey(itemDtos);
+	int i=0;
+	for (Entry<String, List<ItemDetail>> entry : groupItemDtos.entrySet()) {
+		
+		Model sliceModel =ModelFactory.createDefaultModel();
+		
+		
+	    List<ItemDetail> mapValue = entry.getValue();
+	    for(ItemDetail itemDetail:mapValue){
+	    
+	    String itemRepeatKey="";
+ 		//Create base Uri 
+ 		String uri =uriSlice(itemDetail);
+
+ 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
+ 		String formOid=itemDetail.formOid;
+ 		String itemGroupOid=itemDetail.itemGroupOid;
+ 		String dataset=uriDataset(itemDetail.itemGroupOid);
+
+ 		if(	itemDetail.itemRepeatKey ==null){
+ 			
+ 			itemRepeatKey="";
+ 		}else{
+ 			
+ 			itemRepeatKey=itemDetail.itemRepeatKey;
+ 		}
+ 	
+ 		System.out.println(itemList.size());
+
+ 		for (ODMcomplexTypeDefinitionItemData item : itemList) {
+ 			String value="";
+ 			String messurmentUnit="";
+ 			if(item.getMeasurementUnitRef() != null)
+ 				messurmentUnit=item.getMeasurementUnitRef().toString();
+ 			String itemOid=item.getItemOID();
+ 			value=item.getValue();
+ 	
+ 			//Object Model to create comment 
+ 			CommentModel commentDto=new CommentModel();	
+ 			//CreateComment
+ 			commentDto.itemOid=itemOid;
+ 			commentDto.eventOid=itemDetail.eventOid;
+ 			commentDto.subjectKey=itemDetail.subjectKey;
+ 		 	commentDto.dataSet=dataset;
+ 		 	//Comment and Label
+ 	    	String comment=	StringCustomHelper.Comment(commentDto);
+ 		    String label=StringCustomHelper.label(itemOid);
+ 		
+ 			 sliceModel.createResource(uri+itemOid)
+ 			.addProperty(Lcdc.itemOid,itemOid)
+ 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)
+ 	    	.addProperty(Lcdc.formOID,formOid)
+ 	    	.addProperty(Lcdc.itemGroupRepeatKey,itemRepeatKey)
+ 	    	.addProperty(Lcdc.measurementUnitOID, messurmentUnit)
+ 	    	.addProperty(Lcdc.value, value)
+ 	    	.addProperty(RDFS.label, label)
+ 	    	.addProperty(RDFS.comment, comment);
+ 	   
+ 			}//For loop item
+	    
+ 	
+	    } 
+	   
+		models.put(entry.getKey(),sliceModel);
+	}
+	return models;
+}
+  
   
   //Create model with return Object ItemDtos
-  public void itemDtoModel(ArrayList<ItemDetail> itemDtos,Model model){
+  public void completeRdf(ArrayList<ItemDetail> itemDtos,Model model){
 	  
-	  String itemRepeatKey="";
-	  
+	 
 
-	  
 	 for (ItemDetail itemDetail : itemDtos) {
-		 
-		 //Create base Uri 
-		 String uri =uriCustomMaker(itemDetail);
-		 
-		 
-		 
+	
+		        String itemRepeatKey="";
+		 		//Create base Uri 
+		 		String uri =uriDataset(itemDetail);
+
 		 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
 		 		String formOid=itemDetail.formOid;
 		 		String itemGroupOid=itemDetail.itemGroupOid;
-		 		
-		 		
+		 		String dataset=uriDataset(itemDetail.itemGroupOid);
+
 		 		if(	itemDetail.itemRepeatKey ==null){
 		 			
 		 			itemRepeatKey="";
@@ -135,85 +235,39 @@ public class RDFModelHelper {
 		 		System.out.println(itemList.size());
 		
 		 		for (ODMcomplexTypeDefinitionItemData item : itemList) {
-	
+		 			String value="";
+		 			String messurmentUnit="";
+		 			if(item.getMeasurementUnitRef() != null)
+		 				messurmentUnit=item.getMeasurementUnitRef().toString();
+		 			
 		 			String itemOid=item.getItemOID();
+		 			value=item.getValue();
+		 	
+		 			//Object Model to create comment 
+		 			CommentModel commentDto=new CommentModel();	
+		 			//CreateComment
+		 			commentDto.itemOid=itemOid;
+		 			commentDto.eventOid=itemDetail.eventOid;
+		 			commentDto.subjectKey=itemDetail.subjectKey;
+		 		 	commentDto.dataSet=dataset;
+		 		 	//Comment and Label
+		 	    	String comment=	StringCustomHelper.Comment(commentDto);
+		 		    String label=StringCustomHelper.label(itemOid);
+		 		
 		 			 model.createResource(uri+itemOid)
 		 			.addProperty(Lcdc.itemOid,itemOid)
 		 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)
 		 	    	.addProperty(Lcdc.formOID,formOid)
-		 	    	.addProperty(Lcdc.itemGroupRepeatKey,itemRepeatKey);
-		 	    
-		 	}
-		 }
+		 	    	.addProperty(Lcdc.itemGroupRepeatKey,itemRepeatKey)
+		 	    	.addProperty(Lcdc.measurementUnitOID, messurmentUnit)
+		 	    	.addProperty(Lcdc.value, value)
+		 	    	.addProperty(RDFS.label, label)
+		 	    	.addProperty(RDFS.comment, comment);
+		 	   
+		 	}//For loop item
+		 }//for loop itemDto 
 	 }
 	  
 
-/*  
-public void addItemGroups(Map<String, ODMcomplexTypeDefinitionItemGroupData> itemGroups,Model model){
-	
-
-	   //Create RDF sets for GroupItems
-	  	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemGroupData>> i=itemGroups.entrySet().iterator();i.hasNext();){  		
-	       Entry<String, ODMcomplexTypeDefinitionItemGroupData> itemGroup= i.next();
-	    	ODMcomplexTypeDefinitionItemGroupData	it= itemGroup.getValue();
-	    	String mapKey=itemGroup.getKey();
-	   		String itemOid= it.getItemGroupOID();
-	   		String subjectKey=mapKey +"/"+itemOid;	
-	    	String itemGroupRepeatKey="";
-	    	itemGroupRepeatKey="";
-	    	if(it.getItemGroupRepeatKey()!=null){
-	    		itemGroupRepeatKey=it.getItemGroupRepeatKey();
-	    	}	
-	  
-	    	
-	    	String base_Uri=base+subjectKey;
-	    		//Add to model 
-	    	model.createResource(base_Uri)
-	    	.addProperty(ItemGroup.itemGroupRepeatKey,itemGroupRepeatKey)
-	    	.addProperty(ItemGroup.itemGroupOID, itemOid);
-	    			
-	   		}
-		}
-*/
-  
-  
-	//Add Item to RDF model 
-	public void addItems(Map<String, ODMcomplexTypeDefinitionItemData> items,Model model){
-
-    	String itemString="variable/";
-		//Create RDF model for Items
-	  	for(Iterator<Entry<String, ODMcomplexTypeDefinitionItemData>> itemDatas=items.entrySet().iterator();itemDatas.hasNext();){
-	  		
-	  		Entry<String, ODMcomplexTypeDefinitionItemData> item=itemDatas.next();
-	  	
-	  		String mapKey=item.getKey();
-	  		String itemid=item.getValue().getItemOID();
-	  		
-	  		String key= mapKey+"/"+itemString + itemid;
-	  		String valu=item.getValue().getValue();
-	  	  	//Create Comment
-	    	StringCustomHelper stringHelper=new StringCustomHelper();	
-	        String comm=stringHelper.Comment(key);
-	        ODMcomplexTypeDefinitionMeasurementUnitRef mesur=item.getValue().getMeasurementUnitRef();
-	        String base_Uri=base+key;
-	         if(mesur!=null){  //ToString method throws exception if catches  null value
-	     	String mesurUnit=mesur.getMeasurementUnitOID().toString();	
-	        
-	
-	     
-	    	model.createResource(base_Uri)
-			.addProperty(Items.itemOid, itemid)
-			.addProperty(Items.value, valu)
-			.addProperty(Items.measurementUnitOID, mesurUnit)
-	    	.addProperty(RDFS.comment,comm);
-		}else{
-	  		model.createResource(base_Uri)
-	  		.addProperty(Items.itemOid, itemid)
-	  		.addProperty(Items.value, valu)
-	  		.addProperty(RDFS.comment,comm);
-
-		  }
-	  	}	
-	  }
 
 }
