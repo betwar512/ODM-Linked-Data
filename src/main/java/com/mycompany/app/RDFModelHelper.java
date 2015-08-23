@@ -7,8 +7,15 @@ import java.util.Map.Entry;
 
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
+
+import com.hp.hpl.jena.ontology.OntClass;
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.vocabulary.OWL;
+import com.hp.hpl.jena.vocabulary.OWL2;
 import com.hp.hpl.jena.vocabulary.RDFS;
 import com.mycompany.app.lcdc.Lcdc;
 
@@ -27,7 +34,7 @@ public class RDFModelHelper {
 	
 	
 	//Check for Uri dataset type 
-	public String uriDataset(String str){
+	public String datasetType(String str){
 		String returnStr="";
 		
 	final String blood="BLOOD";
@@ -55,9 +62,9 @@ public class RDFModelHelper {
 	public String uriDataset(ItemDetail item){
 		
 		String uriComplete;
-		String baseUri=": http://aehrc-ci.it.csiro.au/dataset/";		
+		String baseUri="http://aehrc-ci.it.csiro.au/dataset/";		
 		String version="20150713";
-		String dataset=uriDataset(item.itemGroupOid);
+		String dataset=datasetType(item.itemGroupOid);
 		String uri=baseUri+dataset+"/lcdc/"+version+"/subject/"+ item.subjectKey+"/phase/"+
 		item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid;
 		//Key optional
@@ -73,7 +80,7 @@ public class RDFModelHelper {
 	//Generate Uri for Slice
 	public String uriSlice(ItemDetail item){
 		String uriComplete;
-		String baseUri=": http://aehrc-ci.it.csiro.au/slice/";		
+		String baseUri="http://aehrc-ci.it.csiro.au/slice/";		
 		String version="20150713";
 		String uri=baseUri+item.subjectKey+"/lcdc/"+version+"/subject/"+ item.subjectKey+"/phase/"+
 		item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid+
@@ -105,7 +112,7 @@ public class RDFModelHelper {
     	ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData);
   
     	HashMap<String,Model> sliceModels=sliceRdf(itemDtos);
-    	// completeRdf(itemDtos,model);
+    	//completeRdf(itemDtos,model);
          return sliceModels;
 	}
 	
@@ -156,7 +163,7 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
  		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
  		String formOid=itemDetail.formOid;
  		String itemGroupOid=itemDetail.itemGroupOid;
- 		String dataset=uriDataset(itemDetail.itemGroupOid);
+ 		String dataset=datasetType(itemDetail.itemGroupOid);
 
  		if(	itemDetail.itemRepeatKey ==null){
  			
@@ -196,7 +203,8 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
  	    	.addProperty(Lcdc.value, value)
  	    	.addProperty(RDFS.label, label)
  	    	.addProperty(RDFS.comment, comment);
- 	   
+ 	    	
+ 	  
  			}//For loop item
 	    
  	
@@ -209,7 +217,7 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
   
   
   //Create model with return Object ItemDtos
-  public void completeRdf(ArrayList<ItemDetail> itemDtos,Model model){
+  public void completeRdf(ArrayList<ItemDetail> itemDtos,OntModel model){
 	  
 	 
 
@@ -222,7 +230,7 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 		 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
 		 		String formOid=itemDetail.formOid;
 		 		String itemGroupOid=itemDetail.itemGroupOid;
-		 		String dataset=uriDataset(itemDetail.itemGroupOid);
+		 		String dataset=datasetType(itemDetail.itemGroupOid);
 
 		 		if(	itemDetail.itemRepeatKey ==null){
 		 			
@@ -238,8 +246,10 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 		 			String value="";
 		 			String messurmentUnit="";
 		 			if(item.getMeasurementUnitRef() != null)
-		 				messurmentUnit=item.getMeasurementUnitRef().toString();
+		 				messurmentUnit=item.getMeasurementUnitRef().getMeasurementUnitOID().toString();
 		 			
+		 	
+
 		 			String itemOid=item.getItemOID();
 		 			value=item.getValue();
 		 	
@@ -253,9 +263,14 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 		 		 	//Comment and Label
 		 	    	String comment=	StringCustomHelper.Comment(commentDto);
 		 		    String label=StringCustomHelper.label(itemOid);
-		 		
-		 			 model.createResource(uri+itemOid)
-		 			.addProperty(Lcdc.itemOid,itemOid)
+		 		    
+		 		 
+		 		   OntClass  testClass=model.createClass("");
+		 		  
+		 		   Resource r= model.createResource(uri+itemOid,OWL.Class);
+		 		  
+		 		  
+		 		    r.addProperty(Lcdc.itemOid,itemOid)
 		 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)
 		 	    	.addProperty(Lcdc.formOID,formOid)
 		 	    	.addProperty(Lcdc.itemGroupRepeatKey,itemRepeatKey)
@@ -263,11 +278,39 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 		 	    	.addProperty(Lcdc.value, value)
 		 	    	.addProperty(RDFS.label, label)
 		 	    	.addProperty(RDFS.comment, comment);
+		 		    
+//		 		
+//		 			 model.createResource(uri+itemOid)
+//		 			.addProperty(Lcdc.itemOid,itemOid)
+//		 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)
+//		 	    	.addProperty(Lcdc.formOID,formOid)
+//		 	    	.addProperty(Lcdc.itemGroupRepeatKey,itemRepeatKey)
+//		 	    	.addProperty(Lcdc.measurementUnitOID, messurmentUnit)
+//		 	    	.addProperty(Lcdc.value, value)
+//		 	    	.addProperty(RDFS.label, label)
+//		 	    	.addProperty(RDFS.comment, comment);
 		 	   
 		 	}//For loop item
 		 }//for loop itemDto 
 	 }
 	  
 
+  public OntModel ontoModelTest(){
+	  
+		//Model
+  	OntModel model=ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MICRO_RULE_INF);
+
+  	JaxBinder myJax=new JaxBinder();
+
+  	ODMcomplexTypeDefinitionClinicalData clinicalData=
+  			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
+  	ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData);
+
+  	completeRdf(itemDtos,model);
+      
+  	return model;
+	  
+  }
+  
 
 }

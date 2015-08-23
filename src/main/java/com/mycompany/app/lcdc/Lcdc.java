@@ -26,7 +26,7 @@ protected static final String uri ="http://aehrc-ci.it.csiro.au/property/lcdc/20
   public static final Property eventOID=property("EventOID");
   public static final Property formOID=property("FormOID");
   
-  
+ 
   //Item
  public static final Property value =property( "Value");	 
  public static final Property itemOid =property("ItemOID");
