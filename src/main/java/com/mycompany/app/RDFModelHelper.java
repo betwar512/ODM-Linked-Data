@@ -256,8 +256,9 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 			
 	      
 	 		//Create base Uri 
-	 		String uri =UriCustomHelper.uriDataset(itemDetail);
-
+	 		String uri =UriCustomHelper.uriMetaData(itemDetail.itemGroupOid);
+	 			
+	 		String definedBy=UriCustomHelper.rdfDefinition(itemDetail.itemGroupOid);
 	 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
 	 		
 	 		for (ODMcomplexTypeDefinitionItemData item : itemList) {  
@@ -270,11 +271,12 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 	 			
 	 			
 	 		   Resource r= model.createResource(uri+itemOid,OWL.Class);
-	 		
+	 		   		
+
 	 		    r.addProperty(DC.identifier,itemOid)	   	 	    	
 	 	    	.addProperty(RDFS.label, itemDef.getName())
-	 	    	.addProperty(RDFS.comment,itemDef.getComment());
-	 		    
+	 	    	.addProperty(RDFS.comment,itemDef.getComment())
+	 		    .addProperty(RDFS.isDefinedBy, definedBy);
 	 		    //Finding right dataType 
 	 		    if(listRange.size()>0){  	
 	 		    	DataType  type=itemDef.getDataType();

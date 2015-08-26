@@ -55,8 +55,7 @@ public class App
 
 String syntax = "RDFXML_ABBREV"; // also try "N-TRIPLE" 
 StringWriter out = new StringWriter();
-RDFDataMgr.write(System.out,model,  RDFFormat.RDFXML_PRETTY);
-
+RDFDataMgr.write(System.out,model,  RDFFormat.TTL);
 
 
 //String fileName = "rdfOnto_test.rdf";
