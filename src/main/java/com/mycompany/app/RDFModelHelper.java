@@ -3,8 +3,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
+
+import org.cdisc.ns.odm.v1.DataType;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
+import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
+import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
+import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionRangeCheck;
+
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
@@ -12,8 +18,11 @@ import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.OWL;
+import com.hp.hpl.jena.vocabulary.RDF;
 import com.hp.hpl.jena.vocabulary.RDFS;
+import com.hp.hpl.jena.vocabulary.XSD;
 import com.mycompany.app.lcdc.Lcdc;
 
 /**
@@ -69,6 +78,14 @@ public class RDFModelHelper {
 	  return hashMap;
 	  }
 
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   //Slice RDF Model 
@@ -223,18 +240,79 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 	 }
 	  
 
-  public OntModel ontoModelTest(){
+  
+		  //================================================================================
+	   	// MetaData model   Test V.1.0
+		//================================================================================
+  
+  
+  
+  //MetaData Model 
+  
+  public void metaDataRdf(HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ArrayList<ItemDetail> itemDtos,Model model){
+	  
+
+	  for (ItemDetail itemDetail : itemDtos) {
+			
+	      
+	 		//Create base Uri 
+	 		String uri =UriCustomHelper.uriDataset(itemDetail);
+
+	 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
+	 		
+	 		for (ODMcomplexTypeDefinitionItemData item : itemList) {  
+	 	     	String itemOid=item.getItemOID();	
+	 	     	//Find itemDef belong to OpenClinica Item 
+	 			ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOid);
+	 			
+	 			List<ODMcomplexTypeDefinitionRangeCheck> listRange=itemDef.getRangeCheck();
+	 		
+	 			
+	 			
+	 		   Resource r= model.createResource(uri+itemOid,OWL.Class);
+	 		
+	 		    r.addProperty(DC.identifier,itemOid)	   	 	    	
+	 	    	.addProperty(RDFS.label, itemDef.getName())
+	 	    	.addProperty(RDFS.comment,itemDef.getComment());
+	 		    
+	 		    //Finding right dataType 
+	 		    if(listRange.size()>0){  	
+	 		    	DataType  type=itemDef.getDataType();
+	 		    	if(type==DataType.FLOAT){  	
+	 		    	r.addProperty(RDFS.range, XSD.xfloat);
+	 		    	}else if(type==DataType.INTEGER){
+	 		    		r.addProperty(RDFS.range, XSD.integer);		    	
+	 		    	}else{		    		
+	 		    		r.addProperty(RDF.predicate,type.toString());		
+	 		    	}
+	 		    }//if
+	 	     }//For loop item		
+	   	} 
+  }
+  
+  
+
+//Test Method to call 
+  public Model ontoModelTest(){
 	  
 		//Model
-  	OntModel model=ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MICRO_RULE_INF);
+  	Model model=ModelFactory.createDefaultModel();
 
   	JaxBinder myJax=new JaxBinder();
 
   	ODMcomplexTypeDefinitionClinicalData clinicalData=
   			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
+  	
+  	
+  	ODMcomplexTypeDefinitionMetaDataVersion meta =JaxBinder.catchMetaData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
+	
+	HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef=JaxBinder.catchItemDef(meta);
+
   	ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData);
 
-  	completeRdf(itemDtos,model);
+  	metaDataRdf(itemDef,itemDtos,model);
+  	
+  //	completeRdf(itemDtos,model);
       
   	return model;
 	  

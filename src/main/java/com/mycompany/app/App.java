@@ -8,6 +8,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+import org.apache.jena.riot.RDFDataMgr;
+import org.apache.jena.riot.RDFFormat;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
 
@@ -26,10 +28,7 @@ public class App
     	
     //	JaxBinder jax=new JaxBinder();
     	
-    	ODMcomplexTypeDefinitionMetaDataVersion meta =JaxBinder.catchMetaData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
     	
-    	HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef=JaxBinder.catchItemDef(meta);
-    	ODMcomplexTypeDefinitionItemDef value=itemDef.get("I_MEDIC_MEDICATIONROUTE");
     	
     	
     	
@@ -49,15 +48,16 @@ public class App
   	//HashMap<String,Model> models=modelHelper.sliceModels();
   	
   	
-  OntModel model=	modelHelper.ontoModelTest();
+  Model model=	modelHelper.ontoModelTest();
 	
 
 	try{
 
-String syntax = "TURTLE"; // also try "N-TRIPLE" 
+String syntax = "RDFXML_ABBREV"; // also try "N-TRIPLE" 
 StringWriter out = new StringWriter();
-model.write(out, syntax);
-String result = out.toString();
+RDFDataMgr.write(System.out,model,  RDFFormat.RDFXML_PRETTY);
+
+
 
 //String fileName = "rdfOnto_test.rdf";
 //File file =new File(fileName);
@@ -66,7 +66,7 @@ String result = out.toString();
 //model.write( output, "TURTLE" );
 //output.close();
 // RDFDataMgr.write(System.out, model, "N-Triples") ;
-System.out.println(result);
+
   
   	} catch (Exception e) { 
   		System.out.println("Failed: " + e); 

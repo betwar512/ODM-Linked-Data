@@ -37,8 +37,7 @@ public class JaxBinder {
 		
 		HashMap<String,ODMcomplexTypeDefinitionItemDef> itemMap=new HashMap<String,ODMcomplexTypeDefinitionItemDef>();
 		List<ODMcomplexTypeDefinitionItemDef> itemDef=metaData.getItemDef();
-		
-	
+
 	for(ODMcomplexTypeDefinitionItemDef item:itemDef){
 		
 		String id=item.getOID();
