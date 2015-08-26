@@ -24,17 +24,29 @@ public class JaxBinder {
 	
 
 	
+	 //================================================================================
+	// MetaData 
+   //================================================================================
+
 	
-	
-	
-	//itemDef
-	public List<ODMcomplexTypeDefinitionItemDef> catchItemDef(ODMcomplexTypeDefinitionMetaDataVersion metaData){
+	//itemDefHash map with keys 
+	  /*
+	   * Using Map to seperate Keys and find the value later by using java HashMap method get(Key) later on 
+	   * */
+	public static HashMap<String,ODMcomplexTypeDefinitionItemDef> catchItemDef(ODMcomplexTypeDefinitionMetaDataVersion metaData){
 		
-		
-	List<ODMcomplexTypeDefinitionItemDef> itemDef=metaData.getItemDef();
+		HashMap<String,ODMcomplexTypeDefinitionItemDef> itemMap=new HashMap<String,ODMcomplexTypeDefinitionItemDef>();
+		List<ODMcomplexTypeDefinitionItemDef> itemDef=metaData.getItemDef();
 		
 	
-		return itemDef;
+	for(ODMcomplexTypeDefinitionItemDef item:itemDef){
+		
+		String id=item.getOID();
+		
+		itemMap.put(id, item);	
+	}
+
+		return itemMap;
 		
 	}
 	
@@ -50,24 +62,11 @@ public class JaxBinder {
 	}
 	*/
 	
-	
-	
-	
-
 	//returning metaData belong to study
-	public ODMcomplexTypeDefinitionMetaDataVersion catchMetaData(List<ODMcomplexTypeDefinitionStudy> study){
+	//Static Method 
+	public static ODMcomplexTypeDefinitionMetaDataVersion catchMetaData(String inputFile){
 		
-		
-		ODMcomplexTypeDefinitionMetaDataVersion metaData=study.get(0).getMetaDataVersion().get(0);
-	
-		return metaData;
-	}
-	
-	
-	
-	//return Study belong to XML file 
-	public List<ODMcomplexTypeDefinitionStudy> catchStudy(String inputFile){
-		
+		ODMcomplexTypeDefinitionMetaDataVersion metaData = null;
 		if(inputFile.length()==0){
 			throw new EmptyStackException();
 		}
@@ -83,19 +82,23 @@ public class JaxBinder {
 		    org.cdisc.ns.odm.v1.ODM o=(ODM) u.unmarshal(new File(inputFile));
 		    System.out.println("o created");
 		   List<ODMcomplexTypeDefinitionStudy> study=o.getStudy();	
-		   study.get(0); 
-		    return study;	
+		   
+			metaData=study.get(0).getMetaDataVersion().get(0);
+			
 		    }catch(JAXBException e){
 		    	e.printStackTrace();
 		    
 		   
 		    	}
-		
-		return null;
+
+		return metaData;
 	}
-	     	
-		
-		
+	
+	
+	   //================================================================================
+    // ClinicaData 
+    //================================================================================
+
 	
 
 	/*
@@ -148,9 +151,7 @@ public class JaxBinder {
 	public  Map<String,List<ODMcomplexTypeDefinitionFormData>> getForms(ODMcomplexTypeDefinitionClinicalData clinicalData){
 		
 		
-		
 		String phase="Phase/";
-		
 		
 		Map<String,List<ODMcomplexTypeDefinitionFormData>>  formsDataKey = new HashMap<String,List<ODMcomplexTypeDefinitionFormData>>();
 		List<ODMcomplexTypeDefinitionSubjectData> subjectData=clinicalData.getSubjectData();
@@ -270,8 +271,11 @@ public Map<String,ODMcomplexTypeDefinitionItemData> getItemsList(Map<String,ODMc
 	
 
 
-//List of items 
-public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalData clinicalData){
+		/*
+		 * List Customer Object ItemDetail Class
+		 * input ClinicaData 
+		 * */
+	public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalData clinicalData){
 	
 	
 	

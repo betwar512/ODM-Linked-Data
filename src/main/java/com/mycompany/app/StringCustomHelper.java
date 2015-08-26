@@ -4,6 +4,12 @@
  */
 package com.mycompany.app;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
+
 /**
  * @author Abbas H Safaie
  *
@@ -14,6 +20,7 @@ public class StringCustomHelper {
 	public StringCustomHelper() {
 		// TODO Auto-generated constructor stub
 	}
+
 
 	
 	  //================================================================================

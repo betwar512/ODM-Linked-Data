@@ -1,21 +1,18 @@
 package com.mycompany.app;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
-
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
-
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
+
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.OWL;
-import com.hp.hpl.jena.vocabulary.OWL2;
 import com.hp.hpl.jena.vocabulary.RDFS;
 import com.mycompany.app.lcdc.Lcdc;
 
@@ -27,74 +24,7 @@ import com.mycompany.app.lcdc.Lcdc;
  */
 public class RDFModelHelper {
 
-	   //================================================================================
-    // Uri 
-    //================================================================================
 
-	
-	
-	//Check for Uri dataset type 
-	public String datasetType(String str){
-		String returnStr="";
-		
-	final String blood="BLOOD";
-	final String vital="VITAL";
-	final String medic="MEDIC";
-	
-	String[] comparStrs=str.split("_");
-	
-	String comparStr=comparStrs[1];
-	
-	//Compare String 
-		if(comparStr.equals(blood)){
-			returnStr=blood;
-		}else if(comparStr.equals(vital)){
-			returnStr=vital;
-		}else if(comparStr.equals(medic)){
-			returnStr=medic;
-		}
-		return returnStr.toLowerCase();
-	}
-	
-	
-	
-	//Generate Uri for Dataset
-	public String uriDataset(ItemDetail item){
-		
-		String uriComplete;
-		String baseUri="http://aehrc-ci.it.csiro.au/dataset/";		
-		String version="20150713";
-		String dataset=datasetType(item.itemGroupOid);
-		String uri=baseUri+dataset+"/lcdc/"+version+"/subject/"+ item.subjectKey+"/phase/"+
-		item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid;
-		//Key optional
-		if(item.itemGroupOid.length()>0)
-		 uriComplete=uri+"/Key/"+item.itemRepeatKey+"/variable/";
-		else
-			uriComplete=uri+"/variable/";
-		return uriComplete;
-		
-	}
-	
-	
-	//Generate Uri for Slice
-	public String uriSlice(ItemDetail item){
-		String uriComplete;
-		String baseUri="http://aehrc-ci.it.csiro.au/slice/";		
-		String version="20150713";
-		String uri=baseUri+item.subjectKey+"/lcdc/"+version+"/subject/"+ item.subjectKey+"/phase/"+
-		item.eventOid+"/form/"+item.formOid+"/itemGroup/"+item.itemGroupOid+
-		"/RepeatKey/"+item.itemRepeatKey+"/variable/";
-		//Key optional
-				if(item.itemGroupOid.length()>0)
-				 uriComplete=uri+"/Key/"+item.itemRepeatKey+"/variable/";
-				else
-					uriComplete=uri+"/variable/";
-				
-		return uriComplete;
-		
-	}
-	
 	   //================================================================================
     // Model
     //================================================================================
@@ -103,13 +33,13 @@ public class RDFModelHelper {
 		
 		
 		//Model
-    	Model model=ModelFactory.createDefaultModel();
+    	//Model model=ModelFactory.createDefaultModel();
 
-    	JaxBinder myJax=new JaxBinder();
+    	JaxBinder jaXb=new JaxBinder();
 
     	ODMcomplexTypeDefinitionClinicalData clinicalData=
-    			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
-    	ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData);
+    			jaXb.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
+    	ArrayList<ItemDetail> itemDtos=jaXb.makeItemsObjects(clinicalData);
   
     	HashMap<String,Model> sliceModels=sliceRdf(itemDtos);
     	//completeRdf(itemDtos,model);
@@ -158,12 +88,12 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 	    
 	    String itemRepeatKey="";
  		//Create base Uri 
- 		String uri =uriSlice(itemDetail);
+ 		String uri =UriCustomHelper.uriSlice(itemDetail);
 
  		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
  		String formOid=itemDetail.formOid;
  		String itemGroupOid=itemDetail.itemGroupOid;
- 		String dataset=datasetType(itemDetail.itemGroupOid);
+ 		String dataset=UriCustomHelper.datasetType(itemDetail.itemGroupOid);
 
  		if(	itemDetail.itemRepeatKey ==null){
  			
@@ -225,12 +155,12 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 	
 		        String itemRepeatKey="";
 		 		//Create base Uri 
-		 		String uri =uriDataset(itemDetail);
+		 		String uri =UriCustomHelper.uriDataset(itemDetail);
 
 		 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
 		 		String formOid=itemDetail.formOid;
 		 		String itemGroupOid=itemDetail.itemGroupOid;
-		 		String dataset=datasetType(itemDetail.itemGroupOid);
+		 		String dataset=UriCustomHelper.datasetType(itemDetail.itemGroupOid);
 
 		 		if(	itemDetail.itemRepeatKey ==null){
 		 			
@@ -263,23 +193,21 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 		 		 	//Comment and Label
 		 	    	String comment=	StringCustomHelper.Comment(commentDto);
 		 		    String label=StringCustomHelper.label(itemOid);
-		 		    
+		 		
 		 		 
 		 		   OntClass  testClass=model.createClass("");
 		 		  
 		 		   Resource r= model.createResource(uri+itemOid,OWL.Class);
-		 		  
-		 		  
+		 		
 		 		    r.addProperty(Lcdc.itemOid,itemOid)
-		 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)
-		 	    	.addProperty(Lcdc.formOID,formOid)
 		 	    	.addProperty(Lcdc.itemGroupRepeatKey,itemRepeatKey)
 		 	    	.addProperty(Lcdc.measurementUnitOID, messurmentUnit)
 		 	    	.addProperty(Lcdc.value, value)
 		 	    	.addProperty(RDFS.label, label)
 		 	    	.addProperty(RDFS.comment, comment);
 		 		    
-//		 		
+	 	
+	 		
 //		 			 model.createResource(uri+itemOid)
 //		 			.addProperty(Lcdc.itemOid,itemOid)
 //		 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)

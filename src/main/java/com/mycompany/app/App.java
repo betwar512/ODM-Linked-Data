@@ -8,6 +8,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
+import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
+
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Model;
 /**
@@ -21,7 +24,22 @@ public class App
     public static void main( String[] args )
     {
     	
+    //	JaxBinder jax=new JaxBinder();
+    	
+    	ODMcomplexTypeDefinitionMetaDataVersion meta =JaxBinder.catchMetaData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
+    	
+    	HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef=JaxBinder.catchItemDef(meta);
+    	ODMcomplexTypeDefinitionItemDef value=itemDef.get("I_MEDIC_MEDICATIONROUTE");
+    	
+    	
+    	
+    	//I_MEDIC_MEDICATIONROUTE
+    	
+ 
+    	
     	DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+    	
+    	
     	Date date = new Date();
     	String time=dateFormat.format(date); //2014/08/06 15:59:48
 
