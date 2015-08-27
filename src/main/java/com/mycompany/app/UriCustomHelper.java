@@ -6,7 +6,8 @@ public class UriCustomHelper {
 	//Check for Uri rdfDefinition type 
 		public static String rdfDefinition(String itemGroupOid){
 			String vitalUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns";
-			
+			String rdfDefine="";
+				
 		final String blood="BLOOD";
 		final String vital="VITAL";
 		final String medic="MEDIC";
@@ -19,11 +20,11 @@ public class UriCustomHelper {
 			if(comparStr.equals(blood)){
 			
 			}else if(comparStr.equals(vital)){
-				return vitalUri;
+				rdfDefine=vitalUri;
 			}else if(comparStr.equals(medic)){
 		
 			}
-			return "";
+			return rdfDefine;
 		}
 		
 

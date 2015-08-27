@@ -11,10 +11,13 @@ import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionRangeCheck;
 
+import com.hp.hpl.jena.datatypes.RDFDatatype;
+import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
+import com.hp.hpl.jena.ontology.Individual;
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
-
+import com.hp.hpl.jena.ontology.OntResource;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
@@ -78,16 +81,7 @@ public class RDFModelHelper {
 	  return hashMap;
 	  }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+ 
   //Slice RDF Model 
 public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 	//Create models 
@@ -175,8 +169,8 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 		 		String uri =UriCustomHelper.uriDataset(itemDetail);
 
 		 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
-		 		String formOid=itemDetail.formOid;
-		 		String itemGroupOid=itemDetail.itemGroupOid;
+		 //		String formOid=itemDetail.formOid;
+		 	//	String itemGroupOid=itemDetail.itemGroupOid;
 		 		String dataset=UriCustomHelper.datasetType(itemDetail.itemGroupOid);
 
 		 		if(	itemDetail.itemRepeatKey ==null){
@@ -212,7 +206,7 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 		 		    String label=StringCustomHelper.label(itemOid);
 		 		
 		 		 
-		 		   OntClass  testClass=model.createClass("");
+		 		  // OntClass  testClass=model.createClass("");
 		 		  
 		 		   Resource r= model.createResource(uri+itemOid,OWL.Class);
 		 		
@@ -225,15 +219,15 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 		 		    
 	 	
 	 		
-//		 			 model.createResource(uri+itemOid)
-//		 			.addProperty(Lcdc.itemOid,itemOid)
-//		 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)
-//		 	    	.addProperty(Lcdc.formOID,formOid)
-//		 	    	.addProperty(Lcdc.itemGroupRepeatKey,itemRepeatKey)
-//		 	    	.addProperty(Lcdc.measurementUnitOID, messurmentUnit)
-//		 	    	.addProperty(Lcdc.value, value)
-//		 	    	.addProperty(RDFS.label, label)
-//		 	    	.addProperty(RDFS.comment, comment);
+			//		 			 model.createResource(uri+itemOid)
+			//		 			.addProperty(Lcdc.itemOid,itemOid)
+			//		 	    	.addProperty(Lcdc.itemGroupOID,itemGroupOid)
+			//		 	    	.addProperty(Lcdc.formOID,formOid)
+			//		 	    	.addProperty(Lcdc.itemGroupRepeatKey,itemRepeatKey)
+			//		 	    	.addProperty(Lcdc.measurementUnitOID, messurmentUnit)
+			//		 	    	.addProperty(Lcdc.value, value)
+			//		 	    	.addProperty(RDFS.label, label)
+			//		 	    	.addProperty(RDFS.comment, comment);
 		 	   
 		 	}//For loop item
 		 }//for loop itemDto 
@@ -249,7 +243,7 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
   
   //MetaData Model 
   
-  public void metaDataRdf(HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ArrayList<ItemDetail> itemDtos,Model model){
+  public void metaDataRdf(HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ArrayList<ItemDetail> itemDtos,OntModel model){
 	  
 
 	  for (ItemDetail itemDetail : itemDtos) {
@@ -267,12 +261,15 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 	 			ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOid);
 	 			
 	 			List<ODMcomplexTypeDefinitionRangeCheck> listRange=itemDef.getRangeCheck();
+	
+      	 		//Model		
 	 		
 	 			
 	 			
-	 		   Resource r= model.createResource(uri+itemOid,OWL.Class);
-	 		   		
-
+	 			
+	 		   OntResource r= model.createOntResource(uri+itemDef.getName()); 
+	 		
+	 			
 	 		    r.addProperty(DC.identifier,itemOid)	   	 	    	
 	 	    	.addProperty(RDFS.label, itemDef.getName())
 	 	    	.addProperty(RDFS.comment,itemDef.getComment())
@@ -281,13 +278,11 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 	 		    if(listRange.size()>0){  	
 	 		    	DataType  type=itemDef.getDataType();
 	 		    	if(type==DataType.FLOAT){  	
-	 		    	r.addProperty(RDFS.range, XSD.xfloat);
+	 		    r.addProperty(RDFS.range,XSD.xfloat);
 	 		    	}else if(type==DataType.INTEGER){
-	 		    		r.addProperty(RDFS.range, XSD.integer);		    	
-	 		    	}else{		    		
-	 		    		r.addProperty(RDF.predicate,type.toString());		
+	 		    		r.addProperty(RDFS.range,XSD.integer);		    	
 	 		    	}
-	 		    }//if
+	 		    }//i
 	 	     }//For loop item		
 	   	} 
   }
@@ -295,10 +290,11 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
   
 
 //Test Method to call 
-  public Model ontoModelTest(){
+  public OntModel ontoModelTest(){
 	  
 		//Model
-  	Model model=ModelFactory.createDefaultModel();
+		OntModel model=ModelFactory.createOntologyModel();
+	
 
   	JaxBinder myJax=new JaxBinder();
 
