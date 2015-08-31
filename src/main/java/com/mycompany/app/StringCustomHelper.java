@@ -23,6 +23,29 @@ public class StringCustomHelper {
 
 
 	
+	
+	public static boolean vitalSeperate(String itemGroupOid){
+		String vitalUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns";
+		String rdfDefine="";
+			
+	
+	final String vital="VITAL";
+	
+	
+	String[] comparStrs=itemGroupOid.split("_");
+	
+	String comparStr=comparStrs[1];
+	
+	//Compare String 
+		 if(comparStr.equals(vital)){
+			rdfDefine=vitalUri;
+			return true;
+		}else{
+		return false;
+		}
+	}
+	
+	
 	  //================================================================================
     // Comment
     //================================================================================

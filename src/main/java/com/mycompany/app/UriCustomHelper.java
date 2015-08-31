@@ -27,6 +27,8 @@ public class UriCustomHelper {
 			return rdfDefine;
 		}
 		
+		
+		
 
 	//Check for Uri dataset type 
 	public static String datasetType(String str){

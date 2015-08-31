@@ -12,18 +12,20 @@ import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionRangeCheck;
 
 import com.hp.hpl.jena.datatypes.RDFDatatype;
+import com.hp.hpl.jena.datatypes.TypeMapper;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
-import com.hp.hpl.jena.ontology.AnnotationProperty;
+
 import com.hp.hpl.jena.ontology.DatatypeProperty;
-import com.hp.hpl.jena.ontology.Individual;
+
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.ontology.OntModelSpec;
+
 import com.hp.hpl.jena.ontology.OntProperty;
 import com.hp.hpl.jena.ontology.OntResource;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.vocabulary.DC;
@@ -339,119 +341,56 @@ public HashMap<String,Model> sliceRdf(ArrayList<ItemDetail> itemDtos){
 //		  cc:license rdf:type owl:AnnotationProperty .
 
 	  OntProperty license=model.createAnnotationProperty("http://creativecommons.org/ns#license");
-	  
-	  license.addRDFType(RDF.type);
+	 
 	  license.addRDFType(OWL.AnnotationProperty);
 	  
-	  
-	  
-	  
-//		  ###  http://purl.org/dc/elements/1.1/creator
-//		  dc:creator rdf:type owl:AnnotationProperty .
-OntProperty creator=model.createAnnotationProperty(" http://purl.org/dc/elements/1.1/creator");
-	  
-				creator.addRDFType(RDF.type);
-				creator.addRDFType(OWL.AnnotationProperty);
-	  
-	  
-
-//		  ###  http://purl.org/dc/elements/1.1/date
-//		  dc:date rdf:type owl:AnnotationProperty .
-				OntProperty date=model.createAnnotationProperty(" http://purl.org/dc/elements/1.1/date");
-				  
-				date.addRDFType(RDF.type);
-				date.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/dc/elements/1.1/description
-//
-//		  dc:description rdf:type owl:AnnotationProperty .
-				OntProperty description=model.createAnnotationProperty(" http://purl.org/dc/elements/1.1/description");
-				  
-				description.addRDFType(RDF.type);
-				description.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/dc/elements/1.1/identifier
-//
-//		  dc:identifier rdf:type owl:AnnotationProperty .
-		OntProperty identifier=model.createAnnotationProperty(" http://purl.org/dc/elements/1.1/description");
-				  
-		identifier.addRDFType(RDF.type);
-		identifier.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/dc/elements/1.1/rights
-//
-//		  dc:rights rdf:type owl:AnnotationProperty .
-		OntProperty rights=model.createAnnotationProperty(" http://purl.org/dc/elements/1.1/rights");
-		  
-		rights.addRDFType(RDF.type);
-		rights.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/dc/elements/1.1/source
-//		  dc:source rdf:type owl:AnnotationProperty .
-		OntProperty source=model.createAnnotationProperty(" http://purl.org/dc/elements/1.1/source");
-		  
-		source.addRDFType(RDF.type);
-		source.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/dc/elements/1.1/title
-//		  dc:title rdf:type owl:AnnotationProperty .
-		OntProperty title=model.createAnnotationProperty(" http://purl.org/dc/elements/1.1/title");
-		  
-		title.addRDFType(RDF.type);
-		title.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/dc/terms/modified
-//		  dct:modified rdf:type owl:AnnotationProperty .
-		OntProperty modified=model.createAnnotationProperty("http://purl.org/dc/terms/modified");
-		  
-		modified.addRDFType(RDF.type);
-		modified.addRDFType(OWL.AnnotationProperty);
+	
 	  
 //		  ###  http://purl.org/linked-data/api/vocab#uriTemplate
 //		  api:uriTemplate rdf:type owl:AnnotationProperty .
 		OntProperty uriTemplate=model.createAnnotationProperty("http://purl.org/linked-data/api/vocab#uriTemplate");
 		  
-		uriTemplate.addRDFType(RDF.type);
+	
 		uriTemplate.addRDFType(OWL.AnnotationProperty);
 	  
 //		  ###  http://purl.org/sstats/lcdc/def/odm#dataType
 //		  lcdcodm:dataType rdf:type owl:AnnotationProperty .
 		OntProperty dataType=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#dataType");
 		  
-		dataType.addRDFType(RDF.type);
+		
 		dataType.addRDFType(OWL.AnnotationProperty);
 	  
 //		  ###  http://purl.org/sstats/lcdc/def/odm#itemOid
 //		  lcdcodm:itemOid rdf:type owl:AnnotationProperty .
 		OntProperty itemOid=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#itemOid");
 		  
-		itemOid.addRDFType(RDF.type);
+	
 		itemOid.addRDFType(OWL.AnnotationProperty);
 	  
 //		  ###  http://purl.org/sstats/lcdc/def/odm#repeating
 //		  lcdcodm:repeating rdf:type owl:AnnotationProperty .
 		OntProperty repeating=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#repeating");
 		  
-		repeating.addRDFType(RDF.type);
+		
 		repeating.addRDFType(OWL.AnnotationProperty);
 	  
 //		  ###  http://purl.org/sstats/lcdc/def/core#variableDefinitionKey
 //		  lcdccore:variableDefinitionKey rdf:type owl:AnnotationProperty .
 		OntProperty variableDefinitionKey=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/core#variableDefinitionKey");
 		  
-		variableDefinitionKey.addRDFType(RDF.type);
+		
 		variableDefinitionKey.addRDFType(OWL.AnnotationProperty);
 	  
 //		  ###  http://purl.org/sstats/lcdc/def/odm#itemGroupOid
 //		  lcdcodm:itemGroupOid rdf:type owl:AnnotationProperty .
-		OntProperty itemGroupOid=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#itemGroupOi");  
-		itemGroupOid.addRDFType(RDF.type);
+		OntProperty itemGroupOid=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#itemGroupOid");  
+		
 		itemGroupOid.addRDFType(OWL.AnnotationProperty);
 	  
 //		  ###  http://purl.org/sstats/lcdc/def/odm#formOid
 //		  lcdcodm:formOid rdf:type owl:AnnotationProperty .
 		OntProperty formOid=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#formOid");  
-		formOid.addRDFType(RDF.type);
+	
 		formOid.addRDFType(OWL.AnnotationProperty);
 	  
 		  //================================================================================
@@ -459,42 +398,28 @@ OntProperty creator=model.createAnnotationProperty(" http://purl.org/dc/elements
 		//================================================================================
 
 		String baseDatatype="http://purl.org/sstats/lcdc/def/odm#";
-//		###  http://purl.org/sstats/lcdc/def/odm#itemcode
-//			lcdcodm:itemcode rdf:type rdfs:Datatype .
-		DatatypeProperty itemcode= model.createDatatypeProperty(baseDatatype+"itemcode");
-		itemcode.setRDFType(RDFS.Datatype);
-		itemcode.addRDFType(RDF.type);
+		TypeMapper tm=TypeMapper.getInstance();
+			
+		RDFDatatype itemcode=tm.getSafeTypeByName(baseDatatype+"itemcode");
+		tm.registerDatatype(itemcode);
+			
+		RDFDatatype itemgroupcode=tm.getSafeTypeByName(baseDatatype+"itemgroupcode");
+		tm.registerDatatype(itemgroupcode);
+	
+			RDFDatatype variabledefinitioncode=tm.getSafeTypeByName(baseDatatype+"variabledefinitioncode");
+		tm.registerDatatype(variabledefinitioncode);
 		
+		RDFDatatype formcode=tm.getSafeTypeByName(baseDatatype+"formcode");
+		tm.registerDatatype(formcode);
 		
-		
-//			###  http://purl.org/sstats/lcdc/def/odm#itemgroupcode
-//			lcdcodm:itemgroupcode rdf:type rdfs:Datatype .
-		DatatypeProperty itemgroupcode= model.createDatatypeProperty(baseDatatype+"itemgroupcode");
-		itemgroupcode.setRDFType(RDFS.Datatype);
-		itemgroupcode.addRDFType(RDF.type);
-		
-//			###  http://purl.org/sstats/lcdc/def/odm#variabledefinitioncode
-//			lcdcodm:variabledefinitioncode rdf:type rdfs:Datatype .
-		DatatypeProperty variabledefinitioncode= model.createDatatypeProperty(baseDatatype+"variabledefinitioncode");
-
-		variabledefinitioncode.setRDFType(RDFS.Datatype);
-		variabledefinitioncode.addRDFType(RDF.type);
-		
-		
-//			###  http://purl.org/sstats/lcdc/def/odm#formcode
-//			lcdcodm:formcode rdf:type rdfs:Datatype 
-		
-		DatatypeProperty formcode= model.createDatatypeProperty(baseDatatype+"formcode");
-		formcode.setRDFType(RDFS.Datatype);
-		formcode.addRDFType(RDF.type);
 		  //================================================================================
 	   	//   Class
 		//================================================================================
 
 		
 		OntClass varDef=model.createClass("http://purl.org/sstats/lcdc/def/core#VariableDefinition");
-		varDef.setRDFType(OWL.Class);
-		varDef.addRDFType(RDF.type);
+		varDef.addRDFType(OWL.Class);
+		
 		
 		String baseUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
 		
@@ -533,6 +458,9 @@ OntProperty creator=model.createAnnotationProperty(" http://purl.org/dc/elements
 
 	  for (ItemDetail itemDetail : itemDtos) {
 	 
+		  if(StringCustomHelper.vitalSeperate(itemDetail.itemGroupOid)){
+		  
+		  
 	//  String definedBy=UriCustomHelper.rdfDefinition(itemDetail.itemGroupOid);
 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
 		
@@ -551,32 +479,33 @@ OntProperty creator=model.createAnnotationProperty(" http://purl.org/dc/elements
 			Resource r=model.createResource(mainUri,varDef);
 			r.addProperty(RDFS.label, itemDef.getName()); //lable
 
-			 Literal valueForm=model.createTypedLiteral(itemDetail.formOid,XSDDatatype.XSD);
-			 Statement st=model.createStatement(r, formcode, valueForm);
-			 Literal valueItemGroup=model.createTypedLiteral(itemDetail.itemGroupOid,XSDDatatype.XSD);
+			 Literal valueForm=model.createTypedLiteral(itemDetail.formOid,formcode);
+			 Statement st=model.createStatement(r,formOid , valueForm);
+			 Literal valueItemGroup=model.createTypedLiteral(itemDetail.itemGroupOid,itemgroupcode);
 			 Statement stItemGroup=model.createStatement(r, itemGroupOid, valueItemGroup);
-			 Literal valueItem=model.createTypedLiteral(item.getItemOID(),XSDDatatype.XSD);
+			 Literal valueItem=model.createTypedLiteral(item.getItemOID(),itemcode);
 			 Statement stItem=model.createStatement(r, itemOid, valueItem);
 			 //Literal valuevarDef=model.createTypedLiteral(itemDetail.g,XSDDatatype.XSD);
 			// Statement stVarDef=model.createStatement(re, variableDefinitionKey, valuevarDef);
 			// Literal valueRepeat=model.createTypedLiteral(itemDetail.g,XSDDatatype.XSDboolean);
 			// Statement stRepeat=model.createStatement(re,repeating, valueRepeat);
-			// Literal valueDatattype=model.createTypedLiteral(itemDef,XSDDatatype.XSD);
-		//	 Statement stDatetype=model.createStatement(re, dataType, valueDatattype);
+			 Literal valueDatattype=model.createTypedLiteral(itemDef.getDataType().toString().toLowerCase(),XSDDatatype.XSDstring);
+			 Statement stDatetype=model.createStatement(r, dataType, valueDatattype);
 		 
-			 
+			
 			 	 model.add(st);
 				 model.add(stItemGroup);
 				 model.add(stItem);
-				// model.add(stVarDef);
+				 model.add(stDatetype);
 				
-				 r.addProperty(source,"cardio");
+				 r.addProperty(DC.source,"cardio");
 				 r.addProperty(RDFS.comment, itemDef.getComment());
 				 r.addProperty(RDFS.isDefinedBy, baseUri);
 				 
 				 
 		
 		    }//i
+		  }
 	     }//For loop item		
 	  }
 }
