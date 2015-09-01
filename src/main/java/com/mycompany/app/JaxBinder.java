@@ -5,11 +5,7 @@ import java.util.EmptyStackException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-
 import javax.xml.bind.*;
-
 import org.cdisc.ns.odm.v1.*;
 
 
@@ -178,7 +174,12 @@ public class JaxBinder {
 			  //ItemGroup
 			  ODMcomplexTypeDefinitionItemGroupData itemGroup= g.next();
 			  ODMcomplexTypeDefinitionItemGroupDef itemGroupDef=itemGroupDefs.get(itemGroup.getItemGroupOID());
-			  String repeat=itemGroupDef.getRepeating().toString();
+			  //Repeating
+			  YesOrNo repeatYesorNo=itemGroupDef.getRepeating();
+			  Boolean repeat=false;
+			  if(repeatYesorNo.equals(YesOrNo.YES))
+				  repeat=true;
+			 
 			  //DTO Object
 			  ItemDetail itemDto=new ItemDetail();
 			  //Set properties

@@ -15,20 +15,25 @@ public class ItemDetail {
 	public String itemGroupOid;
 	//repeatKey in ItemGroup
 	public String itemRepeatKey;
-	public String repeating;
+	public Boolean repeating;
 	public List<ODMcomplexTypeDefinitionItemData> items; 
 	//list of Items 
-	public String getRepeating() {
-		return repeating;
-	}
-	public void setRepeating(String repeating) {
-		this.repeating = repeating;
-	}
+	
 	public void setFormOid(String formOid) {
 		this.formOid = formOid;
 	}
 	
 	
+	public Boolean getRepeating() {
+		return repeating;
+	}
+
+
+	public void setRepeating(Boolean repeating) {
+		this.repeating = repeating;
+	}
+
+
 	public String getSubjectKey() {
 		return subjectKey;
 	}

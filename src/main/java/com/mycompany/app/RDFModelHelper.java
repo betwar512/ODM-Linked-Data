@@ -2,38 +2,35 @@ package com.mycompany.app;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map.Entry;
 
-import org.cdisc.ns.odm.v1.DataType;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionRangeCheck;
+
 
 import com.hp.hpl.jena.datatypes.RDFDatatype;
 import com.hp.hpl.jena.datatypes.TypeMapper;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 
-import com.hp.hpl.jena.ontology.DatatypeProperty;
 
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
 
 import com.hp.hpl.jena.ontology.OntProperty;
-import com.hp.hpl.jena.ontology.OntResource;
+
 import com.hp.hpl.jena.rdf.model.Literal;
-import com.hp.hpl.jena.rdf.model.Model;
+
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.RDFNode;
+
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.OWL;
-import com.hp.hpl.jena.vocabulary.RDF;
+
 import com.hp.hpl.jena.vocabulary.RDFS;
-import com.hp.hpl.jena.vocabulary.XSD;
-import com.mycompany.app.lcdc.Lcdc;
+import com.mycompany.app.lcdc.Odm;
+
 
 /**
  * @author Abbas H Safaie
@@ -121,56 +118,6 @@ public class RDFModelHelper {
 	  OntProperty license=model.createAnnotationProperty("http://creativecommons.org/ns#license");
 	 
 	  license.addRDFType(OWL.AnnotationProperty);
-	  
-	
-	  
-//		  ###  http://purl.org/linked-data/api/vocab#uriTemplate
-//		  api:uriTemplate rdf:type owl:AnnotationProperty .
-		OntProperty uriTemplate=model.createAnnotationProperty("http://purl.org/linked-data/api/vocab#uriTemplate");
-		  
-	
-		uriTemplate.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/sstats/lcdc/def/odm#dataType
-//		  lcdcodm:dataType rdf:type owl:AnnotationProperty .
-		OntProperty dataType=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#dataType");
-		  
-		
-		dataType.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/sstats/lcdc/def/odm#itemOid
-//		  lcdcodm:itemOid rdf:type owl:AnnotationProperty .
-		OntProperty itemOid=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#itemOid");
-		  
-	
-		itemOid.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/sstats/lcdc/def/odm#repeating
-//		  lcdcodm:repeating rdf:type owl:AnnotationProperty .
-		OntProperty repeating=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#repeating");
-		  
-		
-		repeating.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/sstats/lcdc/def/core#variableDefinitionKey
-//		  lcdccore:variableDefinitionKey rdf:type owl:AnnotationProperty .
-		OntProperty variableDefinitionKey=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/core#variableDefinitionKey");
-		  
-		
-		variableDefinitionKey.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/sstats/lcdc/def/odm#itemGroupOid
-//		  lcdcodm:itemGroupOid rdf:type owl:AnnotationProperty .
-		OntProperty itemGroupOid=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#itemGroupOid");  
-		
-		itemGroupOid.addRDFType(OWL.AnnotationProperty);
-	  
-//		  ###  http://purl.org/sstats/lcdc/def/odm#formOid
-//		  lcdcodm:formOid rdf:type owl:AnnotationProperty .
-		OntProperty formOid=model.createAnnotationProperty("http://purl.org/sstats/lcdc/def/odm#formOid");  
-	
-		formOid.addRDFType(OWL.AnnotationProperty);
-	  
 		  //================================================================================
 	   	//   Datatypes
 		//================================================================================
@@ -247,28 +194,27 @@ public class RDFModelHelper {
 			String defName="";
 			defName=itemDef.getName();
 			String mainUri=baseUri+ "#" + defName;
-			
 			Resource r=model.createResource(mainUri,varDef);
 			r.addProperty(RDFS.label, itemDef.getName()); //lable
 			 Literal valueForm=model.createTypedLiteral(itemDetail.formOid,formcode);
-			 Statement st=model.createStatement(r,formOid , valueForm);
 			 Literal valueItemGroup=model.createTypedLiteral(itemDetail.itemGroupOid,itemgroupcode);
-			 Statement stItemGroup=model.createStatement(r, itemGroupOid, valueItemGroup);
 			 Literal valueItem=model.createTypedLiteral(item.getItemOID(),itemcode);
-			 Statement stItem=model.createStatement(r, itemOid, valueItem);
 			 //Literal valuevarDef=model.createTypedLiteral(itemDetail.g,XSDDatatype.XSD);
 			// Statement stVarDef=model.createStatement(re, variableDefinitionKey, valuevarDef);
-			// Literal valueRepeat=model.createTypedLiteral(itemDetail.g,XSDDatatype.XSDboolean);
-			// Statement stRepeat=model.createStatement(re,repeating, valueRepeat);
-			 Literal valueDatattype=model.createTypedLiteral(itemDef.getDataType().toString().toLowerCase(),XSDDatatype.XSDstring);
-			 Statement stDatetype=model.createStatement(r, dataType, valueDatattype);
-		 
-			
+			 Literal valueRepeat=model.createTypedLiteral(itemDetail.repeating,XSDDatatype.XSDboolean);	
+			 Literal valueDatatype=model.createTypedLiteral(itemDef.getDataType().toString().toLowerCase(),XSDDatatype.XSDstring);
+			 
+			 Statement stDatetype=model.createStatement(r, Odm.dataType, valueDatatype);
+			 Statement stRepeat=model.createStatement(r,Odm.repeating, valueRepeat);
+			 Statement stItem=model.createStatement(r, Odm.ItemOid, valueItem);
+			 Statement stItemGroup=model.createStatement(r, Odm.itemGroupOid, valueItemGroup);
+			 Statement st=model.createStatement(r,Odm.formOid , valueForm);
+			 
 			 	 model.add(st);
 				 model.add(stItemGroup);
 				 model.add(stItem);
 				 model.add(stDatetype);
-				
+			     model.add(stRepeat);
 				 r.addProperty(DC.source,"cardio");
 				 r.addProperty(RDFS.comment, itemDef.getComment());
 				 r.addProperty(RDFS.isDefinedBy, baseUri);
