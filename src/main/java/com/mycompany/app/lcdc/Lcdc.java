@@ -1,5 +1,4 @@
 package com.mycompany.app.lcdc;
-
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.ResourceFactory;
@@ -20,13 +19,12 @@ protected static final String uri ="http://aehrc-ci.it.csiro.au/property/lcdc/20
  //Property base 
   protected static final Property property( String local )
   { return ResourceFactory.createProperty( uri, local ); }
-
+  
   //Top level 
   public static final Property subjectKey=property("SubjectKey");
   public static final Property eventOID=property("EventOID");
   public static final Property formOID=property("FormOID");
-  
- 
+
   //Item
  public static final Property value =property( "Value");	 
  public static final Property itemOid =property("ItemOID");

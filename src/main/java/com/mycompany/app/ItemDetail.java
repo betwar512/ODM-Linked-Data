@@ -6,19 +6,28 @@ import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 
 public class ItemDetail {
 
-	public String subjectKey;
 	
 
+	public String subjectKey;
 	public String eventOid;
 	public String formOid;
 	//ItemGroup key 
 	public String itemGroupOid;
-	
 	//repeatKey in ItemGroup
 	public String itemRepeatKey;
-	
-	//list of Items 
+	public String repeating;
 	public List<ODMcomplexTypeDefinitionItemData> items; 
+	//list of Items 
+	public String getRepeating() {
+		return repeating;
+	}
+	public void setRepeating(String repeating) {
+		this.repeating = repeating;
+	}
+	public void setFormOid(String formOid) {
+		this.formOid = formOid;
+	}
+	
 	
 	public String getSubjectKey() {
 		return subjectKey;
