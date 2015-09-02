@@ -1,6 +1,9 @@
 package com.mycompany.app.lcdc;
 
+import com.hp.hpl.jena.datatypes.RDFDatatype;
+import com.hp.hpl.jena.datatypes.TypeMapper;
 import com.hp.hpl.jena.ontology.DatatypeProperty;
+import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -15,7 +18,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 public class Odm {
     /** <p>The ontology model that holds the vocabulary terms</p> */
     private static OntModel m_model = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, null );
-    
+    private static TypeMapper m_tm=TypeMapper.getInstance(); 
     /** <p>The namespace of the vocabulary as a string</p> */
     public static final String NS = "http://purl.org/sstats/lcdc/def/odm#";
     
@@ -27,7 +30,7 @@ public class Odm {
     public static final Resource NAMESPACE = m_model.createResource( NS );
    
     public static final DatatypeProperty ItemOid = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/odm#ItemOid" );
-    
+   
     public static final DatatypeProperty comment = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/odm#comment" );
     
     public static final DatatypeProperty dataType = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/odm#dataType" );
@@ -51,5 +54,12 @@ public class Odm {
     public static final DatatypeProperty studyOID = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/odm#studyOID" );
     
     public static final DatatypeProperty subjectKey = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/odm#subjectKey" );
+
+	public static final RDFDatatype itemcode = m_tm.getSafeTypeByName(NS+"itemcode");
+	
+    public static final RDFDatatype itemgroupcode=m_tm.getSafeTypeByName(NS +"itemgroupcode");
     
+    public static final RDFDatatype variabledefinitioncode=m_tm.getSafeTypeByName(NS+"variabledefinitioncode");
+    
+    public static final RDFDatatype formcode=m_tm.getSafeTypeByName(NS +"formcode");
 }

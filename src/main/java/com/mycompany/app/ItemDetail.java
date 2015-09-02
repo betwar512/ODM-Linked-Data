@@ -19,6 +19,58 @@ public class ItemDetail {
 	public List<ODMcomplexTypeDefinitionItemData> items; 
 	//list of Items 
 	
+	
+	/*
+	* check if item belong to vital ItemGroup 
+	*return type : Boolean 
+	*/
+	public  Boolean isVital( ){
+	final String vital="VITAL";
+	String[] comparStrs=itemGroupOid.split("_");
+	String comparStr=comparStrs[1];
+	//Compare String 
+		 if(comparStr.equals(vital)){
+			return true;
+		}else{
+		return false;
+		}
+	}
+	
+	 //================================================================================
+    // Static Boolean function to categories return information in groups 
+   //================================================================================
+	
+	/*
+	* check if item belong to blood ItemGroup 
+	*return type : Boolean 
+	*/
+	public  Boolean isBlood(){		
+	final String blood="BLOOD";
+	String[] comparStrs=itemGroupOid.split("_");
+	String comparStr=comparStrs[1];
+	//Compare String 
+		if(comparStr.equals(blood)){
+			return true;
+		}
+		return false;
+	}
+	
+	/*
+	* check if item belong to Medication  ItemGroup 
+	*return type : Boolean 
+	*/
+	public  Boolean isMedic(){		
+	final String medicin="MEDIC";
+	String[] comparStrs=itemGroupOid.split("_");
+	String comparStr=comparStrs[1];
+	//Compare String 
+		if(comparStr.equals(medicin)){
+			return true;
+		}
+		return false;
+	}
+	
+
 	public void setFormOid(String formOid) {
 		this.formOid = formOid;
 	}

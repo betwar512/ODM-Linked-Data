@@ -4,62 +4,17 @@
  */
 package com.mycompany.app;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
-
 /**
  * @author Abbas H Safaie
- *
+ *	WARNING DEPRECATED 
  */
 public class StringCustomHelper {
 
 	
 	public StringCustomHelper() {
-		// TODO Auto-generated constructor stub
+	
 	}
 
-	  //================================================================================
-    // Static Boolean function to categories return information in groups 
-    //================================================================================
-	public static Boolean vitalSeparate(String itemGroupOid){
-	final String vital="VITAL";
-	String[] comparStrs=itemGroupOid.split("_");
-	String comparStr=comparStrs[1];
-	//Compare String 
-		 if(comparStr.equals(vital)){
-		
-			return true;
-		}else{
-		return false;
-		}
-	}
-	
-	public static Boolean bloodSeparate(String itemGroupOid){		
-	final String blood="BLOOD";
-	String[] comparStrs=itemGroupOid.split("_");
-	String comparStr=comparStrs[1];
-	//Compare String 
-		if(comparStr.equals(blood)){
-			return true;
-		}
-		return false;
-	}
-	
-	public static Boolean medicinSeparate(String itemGroupOid){		
-	final String medicin="MEDIC";
-	String[] comparStrs=itemGroupOid.split("_");
-	String comparStr=comparStrs[1];
-	//Compare String 
-		if(comparStr.equals(medicin)){
-			return true;
-		}
-		return false;
-	}
-	
-	
 	  //================================================================================
     // Comment
     //================================================================================

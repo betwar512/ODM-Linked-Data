@@ -2,33 +2,25 @@ package com.mycompany.app;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
-
-
 import com.hp.hpl.jena.datatypes.RDFDatatype;
 import com.hp.hpl.jena.datatypes.TypeMapper;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
-
-
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
-
-import com.hp.hpl.jena.ontology.OntProperty;
-
 import com.hp.hpl.jena.rdf.model.Literal;
-
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.OWL;
-
 import com.hp.hpl.jena.vocabulary.RDFS;
+import com.hp.hpl.jena.vocabulary.XSD;
+import com.mycompany.app.lcdc.Disco;
+import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Odm;
 
 
@@ -47,19 +39,19 @@ public class RDFModelHelper {
 
   
   //Grouping by SubjectKey
-  public HashMap<String, List<ItemDetail>> groupBySubjectKey(ArrayList<ItemDetail> itemDetails){
+  public HashMap<String, List<ItemDetail>> groupBySubjectKey(ArrayList<ItemDetail> itemDtos){
 	  
 	  
 	  HashMap<String, List<ItemDetail>> hashMap=new HashMap<String, List<ItemDetail>>();
 	  
-	  for(ItemDetail itemDetail:itemDetails){ 
-		  if(!hashMap.containsKey(itemDetail.subjectKey)){
+	  for(ItemDetail itemDto:itemDtos){ 
+		  if(!hashMap.containsKey(itemDto.subjectKey)){
 	          List<ItemDetail> list= new ArrayList<ItemDetail>();
-	          list.add(itemDetail);
-	      hashMap.put(itemDetail.subjectKey,list);
+	          list.add(itemDto);
+	      hashMap.put(itemDto.subjectKey,list);
 	      }
 	      else
-	          hashMap.get(itemDetail.subjectKey).add(itemDetail);  
+	          hashMap.get(itemDto.subjectKey).add(itemDto);  
 	    }	  
 	  return hashMap;
 	  }
@@ -76,8 +68,13 @@ public class RDFModelHelper {
 	  
 		//Model
 		OntModel model=ModelFactory.createOntologyModel();
-		model.setNsPrefix( "lcdcodm", "http://purl.org/sstats/lcdc/def/odm#" );
-
+		
+		    model.setNsPrefix( "lcdcodm", "http://purl.org/sstats/lcdc/def/odm#" );
+			model.setNsPrefix("dc",  DC.getURI());
+			model.setNsPrefix("lcdccore", "http://purl.org/sstats/lcdc/def/core#");
+			model.setNsPrefix("disco","http://rdf-vocabulary.ddialliance.org/discovery#");
+			
+			
 			JaxBinder myJax=new JaxBinder();
 			ODMcomplexTypeDefinitionClinicalData clinicalData=
 			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
@@ -86,113 +83,141 @@ public class RDFModelHelper {
 	    HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef=JaxBinder.catchItemDef(meta);
         ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData,meta);
   
-  //	metaDataRdf(itemDef,itemDtos,model);
-  	
   //	completeRdf(itemDtos,model); 
-  	cardioVital(itemDef,itemDtos,model);
+  //	cardioVital(itemDtos,itemDef,model);
+  	vitalVitalSign(itemDtos,itemDef,model);
   	return model;
 	  
   }
   
   
+  
   /*
-   * OntModel to create Cardio-vitalSign
+   * OntModel to create vital-vitalSign
    * */
-  public void cardioVital
-  (HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ArrayList<ItemDetail> itemDtos,OntModel model){
+  public void vitalVitalSign(ArrayList<ItemDetail> itemDtos
+		  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
+		  ,OntModel model){
 	  
+	  final String baseUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical";
 	  
-	  
-	  //================================================================================
-   	// Annotation properties
-	//================================================================================
-
-//	  ###  http://creativecommons.org/ns#license
-//		  cc:license rdf:type owl:AnnotationProperty .
-
-	  OntProperty license=model.createAnnotationProperty("http://creativecommons.org/ns#license");
-	 
-	  license.addRDFType(OWL.AnnotationProperty);
-		  //================================================================================
-	   	//   Datatypes
-		//================================================================================
-
-		String baseDatatype="http://purl.org/sstats/lcdc/def/odm#";
-		TypeMapper tm=TypeMapper.getInstance();
-			
-		RDFDatatype itemcode=tm.getSafeTypeByName(baseDatatype+"itemcode");
-		tm.registerDatatype(itemcode);
-			
-		RDFDatatype itemgroupcode=tm.getSafeTypeByName(baseDatatype+"itemgroupcode");
-		tm.registerDatatype(itemgroupcode);
+		 final String metaDataUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#";
 	
-			RDFDatatype variabledefinitioncode=tm.getSafeTypeByName(baseDatatype+"variabledefinitioncode");
-		tm.registerDatatype(variabledefinitioncode);
+	   	
+	//	varDefClass.addRDFType(OWL.Class);
 		
-		RDFDatatype formcode=tm.getSafeTypeByName(baseDatatype+"formcode");
-		tm.registerDatatype(formcode);
-		
-		  //================================================================================
-	   	//   Class
-		//================================================================================
-		OntClass varDef=model.createClass("http://purl.org/sstats/lcdc/def/core#VariableDefinition");
-		varDef.addRDFType(OWL.Class);
-		String baseUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
-
-	  for (ItemDetail itemDetail : itemDtos) { 
-		
-	//  String definedBy=UriCustomHelper.rdfDefinition(itemDetail.itemGroupOid);
-		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
+	  for (ItemDetail itemDto : itemDtos) { 	
+	//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
+		List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
 		for (ODMcomplexTypeDefinitionItemData item : itemList) {  
 			String itemOidName=item.getItemOID();
 	     //	String itemOidval=item.getItemOID();	
 	     	//Find itemDef belong to OpenClinica Item 
 			ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
 		//	List<ODMcomplexTypeDefinitionRangeCheck> listRange=itemDef.getRangeCheck();
+			String typeUri="";
+			String theme="";
+		  	//ItemsDto typeData 
+			  if(itemDto.isVital()){
+				typeUri=baseUri+"vitalsigns/def/cardio-vitalsigns";
+				theme="http://purl.org/sstats/lcdc/id/theme/vitalsigns";
+			  }else if(itemDto.isBlood()){
+				  typeUri=baseUri+"blood/def/cardio-blood";
+				  theme="http://purl.org/sstats/lcdc/id/theme/blood";
+			  }else if(itemDto.isMedic()){
+				  typeUri=baseUri+"/medic/def/cardio-medic";
+				  theme="http://purl.org/sstats/lcdc/id/theme/medication";
+			  }
+			  
+			  
+			
+				
+				
+			  	//main uri 
+			String uri= typeUri +"#"+ itemDef.getName();
+			String itemOid=item.getItemOID();
+			Resource r=model.createResource(uri,OWL.DatatypeProperty);
+			
+			if(!itemDef.getRangeCheck().isEmpty()){
+				String range=itemDef.getDataType().toString();
+				if(range.contains("INTEGER")){
+					r.addProperty(RDFS.range, XSD.integer);
+				}else if(range.contains("FLOAT")){
+					r.addProperty(RDFS.range, XSD.xfloat);
+				}
+			}
+			
+			Literal variableId=model.createTypedLiteral(itemOid, LcdcCore.variablecode);
+			Statement stVariableId=model.createStatement(r, LcdcCore.variableId, variableId);
 
-	 		//Model		
-			String defName="";
-			defName=itemDef.getName();
-			String mainUri=baseUri+ "#" + defName;
-			Resource r=model.createResource(mainUri,varDef);
-						r.addProperty(RDFS.label, itemDef.getName()); //label
-						
+					//rdfs:range xsd:float .
+			r.addProperty(RDFS.isDefinedBy, typeUri)
+			.addProperty(RDFS.label, itemDef.getName())
+			.addProperty(RDFS.comment, itemDef.getComment())
+			.addProperty(RDFS.domain, ":Finding")
+			.addProperty(DC.source, "cardio")
+			.addProperty(DC.identifier, itemOid)
+			.addProperty(Disco.basedOn, metaDataUri+itemOid)
+			.addProperty(LcdcCore.theme,theme);
+			
+			model.add(stVariableId);
 		
-						
-					  	//ItemsDto ArrayList 
-//						  if(StringCustomHelper.vitalSeparate(itemDto.itemGroupOid)){
-//							  itemsDtoVital.add(itemDto);
-//						  }else if(StringCustomHelper.bloodSeparate(itemDto.itemGroupOid)){
-//							  itemsDtoBlood.add(itemDto);
-//						  }else if(StringCustomHelper.medicinSeparate(itemDto.itemGroupOid)){
-//							  itemsDtoMedication.add(itemDto);			
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						Literal valueForm=model.createTypedLiteral(itemDetail.formOid,formcode);
-			 Literal valueItemGroup=model.createTypedLiteral(itemDetail.itemGroupOid,itemgroupcode);
-			 Literal valueItem=model.createTypedLiteral(item.getItemOID(),itemcode);
-			 //Literal valuevarDef=model.createTypedLiteral(itemDetail.g,XSDDatatype.XSD);
-			// Statement stVarDef=model.createStatement(re, variableDefinitionKey, valuevarDef);
-			 Literal valueRepeat=model.createTypedLiteral(itemDetail.repeating,XSDDatatype.XSDboolean);	
-			 Literal valueDatatype=model.createTypedLiteral(itemDef.getDataType().toString().toLowerCase(),XSDDatatype.XSDstring);	 
-			 Statement stDatetype=model.createStatement(r, Odm.dataType, valueDatatype);
-			 Statement stRepeat=model.createStatement(r,Odm.repeating, valueRepeat);
-			 Statement stItem=model.createStatement(r, Odm.ItemOid, valueItem);
-			 Statement stItemGroup=model.createStatement(r, Odm.itemGroupOid, valueItemGroup);
-			 Statement st=model.createStatement(r,Odm.formOid , valueForm);
+			
+			
+			
+
+	     }//for item 
+	  }//for itemDto
+	  
+	  
+  }
+  
+
+  /*
+   * OntModel to create Cardio-vitalSign
+   * */
+  public void cardioVital
+  (ArrayList<ItemDetail> itemDtos
+		  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
+		  ,OntModel model){
+	  
+	 final String baseUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
+	  
 		 
-			 
-			 
-			 
-			 
+
+//		RDFDatatype itemgroupcode=tm.getSafeTypeByName(baseDatatype+"itemgroupcode");
+//		tm.registerDatatype(itemgroupcode);
+
+	  for (ItemDetail itemDto : itemDtos) { 
+		
+	//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
+		List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
+		for (ODMcomplexTypeDefinitionItemData item : itemList) {  
+			String itemOidName=item.getItemOID();
+	     //	String itemOidval=item.getItemOID();	
+	     	//Find itemDef belong to OpenClinica Item 
+			ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
+			String uri=baseUri+ "#" + itemOidName;
+			
+			Resource r=model.createResource(uri,LcdcCore.varDefClass);
+						
+				 Literal valueForm=model.createTypedLiteral(itemDto.formOid,Odm.formcode);
+				 Literal valueItemGroup=model.createTypedLiteral(itemDto.itemGroupOid,Odm.itemgroupcode);
+				 Literal valueItem=model.createTypedLiteral(item.getItemOID(),Odm.itemcode);
+				 
+				 //Literal valuevarDef=model.createTypedLiteral(itemDto.g,XSDDatatype.XSD);
+				// Statement stVarDef=model.createStatement(re, variableDefinitionKey, valuevarDef);
+				 Literal valueRepeat=model.createTypedLiteral(itemDto.repeating,XSDDatatype.XSDboolean);	
+				 Literal valueDatatype=model.createTypedLiteral(itemDef.getDataType()
+						 .toString()
+						   .toLowerCase(),XSDDatatype.XSDstring);	 
+				 		 Statement stDatetype=model.createStatement(r, Odm.dataType, valueDatatype);
+						 Statement stRepeat=model.createStatement(r,Odm.repeating, valueRepeat);
+						 Statement stItem=model.createStatement(r, Odm.ItemOid, valueItem);
+						 Statement stItemGroup=model.createStatement(r, Odm.itemGroupOid, valueItemGroup);
+						 Statement st=model.createStatement(r,Odm.formOid , valueForm);
+				 
+						 	
 			 	 model.add(st);
 				 model.add(stItemGroup);
 				 model.add(stItem);
@@ -201,7 +226,7 @@ public class RDFModelHelper {
 				 r.addProperty(DC.source,"cardio");
 				 r.addProperty(RDFS.comment, itemDef.getComment());
 				 r.addProperty(RDFS.isDefinedBy, baseUri);
-				
+			   	 r.addProperty(RDFS.label, itemDef.getName()); //label
 		    }//i
 		  
 	     }//For loop item		
