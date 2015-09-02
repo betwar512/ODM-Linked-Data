@@ -21,28 +21,42 @@ public class StringCustomHelper {
 		// TODO Auto-generated constructor stub
 	}
 
-
-	
-	
-	public static boolean vitalSeperate(String itemGroupOid){
-		String vitalUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns";
-		String rdfDefine="";
-			
-	
+	  //================================================================================
+    // Static Boolean function to categories return information in groups 
+    //================================================================================
+	public static Boolean vitalSeparate(String itemGroupOid){
 	final String vital="VITAL";
-	
-	
 	String[] comparStrs=itemGroupOid.split("_");
-	
 	String comparStr=comparStrs[1];
-	
 	//Compare String 
 		 if(comparStr.equals(vital)){
-			rdfDefine=vitalUri;
+		
 			return true;
 		}else{
 		return false;
 		}
+	}
+	
+	public static Boolean bloodSeparate(String itemGroupOid){		
+	final String blood="BLOOD";
+	String[] comparStrs=itemGroupOid.split("_");
+	String comparStr=comparStrs[1];
+	//Compare String 
+		if(comparStr.equals(blood)){
+			return true;
+		}
+		return false;
+	}
+	
+	public static Boolean medicinSeparate(String itemGroupOid){		
+	final String medicin="MEDIC";
+	String[] comparStrs=itemGroupOid.split("_");
+	String comparStr=comparStrs[1];
+	//Compare String 
+		if(comparStr.equals(medicin)){
+			return true;
+		}
+		return false;
 	}
 	
 	

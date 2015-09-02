@@ -41,7 +41,7 @@ public class App
   	//HashMap<String,Model> models=modelHelper.sliceModels();
   	
   	
-  OntModel model=	modelHelper.ontoModelTest();
+  OntModel model=modelHelper.ontoModelTest();
 	
 
 	try{

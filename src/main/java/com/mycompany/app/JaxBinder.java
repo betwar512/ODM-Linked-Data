@@ -143,9 +143,13 @@ public class JaxBinder {
 		 * */
 	public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalData clinicalData,ODMcomplexTypeDefinitionMetaDataVersion metaData){
 	
-	
+	//	HashMap<String,ArrayList<ItemDetail>> itemDetailList=new HashMap<String,ArrayList<ItemDetail>>();
+		
 		HashMap<String,ODMcomplexTypeDefinitionItemGroupDef> itemGroupDefs=getItemGroupDef(metaData);	
-		ArrayList<ItemDetail> itemsDto=new ArrayList<ItemDetail>();
+		
+		ArrayList<ItemDetail> itemDtos=new ArrayList<ItemDetail>();
+	//	ArrayList<ItemDetail> itemsDtoBlood=new ArrayList<ItemDetail>();
+	//	ArrayList<ItemDetail> itemsDtoMedication=new ArrayList<ItemDetail>();
 		//subjectData 
 	List<ODMcomplexTypeDefinitionSubjectData> subjectData=clinicalData.getSubjectData();
 	//make GroupItemOut 
@@ -190,14 +194,27 @@ public class JaxBinder {
 			  itemDto.itemRepeatKey=itemGroup.getItemGroupRepeatKey();
 			  itemDto.items=itemGroup.getItemDataGroup();
 			  itemDto.repeating=repeat;
+			  
+			  itemDtos.add(itemDto);
 			  	//ItemsDto ArrayList 
-			  itemsDto.add(itemDto);
-		  
+//			  if(StringCustomHelper.vitalSeparate(itemDto.itemGroupOid)){
+//				  itemsDtoVital.add(itemDto);
+//			  }else if(StringCustomHelper.bloodSeparate(itemDto.itemGroupOid)){
+//				  itemsDtoBlood.add(itemDto);
+//			  }else if(StringCustomHelper.medicinSeparate(itemDto.itemGroupOid)){
+//				  itemsDtoMedication.add(itemDto);
+//			  }
+
 		  }//ItemGroupData
 	  }//FormData
 	 }
 	}	
-	return itemsDto;
+	//itemDetailList.put("vital", itemsDtoVital);
+	//itemDetailList.put("blood", itemsDtoBlood);
+//	itemDetailList.put("medic", itemsDtoMedication);
+	
+	
+	return itemDtos;
  }
 
 //End of Class 

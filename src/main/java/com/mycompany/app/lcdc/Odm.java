@@ -25,7 +25,7 @@ public class Odm {
     
     /** <p>The namespace of the vocabulary as a resource</p> */
     public static final Resource NAMESPACE = m_model.createResource( NS );
-    
+   
     public static final DatatypeProperty ItemOid = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/odm#ItemOid" );
     
     public static final DatatypeProperty comment = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/odm#comment" );

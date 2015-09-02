@@ -52,19 +52,15 @@ public class RDFModelHelper {
 	  
 	  HashMap<String, List<ItemDetail>> hashMap=new HashMap<String, List<ItemDetail>>();
 	  
-	  for(ItemDetail itemDetail:itemDetails){
-		  
-		  
+	  for(ItemDetail itemDetail:itemDetails){ 
 		  if(!hashMap.containsKey(itemDetail.subjectKey)){
 	          List<ItemDetail> list= new ArrayList<ItemDetail>();
 	          list.add(itemDetail);
 	      hashMap.put(itemDetail.subjectKey,list);
 	      }
 	      else
-	          hashMap.get(itemDetail.subjectKey).add(itemDetail);
-		  
-	    }
-		  
+	          hashMap.get(itemDetail.subjectKey).add(itemDetail);  
+	    }	  
 	  return hashMap;
 	  }
 
@@ -80,31 +76,30 @@ public class RDFModelHelper {
 	  
 		//Model
 		OntModel model=ModelFactory.createOntologyModel();
+		model.setNsPrefix( "lcdcodm", "http://purl.org/sstats/lcdc/def/odm#" );
+
+			JaxBinder myJax=new JaxBinder();
+			ODMcomplexTypeDefinitionClinicalData clinicalData=
+			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
+			ODMcomplexTypeDefinitionMetaDataVersion meta =JaxBinder.catchMetaData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
 	
-
-  	JaxBinder myJax=new JaxBinder();
-
-  	ODMcomplexTypeDefinitionClinicalData clinicalData=
-  			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
-  	
+	    HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef=JaxBinder.catchItemDef(meta);
+        ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData,meta);
   
-  	ODMcomplexTypeDefinitionMetaDataVersion meta =JaxBinder.catchMetaData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
-	
-	HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef=JaxBinder.catchItemDef(meta);
-
-  	ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData,meta);
-
   //	metaDataRdf(itemDef,itemDtos,model);
   	
   //	completeRdf(itemDtos,model); 
-  	ontModelTest(itemDef,itemDtos,model);
+  	cardioVital(itemDef,itemDtos,model);
   	return model;
 	  
   }
   
   
-  
-  public void ontModelTest(HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ArrayList<ItemDetail> itemDtos,OntModel model){
+  /*
+   * OntModel to create Cardio-vitalSign
+   * */
+  public void cardioVital
+  (HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ArrayList<ItemDetail> itemDtos,OntModel model){
 	  
 	  
 	  
@@ -143,46 +138,11 @@ public class RDFModelHelper {
 		OntClass varDef=model.createClass("http://purl.org/sstats/lcdc/def/core#VariableDefinition");
 		varDef.addRDFType(OWL.Class);
 		String baseUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
-	//	Individual itemNod=varDef.createIndividual(baseUri+"itemOid");
-		
-		
-//	Resource re=model.createResource(baseUri,varDef);
-	//re.addProperty(RDFS.label, ""); //lable
 
-	//formOid
-	// Literal valueForm=model.createTypedLiteral("FormOid",XSDDatatype.XSD);
-	// Statement st=model.createStatement(re, formcode, valueForm);
-	// Literal valueItemGroup=model.createTypedLiteral("ItemGroup",XSDDatatype.XSD);
-	// Statement stItemGroup=model.createStatement(re, itemGroupOid, valueItemGroup);
-	// Literal valueItem=model.createTypedLiteral("ItemOid",XSDDatatype.XSD);
-	// Statement stItem=model.createStatement(re, itemOid, valueItem);
-//	// Literal valuevarDef=model.createTypedLiteral("varDef",XSDDatatype.XSD);
-//	 Statement stVarDef=model.createStatement(re, variableDefinitionKey, valuevarDef);
-//	 Literal valueRepeat=model.createTypedLiteral("false",XSDDatatype.XSDboolean);
-//	 Statement stRepeat=model.createStatement(re,repeating, valueRepeat);
-//	 Literal valueDatattype=model.createTypedLiteral("false",XSDDatatype.XSD);
-//	 Statement stDatetype=model.createStatement(re, dataType, valueDatattype);
-//	// model.add(st);
-//	// model.add(stItemGroup);
-//	// model.add(stItem);
-//	 model.add(stVarDef);
-//	 model.add(stRepeat);
-//	 model.add(stDatetype);
-//	 re.addProperty(source, "cardio");
-//	 re.addProperty(RDFS.comment, "this is hte comment");
-//	 re.addProperty(RDFS.isDefinedBy, baseUri);
-	 
-	 
-	 
-
-	  for (ItemDetail itemDetail : itemDtos) {
-	 
-		  if(StringCustomHelper.vitalSeperate(itemDetail.itemGroupOid)){
-		  
-		  
+	  for (ItemDetail itemDetail : itemDtos) { 
+		
 	//  String definedBy=UriCustomHelper.rdfDefinition(itemDetail.itemGroupOid);
 		List<ODMcomplexTypeDefinitionItemData> itemList=itemDetail.items;
-		
 		for (ODMcomplexTypeDefinitionItemData item : itemList) {  
 			String itemOidName=item.getItemOID();
 	     //	String itemOidval=item.getItemOID();	
@@ -195,20 +155,43 @@ public class RDFModelHelper {
 			defName=itemDef.getName();
 			String mainUri=baseUri+ "#" + defName;
 			Resource r=model.createResource(mainUri,varDef);
-			r.addProperty(RDFS.label, itemDef.getName()); //lable
-			 Literal valueForm=model.createTypedLiteral(itemDetail.formOid,formcode);
+						r.addProperty(RDFS.label, itemDef.getName()); //label
+						
+		
+						
+					  	//ItemsDto ArrayList 
+//						  if(StringCustomHelper.vitalSeparate(itemDto.itemGroupOid)){
+//							  itemsDtoVital.add(itemDto);
+//						  }else if(StringCustomHelper.bloodSeparate(itemDto.itemGroupOid)){
+//							  itemsDtoBlood.add(itemDto);
+//						  }else if(StringCustomHelper.medicinSeparate(itemDto.itemGroupOid)){
+//							  itemsDtoMedication.add(itemDto);			
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Literal valueForm=model.createTypedLiteral(itemDetail.formOid,formcode);
 			 Literal valueItemGroup=model.createTypedLiteral(itemDetail.itemGroupOid,itemgroupcode);
 			 Literal valueItem=model.createTypedLiteral(item.getItemOID(),itemcode);
 			 //Literal valuevarDef=model.createTypedLiteral(itemDetail.g,XSDDatatype.XSD);
 			// Statement stVarDef=model.createStatement(re, variableDefinitionKey, valuevarDef);
 			 Literal valueRepeat=model.createTypedLiteral(itemDetail.repeating,XSDDatatype.XSDboolean);	
-			 Literal valueDatatype=model.createTypedLiteral(itemDef.getDataType().toString().toLowerCase(),XSDDatatype.XSDstring);
-			 
+			 Literal valueDatatype=model.createTypedLiteral(itemDef.getDataType().toString().toLowerCase(),XSDDatatype.XSDstring);	 
 			 Statement stDatetype=model.createStatement(r, Odm.dataType, valueDatatype);
 			 Statement stRepeat=model.createStatement(r,Odm.repeating, valueRepeat);
 			 Statement stItem=model.createStatement(r, Odm.ItemOid, valueItem);
 			 Statement stItemGroup=model.createStatement(r, Odm.itemGroupOid, valueItemGroup);
 			 Statement st=model.createStatement(r,Odm.formOid , valueForm);
+		 
+			 
+			 
+			 
 			 
 			 	 model.add(st);
 				 model.add(stItemGroup);
@@ -218,11 +201,9 @@ public class RDFModelHelper {
 				 r.addProperty(DC.source,"cardio");
 				 r.addProperty(RDFS.comment, itemDef.getComment());
 				 r.addProperty(RDFS.isDefinedBy, baseUri);
-				 
-				 
-		
+				
 		    }//i
-		  }
+		  
 	     }//For loop item		
 	  }
 }
