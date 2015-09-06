@@ -23,6 +23,18 @@ public class JaxBinder {
 	 //================================================================================
 	// MetaData 
    //================================================================================
+	
+	/*
+	 * capture all the codeLists in metaData 
+	 * */
+	public static List<ODMcomplexTypeDefinitionCodeList> catchCodeList(ODMcomplexTypeDefinitionMetaDataVersion metaData){
+	
+		List<ODMcomplexTypeDefinitionCodeList> codeLists=metaData.getCodeList();	
+		return codeLists;
+		
+	}
+	
+	
 	/*
 	 * get hashMap for ItemGroupDef 
 	 * */
