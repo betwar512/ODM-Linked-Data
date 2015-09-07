@@ -27,10 +27,17 @@ public class JaxBinder {
 	/*
 	 * capture all the codeLists in metaData 
 	 * */
-	public static List<ODMcomplexTypeDefinitionCodeList> catchCodeList(ODMcomplexTypeDefinitionMetaDataVersion metaData){
+	public static HashMap<String,ODMcomplexTypeDefinitionCodeList> catchCodeList(ODMcomplexTypeDefinitionMetaDataVersion metaData){
 	
-		List<ODMcomplexTypeDefinitionCodeList> codeLists=metaData.getCodeList();	
-		return codeLists;
+		List<ODMcomplexTypeDefinitionCodeList> codeLists=metaData.getCodeList();
+		HashMap<String,ODMcomplexTypeDefinitionCodeList> hashMap=new HashMap<String ,ODMcomplexTypeDefinitionCodeList>();
+		for(ODMcomplexTypeDefinitionCodeList codeList:codeLists){
+			
+			String codeListOid=codeList.getOID();
+			hashMap.put(codeListOid, codeList);
+		}
+		
+		return hashMap;
 		
 	}
 	
