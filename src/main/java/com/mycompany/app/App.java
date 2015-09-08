@@ -1,5 +1,8 @@
 package com.mycompany.app;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.StringWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -9,6 +12,9 @@ import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFFormat;
 
 import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelMaker;
+import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
 /**
  * @author Abbas.h.Safaie
@@ -22,52 +28,47 @@ public class App
     {
     	
     //	JaxBinder jax=new JaxBinder();
-    	
-    	
-    	
-    	
-    	
     	//I_MEDIC_MEDICATIONROUTE
-
+    	
     	DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
-    	
-    	
     	Date date = new Date();
     	String time=dateFormat.format(date); //2014/08/06 15:59:48
-
- 
   	RDFModelHelper modelHelper=new RDFModelHelper();
   	
   	//HashMap<String,Model> models=modelHelper.sliceModels();
   	
   	
-  OntModel model=modelHelper.ontoModelTest();
+  		//OntModel model=modelHelper.ontoModelTest();
+  	ModelMaker mm=modelHelper.ontoModelTest();
+  	ExtendedIterator<String> iter=mm.listModels();
 	
-
+  while(iter.hasNext()){
+	  
+	 String modelName=iter.next();
+	Model model= mm.openModel(modelName);
 	try{
 
-String syntax = "RDFXML_ABBREV"; // also try "N-TRIPLE" 
-StringWriter out = new StringWriter();
-RDFDataMgr.write(System.out,model, RDFFormat.TURTLE_BLOCKS);
-//model.write(System.out,"TURTLE");
-//String fileName = "rdfOnto_test.rdf";
-//File file =new File(fileName);
-//FileWriter output = new FileWriter( file );
-
-//model.write( output, "TURTLE" );
-//output.close();
-// RDFDataMgr.write(System.out, model, "N-Triples") ;
-
-  
-  	} catch (Exception e) { 
-  		System.out.println("Failed: " + e); 
-  		} 
+	//	String syntax = "RDFXML_ABBREV"; // also try "N-TRIPLE" 
+	//	StringWriter out = new StringWriter();
+	//	RDFDataMgr.write(System.out,model, RDFFormat.TURTLE_BLOCKS);
+		
+		
+		//model.write(System.out,"TURTLE");
+		String fileName = System.getProperty("user.dir")+"\\RDF_ModelMaker\\"+modelName+".rdf" ;
+		File file =new File(fileName);
+		FileOutputStream output = new FileOutputStream( file );
+		RDFDataMgr.write(output, model, RDFFormat.TURTLE_BLOCKS);
 	
+		//output.close();
+		// RDFDataMgr.write(System.out, model, "N-Triples") ;
 
-  
-  
-  
-  
+		  
+		  	} catch (Exception e) { 
+		  		System.out.println("Failed: " + e); 
+		  		} 
+  }
+
+
   	
 //	for (Entry<String, Model> entry : models.entrySet()) {
 //	try{

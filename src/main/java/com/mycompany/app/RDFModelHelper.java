@@ -1,8 +1,11 @@
 package com.mycompany.app;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import org.apache.commons.lang3.text.WordUtils;
+import org.apache.jena.riot.system.PrefixMap;
+import org.apache.jena.riot.system.PrefixMapBase;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionCodeList;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionCodeListItem;
@@ -13,10 +16,13 @@ import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.ontology.AnnotationProperty;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Literal;
+import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
+import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.OWL;
 import com.hp.hpl.jena.vocabulary.RDFS;
@@ -67,17 +73,36 @@ public class RDFModelHelper {
   
  
 //Test Method to call 
-  public OntModel ontoModelTest(){
+  public ModelMaker ontoModelTest(){
 	  
 		//Model
-		OntModel model=ModelFactory.createOntologyModel();
+		//OntModel model=ModelFactory.createOntologyModel();
 	
-		    model.setNsPrefix( "lcdcodm", "http://purl.org/sstats/lcdc/def/odm#" );
-			model.setNsPrefix("dc",  DC.getURI());	
-			model.setNsPrefix("lcdccore", "http://purl.org/sstats/lcdc/def/core#");
-			model.setNsPrefix("disco","http://rdf-vocabulary.ddialliance.org/discovery#");
-			model.setNsPrefix("cardiovitalsigns", "http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#");
-			model.setNsPrefix("lcdcobs", Obs.getURI());
+
+		
+		PrefixMapping pf=PrefixMapping.Factory.create();
+
+			pf.withDefaultMappings(PrefixMapping.Standard);
+		
+		pf.setNsPrefix("lcdcodm", "http://purl.org/sstats/lcdc/def/odm#" );
+		pf.setNsPrefix("dc",  DC.getURI());	
+		pf.setNsPrefix("lcdccore", "http://purl.org/sstats/lcdc/def/core#");
+		pf.setNsPrefix("disco","http://rdf-vocabulary.ddialliance.org/discovery#");
+		pf.setNsPrefix("cardiovitalsigns", "http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#");
+		pf.setNsPrefix("lcdcobs", Obs.getURI());
+		
+		ModelFactory.setDefaultModelPrefixes(pf);
+		
+		ModelMaker mm=ModelFactory.createMemModelMaker();
+		
+		//Model model=mm.createModel("Vital-Model");
+//		    model.setNsPrefix( "lcdcodm", "http://purl.org/sstats/lcdc/def/odm#" );
+//			model.setNsPrefix("dc",  DC.getURI());	
+//			model.setNsPrefix("lcdccore", "http://purl.org/sstats/lcdc/def/core#");
+//			model.setNsPrefix("disco","http://rdf-vocabulary.ddialliance.org/discovery#");
+//			model.setNsPrefix("cardiovitalsigns", "http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#");
+//			model.setNsPrefix("lcdcobs", Obs.getURI());
+		
 			JaxBinder myJax=new JaxBinder();
 			ODMcomplexTypeDefinitionClinicalData clinicalData=
 			myJax.getClinicalData("src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml");
@@ -88,14 +113,16 @@ public class RDFModelHelper {
   
         ///model codeList 
         
-      //  List<ODMcomplexTypeDefinitionCodeList> codeLists=JaxBinder.catchCodeList(meta);
+        HashMap<String, ODMcomplexTypeDefinitionCodeList> codeLists=JaxBinder.catchCodeList(meta);
+        Collection<ODMcomplexTypeDefinitionCodeList>	codeList= codeLists.values();
+      
         
-     //   codeListRdf(codeLists,model);
-      createObservation(model,itemDtos,itemDef,meta);
+        codeListRdf(codeList,mm);
+      createObservation(mm,itemDtos,itemDef,meta);
   //	completeRdf(itemDtos,model); 
-  //	cardioVital(itemDtos,itemDef,model);
- // 	vitalVitalSign(itemDtos,itemDef,model);  
-  	return model;
+  	variableVital(itemDtos,itemDef,mm);
+ 	vitalVitalSign(itemDtos,itemDef,mm);  
+  	return mm;
 	  
   }
   
@@ -106,8 +133,9 @@ public class RDFModelHelper {
    * */
   public void vitalVitalSign(ArrayList<ItemDetail> itemDtos
 		  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
-		  ,OntModel model){
+		  ,ModelMaker mm){
 	  
+	  Model model=mm.createModel("Vita-Signs");
 	  final String baseUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical";	  
 	  final String metaDataUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#";
 	//  final String cardioVitalSign="http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#";
@@ -204,11 +232,11 @@ public class RDFModelHelper {
    * OntModel to create Cardio-vitalSign
    * 
    * */
-  public void cardioVital
+  public void variableVital
   (ArrayList<ItemDetail> itemDtos
 		  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
-		  ,OntModel model){
-	  
+		  ,ModelMaker mm){
+	  Model model=null;
 	 final String baseUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
 
 	  for (ItemDetail itemDto : itemDtos) { 
@@ -220,6 +248,19 @@ public class RDFModelHelper {
 			ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
 			String uri=baseUri+ "#" + itemOidName;
 			//itemDef.getCodeListRef();  //CodeList reference 
+			String theme=""; 
+			  if(itemDto.isVital()){
+				  mm.createModel("Variable-Vital");
+					theme="http://purl.org/sstats/lcdc/id/theme/vitalsigns";
+					
+				  }else if(itemDto.isBlood()){ 
+					  mm.createModel("Variable-Blood");
+					  theme="http://purl.org/sstats/lcdc/id/theme/blood";
+			
+				  }else if(itemDto.isMedic()){ 
+					  mm.createModel("Variable-Medication");
+					  theme="http://purl.org/sstats/lcdc/id/theme/medication";
+				  }
 			Resource r=model.createResource(uri,LcdcCore.VariableDefinition);
 						
 				 Literal valueForm=model.createTypedLiteral(itemDto.formOid,Odm.formcode);
@@ -238,6 +279,11 @@ public class RDFModelHelper {
 						 Statement stItemGroup=model.createStatement(r, Odm.itemGroupOid, valueItemGroup);
 						 Statement st=model.createStatement(r,Odm.formOid , valueForm);
 				 
+						
+						 
+						 
+						 
+						 
 						 	
 			 	 model.add(st);
 				 model.add(stItemGroup);
@@ -248,6 +294,7 @@ public class RDFModelHelper {
 				 r.addProperty(RDFS.comment, itemDef.getComment());
 				 r.addProperty(RDFS.isDefinedBy, baseUri);
 			   	 r.addProperty(RDFS.label, itemDef.getName()); //label
+			   	 r.addProperty(LcdcCore.themeId, theme);
 		    }//i
 		  
 	     }//For loop item		
@@ -258,9 +305,11 @@ public class RDFModelHelper {
    * void method
    * version = 0.1.3
    * */
-  public void codeListRdf(List<ODMcomplexTypeDefinitionCodeList> codeLists,OntModel model){
-	  
+  public void codeListRdf(Collection<ODMcomplexTypeDefinitionCodeList> codeLists,ModelMaker mm){
+	  Model model=mm.createModel("Code-List-all");
 	  final String base_Uri="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#";
+	  
+	  
 	  for(ODMcomplexTypeDefinitionCodeList codeList:codeLists)
 	  {
 		  List<ODMcomplexTypeDefinitionCodeListItem>  codeL=codeList.getCodeListItem();
@@ -296,8 +345,8 @@ public class RDFModelHelper {
    * version 0.0.1
    * */
   public void createObservation
-  (OntModel model,ArrayList<ItemDetail> itemDtos,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ODMcomplexTypeDefinitionMetaDataVersion meta){
-	  
+  (ModelMaker mm,ArrayList<ItemDetail> itemDtos,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ODMcomplexTypeDefinitionMetaDataVersion meta){
+	  Model model=null;
 	  final String cardioVitalSign="http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#";
 
 	  for (ItemDetail itemDto : itemDtos) { 	
@@ -317,14 +366,15 @@ public class RDFModelHelper {
 			  if(itemDto.isVital()){
 				theme=baseUriType+"theme/vitalsigns";
 				obsUri="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vitalsigns/phase/";
-			  }else if(itemDto.isBlood()){
-				 
+				model=mm.createModel("observations-VitalSigns");
+			  }else if(itemDto.isBlood()){ 
 				  theme="http://purl.org/sstats/lcdc/id/theme/blood";
 				  obsUri="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/";
-			  }else if(itemDto.isMedic()){
-				 
+				  model=mm.createModel("observations-Blood");
+			  }else if(itemDto.isMedic()){ 
 				  theme="http://purl.org/sstats/lcdc/id/theme/medication";
 				  obsUri="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medication/phase/";
+				  model=mm.createModel("observations-medication");
 			  }
 			  String obsPhase=obsUri+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;
 			  
@@ -369,7 +419,7 @@ public class RDFModelHelper {
 				String coCl[]=codeListOid.split("_");
 				String codeNumber=coCl[coCl.length-1];
 				String cardioVaitalProperty=itemDef.getName()+codeNumber+"-"+decode;
-				AnnotationProperty pr2=model.createAnnotationProperty(cardioVitalSign+cardioVaitalProperty);
+				Property pr2=model.createProperty(cardioVitalSign+cardioVaitalProperty);
 				obs.addProperty(pr,pr2);
 			
 				
