@@ -1,0 +1,142 @@
+@prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco:  <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
+@prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#Iron>
+        rdfs:domain       ":Finding" ;
+        rdfs:label        "Iron" ;
+        dc:source         "cardio" ;
+        rdf:type          owl:DatatypeProperty ;
+        dc:identifier     "I_BLOOD_IRON" ;
+        rdfs:comment      "The level of Iron in the participant's blood" ;
+        rdfs:range        xsd:float ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_IRON> ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#LDL>
+        rdfs:comment      "The level of Low Density Level Cholesterol in the participant's blood" ;
+        dc:identifier     "I_BLOOD_LDL" ;
+        rdfs:domain       ":Finding" ;
+        rdfs:label        "LDL" ;
+        dc:source         "cardio" ;
+        rdfs:range        xsd:float ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_LDL> ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" ;
+        rdf:type          owl:DatatypeProperty .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#WhiteBloodCell>
+        rdfs:range        xsd:float ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_WHITEBLOODCELL> ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        rdfs:comment      "The level of White Cell Count in the participant's blood" ;
+        rdfs:domain       ":Finding" ;
+        dc:identifier     "I_BLOOD_WHITEBLOODCELL" ;
+        rdfs:label        "WhiteBloodCell" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" ;
+        rdf:type          owl:DatatypeProperty ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#Triglycerides>
+        dc:identifier     "I_BLOOD_TRIGLYCERIDES" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_TRIGLYCERIDES> ;
+        dc:source         "cardio" ;
+        rdfs:comment      "The level of Triglycerides in the participant's blood" ;
+        rdfs:domain       ":Finding" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        rdfs:label        "Triglycerides" ;
+        rdf:type          owl:DatatypeProperty ;
+        rdfs:range        xsd:float ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#Sodium>
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_SODIUM> ;
+        rdfs:label        "Sodium" ;
+        rdfs:comment      "The level of Sodium in the participant's blood" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        rdfs:domain       ":Finding" ;
+        rdf:type          owl:DatatypeProperty ;
+        dc:source         "cardio" ;
+        rdfs:range        xsd:float ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" ;
+        dc:identifier     "I_BLOOD_SODIUM" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#HDL>
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_HDL> ;
+        dc:source         "cardio" ;
+        rdfs:comment      "The level of High Density Level Cholesterol in the participant's blood" ;
+        dc:identifier     "I_BLOOD_HDL" ;
+        rdfs:domain       ":Finding" ;
+        rdfs:range        xsd:float ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        rdfs:label        "HDL" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" ;
+        rdf:type          owl:DatatypeProperty .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#Glucose>
+        dc:source         "cardio" ;
+        rdfs:label        "Glucose" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        rdfs:range        xsd:float ;
+        rdf:type          owl:DatatypeProperty ;
+        rdfs:domain       ":Finding" ;
+        dc:identifier     "I_BLOOD_GLUCOSE" ;
+        rdfs:comment      "The level of Glucose in the participant's blood" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_GLUCOSE> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#Cholesterol>
+        dc:identifier     "I_BLOOD_CHOLESTEROL" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        rdfs:domain       ":Finding" ;
+        rdfs:range        xsd:float ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" ;
+        dc:source         "cardio" ;
+        rdf:type          owl:DatatypeProperty ;
+        rdfs:comment      "The level of Cholesterol in the participant's blood" ;
+        rdfs:label        "Cholesterol" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_CHOLESTEROL> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#Haemoglobin>
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_HAEMOGLOBIN> ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" ;
+        rdfs:label        "Haemoglobin" ;
+        rdfs:domain       ":Finding" ;
+        rdfs:range        xsd:integer ;
+        rdf:type          owl:DatatypeProperty ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        rdfs:comment      "The level of Haemoglobin in the participant's blood" ;
+        dc:identifier     "I_BLOOD_HAEMOGLOBIN" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#RedBloodCell>
+        rdfs:range        xsd:float ;
+        dc:source         "cardio" ;
+        dc:identifier     "I_BLOOD_REDBLOODCELL" ;
+        rdfs:domain       ":Finding" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_REDBLOODCELL> ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" ;
+        rdfs:comment      "The level of Red Blood Cell Count in the participant's blood" ;
+        rdfs:label        "RedBloodCell" ;
+        rdf:type          owl:DatatypeProperty ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood#CollectionTime>
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_BLOOD_COLLECTIONTIME> ;
+        dc:identifier     "I_BLOOD_COLLECTIONTIME" ;
+        dc:source         "cardio" ;
+        rdfs:domain       ":Finding" ;
+        rdfs:comment      "The time of the blood collection" ;
+        rdfs:label        "CollectionTime" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalblood/def/cardio-blood" ;
+        rdf:type          owl:DatatypeProperty .

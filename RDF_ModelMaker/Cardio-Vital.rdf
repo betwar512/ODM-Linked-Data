@@ -1,0 +1,153 @@
+@prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco:  <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
+@prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#SystolicBP>
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_SYSTOLICBP_1220> ;
+        dc:identifier     "I_VITAL_SYSTOLICBP_1220" ;
+        dc:identifier     "I_VITAL_SYSTOLICBP_1335" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> ;
+        dc:source         "cardio" ;
+        rdfs:domain       ":Finding" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        rdfs:label        "SystolicBP" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_SYSTOLICBP_1335> ;
+        rdfs:range        xsd:integer ;
+        rdf:type          owl:DatatypeProperty ;
+        rdfs:comment      "The Systolic blood pressure reading for the participant at the time of measurements" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#ReadingsBodyPosition>
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> ;
+        rdfs:comment      "The bosy position of the participant at the time of readings" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_READINGSBODYPOSITION> ;
+        dc:source         "cardio" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_READINGSBODYPOSITION_1915> ;
+        dc:identifier     "I_VITAL_READINGSBODYPOSITION" ;
+        dc:identifier     "I_VITAL_READINGSBODYPOSITION_1915" ;
+        rdf:type          owl:DatatypeProperty ;
+        rdfs:label        "ReadingsBodyPosition" ;
+        rdfs:domain       ":Finding" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#bmi>
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        dc:source         "cardio" ;
+        rdfs:domain       ":Finding" ;
+        rdfs:range        xsd:float ;
+        rdf:type          owl:DatatypeProperty ;
+        rdfs:comment      "The participant's body mass index at the time of measurements" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_BMI_6271> ;
+        dc:identifier     "I_VITAL_BMI_6271" ;
+        rdfs:label        "bmi" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#ReadingsTime>
+        dc:identifier     "I_VITAL_READINGSTIME_1720" ;
+        dc:source         "cardio" ;
+        dc:identifier     "I_VITAL_READINGSTIME" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> ;
+        rdf:type          owl:DatatypeProperty ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_READINGSTIME_1720> ;
+        rdfs:domain       ":Finding" ;
+        rdfs:label        "ReadingsTime" ;
+        rdfs:comment      "The time at which the readings of the Vital Signs was taken" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_READINGSTIME> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#Weight>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        rdf:type          owl:DatatypeProperty ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_WEIGHT_6650> ;
+        rdfs:comment      "The participant's weight at the time of measurements" ;
+        rdfs:domain       ":Finding" ;
+        dc:identifier     "I_VITAL_WEIGHT_6650" ;
+        rdfs:label        "Weight" ;
+        rdfs:range        xsd:integer ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#Height>
+        rdfs:label        "Height" ;
+        rdfs:range        xsd:integer ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        rdfs:comment      "The participant's height at the time of measurements" ;
+        rdfs:domain       ":Finding" ;
+        dc:source         "cardio" ;
+        dc:identifier     "I_VITAL_HEIGHT_3150" ;
+        rdf:type          owl:DatatypeProperty ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_HEIGHT_3150> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#HeartRate>
+        dc:source         "cardio" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_HEARTRATE_8662> ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> ;
+        rdfs:label        "HeartRate" ;
+        rdf:type          owl:DatatypeProperty ;
+        dc:identifier     "I_VITAL_HEARTRATE_8662" ;
+        dc:identifier     "I_VITAL_HEARTRATE_7515" ;
+        rdfs:range        xsd:integer ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_HEARTRATE_7515> ;
+        rdfs:comment      "The participant's heart rate at the time of measurements" ;
+        rdfs:domain       ":Finding" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#ReadingsBodyPart>
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        dc:source         "cardio" ;
+        rdfs:label        "ReadingsBodyPart" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_READINGSBODYPART> ;
+        rdf:type          owl:DatatypeProperty ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_READINGSBODYPART_8890> ;
+        dc:identifier     "I_VITAL_READINGSBODYPART_8890" ;
+        rdfs:domain       ":Finding" ;
+        rdfs:comment      "The body part from which the Vital Signs readings are taken" ;
+        dc:identifier     "I_VITAL_READINGSBODYPART" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#ReadingsTakenBy>
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> ;
+        dc:source         "cardio" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_READINGSTAKENBY_4404> ;
+        rdfs:domain       ":Finding" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        rdfs:comment      "The person who took the readings of the Vital Signs of the participant" ;
+        dc:identifier     "I_VITAL_READINGSTAKENBY_4404" ;
+        rdfs:label        "ReadingsTakenBy" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_READINGSTAKENBY> ;
+        dc:identifier     "I_VITAL_READINGSTAKENBY" ;
+        rdf:type          owl:DatatypeProperty .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#AbdominalCircumference>
+        rdfs:domain       ":Finding" ;
+        dc:identifier     "I_VITAL_ABDOMINALCIRCUMFERENCE_5194" ;
+        rdfs:comment      "The participant's abdominal circumference at the time of measurements" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_ABDOMINALCIRCUMFERENCE_5194> ;
+        rdfs:label        "AbdominalCircumference" ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> ;
+        rdf:type          owl:DatatypeProperty ;
+        rdfs:range        xsd:integer .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns#DiastolicBP>
+        rdf:type          owl:DatatypeProperty ;
+        rdfs:label        "DiastolicBP" ;
+        dc:identifier     "I_VITAL_DIASTOLICBP_37" ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_DIASTOLICBP_37> ;
+        dc:identifier     "I_VITAL_DIASTOLICBP_4036" ;
+        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/vitalsigns> ;
+        lcdcodm:basedOn   <http://purl.org/sstats/lcdc/def/cardio#I_VITAL_DIASTOLICBP_4036> ;
+        dc:source         "cardio" ;
+        rdfs:range        xsd:integer ;
+        rdfs:comment      "The Diastolic blood pressure reading for the participant at the time of measurements" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinicalvitalsigns/def/cardio-vitalsigns" ;
+        rdfs:domain       ":Finding" .

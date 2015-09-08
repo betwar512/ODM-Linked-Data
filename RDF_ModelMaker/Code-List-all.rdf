@@ -1,0 +1,599 @@
+@prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco:  <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
+@prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Intraocular>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "intraocular" ;
+        dc:identifier     "5" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit622-Gram>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "gram" ;
+        dc:identifier     "4" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq624-Unknown>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "unknown" ;
+        dc:identifier     "8" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit680-Tablet>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "tablet" ;
+        dc:identifier     "6" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq682-AsNeeded>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "as needed" ;
+        dc:identifier     "7" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit680-Puff>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "puff" ;
+        dc:identifier     "8" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq624-AsNeeded>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "as needed" ;
+        dc:identifier     "7" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit622-Milligram>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "milligram" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Tablet>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "tablet" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Nasal>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "nasal" ;
+        dc:identifier     "10" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit622-InternationalUnit>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "International Unit" ;
+        dc:identifier     "5" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq624-FourTimesDaily>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "four times daily" ;
+        dc:identifier     "4" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypositionatreadings938-Lying>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Lying" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq624-ThreeTimesADay>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "three times a day" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq682-Daily>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "daily" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit622-Puff>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "puff" ;
+        dc:identifier     "8" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypositionatreadings938-Standing>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Standing" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Spray>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "spray" ;
+        dc:identifier     "6" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit680-Gram>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "gram" ;
+        dc:identifier     "4" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Gas>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "gas" ;
+        dc:identifier     "9" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Suspension>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "suspension" ;
+        dc:identifier     "7" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Suspension>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "suspension" ;
+        dc:identifier     "7" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit680-InternationalUnit>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "International Unit" ;
+        dc:identifier     "5" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq682-FourTimesDaily>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "four times daily" ;
+        dc:identifier     "4" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq682-ThreeTimesADay>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "three times a day" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Aerosol>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "aerosol" ;
+        dc:identifier     "5" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Intramuscular>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "intramuscular" ;
+        dc:identifier     "6" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Oral>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "oral" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit680-Capsule>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "capsule" ;
+        dc:identifier     "7" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Transdermal>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "transdermal" ;
+        dc:identifier     "4" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypositionatreadings933-Lying>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Lying" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit680-Milligram>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "milligram" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypartofreadings937-LeftForearm>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Left forearm" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit622-Microgram>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "microgram" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Ointment>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "ointment" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Powder>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "powder" ;
+        dc:identifier     "11" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Subcutaneous>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "subcutaneous" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit680-Microgram>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "microgram" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Capsule>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "capsule" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Intralesion>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "intralesion" ;
+        dc:identifier     "8" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Gas>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "gas" ;
+        dc:identifier     "9" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Cream>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "cream" ;
+        dc:identifier     "10" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq624-Daily>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "daily" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Suppository>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "suppository" ;
+        dc:identifier     "4" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Intraperiteoneal>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "intraperiteoneal" ;
+        dc:identifier     "9" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Spray>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "spray" ;
+        dc:identifier     "6" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypartofreadings932-LeftUpperArm>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Left upper arm" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Rectal>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "rectal" ;
+        dc:identifier     "12" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypartofreadings937-RightUpperArm>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Right upper arm" ;
+        dc:identifier     "4" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Inhalation>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "inhalation" ;
+        dc:identifier     "7" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Patch>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "patch" ;
+        dc:identifier     "8" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Topical>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "topical" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq624-EveryOtherDay>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "every other day" ;
+        dc:identifier     "5" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypositionatreadings933-Sitting>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Sitting" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Tablet>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "tablet" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Ointment>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "ointment" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypositionatreadings933-Standing>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Standing" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Suppository>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "suppository" ;
+        dc:identifier     "4" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit622-Millilitre>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "millilitre" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit680-Millilitre>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "millilitre" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit622-Capsule>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "capsule" ;
+        dc:identifier     "7" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypartofreadings932-RightUpperArm>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Right upper arm" ;
+        dc:identifier     "4" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseUnit622-Tablet>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "tablet" ;
+        dc:identifier     "6" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Powder>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "powder" ;
+        dc:identifier     "11" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypartofreadings932-RightForearm>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Right forearm" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypartofreadings937-LeftUpperArm>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Left upper arm" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypartofreadings932-LeftForearm>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Left forearm" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypositionatreadings938-Sitting>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Sitting" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#readingstakenby936-Patient>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Patient" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationRoute683-Vaginal>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "vaginal" ;
+        dc:identifier     "11" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Capsule>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "capsule" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Cream>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "cream" ;
+        dc:identifier     "10" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#readingstakenby931-Doctor>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Doctor" ;
+        dc:identifier     "1" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq624-TwiceDaily>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "twice daily" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq682-Unknown>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "unknown" ;
+        dc:identifier     "8" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq682-TwiceDaily>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "twice daily" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#readingstakenby936-Relative>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Relative" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq624-EveryMonth>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "every month" ;
+        dc:identifier     "6" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm681-Aerosol>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "aerosol" ;
+        dc:identifier     "5" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq682-EveryMonth>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "every month" ;
+        dc:identifier     "6" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#readingstakenby931-Nurse>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Nurse" ;
+        dc:identifier     "2" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicFreq682-EveryOtherDay>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "every other day" ;
+        dc:identifier     "5" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#bodypartofreadings937-RightForearm>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "Right forearm" ;
+        dc:identifier     "3" ;
+        rdf:type          skos:Concept .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns#MedicationDoseForm623-Patch>
+        dc:source         "cardio" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns" ;
+        dc:description    "patch" ;
+        dc:identifier     "8" ;
+        rdf:type          skos:Concept .

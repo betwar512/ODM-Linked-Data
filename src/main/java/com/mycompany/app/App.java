@@ -2,16 +2,11 @@ package com.mycompany.app;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.StringWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFFormat;
-
-import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
@@ -22,11 +17,8 @@ import com.hp.hpl.jena.util.iterator.ExtendedIterator;
  * */
 public class App 
 {
-
-
     public static void main( String[] args )
-    {
-    	
+    {   	
     //	JaxBinder jax=new JaxBinder();
     	//I_MEDIC_MEDICATIONROUTE
     	
@@ -37,9 +29,9 @@ public class App
   	
   	//HashMap<String,Model> models=modelHelper.sliceModels();
   	
-  	
+  	String filePath="src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml";
   		//OntModel model=modelHelper.ontoModelTest();
-  	ModelMaker mm=modelHelper.ontoModelTest();
+  	ModelMaker mm=modelHelper.ontoModelTest(filePath);
   	ExtendedIterator<String> iter=mm.listModels();
 	
   while(iter.hasNext()){
