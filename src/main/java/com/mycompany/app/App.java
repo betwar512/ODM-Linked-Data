@@ -7,9 +7,24 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFFormat;
+
+import com.hp.hpl.jena.query.Dataset;
+import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ReadWrite;
+import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
+import com.hp.hpl.jena.rdf.model.RDFNode;
+import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
+import com.hp.hpl.jena.vocabulary.RDFS;
+import com.mycompany.app.lcdc.Lcdc;
 
 /**
  * @author Abbas.h.Safaie
@@ -19,9 +34,8 @@ public class App
 {
     public static void main( String[] args )
     {   	
-    //	JaxBinder jax=new JaxBinder();
-    	//I_MEDIC_MEDICATIONROUTE
-    	
+   
+    
     	DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
     	Date date = new Date();
     	String time=dateFormat.format(date); //2014/08/06 15:59:48
@@ -33,35 +47,67 @@ public class App
   		//OntModel model=modelHelper.ontoModelTest();
   	ModelMaker mm=modelHelper.ontoModelTest(filePath);
   	ExtendedIterator<String> iter=mm.listModels();
-	
+  	String databaseUri="Databases/";
+	Dataset dataset=TDBFactory.createDataset(databaseUri);
+	  dataset.begin(ReadWrite.WRITE) ;
   while(iter.hasNext()){
-	  
+
 	 String modelName=iter.next();
 	Model model= mm.openModel(modelName);
+	
+	dataset.addNamedModel(modelName, model);
+
+	dataset.getNamedModel(modelName);
+	
+	
 	try{
 
-	//	String syntax = "RDFXML_ABBREV"; // also try "N-TRIPLE" 
-	//	StringWriter out = new StringWriter();
-	//	RDFDataMgr.write(System.out,model, RDFFormat.TURTLE_BLOCKS);
-		
-		
-		//model.write(System.out,"TURTLE");
 		String fileName = System.getProperty("user.dir")+"\\RDF_ModelMaker\\"+modelName+".rdf" ;
 		File file =new File(fileName);
 		FileOutputStream output = new FileOutputStream( file );
 		RDFDataMgr.write(output, model, RDFFormat.TURTLE_BLOCKS);
-	
-		//output.close();
-		// RDFDataMgr.write(System.out, model, "N-Triples") ;
 
-		  
 		  	} catch (Exception e) { 
 		  		System.out.println("Failed: " + e); 
 		  		} 
   }
 
-
+	dataset.commit();
+	dataset.close();
   	
+//    String queryString="SELECT ?ItemOid WHERE{ ?y "+ RDFS.label.getURI() +" HeartRate .?y  "+Lcdc.eventOID.getURI()+"  ?ItemOid . } ";
+//    Query query = QueryFactory.create(queryString) ;
+//  	String databaseUri="Databases/";
+//  	
+//	Dataset dataset=TDBFactory.createDataset(databaseUri);
+//	
+//    	dataset.begin(ReadWrite.READ);
+//    	
+//    	Model model=dataset.getNamedModel("Cardio-Vital");
+//    	
+//    	RDFDataMgr.write(System.out, model, RDFFormat.TURTLE_BLOCKS);
+//    	
+//    	
+//    	
+//    	  try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+//    		    ResultSet results = qexec.execSelect() ;
+//    		    
+//    		    for ( ; results.hasNext() ; )
+//    		    {
+//    		      QuerySolution soln = results.nextSolution() ;
+//    		      RDFNode x = soln.get("varName") ;       // Get a result variable by name.
+//    		      Resource r = soln.getResource("VarR") ; // Get a result variable - must be a resource
+//    		      Literal l = soln.getLiteral("VarL") ;   // Get a result variable - must be a literal
+//    		    }
+//    		  }
+//    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
 //	for (Entry<String, Model> entry : models.entrySet()) {
 //	try{
 //  Model model=entry.getValue();

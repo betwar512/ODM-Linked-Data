@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
-
 import org.apache.commons.lang3.text.WordUtils;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionCodeList;
@@ -11,7 +10,6 @@ import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionCodeListItem;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
-
 import com.hp.hpl.jena.datatypes.RDFDatatype;
 import com.hp.hpl.jena.datatypes.TypeMapper;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
@@ -75,12 +73,7 @@ public class RDFModelHelper {
  
 //Test Method to call 
   public ModelMaker ontoModelTest(String filePath){
-	  
-		//Model
-		//OntModel model=ModelFactory.createOntologyModel();
-	
 
-		
 		PrefixMapping pf=PrefixMapping.Factory.create();
 
 			pf.withDefaultMappings(PrefixMapping.Standard);
@@ -96,18 +89,20 @@ public class RDFModelHelper {
 		
 		     ModelMaker mm=ModelFactory.createMemModelMaker();
 		
+		     	
+		    
 			JaxBinder myJax=new JaxBinder();
 			ODMcomplexTypeDefinitionClinicalData clinicalData=
 			myJax.getClinicalData(filePath);
-			ODMcomplexTypeDefinitionMetaDataVersion meta =JaxBinder.catchMetaData(filePath);
+			ODMcomplexTypeDefinitionMetaDataVersion meta = JaxBinder.catchMetaData(filePath);
 	
-	    HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef=JaxBinder.catchItemDef(meta);
-        ArrayList<ItemDetail> itemDtos=myJax.makeItemsObjects(clinicalData,meta);
+	    HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef = JaxBinder.catchItemDef(meta);
+        ArrayList<ItemDetail> itemDtos = myJax.makeItemsObjects(clinicalData,meta);
   
         ///model codeList 
         
-        HashMap<String, ODMcomplexTypeDefinitionCodeList> codeLists=JaxBinder.catchCodeList(meta);
-        Collection<ODMcomplexTypeDefinitionCodeList>	codeList= codeLists.values();
+        HashMap<String, ODMcomplexTypeDefinitionCodeList> codeLists= JaxBinder.catchCodeList(meta);
+        Collection<ODMcomplexTypeDefinitionCodeList>       codeList= codeLists.values();
       
         
         codeListRdf(codeList,mm);
