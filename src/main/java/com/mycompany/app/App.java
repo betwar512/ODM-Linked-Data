@@ -16,6 +16,7 @@ import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ReadWrite;
 import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
@@ -25,6 +26,7 @@ import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 import com.hp.hpl.jena.vocabulary.RDFS;
 import com.mycompany.app.lcdc.Lcdc;
+import com.mycompany.app.lcdc.LcdcCore;
 
 /**
  * @author Abbas.h.Safaie
@@ -47,63 +49,58 @@ public class App
   		//OntModel model=modelHelper.ontoModelTest();
   	ModelMaker mm=modelHelper.ontoModelTest(filePath);
   	ExtendedIterator<String> iter=mm.listModels();
-  	String databaseUri="Databases/";
-	Dataset dataset=TDBFactory.createDataset(databaseUri);
-	  dataset.begin(ReadWrite.WRITE) ;
-  while(iter.hasNext()){
-
-	 String modelName=iter.next();
-	Model model= mm.openModel(modelName);
-	
-	dataset.addNamedModel(modelName, model);
-
-	dataset.getNamedModel(modelName);
-	
-	
-	try{
-
-		String fileName = System.getProperty("user.dir")+"\\RDF_ModelMaker\\"+modelName+".rdf" ;
-		File file =new File(fileName);
-		FileOutputStream output = new FileOutputStream( file );
-		RDFDataMgr.write(output, model, RDFFormat.TURTLE_BLOCKS);
-
-		  	} catch (Exception e) { 
-		  		System.out.println("Failed: " + e); 
-		  		} 
-  }
-
-	dataset.commit();
-	dataset.close();
+  //	DatabaseHelper dbh=new 	DatabaseHelper();
   	
-//    String queryString="SELECT ?ItemOid WHERE{ ?y "+ RDFS.label.getURI() +" HeartRate .?y  "+Lcdc.eventOID.getURI()+"  ?ItemOid . } ";
-//    Query query = QueryFactory.create(queryString) ;
-//  	String databaseUri="Databases/";
-//  	
-//	Dataset dataset=TDBFactory.createDataset(databaseUri);
+  	
+   //  	dbh.writeModel(mm);
+
+// while(iter.hasNext()){
+//
+	// String modelName=iter.next();
+
 //	
-//    	dataset.begin(ReadWrite.READ);
-//    	
-//    	Model model=dataset.getNamedModel("Cardio-Vital");
-//    	
-//    	RDFDataMgr.write(System.out, model, RDFFormat.TURTLE_BLOCKS);
-//    	
-//    	
-//    	
-//    	  try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
-//    		    ResultSet results = qexec.execSelect() ;
-//    		    
-//    		    for ( ; results.hasNext() ; )
-//    		    {
-//    		      QuerySolution soln = results.nextSolution() ;
-//    		      RDFNode x = soln.get("varName") ;       // Get a result variable by name.
-//    		      Resource r = soln.getResource("VarR") ; // Get a result variable - must be a resource
-//    		      Literal l = soln.getLiteral("VarL") ;   // Get a result variable - must be a literal
-//    		    }
-//    		  }
-//    	
-    	
-    	
-    	
+//	
+//	try{
+//
+//		String fileName = System.getProperty("user.dir")+"\\RDF_ModelMaker\\"+modelName+".rdf" ;
+//		File file =new File(fileName);
+//		FileOutputStream output = new FileOutputStream( file );
+//		RDFDataMgr.write(output, model, RDFFormat.TURTLE_BLOCKS);
+//
+//		  	} catch (Exception e) { 
+//		  		System.out.println("Failed: " + e); 
+//		  		} 
+//}
+
+
+     	  // Create a new query
+        String queryString =        
+          "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> "+
+         "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
+        // "PREFIX lcdcobs:<http://purl.org/sstats/lcdc/def/obs#>"+ 
+         "PREFIX cardiovitalsigns:<http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#>"+
+         "PREFIX lcdccore:<http://purl.org/sstats/lcdc/def/core#>"+
+            "select ?uri ?subject "+
+            "where {?uri cardiovitalsigns:MedicationStartDate '2014-07-01'."+
+            "?x lcdccore:subject ?subject.} \n ";
+        Query query = QueryFactory.create(queryString);
+   
+
+        System.out.println("----------------------");
+
+        System.out.println("Query Result Sheet");
+
+        System.out.println("----------------------");
+
+        System.out.println("Direct&Indirect Descendants (obs-medication)");
+        Model model=mm.getModel("observations-medication");
+        QueryExecution qe = QueryExecutionFactory.create(query, model);
+        com.hp.hpl.jena.query.ResultSet results =  qe.execSelect();
+
+        // Output query results    
+        ResultSetFormatter.out(System.out, results, query);
+  //   model.write(System.out);
+
     	
     	
     	
