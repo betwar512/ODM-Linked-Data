@@ -41,15 +41,15 @@ public class ObservationCustomModel {
 			  if(itemDto.isVital()){
 				theme="vitalsigns";
 				obsUri=baseUri+"vitalsigns/phase/";
-				model=mm.createModel("observations-VitalSigns");
+				model=mm.createModel(ModelNames.OBS_VITAL);
 			  }else if(itemDto.isBlood()){ 
 				  theme="blood";
 				  obsUri=baseUri+"blood/phase/";
-				  model=mm.createModel("observations-Blood");
+				  model=mm.createModel(ModelNames.OBS_BLOOD);
 			  }else if(itemDto.isMedic()){ 
 				  theme="medication";
 				  obsUri=baseUri+"medication/phase/";
-				  model=mm.createModel("observations-medication");
+				  model=mm.createModel(ModelNames.OBS_MEDIC);
 			  }
 			  Property themeP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
 		//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);

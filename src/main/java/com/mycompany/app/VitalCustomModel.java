@@ -55,13 +55,13 @@ public class VitalCustomModel {
 				  if(itemDto.isVital()){
 						typeUri=baseUri+"vitalsigns/def/cardio-vitalsigns";
 						theme="vitalsigns";
-						model=mm.createModel("Cardio-Vital");;
+						model=mm.createModel(ModelNames.CARDIO_VITAL);;
 					  }else if(itemDto.isBlood()){
-						  model=mm.createModel("Cardio-Blood");
+						  model=mm.createModel(ModelNames.CARDIO_BLOOD);
 						  typeUri=baseUri+"blood/def/cardio-blood";
 						  theme="blood";
 					  }else if(itemDto.isMedic()){
-						  model=mm.createModel("Cardio-Medication");
+						  model=mm.createModel(ModelNames.CARDIO_MEIDC);
 						  typeUri=baseUri+"/medic/def/cardio-medic";
 						  theme="medication";
 					  }
@@ -127,15 +127,15 @@ public class VitalCustomModel {
 		  for (ItemDetail itemDto : itemDtos) { 
 				String theme=""; 
 				  if(itemDto.isVital()){
-					model=mm.createModel("Variable-Vital");
+					model=mm.createModel(ModelNames.Variable_VITAL);
 						theme="vitalsigns";
 						
 					  }else if(itemDto.isBlood()){ 
-						model=mm.createModel("Variable-Blood");
+						model=mm.createModel(ModelNames.Variable_BLOOD);
 						  theme="blood";
 				
 					  }else if(itemDto.isMedic()){ 
-					model=mm.createModel("Variable-Medication");
+					model=mm.createModel(ModelNames.Variable_MEIDC);
 						  theme="medication";
 					  }
 				  Property themP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
