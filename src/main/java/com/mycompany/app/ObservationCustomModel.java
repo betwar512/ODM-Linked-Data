@@ -38,30 +38,25 @@ public class ObservationCustomModel {
 			  String theme="";
 			  String baseUriType="http://purl.org/sstats/lcdc/id/";
 			  String obsUri="";
-			  if(itemDto.isVital()){
-				theme="vitalsigns";
-				obsUri=baseUri+"vitalsigns/phase/";
-				model=mm.createModel(ModelNames.OBS_VITAL);
-			  }else if(itemDto.isBlood()){ 
-				  theme="blood";
-				  obsUri=baseUri+"blood/phase/";
-				  model=mm.createModel(ModelNames.OBS_BLOOD);
-			  }else if(itemDto.isMedic()){ 
-				  theme="medication";
-				  obsUri=baseUri+"medication/phase/";
-				  model=mm.createModel(ModelNames.OBS_MEDIC);
-			  }
-			  Property themeP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
-		//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
+	
+		
 			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
 			for (ODMcomplexTypeDefinitionItemData item : itemList) {  
 				String itemOidName=item.getItemOID();
+				
+
+				
+				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+				 obsUri=baseUri+theme+"/phase/";
+				 model=mm.createModel("Observation-"+theme);
+				 Property themeP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
+				  
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
 				String phase="";
 				String subject="";
 				//Create observation uri 
 				Resource obs=null;
-				  String obsPhase=obsUri+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
+			    String obsPhase=obsUri+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
 					phase=baseUriType+"phase/"+itemDto.eventOid;
 					subject=baseUriType+"subject/"+itemDto.subjectKey;
 				//Observation resource

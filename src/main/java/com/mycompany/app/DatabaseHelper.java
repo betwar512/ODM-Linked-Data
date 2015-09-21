@@ -32,9 +32,11 @@ public class DatabaseHelper {
 	 * Close dataset 
 	 * Query Can't be use after this method 
 	 * */
-	public void closCon(){
+	public void closeCon(){
 		
 		dataset.close();
+		
+		  System.out.println("Database connection closed");
 	}
 	
 	
@@ -65,8 +67,6 @@ public class DatabaseHelper {
 	
 	dataset.begin(ReadWrite.READ);	
     Model model=dataset.getNamedModel(name);
-    dataset.close();
-    
     	return model;
 	}
 	
@@ -90,7 +90,11 @@ public class DatabaseHelper {
 				File file =new File(fileName);
 				FileOutputStream output = new FileOutputStream( file );
 				RDFDataMgr.write(output, model, RDFFormat.TURTLE_BLOCKS);
-		
+				 System.out.println("----------------------");
+					System.out.println("Model: "+modelName +" saved into Folder RDF_ModelMaker");
+					 System.out.println("----------------------");
+				
+				
 				  	} catch (Exception e) { 
 				  		System.out.println("Failed: " + e); 
 		    } 

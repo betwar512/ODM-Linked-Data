@@ -30,19 +30,18 @@ public class App
     	DatabaseHelper dbh=new 	DatabaseHelper();
   	
     		
-    	dbh.writeModel(mm);
+ //  	dbh.writeModel(mm);
     		dbh.saveToFile(mm);
 
-     	  // Create a new query
-        String queryString =        
+//     	  // Create a new query
+       String queryString =        
           "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> "+
          "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
-        // "PREFIX lcdcobs:<http://purl.org/sstats/lcdc/def/obs#>"+ 
+         "PREFIX lcdcobs:<http://purl.org/sstats/lcdc/def/obs#>"+ 
          "PREFIX cardiovitalsigns:<http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#>"+
          "PREFIX lcdccore:<http://purl.org/sstats/lcdc/def/core#>"+
-            "select ?uri ?subject "+
-            "where {?uri cardiovitalsigns:MedicationStartDate '2014-07-01'."+
-            "?x lcdccore:subject ?subject.} \n ";
+            "select ?uri "+
+            "where {?uri lcdccore:subject 'http://purl.org/sstats/lcdc/id/subject/SS_10'. }\n ";
         Query query = QueryFactory.create(queryString);
    
 
@@ -50,13 +49,14 @@ public class App
         System.out.println("Query Result Sheet");
         System.out.println("----------------------");
 
-        System.out.println("Query on Model : "+ModelNames.OBS_MEDIC);
-        Model model=dbh.getModelByName(ModelNames.OBS_MEDIC);
+       System.out.println("Query on Model : "+ModelNames.OBS_MEDIC);
+      Model model=dbh.getModelByName("Observation-vital");
         QueryExecution qe = QueryExecutionFactory.create(query, model);
-        com.hp.hpl.jena.query.ResultSet results =  qe.execSelect();
+       com.hp.hpl.jena.query.ResultSet results =  qe.execSelect();
         ResultSetFormatter.out(System.out, results, query);
-        
-        
+       
+        dbh.closeCon();
+      
         
         
         

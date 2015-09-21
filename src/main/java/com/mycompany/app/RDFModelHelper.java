@@ -20,6 +20,7 @@ import com.mycompany.app.lcdc.Disco;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Obs;
 import com.mycompany.app.lcdc.Odm;
+import com.mycompany.app.lcdc.Qb;
 import com.mycompany.app.lcdc.Skos;
 
 
@@ -31,10 +32,6 @@ import com.mycompany.app.lcdc.Skos;
  */
 public class RDFModelHelper {
 
-
-	   //================================================================================
-    // Model
-    //================================================================================
 
   
   //Grouping by SubjectKey
@@ -58,7 +55,7 @@ public class RDFModelHelper {
   
 
 		  //================================================================================
-	   	// MetaData model   Test V 2.0
+	   	//  model   Test V 2.0
 		//================================================================================
   
  
@@ -76,6 +73,7 @@ public class RDFModelHelper {
 		pf.setNsPrefix("cardiovitalsigns", "http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#");
 		pf.setNsPrefix("lcdcobs", Obs.getURI());
 		pf.setNsPrefix("skos", Skos.getURI());
+		pf.setNsPrefix("qb", Qb.getURI());
 		ModelFactory.setDefaultModelPrefixes(pf);
 		
 		     ModelMaker mm=ModelFactory.createMemModelMaker();
@@ -96,11 +94,13 @@ public class RDFModelHelper {
         Collection<ODMcomplexTypeDefinitionCodeList>       codeList= codeLists.values();
       
         
-      codeListRdf(codeList,mm);
-     ObservationCustomModel.createObservation(mm,itemDtos,itemDef,meta);
+   //   codeListRdf(codeList,mm);
+   //   ObservationCustomModel.createObservation(mm,itemDtos,itemDef,meta);
       SliceCustomModel.sliceThemePhase(mm, itemDtos, itemDef, meta);
-      VitalCustomModel.variableVital(itemDtos,itemDef,mm);
-      VitalCustomModel.generateCardio(itemDtos,itemDef,mm);  
+   //   VitalCustomModel.variableVital(itemDtos,itemDef,mm);
+   //   VitalCustomModel.generateCardio(itemDtos,itemDef,mm);  
+      
+     //ModelTester.generateCardio(itemDtos,itemDef,mm);  
   	return mm;
 	  
   }

@@ -1,0 +1,249 @@
+@prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco:  <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
+@prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC1/subject/SS_10>
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1" ;
+        cardiovitalsigns:HDL            "0.7"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:Haemoglobin    141 ;
+        cardiovitalsigns:WhiteBloodCell  "4.7"^^xsd:float ;
+        cardiovitalsigns:RedBloodCell   "4.52"^^xsd:float ;
+        cardiovitalsigns:LDL            "1.4"^^xsd:float ;
+        cardiovitalsigns:Sodium         "140"^^xsd:float ;
+        cardiovitalsigns:Triglycerides  "1.9"^^xsd:float ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:Cholesterol    "3.2"^^xsd:float ;
+        cardiovitalsigns:Iron           "9.8"^^xsd:float ;
+        cardiovitalsigns:CollectionTime  "10:40" ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_10" ;
+        cardiovitalsigns:Glucose        "5.1"^^xsd:float .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC1/subject/SS_8>
+        cardiovitalsigns:WhiteBloodCell  "5.1"^^xsd:float ;
+        cardiovitalsigns:Sodium         "142"^^xsd:float ;
+        cardiovitalsigns:RedBloodCell   "4.86"^^xsd:float ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:LDL            "3"^^xsd:float ;
+        cardiovitalsigns:Glucose        "4.6"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1" ;
+        cardiovitalsigns:Iron           "25"^^xsd:float ;
+        cardiovitalsigns:CollectionTime  "10:10" ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_8" ;
+        cardiovitalsigns:HDL            "1.7"^^xsd:float ;
+        cardiovitalsigns:Triglycerides  "0.9"^^xsd:float ;
+        cardiovitalsigns:Haemoglobin    156 ;
+        cardiovitalsigns:Cholesterol    "5.1"^^xsd:float .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC4/subject/SS_10>
+        cardiovitalsigns:LDL            "1.4"^^xsd:float ;
+        cardiovitalsigns:Iron           "12"^^xsd:float ;
+        cardiovitalsigns:Haemoglobin    141 ;
+        cardiovitalsigns:Triglycerides  "1.6"^^xsd:float ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_10" ;
+        cardiovitalsigns:CollectionTime  "11:00" ;
+        cardiovitalsigns:Cholesterol    "3.0"^^xsd:float ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4" ;
+        cardiovitalsigns:RedBloodCell   "4.6"^^xsd:float ;
+        cardiovitalsigns:HDL            "0.9"^^xsd:float ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:Glucose        "4.9"^^xsd:float ;
+        cardiovitalsigns:WhiteBloodCell  "4.8"^^xsd:float ;
+        cardiovitalsigns:Sodium         "134"^^xsd:float .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC3/subject/SS_9>
+        cardiovitalsigns:LDL            "3.1"^^xsd:float ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_9" ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3" ;
+        cardiovitalsigns:Haemoglobin    133 ;
+        cardiovitalsigns:Sodium         "136"^^xsd:float ;
+        cardiovitalsigns:HDL            "1.8"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:Triglycerides  "0.7"^^xsd:float ;
+        cardiovitalsigns:Cholesterol    "5.0"^^xsd:float ;
+        cardiovitalsigns:WhiteBloodCell  "4.4"^^xsd:float ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:CollectionTime  "10:30" ;
+        cardiovitalsigns:Iron           "27"^^xsd:float ;
+        cardiovitalsigns:Glucose        "4.6"^^xsd:float ;
+        cardiovitalsigns:RedBloodCell   "4.0"^^xsd:float .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC2/subject/SS_11>
+        cardiovitalsigns:Triglycerides  "0.6"^^xsd:float ;
+        cardiovitalsigns:Haemoglobin    131 ;
+        cardiovitalsigns:LDL            "4.2"^^xsd:float ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2" ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:Sodium         "136"^^xsd:float ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_11" ;
+        cardiovitalsigns:WhiteBloodCell  "4.6"^^xsd:float ;
+        cardiovitalsigns:HDL            "1.9"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:Glucose        "4.5"^^xsd:float ;
+        cardiovitalsigns:CollectionTime  "11:50" ;
+        cardiovitalsigns:Cholesterol    "6.4"^^xsd:float ;
+        cardiovitalsigns:RedBloodCell   "4.28"^^xsd:float ;
+        cardiovitalsigns:Iron           "11.3"^^xsd:float .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC3/subject/SS_10>
+        cardiovitalsigns:Haemoglobin    140 ;
+        cardiovitalsigns:Sodium         "138"^^xsd:float ;
+        cardiovitalsigns:WhiteBloodCell  "4.5"^^xsd:float ;
+        cardiovitalsigns:LDL            "1.7"^^xsd:float ;
+        cardiovitalsigns:Glucose        "5.0"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:Triglycerides  "1.7"^^xsd:float ;
+        cardiovitalsigns:RedBloodCell   "4.4"^^xsd:float ;
+        cardiovitalsigns:HDL            "0.9"^^xsd:float ;
+        cardiovitalsigns:Iron           "11"^^xsd:float ;
+        cardiovitalsigns:CollectionTime  "11:00" ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_10" ;
+        cardiovitalsigns:Cholesterol    "3.1"^^xsd:float ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC2/subject/SS_9>
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:HDL            "1.7"^^xsd:float ;
+        cardiovitalsigns:WhiteBloodCell  "4.2"^^xsd:float ;
+        cardiovitalsigns:LDL            "3.2"^^xsd:float ;
+        cardiovitalsigns:Glucose        "4.6"^^xsd:float ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2" ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_9" ;
+        cardiovitalsigns:Iron           "27"^^xsd:float ;
+        cardiovitalsigns:Haemoglobin    130 ;
+        cardiovitalsigns:Cholesterol    "5.2"^^xsd:float ;
+        cardiovitalsigns:Sodium         "137"^^xsd:float ;
+        cardiovitalsigns:Triglycerides  "0.7"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:CollectionTime  "10:50" ;
+        cardiovitalsigns:RedBloodCell   "3.9"^^xsd:float .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC1/subject/SS_11>
+        cardiovitalsigns:Cholesterol    "6.6"^^xsd:float ;
+        cardiovitalsigns:Iron           "13.5"^^xsd:float ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:Triglycerides  "0.7"^^xsd:float ;
+        cardiovitalsigns:Sodium         "134"^^xsd:float ;
+        cardiovitalsigns:HDL            "2.0"^^xsd:float ;
+        cardiovitalsigns:Haemoglobin    135 ;
+        cardiovitalsigns:Glucose        "5.1"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:CollectionTime  "11:20" ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_11" ;
+        cardiovitalsigns:RedBloodCell   "4.29"^^xsd:float ;
+        cardiovitalsigns:WhiteBloodCell  "4.28"^^xsd:float ;
+        cardiovitalsigns:LDL            "4.2"^^xsd:float ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC1/subject/SS_9>
+        cardiovitalsigns:Triglycerides  "0.7"^^xsd:float ;
+        cardiovitalsigns:Glucose        "4.8"^^xsd:float ;
+        cardiovitalsigns:Cholesterol    "5.4"^^xsd:float ;
+        cardiovitalsigns:HDL            "1.8"^^xsd:float ;
+        cardiovitalsigns:WhiteBloodCell  "4"^^xsd:float ;
+        cardiovitalsigns:Iron           "27"^^xsd:float ;
+        cardiovitalsigns:LDL            "3.3"^^xsd:float ;
+        cardiovitalsigns:CollectionTime  "10:50" ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_9" ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:Sodium         "136"^^xsd:float ;
+        cardiovitalsigns:RedBloodCell   "3.82"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1" ;
+        cardiovitalsigns:Haemoglobin    124 .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC4/subject/SS_11>
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:Iron           "12.4"^^xsd:float ;
+        cardiovitalsigns:Cholesterol    "4.6"^^xsd:float ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_11" ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:WhiteBloodCell  "4.8"^^xsd:float ;
+        cardiovitalsigns:Sodium         "134"^^xsd:float ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4" ;
+        cardiovitalsigns:HDL            "1.8"^^xsd:float ;
+        cardiovitalsigns:Haemoglobin    127 ;
+        cardiovitalsigns:LDL            "2.5"^^xsd:float ;
+        cardiovitalsigns:Glucose        "4.8"^^xsd:float ;
+        cardiovitalsigns:RedBloodCell   "4.17"^^xsd:float ;
+        cardiovitalsigns:CollectionTime  "11:50" ;
+        cardiovitalsigns:Triglycerides  "0.6"^^xsd:float .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC3/subject/SS_11>
+        cardiovitalsigns:Glucose        "4.6"^^xsd:float ;
+        cardiovitalsigns:LDL            "4.2"^^xsd:float ;
+        cardiovitalsigns:WhiteBloodCell  "4.4"^^xsd:float ;
+        cardiovitalsigns:CollectionTime  "11:50" ;
+        cardiovitalsigns:Haemoglobin    129 ;
+        cardiovitalsigns:Iron           "12.7"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3" ;
+        cardiovitalsigns:RedBloodCell   "4.16"^^xsd:float ;
+        cardiovitalsigns:HDL            "1.7"^^xsd:float ;
+        cardiovitalsigns:Sodium         "134"^^xsd:float ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_11" ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:Triglycerides  "0.8"^^xsd:float ;
+        cardiovitalsigns:Cholesterol    "6.3"^^xsd:float .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC3/subject/SS_8>
+        cardiovitalsigns:Iron           "25"^^xsd:float ;
+        cardiovitalsigns:WhiteBloodCell  "5.0"^^xsd:float ;
+        cardiovitalsigns:HDL            "1.6"^^xsd:float ;
+        cardiovitalsigns:LDL            "3.1"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:Glucose        "4.9"^^xsd:float ;
+        cardiovitalsigns:Triglycerides  "0.7"^^xsd:float ;
+        cardiovitalsigns:RedBloodCell   "4.82"^^xsd:float ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:CollectionTime  "10:20" ;
+        cardiovitalsigns:Sodium         "139"^^xsd:float ;
+        cardiovitalsigns:Haemoglobin    155 ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_8" ;
+        cardiovitalsigns:Cholesterol    "5.0"^^xsd:float ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC2/subject/SS_10>
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2" ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:Glucose        "5.0"^^xsd:float ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:CollectionTime  "10:50" ;
+        cardiovitalsigns:Sodium         "139"^^xsd:float ;
+        cardiovitalsigns:Cholesterol    "3.2"^^xsd:float ;
+        cardiovitalsigns:RedBloodCell   "4.3"^^xsd:float ;
+        cardiovitalsigns:Triglycerides  "1.8"^^xsd:float ;
+        cardiovitalsigns:WhiteBloodCell  "4.7"^^xsd:float ;
+        cardiovitalsigns:Haemoglobin    136 ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_10" ;
+        cardiovitalsigns:HDL            "0.8"^^xsd:float ;
+        cardiovitalsigns:LDL            "1.6"^^xsd:float ;
+        cardiovitalsigns:Iron           "10"^^xsd:float .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC2/subject/SS_8>
+        cardiovitalsigns:WhiteBloodCell  "4.9"^^xsd:float ;
+        lcdccore:phase                  "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2" ;
+        cardiovitalsigns:LDL            "3"^^xsd:float ;
+        cardiovitalsigns:CollectionTime  "10:10" ;
+        rdf:type                        lcdcobs:Observation ;
+        cardiovitalsigns:RedBloodCell   "4.80"^^xsd:float ;
+        cardiovitalsigns:Haemoglobin    154 ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        cardiovitalsigns:Iron           "24.5"^^xsd:float ;
+        lcdccore:subject                "http://purl.org/sstats/lcdc/id/subject/SS_8" ;
+        cardiovitalsigns:Triglycerides  "0.8"^^xsd:float ;
+        cardiovitalsigns:Glucose        "5.0"^^xsd:float ;
+        cardiovitalsigns:Sodium         "140"^^xsd:float ;
+        cardiovitalsigns:Cholesterol    "4.8"^^xsd:float ;
+        cardiovitalsigns:HDL            "1.8"^^xsd:float .

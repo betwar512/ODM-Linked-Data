@@ -3,6 +3,8 @@ package com.mycompany.app;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
+
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
@@ -15,6 +17,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Obs;
+import com.mycompany.app.lcdc.Qb;
 
 /**
  * @author Abbas.h.Safaie
@@ -25,96 +28,68 @@ import com.mycompany.app.lcdc.Obs;
 public class SliceCustomModel {
 
 	
+	//Grouping by SubjectKey
+	  public static HashMap<String, List<ItemDetail>> groupBySubjectKey(ArrayList<ItemDetail> itemDtos){
+		    
+		  HashMap<String, List<ItemDetail>> hashMap=new HashMap<String, List<ItemDetail>>(); 
+		  for(ItemDetail itemDto:itemDtos){ 
+			  if(!hashMap.containsKey(itemDto.subjectKey)){
+		          List<ItemDetail> list= new ArrayList<ItemDetail>();
+		          list.add(itemDto);
+		      hashMap.put(itemDto.subjectKey,list);
+		      }
+		      else
+		          hashMap.get(itemDto.subjectKey).add(itemDto);  
+		    }	  
+		  return hashMap;
+		  }
+
+	
+	
 	/*
-	 * Generate Slice Model from qb by Theme and phase 
+	 * Generate Slice Model from qb by Theme and Subject  
 	 * */
 	public static void sliceThemePhase(ModelMaker mm,ArrayList<ItemDetail> itemDtos,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ODMcomplexTypeDefinitionMetaDataVersion meta){
 		  Model model=null;
-		  final String cardioVitalSign="http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#";
+		  final String baseObs="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/";
 		  final String baseUri="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/slice/theme/";
-		  for (ItemDetail itemDto : itemDtos) { 
-			  	//ItemsDto typeData 
-			  String theme="";
-			  String baseUriType="http://purl.org/sstats/lcdc/id/";
-			  String obsUri="";
-			  if(itemDto.isVital()){
-				theme="vitalsigns";
-				obsUri=baseUri+"vitalsigns/phase/";
-				model=mm.createModel("slice-VitalSigns");
-			  }else if(itemDto.isBlood()){ 
-				  theme="blood";
-				  obsUri=baseUri+"blood/phase/";
-				  model=mm.createModel("slice-Blood");
-			  }else if(itemDto.isMedic()){ 
-				  theme="medication";
-				  obsUri=baseUri+"medication/phase/";
-				  model=mm.createModel("slice-medication");
-			  }
-			  Property themeP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
-		//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
-			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
-			for (ODMcomplexTypeDefinitionItemData item : itemList) {  
-				String itemOidName=item.getItemOID();
-				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
-				String phase="";
-				String subject="";
-				//Create observation uri 
-				Resource obs=null;
-				  String obsPhase=obsUri+ itemDto.eventOid;  
-							phase=baseUriType+"phase/"+itemDto.eventOid;
-							subject=baseUriType+"subject/"+itemDto.subjectKey;
-				//Observation resource
-				 obs=model.createResource(obsPhase,Obs.OBSERVATION);
-				 obs.addProperty(LcdcCore.phase, phase)
-				 .addProperty(LcdcCore.subject, subject)
-				 .addProperty(LcdcCore.themeId, themeP);
-				 
-				//Obs value
-				Literal value=null;
-				Property pr=model.createProperty(cardioVitalSign+itemDef.getName());
-				//if not empty 
-				if(itemDef.getCodeListRef() == null){ //Check if codeList reference exist 
-				
-				if(!itemDef.getRangeCheck().isEmpty()){
-					String range=itemDef.getDataType().toString();
-					if(range.contains("INTEGER")){
-					value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDinteger);
-					
-					}else if(range.contains("FLOAT")){
+		  
+		  
+		  
+		  HashMap<String, List<ItemDetail>> groupBySubject=groupBySubjectKey(itemDtos);
+	
+		  	Set<String> key=groupBySubject.keySet();
+		  
+		  for (String subject:key){
+			  
+			  List<ItemDetail> listPhases=groupBySubject.get(subject);
+			  
+			  
+			  
+			  for (ItemDetail itemDto : listPhases) { 
+	
+					//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
+						List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
+						for (ODMcomplexTypeDefinitionItemData item : itemList) {  
+							String itemOidName=item.getItemOID();
 						
-						value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDfloat);
-					}else{
-					
-						value=model.createTypedLiteral(item.getValue());
-					}		
-					Statement stVal=model.createStatement(obs,pr,value);
-					model.add(stVal);
-				}else{
-		
-					obs.addProperty(pr,item.getValue());
-						
-					}
-				}else{//code list exist 
-					
-					String codeListOid=itemDef.getCodeListRef().getCodeListOID();
-					String decode=CodeListDecoder.codeListValue(codeListOid,item.getValue(),meta);
-					String coCl[]=codeListOid.split("_");
-					String codeNumber=coCl[coCl.length-1];
-					String cardioVaitalProperty=itemDef.getName()+codeNumber+"-"+decode;
-					Property pr2=model.createProperty(cardioVitalSign+cardioVaitalProperty);
-					obs.addProperty(pr,pr2);
-				
-					
-				}	  
-		    }
+							//Create observation uri 
+							String theme=StringCustomHelper.groupType(itemOidName);
+							
+							  String obsPhase=baseObs+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
+							model=mm.createModel("Slice-"+theme);			
+							Resource r=model.createResource(baseUri+theme+"/subject/"+subject,Qb.Slice);			
+							Property p=model.createProperty(obsPhase);	
+							r.addProperty(Qb.observation, p);
+
+			   }	  
+			 }
+			  
+		  }
 
 	    }
 	  
 	 }
 	
-	
-	
-	
-	
-	
-}
+
+

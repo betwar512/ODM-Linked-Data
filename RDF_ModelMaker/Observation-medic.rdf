@@ -1,0 +1,153 @@
+@prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco:  <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
+@prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_9>
+        cardiovitalsigns:MedicationRoute  cardiovitalsigns:MedicationRoute683-Rectal ;
+        lcdccore:themeId             <http://purl.org/sstats/lcdc/id/theme/medic> ;
+        cardiovitalsigns:MedicationFreq  cardiovitalsigns:MedicationFreq682-Daily ;
+        cardiovitalsigns:MedicationDose  "10" ;
+        lcdccore:subject             "http://purl.org/sstats/lcdc/id/subject/SS_9" ;
+        cardiovitalsigns:MedicationStartDate  "2014-02-24" ;
+        cardiovitalsigns:MedicationCode  "76753011000036109" ;
+        cardiovitalsigns:OntologyID  "900062011000036108" ;
+        cardiovitalsigns:MedicationName  "Fishaphos 1 g capsule: soft, 100" ;
+        rdf:type                     lcdcobs:Observation ;
+        cardiovitalsigns:MedicationCode  "76601011000036106" ;
+        cardiovitalsigns:MedicationName  "Aricept 5 mg tablet: film-coated, 28" ;
+        cardiovitalsigns:MedicationDoseForm  cardiovitalsigns:MedicationDoseForm681-Capsule ;
+        cardiovitalsigns:MedicationStartDate  "2015-01-05" ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Milligram ;
+        lcdccore:phase               "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1" ;
+        cardiovitalsigns:OntologyVersion  "20150131" ;
+        cardiovitalsigns:MedicationDoseForm  cardiovitalsigns:MedicationDoseForm681-Powder ;
+        cardiovitalsigns:MedicationEndDate  "2015-04-01" ;
+        cardiovitalsigns:MedicationCode  "12941011000036106" ;
+        cardiovitalsigns:MedicationDose  "1000" ;
+        cardiovitalsigns:MedicationDose  "1500" ;
+        cardiovitalsigns:MedicationName  "Glucosamine (Blackmores) 500 mg tablet: film-coated, 90" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_11>
+        cardiovitalsigns:MedicationRoute  cardiovitalsigns:MedicationRoute683-Rectal ;
+        cardiovitalsigns:MedicationStartDate  "2014-04-30" ;
+        lcdccore:phase               "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1" ;
+        cardiovitalsigns:MedicationCode  "21091011000036106" ;
+        cardiovitalsigns:MedicationName  "Ostelin-1000 25 microgram capsule: soft, 250" ;
+        cardiovitalsigns:MedicationCode  "36805011000036107" ;
+        cardiovitalsigns:MedicationFreq  cardiovitalsigns:MedicationFreq682-Daily ;
+        cardiovitalsigns:MedicationDoseForm  cardiovitalsigns:MedicationDoseForm681-Powder ;
+        cardiovitalsigns:MedicationName  "Actonel Combi D (4 x 35 mg tablets, 24 x sachets), 1 pack" ;
+        cardiovitalsigns:MedicationStartDate  "2014-11-30" ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Milligram ;
+        cardiovitalsigns:MedicationDose  "1" ;
+        lcdccore:subject             "http://purl.org/sstats/lcdc/id/subject/SS_11" ;
+        cardiovitalsigns:MedicationStartDate  "2001-04-01" ;
+        cardiovitalsigns:MedicationName  "Amohexal 250 mg capsule: hard, 20, blister pack" ;
+        lcdccore:themeId             <http://purl.org/sstats/lcdc/id/theme/medic> ;
+        cardiovitalsigns:MedicationEndDate  "2015-04-24" ;
+        rdf:type                     lcdcobs:Observation ;
+        cardiovitalsigns:MedicationDose  "35" ;
+        cardiovitalsigns:OntologyID  "900062011000036108" ;
+        cardiovitalsigns:OntologyVersion  "20150331" ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Tablet ;
+        cardiovitalsigns:MedicationCode  "76785011000036101" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC4/subject/SS_11>
+        rdf:type                     lcdcobs:Observation ;
+        cardiovitalsigns:MedicationStartDate  "1995-04-11" ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Milligram ;
+        cardiovitalsigns:OntologyID  "900062011000036108" ;
+        lcdccore:phase               "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4" ;
+        cardiovitalsigns:MedicationDose  "10" ;
+        cardiovitalsigns:MedicationCode  "929655011000036100" ;
+        cardiovitalsigns:MedicationName  "Nexium 10 mg granules: enteric-coated, 30 sachets" ;
+        lcdccore:themeId             <http://purl.org/sstats/lcdc/id/theme/medic> ;
+        cardiovitalsigns:MedicationCode  "35681000036100" ;
+        cardiovitalsigns:MedicationRoute  cardiovitalsigns:MedicationRoute683-Rectal ;
+        cardiovitalsigns:MedicationName  "Lipitor 10 mg tablet: film-coated, 10" ;
+        cardiovitalsigns:MedicationStartDate  "2015-02-01" ;
+        cardiovitalsigns:MedicationFreq  cardiovitalsigns:MedicationFreq682-Daily ;
+        lcdccore:subject             "http://purl.org/sstats/lcdc/id/subject/SS_11" ;
+        cardiovitalsigns:MedicationDoseForm  cardiovitalsigns:MedicationDoseForm681-Powder ;
+        cardiovitalsigns:OntologyVersion  "20150331" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC3/subject/SS_11>
+        cardiovitalsigns:MedicationDose  "1" ;
+        cardiovitalsigns:OntologyID  "900062011000036108" ;
+        cardiovitalsigns:MedicationDose  "50" ;
+        cardiovitalsigns:MedicationName  "Astrix 100 mg capsule: enteric, 28" ;
+        lcdccore:phase               "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3" ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Milligram ;
+        cardiovitalsigns:MedicationName  "Lipitor 10 mg tablet: film-coated, 10" ;
+        rdf:type                     lcdcobs:Observation ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Tablet ;
+        cardiovitalsigns:MedicationName  "Nexium 10 mg granules: enteric-coated, 30 sachets" ;
+        cardiovitalsigns:MedicationRoute  cardiovitalsigns:MedicationRoute683-Rectal ;
+        cardiovitalsigns:MedicationEndDate  "2015-05-10" ;
+        cardiovitalsigns:MedicationStartDate  "2015-02-11" ;
+        cardiovitalsigns:MedicationCode  "929655011000036100" ;
+        lcdccore:themeId             <http://purl.org/sstats/lcdc/id/theme/medic> ;
+        cardiovitalsigns:MedicationStartDate  "2014-07-01" ;
+        cardiovitalsigns:OntologyVersion  "20150331" ;
+        cardiovitalsigns:MedicationCode  "35681000036100" ;
+        lcdccore:subject             "http://purl.org/sstats/lcdc/id/subject/SS_11" ;
+        cardiovitalsigns:MedicationFreq  cardiovitalsigns:MedicationFreq682-Daily ;
+        cardiovitalsigns:MedicationCode  "72081000036101" ;
+        cardiovitalsigns:MedicationDose  "10" ;
+        cardiovitalsigns:MedicationDoseForm  cardiovitalsigns:MedicationDoseForm681-Powder ;
+        cardiovitalsigns:MedicationStartDate  "1995-03-01" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_8>
+        cardiovitalsigns:MedicationDose  "5" ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Tablet ;
+        rdf:type                     lcdcobs:Observation ;
+        cardiovitalsigns:MedicationName  "Fosamax 5 mg tablet: uncoated, 8" ;
+        cardiovitalsigns:MedicationName  "Tamsulosin Hydrochloride SR (Sandoz) 400 microgram tablet: modified release, 10" ;
+        cardiovitalsigns:MedicationCode  "41832011000036106" ;
+        cardiovitalsigns:MedicationEndDate  "2015-03-12" ;
+        lcdccore:phase               "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1" ;
+        cardiovitalsigns:MedicationRoute  cardiovitalsigns:MedicationRoute683-Rectal ;
+        cardiovitalsigns:OntologyVersion  "20150131" ;
+        cardiovitalsigns:MedicationDoseForm  cardiovitalsigns:MedicationDoseForm681-Powder ;
+        cardiovitalsigns:MedicationEndDate  "2015-03-30" ;
+        cardiovitalsigns:MedicationStartDate  "2015-02-01" ;
+        cardiovitalsigns:MedicationCode  "139321000036102" ;
+        cardiovitalsigns:MedicationStartDate  "2015-03-05" ;
+        cardiovitalsigns:OntologyID  "900062011000036108" ;
+        cardiovitalsigns:MedicationDose  "1" ;
+        lcdccore:themeId             <http://purl.org/sstats/lcdc/id/theme/medic> ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Milligram ;
+        lcdccore:subject             "http://purl.org/sstats/lcdc/id/subject/SS_8" ;
+        cardiovitalsigns:MedicationFreq  cardiovitalsigns:MedicationFreq682-Daily ;
+        cardiovitalsigns:MedicationFreq  cardiovitalsigns:MedicationFreq682-EveryOtherDay .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_10>
+        rdf:type                     lcdcobs:Observation ;
+        cardiovitalsigns:MedicationCode  "35681000036100" ;
+        cardiovitalsigns:MedicationEndDate  "2015-03-15" ;
+        lcdccore:phase               "http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1" ;
+        cardiovitalsigns:OntologyVersion  "20150131" ;
+        cardiovitalsigns:OntologyID  "900062011000036108" ;
+        cardiovitalsigns:MedicationDose  "75" ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Tablet ;
+        cardiovitalsigns:MedicationDoseForm  cardiovitalsigns:MedicationDoseForm681-Powder ;
+        cardiovitalsigns:MedicationFreq  cardiovitalsigns:MedicationFreq682-Daily ;
+        cardiovitalsigns:MedicationDose  "1" ;
+        cardiovitalsigns:MedicationRoute  cardiovitalsigns:MedicationRoute683-Rectal ;
+        cardiovitalsigns:MedicationEndDate  "2015-04-24" ;
+        cardiovitalsigns:MedicationStartDate  "2015-03-05" ;
+        cardiovitalsigns:MedicationName  "Plavix 75 mg tablet: film-coated, 28, blister pack" ;
+        cardiovitalsigns:MedicationCode  "20503011000036102" ;
+        cardiovitalsigns:MedicationName  "Lipitor 10 mg tablet: film-coated, 10" ;
+        lcdccore:themeId             <http://purl.org/sstats/lcdc/id/theme/medic> ;
+        cardiovitalsigns:MedicationDoseUnit  cardiovitalsigns:MedicationDoseUnit680-Milligram ;
+        cardiovitalsigns:MedicationStartDate  "2015-02-02" ;
+        lcdccore:subject             "http://purl.org/sstats/lcdc/id/subject/SS_10" .

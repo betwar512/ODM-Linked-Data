@@ -32,8 +32,10 @@ import com.mycompany.app.lcdc.Odm;
  *
  */
 public class VitalCustomModel {
-
-
+	
+	 final static String baseMeta="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
+	  final static String baseCardio="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical";	  
+		 final static String metaDataUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#";
 	  /*
 	   * Model to create vital-vitalSign
 	   * */
@@ -42,31 +44,12 @@ public class VitalCustomModel {
 			  ,ModelMaker mm){
 		  
 		  Model model=null;
-		  final String baseUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical";	  
-		//  final String metaDataUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#";
+		
 		//  final String cardioVitalSign="http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#";
-		  
+		 
 
 		  for (ItemDetail itemDto : itemDtos) { 	
-				String typeUri="";
-				String theme="";
-				//Create observation uri 
-			  	//ItemsDto typeData 
-				  if(itemDto.isVital()){
-						typeUri=baseUri+"vitalsigns/def/cardio-vitalsigns";
-						theme="vitalsigns";
-						model=mm.createModel(ModelNames.CARDIO_VITAL);;
-					  }else if(itemDto.isBlood()){
-						  model=mm.createModel(ModelNames.CARDIO_BLOOD);
-						  typeUri=baseUri+"blood/def/cardio-blood";
-						  theme="blood";
-					  }else if(itemDto.isMedic()){
-						  model=mm.createModel(ModelNames.CARDIO_MEIDC);
-						  typeUri=baseUri+"/medic/def/cardio-medic";
-						  theme="medication";
-					  }
-				  Property themP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
-				  
+
 		//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
 			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
 			for (ODMcomplexTypeDefinitionItemData item : itemList) {  
@@ -76,6 +59,14 @@ public class VitalCustomModel {
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
 			//	List<ODMcomplexTypeDefinitionRangeCheck> listRange=itemDef.getRangeCheck();
 
+
+				String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+				 
+				String typeUri=baseCardio+theme+"/def/cardio-"+theme;
+				 
+				 model=mm.createModel("Cardio-"+theme);
+				
+				 Property themP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
 
 				  	//main uri 
 				String uri= typeUri +"#"+ itemDef.getName();
@@ -88,17 +79,18 @@ public class VitalCustomModel {
 					if(range.length()>0){
 					if(range.contains("INTEGER")){
 						r.addProperty(RDFS.range, XSD.integer);
+				
 					}else if(range.contains("FLOAT")){
 						r.addProperty(RDFS.range, XSD.xfloat);		
 					  }	
 					}	
-
-			Property based=model.createProperty("http://purl.org/sstats/lcdc/def/cardio#",itemOid);
-			
+							//pointing to Variable Def 
+				Property based=model.createProperty(metaDataUri,itemOid);
+					
 				r.addProperty(RDFS.isDefinedBy, typeUri)
 				.addProperty(RDFS.label, itemDef.getName())
 				.addProperty(RDFS.comment, itemDef.getComment())
-				.addProperty(RDFS.domain, ":Finding")
+				.addProperty(RDFS.domain, "Finding")
 				.addProperty(DC.source, "cardio")
 				.addProperty(DC.identifier, itemOid)
 				.addProperty(Disco.basedOn, based)
@@ -122,31 +114,26 @@ public class VitalCustomModel {
 			  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
 			  ,ModelMaker mm){
 		  Model model=null;
-		 final String baseUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
+	
 
 		  for (ItemDetail itemDto : itemDtos) { 
-				String theme=""; 
-				  if(itemDto.isVital()){
-					model=mm.createModel(ModelNames.Variable_VITAL);
-						theme="vitalsigns";
-						
-					  }else if(itemDto.isBlood()){ 
-						model=mm.createModel(ModelNames.Variable_BLOOD);
-						  theme="blood";
-				
-					  }else if(itemDto.isMedic()){ 
-					model=mm.createModel(ModelNames.Variable_MEIDC);
-						  theme="medication";
-					  }
-				  Property themP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
+	
 			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
 			for (ODMcomplexTypeDefinitionItemData item : itemList) {  
 
 				String itemOidName=item.getItemOID();
+				
+				
+				//Get them type data 
+				String  theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+				 model=mm.createModel("Variable-"+theme);
+				  Property themP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
+				
+
 		     //	String itemOidval=item.getItemOID();	
 		     	//Find itemDef belong to OpenClinica Item 
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
-				String uri=baseUri+ "#" + itemOidName;
+				String uri=baseMeta+ "#" + itemOidName;
 				//itemDef.getCodeListRef();  //CodeList reference 
 				Resource r=model.createResource(uri,LcdcCore.VariableDefinition);
 							
@@ -179,7 +166,7 @@ public class VitalCustomModel {
 				     model.add(stVarDef);
 					 r.addProperty(DC.source,"cardio");
 					 r.addProperty(RDFS.comment, itemDef.getComment());
-					 r.addProperty(RDFS.isDefinedBy, baseUri);
+					 r.addProperty(RDFS.isDefinedBy, baseMeta);
 				   	 r.addProperty(RDFS.label, itemDef.getName()); //label
 				   	 r.addProperty(LcdcCore.themeId, themP);
 			    }//i
