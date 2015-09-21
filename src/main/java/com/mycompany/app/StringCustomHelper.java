@@ -15,6 +15,15 @@ public class StringCustomHelper {
 	
 	}
 
+	
+	//GroupType of the item for theme 
+	public static String groupType(String itemOid){		
+		String[] comparStrs=itemOid.split("_");
+		String group=comparStrs[1];
+			return group;
+		}
+	
+	
 	  //================================================================================
     // Comment
     //================================================================================
