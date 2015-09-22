@@ -1,15 +1,9 @@
-/**
- * 
- */
 package com.mycompany.app;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
-
 import com.hp.hpl.jena.datatypes.RDFDatatype;
 import com.hp.hpl.jena.datatypes.TypeMapper;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
@@ -33,9 +27,7 @@ import com.mycompany.app.lcdc.Odm;
  */
 public class VitalCustomModel {
 	
-	 final static String baseMeta="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
-	  final static String baseCardio="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical";	  
-		 final static String metaDataUri="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#";
+
 	  /*
 	   * Model to create vital-vitalSign
 	   * */
@@ -44,10 +36,7 @@ public class VitalCustomModel {
 			  ,ModelMaker mm){
 		  
 		  Model model=null;
-		
-		//  final String cardioVitalSign="http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#";
-		 
-
+	
 		  for (ItemDetail itemDto : itemDtos) { 	
 
 		//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
@@ -62,7 +51,7 @@ public class VitalCustomModel {
 
 				String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 
-				String typeUri=baseCardio+theme+"/def/cardio-"+theme;
+				String typeUri=UriCustomHelper.cardioBase+theme+"/def/cardio-"+theme;
 				 
 				 model=mm.createModel("Cardio-"+theme);
 				
@@ -85,7 +74,7 @@ public class VitalCustomModel {
 					  }	
 					}	
 							//pointing to Variable Def 
-				Property based=model.createProperty(metaDataUri,itemOid);
+				Property based=model.createProperty(UriCustomHelper.metaBase,itemOid);
 					
 				r.addProperty(RDFS.isDefinedBy, typeUri)
 				.addProperty(RDFS.label, itemDef.getName())
@@ -133,7 +122,7 @@ public class VitalCustomModel {
 		     //	String itemOidval=item.getItemOID();	
 		     	//Find itemDef belong to OpenClinica Item 
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
-				String uri=baseMeta+ "#" + itemOidName;
+				String uri=UriCustomHelper.metaBase+ "#" + itemOidName;
 				//itemDef.getCodeListRef();  //CodeList reference 
 				Resource r=model.createResource(uri,LcdcCore.VariableDefinition);
 							
@@ -166,7 +155,7 @@ public class VitalCustomModel {
 				     model.add(stVarDef);
 					 r.addProperty(DC.source,"cardio");
 					 r.addProperty(RDFS.comment, itemDef.getComment());
-					 r.addProperty(RDFS.isDefinedBy, baseMeta);
+					 r.addProperty(RDFS.isDefinedBy, UriCustomHelper.metaBase);
 				   	 r.addProperty(RDFS.label, itemDef.getName()); //label
 				   	 r.addProperty(LcdcCore.themeId, themP);
 			    }//i

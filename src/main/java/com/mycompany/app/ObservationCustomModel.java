@@ -17,12 +17,13 @@ import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
+import com.mycompany.app.lcdc.Cardiovitalsigns;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Obs;
 
 public class ObservationCustomModel {
 
-	
+
 	 
 	  /*
 	   * Observation model 
@@ -31,8 +32,8 @@ public class ObservationCustomModel {
 	  public static void createObservation
 	  (ModelMaker mm,ArrayList<ItemDetail> itemDtos,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ODMcomplexTypeDefinitionMetaDataVersion meta){
 		  Model model=null;
-		  final String cardioVitalSign="http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#";
-		  	final String baseUri="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/";
+	
+		  
 		  for (ItemDetail itemDto : itemDtos) { 
 			  	//ItemsDto typeData 
 			  String theme="";
@@ -47,7 +48,7 @@ public class ObservationCustomModel {
 
 				
 				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
-				 obsUri=baseUri+theme+"/phase/";
+				 obsUri=UriCustomHelper.obsBase+theme+"/phase/";
 				 model=mm.createModel("Observation-"+theme);
 				 Property themeP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
 				  
@@ -68,7 +69,7 @@ public class ObservationCustomModel {
 				//Obs value
 				Literal value=null;
 				//if not empty 
-				Property pr=model.createProperty(cardioVitalSign+itemDef.getName());
+				Property pr=model.createProperty(Cardiovitalsigns.getURI(),itemDef.getName());
 				
 				if(itemDef.getCodeListRef() == null){ //Check if codeList reference exist 
 				
@@ -98,7 +99,7 @@ public class ObservationCustomModel {
 					String coCl[]=codeListOid.split("_");
 					String codeNumber=coCl[coCl.length-1];
 					String cardioVaitalProperty=itemDef.getName()+codeNumber+"-"+decode;
-					Property pr2=model.createProperty(cardioVitalSign+cardioVaitalProperty);
+					Property pr2=model.createProperty(Cardiovitalsigns.getURI(),cardioVaitalProperty);
 					obs.addProperty(pr,pr2);
 				
 					

@@ -16,6 +16,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.RDFS;
+import com.mycompany.app.lcdc.Cardiovitalsigns;
 import com.mycompany.app.lcdc.Disco;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Obs;
@@ -70,7 +71,7 @@ public class RDFModelHelper {
 		pf.setNsPrefix("dc",  DC.getURI());	
 		pf.setNsPrefix("lcdccore",LcdcCore.getURI());
 		pf.setNsPrefix("disco",Disco.getURI());
-		pf.setNsPrefix("cardiovitalsigns", "http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#");
+		pf.setNsPrefix("cardiovitalsigns",Cardiovitalsigns.getURI() );
 		pf.setNsPrefix("lcdcobs", Obs.getURI());
 		pf.setNsPrefix("skos", Skos.getURI());
 		pf.setNsPrefix("qb", Qb.getURI());
@@ -94,12 +95,17 @@ public class RDFModelHelper {
         Collection<ODMcomplexTypeDefinitionCodeList>       codeList= codeLists.values();
       
         
-   //   codeListRdf(codeList,mm);
-   //   ObservationCustomModel.createObservation(mm,itemDtos,itemDef,meta);
-      SliceCustomModel.sliceThemePhase(mm, itemDtos, itemDef, meta);
-   //   VitalCustomModel.variableVital(itemDtos,itemDef,mm);
-   //   VitalCustomModel.generateCardio(itemDtos,itemDef,mm);  
+     codeListRdf(codeList,mm);
+     	//Cardio Variables 
+      VitalCustomModel.variableVital(itemDtos,itemDef,mm);
+      VitalCustomModel.generateCardio(itemDtos,itemDef,mm);  
       
+      //Observation Models 
+      ObservationCustomModel.createObservation(mm,itemDtos,itemDef,meta);
+      //Slice Models 
+      SliceCustomModel.sliceBySubject(mm, itemDtos, itemDef, meta);
+      SliceCustomModel.sliceByTheme(mm, itemDtos, itemDef, meta);
+      SliceCustomModel.sliceByPhase(mm, itemDtos, itemDef, meta);
      //ModelTester.generateCardio(itemDtos,itemDef,mm);  
   	return mm;
 	  
