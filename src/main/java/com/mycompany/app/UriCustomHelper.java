@@ -3,7 +3,7 @@ package com.mycompany.app;
 public class UriCustomHelper {
 
 	
-	public static final String cardioBase="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical";	
+	public static final String cardioBase="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/";	
 	
 	public static final String obsBase="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/";
 	
@@ -11,6 +11,6 @@ public class UriCustomHelper {
 	
 	public static final String sliceBase="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/slice/";
 	
-
+	public static final String themeBase="http://purl.org/sstats/lcdc/id/theme/";
 	
 }

@@ -56,7 +56,7 @@ public class RDFModelHelper {
   
 
 		  //================================================================================
-	   	//  model   Test V 2.0
+	   	//  model   Test V 4.0
 		//================================================================================
   
  
@@ -71,10 +71,13 @@ public class RDFModelHelper {
 		pf.setNsPrefix("dc",  DC.getURI());	
 		pf.setNsPrefix("lcdccore",LcdcCore.getURI());
 		pf.setNsPrefix("disco",Disco.getURI());
-		pf.setNsPrefix("cardiovitalsigns",Cardiovitalsigns.getURI() );
 		pf.setNsPrefix("lcdcobs", Obs.getURI());
 		pf.setNsPrefix("skos", Skos.getURI());
 		pf.setNsPrefix("qb", Qb.getURI());
+		pf.setNsPrefix("cardiovitalsigns",Cardiovitalsigns.getURI() );
+		pf.setNsPrefix("cardiomedic", "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#");
+		pf.setNsPrefix("cardioblood", "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#");
+		
 		ModelFactory.setDefaultModelPrefixes(pf);
 		
 		     ModelMaker mm=ModelFactory.createMemModelMaker();
@@ -88,14 +91,7 @@ public class RDFModelHelper {
 	
 	    HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef = JaxBinder.catchItemDef(meta);
         ArrayList<ItemDetail> itemDtos = myJax.makeItemsObjects(clinicalData,meta);
-  
-        ///model codeList 
-        
-        HashMap<String, ODMcomplexTypeDefinitionCodeList> codeLists= JaxBinder.catchCodeList(meta);
-        Collection<ODMcomplexTypeDefinitionCodeList>       codeList= codeLists.values();
-      
-        
-     codeListRdf(codeList,mm);
+ 
      	//Cardio Variables 
       VitalCustomModel.variableVital(itemDtos,itemDef,mm);
       VitalCustomModel.generateCardio(itemDtos,itemDef,mm);  
@@ -106,50 +102,8 @@ public class RDFModelHelper {
       SliceCustomModel.sliceBySubject(mm, itemDtos, itemDef, meta);
       SliceCustomModel.sliceByTheme(mm, itemDtos, itemDef, meta);
       SliceCustomModel.sliceByPhase(mm, itemDtos, itemDef, meta);
-     //ModelTester.generateCardio(itemDtos,itemDef,mm);  
+      
   	return mm;
 	  
   }
-  
-
-  /*
-   * Generate RDf CodeList 
-   * void method
-   * version = 0.2.0
-   * */
-  public void codeListRdf(Collection<ODMcomplexTypeDefinitionCodeList> codeLists,ModelMaker mm){
-	  Model model=mm.createModel("Code-List-all");
-	  final String base_Uri="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns";
-	  
-	  for(ODMcomplexTypeDefinitionCodeList codeList:codeLists)
-	  {
-		  List<ODMcomplexTypeDefinitionCodeListItem>  codeL=codeList.getCodeListItem();
-		  
-		 //number belong to codeList 
-		String codeListName=codeList.getName().replaceAll("\\s","");
-		 String oids[]=codeList.getOID().split("_");
-		 String oid=oids[oids.length-1];
-		 
-		 //Each code inside codeList 
-		  for(ODMcomplexTypeDefinitionCodeListItem item:codeL){	  
-			String decodeVal=  item.getDecode().getTranslatedText().get(0).getValue();
-			  
-
-				//value of Decode Capitalized no white space
-		String decodeValCap=WordUtils.capitalizeFully(decodeVal).replaceAll("\\s","");
-		  
-		//Resource and properties 
-		Resource codeResource =model.createResource(base_Uri+"#"+codeListName+oid+"-"+decodeValCap,Skos.Concept);
-		codeResource.addProperty(DC.identifier,	item.getCodedValue());
-		codeResource.addProperty(DC.description,decodeVal);
-		codeResource.addProperty(RDFS.isDefinedBy,base_Uri);
-		codeResource.addProperty(DC.source,"cardio");
-
-		  }		  
-	  }  
-  }
-
-  
- 
-  
 }

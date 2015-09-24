@@ -86,7 +86,7 @@ public class DatabaseHelper {
 			
 			try{
 		
-				String fileName = System.getProperty("user.dir")+"\\RDF_ModelMaker\\"+modelName+".rdf" ;
+				String fileName = System.getProperty("user.dir")+"\\RDF_ModelMaker\\"+modelName+".ttl" ;
 				File file =new File(fileName);
 				FileOutputStream output = new FileOutputStream( file );
 				RDFDataMgr.write(output, model, RDFFormat.TURTLE_BLOCKS);

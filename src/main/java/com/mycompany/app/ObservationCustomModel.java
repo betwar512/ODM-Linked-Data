@@ -17,7 +17,6 @@ import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
-import com.mycompany.app.lcdc.Cardiovitalsigns;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Obs;
 
@@ -50,7 +49,7 @@ public class ObservationCustomModel {
 				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 obsUri=UriCustomHelper.obsBase+theme+"/phase/";
 				 model=mm.createModel("Observation-"+theme);
-				 Property themeP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
+				 Property themeP=model.createProperty(UriCustomHelper.themeBase, theme);
 				  
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
 				String phase="";
@@ -69,7 +68,12 @@ public class ObservationCustomModel {
 				//Obs value
 				Literal value=null;
 				//if not empty 
-				Property pr=model.createProperty(Cardiovitalsigns.getURI(),itemDef.getName());
+				
+			String cardioUri=UriCustomHelper.cardioBase+theme+"/def/cardio-"+theme+"#";
+				
+				
+				
+				Property pr=model.createProperty(cardioUri,itemDef.getName());
 				
 				if(itemDef.getCodeListRef() == null){ //Check if codeList reference exist 
 				
@@ -99,9 +103,18 @@ public class ObservationCustomModel {
 					String coCl[]=codeListOid.split("_");
 					String codeNumber=coCl[coCl.length-1];
 					String cardioVaitalProperty=itemDef.getName()+codeNumber+"-"+decode;
-					Property pr2=model.createProperty(Cardiovitalsigns.getURI(),cardioVaitalProperty);
+					Property pr2=model.createProperty(cardioUri,cardioVaitalProperty);
 					obs.addProperty(pr,pr2);
+					
+					
+					//CodeList 
+					CodeListDecoder.codeListRdf(cardioUri, codeListOid, meta, model);
+					
+					
 				
+					
+					
+					
 					
 				}	  
 		    }

@@ -9,7 +9,7 @@ public class Cardiovitalsigns {
 	/** <p>The ontology model that holds the vocabulary terms</p> */
     private static OntModel m_model = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, null );
     /** <p>The namespace of the vocabulary as a string</p> */
-    public static final String NS = "http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#";
+    public static final String NS = "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#";
     
     /** <p>The namespace of the vocabulary as a string</p>
      *  @see #NS */

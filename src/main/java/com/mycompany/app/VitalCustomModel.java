@@ -55,7 +55,7 @@ public class VitalCustomModel {
 				 
 				 model=mm.createModel("Cardio-"+theme);
 				
-				 Property themP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
+				 Property themP=model.createProperty(UriCustomHelper.themeBase, theme);
 
 				  	//main uri 
 				String uri= typeUri +"#"+ itemDef.getName();
@@ -74,7 +74,7 @@ public class VitalCustomModel {
 					  }	
 					}	
 							//pointing to Variable Def 
-				Property based=model.createProperty(UriCustomHelper.metaBase,itemOid);
+				Property based=model.createProperty(UriCustomHelper.metaBase,"/"+itemOid);
 					
 				r.addProperty(RDFS.isDefinedBy, typeUri)
 				.addProperty(RDFS.label, itemDef.getName())
@@ -116,7 +116,7 @@ public class VitalCustomModel {
 				//Get them type data 
 				String  theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 model=mm.createModel("Variable-"+theme);
-				  Property themP=model.createProperty("http://purl.org/sstats/lcdc/id/theme/", theme);
+				  Property themP=model.createProperty(UriCustomHelper.themeBase, theme);
 				
 
 		     //	String itemOidval=item.getItemOID();	
@@ -135,12 +135,14 @@ public class VitalCustomModel {
 			        
 					 Literal valuevarDef=model.createTypedLiteral(itemDef.getName(),rdfType );
 					 
-					Statement stVarDef=model.createStatement(r, LcdcCore.variableDefinitionKey, valuevarDef);
-					 r.addProperty(LcdcCore.variableDefinitionKey,valuevarDef);
+					
+					
 					 Literal valueRepeat=model.createTypedLiteral(itemDto.repeating,XSDDatatype.XSDboolean);	
 					 Literal valueDatatype=model.createTypedLiteral(itemDef.getDataType()
 							 .toString()
 							   .toLowerCase(),XSDDatatype.XSDstring);	 
+					 
+					 		 Statement stVarDef=model.createStatement(r, LcdcCore.variableDefinitionKey, valuevarDef);
 					 		 Statement stDatetype=model.createStatement(r, Odm.dataType, valueDatatype);
 							 Statement stRepeat=model.createStatement(r,Odm.repeating, valueRepeat);
 							 Statement stItem=model.createStatement(r, Odm.ItemOid, valueItem);
@@ -157,6 +159,7 @@ public class VitalCustomModel {
 					 r.addProperty(RDFS.comment, itemDef.getComment());
 					 r.addProperty(RDFS.isDefinedBy, UriCustomHelper.metaBase);
 				   	 r.addProperty(RDFS.label, itemDef.getName()); //label
+				   	 r.addProperty(LcdcCore.variableDefinitionKey,valuevarDef);
 				   	 r.addProperty(LcdcCore.themeId, themP);
 			    }//i
 			  
