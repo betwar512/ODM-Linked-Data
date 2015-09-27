@@ -17,6 +17,7 @@ import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.OWL;
 import com.hp.hpl.jena.vocabulary.RDFS;
 import com.hp.hpl.jena.vocabulary.XSD;
+import com.mycompany.app.lcdc.Cardiovitalsigns;
 import com.mycompany.app.lcdc.Disco;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Odm;
@@ -75,11 +76,12 @@ public class VitalCustomModel {
 					}	
 							//pointing to Variable Def 
 				Property based=model.createProperty(UriCustomHelper.metaBase,"/"+itemOid);
+				Property findings=model.createProperty("","Findings");
 					
 				r.addProperty(RDFS.isDefinedBy, typeUri)
 				.addProperty(RDFS.label, itemDef.getName())
 				.addProperty(RDFS.comment, itemDef.getComment())
-				.addProperty(RDFS.domain, "Finding")
+				.addProperty(RDFS.domain, findings)
 				.addProperty(DC.source, "cardio")
 				.addProperty(DC.identifier, itemOid)
 				.addProperty(Disco.basedOn, based)

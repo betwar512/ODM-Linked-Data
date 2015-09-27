@@ -118,6 +118,7 @@ public class JaxBinder {
 
 	/*
 	 *  Get for Object ClinicalData
+	 *
 	 * */
 	public  ODMcomplexTypeDefinitionClinicalData getClinicalData(String inputFile){
 		
@@ -159,7 +160,9 @@ public class JaxBinder {
 		/*
 		 * List Customer Object ItemDetail Class
 		 * input ClinicaData 
+		 * 
 		 * */
+	
 	public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalData clinicalData,ODMcomplexTypeDefinitionMetaDataVersion metaData){
 	
 	//	HashMap<String,ArrayList<ItemDetail>> itemDetailList=new HashMap<String,ArrayList<ItemDetail>>();
@@ -215,24 +218,13 @@ public class JaxBinder {
 			  itemDto.repeating=repeat;
 			  
 			  itemDtos.add(itemDto);
-			  	//ItemsDto ArrayList 
-//			  if(StringCustomHelper.vitalSeparate(itemDto.itemGroupOid)){
-//				  itemsDtoVital.add(itemDto);
-//			  }else if(StringCustomHelper.bloodSeparate(itemDto.itemGroupOid)){
-//				  itemsDtoBlood.add(itemDto);
-//			  }else if(StringCustomHelper.medicinSeparate(itemDto.itemGroupOid)){
-//				  itemsDtoMedication.add(itemDto);
-//			  }
+
 
 		  }//ItemGroupData
 	  }//FormData
 	 }
 	}	
-	//itemDetailList.put("vital", itemsDtoVital);
-	//itemDetailList.put("blood", itemsDtoBlood);
-//	itemDetailList.put("medic", itemsDtoMedication);
-	
-	
+
 	return itemDtos;
  }
 

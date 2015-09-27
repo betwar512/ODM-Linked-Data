@@ -9,7 +9,7 @@ public class UriCustomHelper {
 	
 	public static final String metaBase="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
 	
-	public static final String sliceBase="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/slice/";
+	public static final String sliceBase="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/";
 	
 	public static final String themeBase="http://purl.org/sstats/lcdc/id/theme/";
 	

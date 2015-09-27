@@ -3,19 +3,17 @@
  */
 package com.mycompany.app;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
-
 import org.apache.commons.lang3.text.WordUtils;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionCodeList;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionCodeListItem;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
-
 import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.DC;
+import com.hp.hpl.jena.vocabulary.OWL;
+import com.hp.hpl.jena.vocabulary.RDF;
 import com.hp.hpl.jena.vocabulary.RDFS;
 import com.mycompany.app.lcdc.Skos;
 
@@ -84,9 +82,10 @@ public class CodeListDecoder {
 
 					//value of Decode Capitalized no white space
 			String decodeValCap=WordUtils.capitalizeFully(decodeVal).replaceAll("\\s","");
-			  
+  
 			//Resource and properties 
-			Resource codeResource =model.createResource(base_Uri+codeListName+oid+"-"+decodeValCap,Skos.Concept);
+			Resource codeResource =model.createResource(base_Uri+codeListName+oid+"-"+decodeValCap,OWL.Class);	
+			codeResource.addProperty(RDF.type,Skos.Concept);
 			codeResource.addProperty(DC.identifier,	item.getCodedValue());
 			codeResource.addProperty(DC.description,decodeVal);
 			codeResource.addProperty(RDFS.isDefinedBy,base_Uri);

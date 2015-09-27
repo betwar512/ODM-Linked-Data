@@ -26,7 +26,7 @@ public class ObservationCustomModel {
 	 
 	  /*
 	   * Observation model 
-	   * version 1.0.0
+	   * version 1.2.1
 	   * */
 	  public static void createObservation
 	  (ModelMaker mm,ArrayList<ItemDetail> itemDtos,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ODMcomplexTypeDefinitionMetaDataVersion meta){
@@ -38,13 +38,14 @@ public class ObservationCustomModel {
 			  String theme="";
 			  String baseUriType="http://purl.org/sstats/lcdc/id/";
 			  String obsUri="";
-	
+			  	
+		String repeatKey=itemDto.itemRepeatKey;
 		
 			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
 			for (ODMcomplexTypeDefinitionItemData item : itemList) {  
 				String itemOidName=item.getItemOID();
 				
-
+					
 				
 				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 obsUri=UriCustomHelper.obsBase+theme+"/phase/";
@@ -56,7 +57,12 @@ public class ObservationCustomModel {
 				String subject="";
 				//Create observation uri 
 				Resource obs=null;
-			    String obsPhase=obsUri+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
+			    String obsPhase=obsUri+ itemDto.eventOid+"/subject/"+itemDto.subjectKey; 
+			    
+			    //Add groupLey if exist 
+			    if(repeatKey!=null)
+			    	obsPhase+="/key/"+repeatKey;
+
 					phase=baseUriType+"phase/"+itemDto.eventOid;
 					subject=baseUriType+"subject/"+itemDto.subjectKey;
 				//Observation resource
@@ -67,8 +73,7 @@ public class ObservationCustomModel {
 				 
 				//Obs value
 				Literal value=null;
-				//if not empty 
-				
+
 			String cardioUri=UriCustomHelper.cardioBase+theme+"/def/cardio-"+theme+"#";
 				
 				
@@ -105,17 +110,9 @@ public class ObservationCustomModel {
 					String cardioVaitalProperty=itemDef.getName()+codeNumber+"-"+decode;
 					Property pr2=model.createProperty(cardioUri,cardioVaitalProperty);
 					obs.addProperty(pr,pr2);
-					
-					
 					//CodeList 
 					CodeListDecoder.codeListRdf(cardioUri, codeListOid, meta, model);
-					
-					
-				
-					
-					
-					
-					
+
 				}	  
 		    }
 

@@ -71,7 +71,7 @@ public class SliceCustomModel {
 							
 							  String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
 									
-							Resource r=model.createResource(UriCustomHelper.sliceBase+"subject/"+subject,Qb.Slice);			
+							Resource r=model.createResource(UriCustomHelper.sliceBase+"cs-slice"+"/subject/"+subject,Qb.Slice);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
 			   }	  
@@ -116,7 +116,7 @@ public class SliceCustomModel {
 							
 						  String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
 									
-							Resource r=model.createResource(UriCustomHelper.sliceBase+"theme/"+theme,Qb.Slice);			
+							Resource r=model.createResource(UriCustomHelper.sliceBase+"ds-slice"+"/theme/"+theme,Qb.Slice);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
 			   }	  
@@ -158,7 +158,7 @@ public class SliceCustomModel {
 							
 						  String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
 									
-							Resource r=model.createResource(UriCustomHelper.sliceBase+"phase/"+itemDto.eventOid,Qb.Slice);			
+							Resource r=model.createResource(UriCustomHelper.sliceBase+"tc-slice"+"/phase/"+itemDto.eventOid,Qb.Slice);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
 			   }	  

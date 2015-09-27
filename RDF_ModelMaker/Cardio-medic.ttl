@@ -18,7 +18,7 @@ cardiomedic:MedicationDoseUnit
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONDOSEUNIT_2971> ;
         dc:identifier     "I_MEDIC_MEDICATIONDOSEUNIT_2971" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "Units for the MedicationDose.  Examples: ng, mg, or mg/kg." ;
         rdfs:label        "MedicationDoseUnit" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
@@ -29,7 +29,7 @@ cardiomedic:MedicationEndDate
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONENDDATE_2617> ;
         dc:identifier     "I_MEDIC_MEDICATIONENDDATE_2617" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "Denotes the date at which the patient ceased to take the medication. If the medication intake is still ongoing, this field can be left blank." ;
         rdfs:label        "MedicationEndDate" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
@@ -40,7 +40,7 @@ cardiomedic:MedicationFreq
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONFREQ_7034> ;
         dc:identifier     "I_MEDIC_MEDICATIONFREQ_7034" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "Dose frequency per interval for the medication. Usually expressed as the number of repeated administrations of MedicationDose within a specific time period. Examples: BID (twice daily), Q12H (every 12 hours)." ;
         rdfs:label        "MedicationFreq" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
@@ -51,7 +51,7 @@ cardiomedic:MedicationName
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONNAME_2443> ;
         dc:identifier     "I_MEDIC_MEDICATIONNAME_2443" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "Standardized or dictionary-derived text description - in this case from the Australian Medicines Terminology. The sponsor is expected to provide the dictionary name, unique code identifer, terminology identifier and version used to map the terms" ;
         rdfs:label        "MedicationName" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
@@ -62,7 +62,7 @@ cardiomedic:OntologyID
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_ONTOLOGYID_5156> ;
         dc:identifier     "I_MEDIC_ONTOLOGYID_5156" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "Unique ID for the AMT ontology" ;
         rdfs:label        "OntologyID" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
@@ -73,7 +73,7 @@ cardiomedic:OntologyVersion
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_ONTOLOGYVERSION_7814> ;
         dc:identifier     "I_MEDIC_ONTOLOGYVERSION_7814" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "Version for the AMT ontology" ;
         rdfs:label        "OntologyVersion" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
@@ -84,7 +84,7 @@ cardiomedic:MedicationRoute
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONROUTE> ;
         dc:identifier     "I_MEDIC_MEDICATIONROUTE" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "Medication's route of administration. See CMROUTE." ;
         rdfs:label        "MedicationRoute" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
@@ -97,8 +97,8 @@ cardiomedic:MedicationDose
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONDOSE_1998> ;
         rdfs:range        xsd:float ;
         rdfs:comment      "Amount of medication taken." ;
-        rdfs:domain       "Finding" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
+        rdfs:domain       <Findings> ;
         rdf:type          owl:DatatypeProperty ;
         dc:source         "cardio" .
 
@@ -107,7 +107,7 @@ cardiomedic:MedicationCode
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONCODE_1591> ;
         dc:identifier     "I_MEDIC_MEDICATIONCODE_1591" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "AMT Code for this medication" ;
         rdfs:label        "MedicationCode" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
@@ -118,7 +118,7 @@ cardiomedic:MedicationStartDate
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONSTARTDATE_6157> ;
         dc:identifier     "I_MEDIC_MEDICATIONSTARTDATE_6157" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "Denotes the start date at which the medication was taken" ;
         rdfs:label        "MedicationStartDate" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
@@ -129,7 +129,7 @@ cardiomedic:MedicationDoseForm
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONDOSEFORM_3200> ;
         dc:identifier     "I_MEDIC_MEDICATIONDOSEFORM_3200" ;
         dc:source         "cardio" ;
-        rdfs:domain       "Finding" ;
+        rdfs:domain       <Findings> ;
         rdfs:comment      "Dose form for the medication. Examples: TABLET, LOTION." ;
         rdfs:label        "MedicationDoseForm" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic" ;
