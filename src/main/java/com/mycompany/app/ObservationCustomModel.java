@@ -19,6 +19,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Obs;
+import com.mycompany.app.lcdc.Snomed;
 
 public class ObservationCustomModel {
 
@@ -26,10 +27,16 @@ public class ObservationCustomModel {
 	 
 	  /*
 	   * Observation model 
-	   * version 1.2.1
+	   * version 2.1.0
+	   * Input (ItemDetails,itemDefinition(metaOdm),metaData)
+	   * returnType Void 
+	   * Snomed added 
+	   * Subject changed to Resource 
 	   * */
 	  public static void createObservation
-	  (ModelMaker mm,ArrayList<ItemDetail> itemDtos,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs,ODMcomplexTypeDefinitionMetaDataVersion meta){
+	  (ModelMaker mm,ArrayList<ItemDetail> itemDtos 
+			  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
+			  ,ODMcomplexTypeDefinitionMetaDataVersion meta){
 		  Model model=null;
 	
 		  
@@ -37,19 +44,21 @@ public class ObservationCustomModel {
 			  	//ItemsDto typeData 
 			  String theme="";
 			  String baseUriType="http://purl.org/sstats/lcdc/id/";
-			  String obsUri="";
-			  	
-		String repeatKey=itemDto.itemRepeatKey;
+			  String obsUri=""; 	
+			  String repeatKey=itemDto.itemRepeatKey;
 		
 			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
+			
 			for (ODMcomplexTypeDefinitionItemData item : itemList) {  
-				String itemOidName=item.getItemOID();
 				
-					
 				
+		  String itemOidName=item.getItemOID();
 				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 obsUri=UriCustomHelper.obsBase+theme+"/phase/";
 				 model=mm.createModel("Observation-"+theme);
+				 //add snomed uri to model 
+				 model.setNsPrefix("snomed", Snomed.snomedUri);
+				 
 				 Property themeP=model.createProperty(UriCustomHelper.themeBase, theme);
 				  
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
@@ -59,44 +68,65 @@ public class ObservationCustomModel {
 				Resource obs=null;
 			    String obsPhase=obsUri+ itemDto.eventOid+"/subject/"+itemDto.subjectKey; 
 			    
-			    //Add groupLey if exist 
-			    if(repeatKey!=null)
+			    //Add groupKey if exist 
+			    if(itemDto.repeating)
 			    	obsPhase+="/key/"+repeatKey;
+					
 
-					phase=baseUriType+"phase/"+itemDto.eventOid;
-					subject=baseUriType+"subject/"+itemDto.subjectKey;
-				//Observation resource
-				 obs=model.createResource(obsPhase,Obs.OBSERVATION);
-				 obs.addProperty(LcdcCore.phase, phase)
-				 .addProperty(LcdcCore.subject, subject)
-				 .addProperty(LcdcCore.themeId, themeP);
+			    //String Uri phase subject 
+			    
+			    	phase=baseUriType+"phase/"+itemDto.eventOid;
+			    	subject=baseUriType+"subject/"+itemDto.subjectKey;
+			    	
+			  // resources Subject Phase	
+			    	
+					Resource subjectResource=model.createResource(subject);
+					Resource phaseResource=model.createResource(phase);
+					
+				 obs=model.createResource(obsPhase,Obs.OBSERVATION);//Observation resource
+				 
+				 
+				 
+				 obs.addProperty(LcdcCore.phase, phaseResource)
+				 	   .addProperty(LcdcCore.subject, subjectResource)
+				 	   		.addProperty(LcdcCore.theme, themeP);
 				 
 				//Obs value
 				Literal value=null;
 
-			String cardioUri=UriCustomHelper.cardioBase+theme+"/def/cardio-"+theme+"#";
-				
-				
-				
+				String cardioUri=UriCustomHelper.cardioBase+theme+"/def/cardio-"+theme+"#";
+
 				Property pr=model.createProperty(cardioUri,itemDef.getName());
+				
+				if(itemDef.getName().equals("MedicationCode")){ //MedicationCode 
+					
+					Property snomedP=model.createProperty(Snomed.snomedUri, item.getValue());
+					
+					//create statement with snomed
+					Statement medicationSnomed=model.createStatement(obs, pr,snomedP);
+					model.add(medicationSnomed);
+			
+				}else{//not medicationCode 
+				
 				
 				if(itemDef.getCodeListRef() == null){ //Check if codeList reference exist 
 				
-				if(!itemDef.getRangeCheck().isEmpty()){
-					String range=itemDef.getDataType().toString();
+				if(!itemDef.getRangeCheck().isEmpty()){//check if item had rangeChceck or not (RangeCheck type integer or float)
+					
+					String range=itemDef.getDataType().toString(); //compare String 
 					if(range.contains("INTEGER")){
 					value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDinteger);
 					
 					}else if(range.contains("FLOAT")){
 						
 						value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDfloat);
-					}else{
-					
+					}else{//if none of these types then create with String 
+							
 						value=model.createTypedLiteral(item.getValue());
 					}		
 					Statement stVal=model.createStatement(obs,pr,value);
 					model.add(stVal);
-				}else{
+				}else{//Range check null add property 
 		
 					obs.addProperty(pr,item.getValue());
 						
@@ -115,6 +145,7 @@ public class ObservationCustomModel {
 
 				}	  
 		    }
+		}//check for medicationCode
 
 	    }
 	  

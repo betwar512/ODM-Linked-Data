@@ -7,10 +7,14 @@ import java.util.Set;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
+
+import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.vocabulary.OWL2;
+import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Qb;
 
 /**
@@ -56,9 +60,7 @@ public class SliceCustomModel {
 		  for (String subject:key){
 			  
 			  List<ItemDetail> listPhases=groupBySubject.get(subject);
-			  
-			  
-			  
+
 			  for (ItemDetail itemDto : listPhases) { 
 	
 					//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
@@ -67,13 +69,25 @@ public class SliceCustomModel {
 							String itemOidName=item.getItemOID();
 						
 							//Create observation uri 
-							String theme=StringCustomHelper.groupType(itemOidName);
-							
-							  String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
-									
+							String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+							String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
+								//Adding Key
+							  if(itemDto.repeating)
+							    	obsPhase+="/key/"+itemDto.itemRepeatKey;
+							  
 							Resource r=model.createResource(UriCustomHelper.sliceBase+"cs-slice"+"/subject/"+subject,Qb.Slice);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
+							
+							//Resource for Subject 
+												
+							Resource subjectResource=model.createResource(UriCustomHelper.purl+"subject/"+subject,OWL2.NamedIndividual);
+						    Literal resourceLit=model.createTypedLiteral(subject,LcdcCore.subjectcode.getURI());
+							subjectResource.addProperty(LcdcCore.themeId,resourceLit);
+								
+							//Add subject to slice 
+							r.addProperty(LcdcCore.subject, subjectResource);
+							
 			   }	  
 			 }	  
 		  }
@@ -84,7 +98,8 @@ public class SliceCustomModel {
 	
 	/*
 	 * Slice
-	 * Generate Slice by Theme 
+	 * Generate Slice by Theme
+	 *  
 	 * */
 	
 	
@@ -112,13 +127,23 @@ public class SliceCustomModel {
 							String itemOidName=item.getItemOID();
 						
 							//get Theme
-							String theme=StringCustomHelper.groupType(itemOidName);
-							
-						  String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
-									
+							String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+						    String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
+							//Adding Key	
+						    if(itemDto.repeating)
+						    	obsPhase+="/key/"+itemDto.itemRepeatKey;
+
 							Resource r=model.createResource(UriCustomHelper.sliceBase+"ds-slice"+"/theme/"+theme,Qb.Slice);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
+							
+							//Add them Resource NameINdevidual 
+							Resource themeResource=model.createResource(UriCustomHelper.purl+"theme/"+theme,OWL2.NamedIndividual);
+						    Literal resourceLit=model.createTypedLiteral(theme,LcdcCore.themecode.getURI());
+							themeResource.addProperty(LcdcCore.themeKey,resourceLit);
+								
+							//Add theme to slice 
+							r.addProperty(LcdcCore.theme, themeResource);
 			   }	  
 			 }	  
 		  }
@@ -128,6 +153,7 @@ public class SliceCustomModel {
 	/*
 	 * Slice
 	 * Generate Slice by Theme 
+	 * 
 	 * */
 	
 	
@@ -147,24 +173,35 @@ public class SliceCustomModel {
 			  
 			  
 			  for (ItemDetail itemDto : listPhases) { 
-	
-					//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
+				  		
+				  String phase=itemDto.eventOid;
+				
 						List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
 						for (ODMcomplexTypeDefinitionItemData item : itemList) {  
 							String itemOidName=item.getItemOID();
 						
 							//get Theme
-							String theme=StringCustomHelper.groupType(itemOidName);
+							String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 							
-						  String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
-									
+						  String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ phase+"/subject/"+itemDto.subjectKey;  
+							//Adding Key
+						  if(itemDto.repeating)
+						    	obsPhase+="/key/"+itemDto.itemRepeatKey;
+						  
 							Resource r=model.createResource(UriCustomHelper.sliceBase+"tc-slice"+"/phase/"+itemDto.eventOid,Qb.Slice);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
+
+							//Add Phase Resource NameINdevidual 
+							Resource phaseResource=model.createResource(UriCustomHelper.purl+"phase/"+phase,OWL2.NamedIndividual);
+						    Literal resourceLit=model.createTypedLiteral(phase,LcdcCore.phasecode.getURI());
+						    phaseResource.addProperty(LcdcCore.phaseKey,resourceLit);		
+							//Add theme to slice 
+							r.addProperty(LcdcCore.phase, phaseResource);
+			
 			   }	  
 			 }	  
 		  }
-
 	    }
 	
 	

@@ -25,7 +25,7 @@ public class App
     //	Date date = new Date();
     //	String time=dateFormat.format(date); //2014/08/06 15:59:48
     RDFModelHelper modelHelper=new RDFModelHelper();	
-    	String filePath="src/main/java/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml";
+    	String filePath="src/main/java/resources/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml";
   		
     	ModelMaker mm=modelHelper.ontoModelTest(filePath);
     

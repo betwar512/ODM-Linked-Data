@@ -9,6 +9,8 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.vocabulary.DC;
+import com.mycompany.app.lcdc.Cardioblood;
+import com.mycompany.app.lcdc.Cardiomedic;
 import com.mycompany.app.lcdc.Cardiovitalsigns;
 import com.mycompany.app.lcdc.Disco;
 import com.mycompany.app.lcdc.LcdcCore;
@@ -58,8 +60,7 @@ public class RDFModelHelper {
 
 		PrefixMapping pf=PrefixMapping.Factory.create();
 
-			pf.withDefaultMappings(PrefixMapping.Standard);
-		
+		pf.withDefaultMappings(PrefixMapping.Standard);
 		pf.setNsPrefix("lcdcodm", Odm.getURI());
 		pf.setNsPrefix("dc",  DC.getURI());	
 		pf.setNsPrefix("lcdccore",LcdcCore.getURI());
@@ -68,15 +69,15 @@ public class RDFModelHelper {
 		pf.setNsPrefix("skos", Skos.getURI());
 		pf.setNsPrefix("qb", Qb.getURI());
 		pf.setNsPrefix("cardiovitalsigns",Cardiovitalsigns.getURI() );
-		pf.setNsPrefix("cardiomedic", "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#");
-		pf.setNsPrefix("cardioblood", "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#");
+		pf.setNsPrefix("cardiomedic",Cardiomedic.getURI());
+		pf.setNsPrefix("cardioblood",Cardioblood.getURI());
 		
 		ModelFactory.setDefaultModelPrefixes(pf);
 		
 		     ModelMaker mm=ModelFactory.createMemModelMaker();
 		
 		     	
-		    
+		    //Unlarshal binding 
 			JaxBinder myJax=new JaxBinder();
 			ODMcomplexTypeDefinitionClinicalData clinicalData=
 			myJax.getClinicalData(filePath);
@@ -86,8 +87,8 @@ public class RDFModelHelper {
         ArrayList<ItemDetail> itemDtos = myJax.makeItemsObjects(clinicalData,meta);
  
      	//Cardio Variables 
-      VitalCustomModel.variableVital(itemDtos,itemDef,mm);
-      VitalCustomModel.generateCardio(itemDtos,itemDef,mm);  
+      VariableCustomModel.generateVariable(itemDtos,itemDef,mm);
+      CardioCustomModel.generateCardio(itemDtos,itemDef,mm);  
       
       //Observation Models 
       ObservationCustomModel.createObservation(mm,itemDtos,itemDef,meta);

@@ -123,6 +123,7 @@ public class JaxBinder {
 	public  ODMcomplexTypeDefinitionClinicalData getClinicalData(String inputFile){
 		
 		
+		ODMcomplexTypeDefinitionClinicalData clinical=new ODMcomplexTypeDefinitionClinicalData();
 		
 		if(inputFile.length()==0){
 			
@@ -144,7 +145,7 @@ public class JaxBinder {
 			    System.out.println("o created");
 			   List<ODMcomplexTypeDefinitionClinicalData> clinicalData=o.getClinicalData();
 			   
-				return 	clinicalData.get(0);
+			   clinical=clinicalData.get(0);
 				
 	           }catch(JAXBException e){
 	        	   
@@ -152,7 +153,7 @@ public class JaxBinder {
 	        	   e.printStackTrace();   
 	         }
 		}
-	return null;
+	return clinical;
 	}
 	
 	
@@ -170,8 +171,7 @@ public class JaxBinder {
 		HashMap<String,ODMcomplexTypeDefinitionItemGroupDef> itemGroupDefs=getItemGroupDef(metaData);	
 		
 		ArrayList<ItemDetail> itemDtos=new ArrayList<ItemDetail>();
-	//	ArrayList<ItemDetail> itemsDtoBlood=new ArrayList<ItemDetail>();
-	//	ArrayList<ItemDetail> itemsDtoMedication=new ArrayList<ItemDetail>();
+
 		//subjectData 
 	List<ODMcomplexTypeDefinitionSubjectData> subjectData=clinicalData.getSubjectData();
 	//make GroupItemOut 

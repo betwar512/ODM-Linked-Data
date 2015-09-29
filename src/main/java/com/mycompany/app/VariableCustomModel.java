@@ -1,9 +1,13 @@
 package com.mycompany.app;
+
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
+
 import com.hp.hpl.jena.datatypes.RDFDatatype;
 import com.hp.hpl.jena.datatypes.TypeMapper;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
@@ -14,85 +18,16 @@ import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.vocabulary.DC;
-import com.hp.hpl.jena.vocabulary.OWL;
+import com.hp.hpl.jena.vocabulary.OWL2;
 import com.hp.hpl.jena.vocabulary.RDFS;
-import com.hp.hpl.jena.vocabulary.XSD;
-import com.mycompany.app.lcdc.Cardiovitalsigns;
-import com.mycompany.app.lcdc.Disco;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Odm;
+import com.mycompany.app.lcdc.Skos;
+import com.mycompany.app.lcdc.Snomed;
 
-/**
- * @author Abbas H Safaie
- *
- */
-public class VitalCustomModel {
+public class VariableCustomModel {
+
 	
-
-	  /*
-	   * Model to create vital-vitalSign
-	   * */
-	  public static void generateCardio(ArrayList<ItemDetail> itemDtos
-			  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
-			  ,ModelMaker mm){
-		  
-		  Model model=null;
-	
-		  for (ItemDetail itemDto : itemDtos) { 	
-
-		//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
-			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
-			for (ODMcomplexTypeDefinitionItemData item : itemList) {  
-				String itemOidName=item.getItemOID();
-		     //	String itemOidval=item.getItemOID();	
-		     	//Find itemDef belong to OpenClinica Item 
-				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
-			//	List<ODMcomplexTypeDefinitionRangeCheck> listRange=itemDef.getRangeCheck();
-
-
-				String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
-				 
-				String typeUri=UriCustomHelper.cardioBase+theme+"/def/cardio-"+theme;
-				 
-				 model=mm.createModel("Cardio-"+theme);
-				
-				 Property themP=model.createProperty(UriCustomHelper.themeBase, theme);
-
-				  	//main uri 
-				String uri= typeUri +"#"+ itemDef.getName();
-				String itemOid=item.getItemOID();
-				//vital Resource
-				Resource r=model.createResource(uri,OWL.DatatypeProperty);
-		
-					String range=itemDef.getDataType().toString();
-					
-					if(range.length()>0){
-					if(range.contains("INTEGER")){
-						r.addProperty(RDFS.range, XSD.integer);
-				
-					}else if(range.contains("FLOAT")){
-						r.addProperty(RDFS.range, XSD.xfloat);		
-					  }	
-					}	
-							//pointing to Variable Def 
-				Property based=model.createProperty(UriCustomHelper.metaBase,"/"+itemOid);
-				Property findings=model.createProperty("","Findings");
-					
-				r.addProperty(RDFS.isDefinedBy, typeUri)
-				.addProperty(RDFS.label, itemDef.getName())
-				.addProperty(RDFS.comment, itemDef.getComment())
-				.addProperty(RDFS.domain, findings)
-				.addProperty(DC.source, "cardio")
-				.addProperty(DC.identifier, itemOid)
-				.addProperty(Disco.basedOn, based)
-				.addProperty(LcdcCore.themeId,themP);		
-				
-			//	model.add(stVariableId);
-		     }//for item 
-		  }//for itemDto  
-	  }
-	  
-
 	  
 	  /*
 	   * Model Variable Vital 
@@ -100,12 +35,14 @@ public class VitalCustomModel {
 	   * Void 
 	   * 
 	   * */
-	  public static void variableVital
+	  public static void generateVariable
 	  (ArrayList<ItemDetail> itemDtos
 			  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
 			  ,ModelMaker mm){
+		  //model for variable 
 		  Model model=null;
-	
+		  //Model for Linkset
+		  Model modelLs=null;
 
 		  for (ItemDetail itemDto : itemDtos) { 
 	
@@ -163,9 +100,42 @@ public class VitalCustomModel {
 				   	 r.addProperty(RDFS.label, itemDef.getName()); //label
 				   	 r.addProperty(LcdcCore.variableDefinitionKey,valuevarDef);
 				   	 r.addProperty(LcdcCore.themeId, themP);
+				   	 
+				   	 
+				   	 
+
+					  //================================================================================
+				   	//  adding named individual uri 
+					//================================================================================
+			  
+			 
+				   	 
+				   	modelLs=mm.createModel("Linkset-"+theme);
+				   	
+				   	modelLs.setNsPrefix("snomed", Snomed.snomedUri);
+				   	modelLs.setNsPrefix("snomedmod", Snomed.snomedmodUri);
+				   	modelLs.setNsPrefix("amt", Snomed.amtUri);
+				   	modelLs.setNsPrefix("skos",Skos.getURI());
+				   	Resource linkSet=modelLs.createResource(uri);
+				   	Resource namedIndv=null;
+				   	
+				   	String snomedUri="";
+				   	try {
+						 snomedUri=CsvHelper.getLastColumn(itemDef.getName()); //matched snomedUri 
+						  namedIndv=modelLs.createResource(snomedUri,OWL2.NamedIndividual); //Resource nameIndivitual
+							linkSet.addProperty(Skos.exactMatch, namedIndv); //add nameIndividual Resource to llinkSet Resource
+						 
+					} catch (FileNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				   	 
+				   
+				   	 namedIndv.addProperty(RDFS.label, itemDef.getName());
+				   	 
+				   	 
 			    }//i
 			  
 		     }//For loop item		
 		  }
-	  
 }

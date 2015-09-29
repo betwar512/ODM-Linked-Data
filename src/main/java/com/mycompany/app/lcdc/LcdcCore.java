@@ -34,6 +34,8 @@ public class LcdcCore {
     public static final ObjectProperty obsInterval = m_model.createObjectProperty( "http://purl.org/sstats/lcdc/def/core#obsInterval" );
 
     public static final ObjectProperty phase = m_model.createObjectProperty( "http://purl.org/sstats/lcdc/def/core#phase" );
+    
+    public static final ObjectProperty theme = m_model.createObjectProperty( "http://purl.org/sstats/lcdc/def/core#theme" );
 
     public static final ObjectProperty phaseInterval = m_model.createObjectProperty( "http://purl.org/sstats/lcdc/def/core#phaseInterval" );
 
@@ -64,6 +66,10 @@ public class LcdcCore {
     public static final DatatypeProperty subjectKey = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/core#subjectKey" );
 
     public static final DatatypeProperty themeId = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/core#themeId" );
+    
+    
+    //Edit by A H Safaie
+    public static final DatatypeProperty themeKey = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/core#themeKey" );
 
     public static final DatatypeProperty variableDefinitionKey = m_model.createDatatypeProperty( "http://purl.org/sstats/lcdc/def/core#variableDefinitionKey" );
 

@@ -13,4 +13,6 @@ public class UriCustomHelper {
 	
 	public static final String themeBase="http://purl.org/sstats/lcdc/id/theme/";
 	
+	public static final String purl="http://purl.org/sstats/lcdc/id/";
+	
 }
