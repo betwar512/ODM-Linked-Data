@@ -56,7 +56,7 @@ public class RDFModelHelper {
   
  
 //Test Method to call 
-  public ModelMaker ontoModelTest(String filePath){
+  public ModelMaker modelHandler(String filePath){
 
 		PrefixMapping pf=PrefixMapping.Factory.create();
 
@@ -88,14 +88,14 @@ public class RDFModelHelper {
  
      	//Cardio Variables 
       VariableCustomModel.generateVariable(itemDtos,itemDef,mm);
-      CardioCustomModel.generateCardio(itemDtos,itemDef,mm);  
+        CardioCustomModel.generateCardio(itemDtos,itemDef,mm);  
       
       //Observation Models 
       ObservationCustomModel.createObservation(mm,itemDtos,itemDef,meta);
       //Slice Models 
       SliceCustomModel.sliceBySubject(mm, itemDtos, itemDef, meta);
-      SliceCustomModel.sliceByTheme(mm, itemDtos, itemDef, meta);
-      SliceCustomModel.sliceByPhase(mm, itemDtos, itemDef, meta);
+      SliceCustomModel.sliceByTheme( mm,  itemDtos, itemDef, meta);
+      SliceCustomModel.sliceByPhase( mm,  itemDtos, itemDef, meta);
       
   	return mm;
 	  

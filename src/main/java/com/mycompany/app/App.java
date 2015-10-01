@@ -27,14 +27,14 @@ public class App
     RDFModelHelper modelHelper=new RDFModelHelper();	
     	String filePath="src/main/java/resources/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml";
   		
-    	ModelMaker mm=modelHelper.ontoModelTest(filePath);
+    	ModelMaker mm=modelHelper.modelHandler(filePath);
     
     	DatabaseHelper dbh=new 	DatabaseHelper();
   	
     		
- 	dbh.writeModel(mm);
+ 	//dbh.writeModel(mm);
     dbh.saveToFile(mm);
-
+    //dbh.closeCon();
     		
 //    		 String queryString =        
 //                     "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" +
@@ -79,7 +79,7 @@ public class App
         
         
         
-        dbh.closeCon();
+      
       
         
         

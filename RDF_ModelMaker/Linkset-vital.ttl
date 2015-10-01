@@ -1,0 +1,92 @@
+@prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#> .
+@prefix cardioblood:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
+@prefix snomed:  <http://snomed.info/sct/32506021000036107/version/20150531/id/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco:  <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix amt:  <http://snomed.info/sct/900062011000036108/version/20150831/id/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
+@prefix cardiomedic:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#> .
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
+@prefix snomedmod:  <http://snomed.info/sct/900000000000012004/version/20150831/id/> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPART>
+        skos:exactMatch  snomed:38866009 .
+
+snomed:410669006  rdfs:label  "Time" ;
+        rdf:type    owl:NamedIndividual .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPOSITION>
+        skos:exactMatch  snomed:397155001 .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_ABDOMINALCIRCUMFERENCE_5194>
+        skos:exactMatch  snomed:396552003 .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_SYSTOLICBP_1335>
+        skos:exactMatch  snomed:271649006 .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTAKENBY>
+        skos:exactMatch  snomed:125676002 .
+
+snomed:397155001  rdfs:label  "Body position" ;
+        rdf:type    owl:NamedIndividual .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_SYSTOLICBP_1220>
+        skos:exactMatch  snomed:271649006 .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTIME>
+        skos:exactMatch  snomed:410669006 .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_HEARTRATE_8662>
+        skos:exactMatch  snomed:364075005 .
+
+snomed:60621009  rdfs:label  "Body mass index" ;
+        rdf:type    owl:NamedIndividual .
+
+snomed:396552003  rdfs:label  "Abdominal circumference" ;
+        rdf:type    owl:NamedIndividual .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_DIASTOLICBP_37>
+        skos:exactMatch  snomed:271650006 .
+
+snomed:271650006  rdfs:label  "Diastolic blood pressure" ;
+        rdf:type    owl:NamedIndividual .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_BMI_6271>
+        skos:exactMatch  snomed:60621009 .
+
+snomed:364075005  rdfs:label  "Heart rate" ;
+        rdf:type    owl:NamedIndividual .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_HEIGHT_3150>
+        skos:exactMatch  snomed:50373000 .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_DIASTOLICBP_4036>
+        skos:exactMatch  snomed:271650006 .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_HEARTRATE_7515>
+        skos:exactMatch  snomed:364075005 .
+
+snomed:271649006  rdfs:label  "systolic blood pressure" ;
+        rdf:type    owl:NamedIndividual .
+
+snomed:50373000  rdfs:label  "Body height measure" ;
+        rdf:type    owl:NamedIndividual .
+
+snomed:38866009  rdfs:label  "Body part structure" ;
+        rdf:type    owl:NamedIndividual .
+
+snomed:125676002  rdfs:label  "Person" ;
+        rdf:type    owl:NamedIndividual .
+
+snomed:27113001  rdfs:label  "Body weight" ;
+        rdf:type    owl:NamedIndividual .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_WEIGHT_6650>
+        skos:exactMatch  snomed:27113001 .

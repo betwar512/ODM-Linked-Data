@@ -32,6 +32,7 @@ public class CardioCustomModel {
 	
 	  /*
 	   * Model to create vital-vitalSign
+	   * 
 	   * */
 	  public static void generateCardio(ArrayList<ItemDetail> itemDtos
 			  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
@@ -41,11 +42,11 @@ public class CardioCustomModel {
 	
 		  for (ItemDetail itemDto : itemDtos) { 	
 
-		//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
+	
 			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
 			for (ODMcomplexTypeDefinitionItemData item : itemList) {  
 				String itemOidName=item.getItemOID();
-		     //	String itemOidval=item.getItemOID();	
+			
 		     	//Find itemDef belong to OpenClinica Item 
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
 			//	List<ODMcomplexTypeDefinitionRangeCheck> listRange=itemDef.getRangeCheck();
@@ -77,12 +78,17 @@ public class CardioCustomModel {
 					}	
 							//pointing to Variable Def 
 				Property based=model.createProperty(UriCustomHelper.metaBase,"/"+itemOid);
-				Property findings=model.createProperty("","Findings");
+							//domain from CsvFile
+				
+				try { 
 					
-				try {
-					String snomad =CsvHelper.getLastColumn(itemDef.getName());
+					String domain=CsvHelper.getDomain(itemOidName);
+
+					if (domain.length()>0) //Check if domain exist in lcdcMap
+					 r.addProperty(RDFS.domain, domain);
 					
-					System.out.println(snomad);
+					
+				
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -92,7 +98,6 @@ public class CardioCustomModel {
 				r.addProperty(RDFS.isDefinedBy, typeUri)
 				.addProperty(RDFS.label, itemDef.getName())
 				.addProperty(RDFS.comment, itemDef.getComment())
-				.addProperty(RDFS.domain, findings)
 				.addProperty(DC.source, "cardio")
 				.addProperty(DC.identifier, itemOid)
 				.addProperty(Disco.basedOn, based)

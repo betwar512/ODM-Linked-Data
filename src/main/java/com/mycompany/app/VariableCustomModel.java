@@ -31,8 +31,8 @@ public class VariableCustomModel {
 	  
 	  /*
 	   * Model Variable Vital 
-	   * separate models by dataType Vital Blood Medication
-	   * Void 
+	   *  
+	   * Model Variable ,Model Linkset 
 	   * 
 	   * */
 	  public static void generateVariable
@@ -41,8 +41,7 @@ public class VariableCustomModel {
 			  ,ModelMaker mm){
 		  //model for variable 
 		  Model model=null;
-		  //Model for Linkset
-		  Model modelLs=null;
+		
 
 		  for (ItemDetail itemDto : itemDtos) { 
 	
@@ -57,27 +56,18 @@ public class VariableCustomModel {
 				 model=mm.createModel("Variable-"+theme);
 				  Property themP=model.createProperty(UriCustomHelper.themeBase, theme);
 				
-
-		     //	String itemOidval=item.getItemOID();	
 		     	//Find itemDef belong to OpenClinica Item 
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
 				String uri=UriCustomHelper.metaBase+ "#" + itemOidName;
-				//itemDef.getCodeListRef();  //CodeList reference 
+				
 				Resource r=model.createResource(uri,LcdcCore.VariableDefinition);
 							
-					 Literal valueForm=model.createTypedLiteral(itemDto.formOid,Odm.formcode);
-					 Literal valueItemGroup=model.createTypedLiteral(itemDto.itemGroupOid,Odm.itemgroupcode);
-					 Literal valueItem=model.createTypedLiteral(item.getItemOID(),Odm.itemcode);
-					 //Using TypeMapper because need to create TypeLitral 
-				TypeMapper tm=TypeMapper.getInstance();
-			        RDFDatatype rdfType=tm.getSafeTypeByName(LcdcCore.variabledefinitioncode.getURI());
-			        
-					 Literal valuevarDef=model.createTypedLiteral(itemDef.getName(),rdfType );
-					 
-					
-					
-					 Literal valueRepeat=model.createTypedLiteral(itemDto.repeating,XSDDatatype.XSDboolean);	
-					 Literal valueDatatype=model.createTypedLiteral(itemDef.getDataType()
+					 Literal valueForm		=model.createTypedLiteral(itemDto.formOid,Odm.formcode);
+					 Literal valueItemGroup	=model.createTypedLiteral(itemDto.itemGroupOid,Odm.itemgroupcode);
+					 Literal valueItem		=model.createTypedLiteral(item.getItemOID(),Odm.itemcode);
+					 Literal valuevarDef	=model.createTypedLiteral(itemDef.getName(),LcdcCore.variabledefinitioncode.getURI());
+					 Literal valueRepeat	=model.createTypedLiteral(itemDto.repeating,XSDDatatype.XSDboolean);	
+					 Literal valueDatatype	=model.createTypedLiteral(itemDef.getDataType()
 							 .toString()
 							   .toLowerCase(),XSDDatatype.XSDstring);	 
 					 
@@ -105,37 +95,54 @@ public class VariableCustomModel {
 				   	 
 
 					  //================================================================================
-				   	//  adding named individual uri 
+				   	//  Model LinkSet 
 					//================================================================================
 			  
 			 
-				   	 
-				   	modelLs=mm.createModel("Linkset-"+theme);
-				   	
-				   	modelLs.setNsPrefix("snomed", Snomed.snomedUri);
-				   	modelLs.setNsPrefix("snomedmod", Snomed.snomedmodUri);
-				   	modelLs.setNsPrefix("amt", Snomed.amtUri);
-				   	modelLs.setNsPrefix("skos",Skos.getURI());
-				   	Resource linkSet=modelLs.createResource(uri);
-				   	Resource namedIndv=null;
-				   	
-				   	String snomedUri="";
-				   	try {
-						 snomedUri=CsvHelper.getLastColumn(itemDef.getName()); //matched snomedUri 
-						  namedIndv=modelLs.createResource(snomedUri,OWL2.NamedIndividual); //Resource nameIndivitual
-							linkSet.addProperty(Skos.exactMatch, namedIndv); //add nameIndividual Resource to llinkSet Resource
-						 
-					} catch (FileNotFoundException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				   	 
-				   
-				   	 namedIndv.addProperty(RDFS.label, itemDef.getName());
-				   	 
-				   	 
+				   	linkSet(uri,itemOidName,theme,mm);
+
+  	 
 			    }//i
 			  
 		     }//For loop item		
 		  }
+	  
+	  
+	  /*
+	   * Model Linkset 
+	   * @private
+	   * input: String uri,String Odm.itemOid,String item.theme,ModelMaker Jena.ModelMaker 
+	   * Gets called inside variable generator method ,(Having similar object pattern)
+	   * 
+	   * */
+	  private static void linkSet(String uri,String itemOid,String theme,ModelMaker mm){
+		
+		  Model  modelLs=mm.createModel("Linkset-"+theme);
+		   	String snomedUri="";
+		   	String extLabel="";
+		   	
+		   	modelLs.setNsPrefix("snomed", Snomed.snomedUri);
+		   	modelLs.setNsPrefix("snomedmod", Snomed.snomedmodUri);
+		   	modelLs.setNsPrefix("amt", Snomed.amtUri);
+		   	modelLs.setNsPrefix("skos",Skos.getURI());
+		   	//Resource linkSet 
+		   	Resource linkSet=modelLs.createResource(uri);
+		
+		   	try {
+				 snomedUri=CsvHelper.getSnomedUri(itemOid); //matched snomedUri 
+				 extLabel = CsvHelper.getLabel(itemOid);
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		   	if(snomedUri.length()>0){ //Check if snomed uri exist in lcdcMapping
+		  	Resource  namedIndv=modelLs.createResource(snomedUri,OWL2.NamedIndividual); //Resource nameIndivitual
+				linkSet.addProperty(Skos.exactMatch, namedIndv); //add nameIndividual Resource to llinkSet Resource
+			   	 namedIndv.addProperty(RDFS.label,extLabel);
+		  
+	    }
+	  }
+	  
+	  
+	  
 }

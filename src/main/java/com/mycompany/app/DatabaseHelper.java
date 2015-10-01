@@ -24,8 +24,8 @@ public class DatabaseHelper {
    Dataset dataset=null;
 	
 	public DatabaseHelper(){
+		// dataset=TDBFactory.createDataset(databaseUri);
 		
-		 dataset=TDBFactory.createDataset(databaseUri);
 	}
 	
 	/*

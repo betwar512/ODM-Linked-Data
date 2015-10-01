@@ -5,11 +5,11 @@ I_VITAL_HEARTRATE_7515,HeartRate,VitalSignFinding,http://snomed.info/sct/3250602
 I_VITAL_HEIGHT_3150,Height,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/50373000,Body height measure
 I_VITAL_WEIGHT_6650,Weight,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/27113001,Body weight
 I_VITAL_BMI_6271,bmi,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/60621009,Body mass index
-I_VITAL_ABDOMINALCIRCUMFERENCE_5194,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/396552003,Abdominal circumference
+I_VITAL_ABDOMINALCIRCUMFERENCE_5194,AbdominalCircumference,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/396552003,Abdominal circumference
 I_MEDIC_MEDICATIONNAME_2443,MedicationName,Pharmaceutical,http://snomed.info/sct/32506021000036107/version/20150531/id/410942007,Drug or medicament
-I_MEDIC_MEDICATIONSTARTDATE_6157,MedicationStartDate,PharmaceuticalProduct,http://snomed.info/sct/32506021000036107/version/20150531/id/413946009,Date treatment started
+I_MEDIC_MEDICATIONSTARTDATE_6157,MedicationStartDate,PharmaceuticalObservable,http://snomed.info/sct/32506021000036107/version/20150531/id/413946009,Date treatment started
 I_MEDIC_MEDICATIONENDDATE_2617,MedicationEndDate,PharmaceuticalObservable,http://snomed.info/sct/32506021000036107/version/20150531/id/413947000,Date treatment stopped
-I_MEDIC_MEDICATIONDOSE_1998,MedicationDose,PharmaceuticalFinding,http://snomed.info/sct/900062011000036108/version/20150831/id/712091000168102,Drug dose
+I_MEDIC_MEDICATIONDOSE_1998,MedicationDose,PharmaceuticalObservable,http://snomed.info/sct/900062011000036108/version/20150831/id/712091000168102,Drug dose
 I_MEDIC_MEDICATIONDOSEUNIT_2971,MedicationDoseUnit,PharmaceuticalObservable,http://snomed.info/sct/900062011000036108/version/20150831/id/700000471000036108,unit dose
 I_MEDIC_MEDICATIONDOSEFORM_3200,MedicationDoseForm,PharmaceuticalObservable,http://snomed.info/sct/900062011000036108/version/20150831/id/30383011000036100,form
 I_MEDIC_MEDICATIONFREQ_7034,MedicationFreq,Pharmaceutical,http://snomed.info/sct/900000000000012004/version/20150831/id/260864003,Frequency
@@ -20,16 +20,16 @@ I_VITAL_READINGSTAKENBY,ReadingsTakenBy,VitalSignObservable,http://snomed.info/s
 I_VITAL_READINGSBODYPART,ReadingsBodyPart,VitalSignObservable,http://snomed.info/sct/32506021000036107/version/20150531/id/38866009,Body part structure
 I_VITAL_READINGSBODYPOSITION,ReadingsBodyPosition,VitalSignObservable,http://snomed.info/sct/32506021000036107/version/20150531/id/397155001,Body position
 I_VITAL_SYSTOLICBP_1220,SystolicBP,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/271649006,systolic blood pressure
-I_VITAL_DIASTOLICBP_4036,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/271650006,Diastolic blood pressure
-I_VITAL_HEARTRATE_8662,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/364075005,Heart rate
-I_BLOOD_HAEMOGLOBIN,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/416766001,Quantity of haemoglobin in erythrocyte
-I_BLOOD_REDBLOODCELL,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/14089001,Red blood cell count
-I_BLOOD_WHITEBLOODCELL,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/767002,White blood cell count
-I_BLOOD_GLUCOSE,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/434912009,Blood glucose concentration
-I_BLOOD_CHOLESTEROL,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/365793008,Cholesterol level - finding
-I_BLOOD_TRIGLYCERIDES,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/365795001,Triglyceride level - finding
-I_BLOOD_HDL,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/365791005,Lipid level - finding
-I_BLOOD_LDL,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/365791005,Lipid level - finding
-I_BLOOD_IRON,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/250216004,Serum iron measurement
-I_BLOOD_SODIUM,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/365761000,Sodium level - finding
-I_BLOOD_COLLECTIONTIME,BloodObservables,http://snomed.info/sct/32506021000036107/version/20150531/id/168149003,Fluid sample collection time
+I_VITAL_DIASTOLICBP_4036,DiastolicBP,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/271650006,Diastolic blood pressure
+I_VITAL_HEARTRATE_8662,HeartRate,VitalSignFinding,http://snomed.info/sct/32506021000036107/version/20150531/id/364075005,Heart rate
+I_BLOOD_HAEMOGLOBIN,Haemoglobin,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/416766001,Quantity of haemoglobin in erythrocyte
+I_BLOOD_REDBLOODCELL,RedBloodCell,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/14089001,Red blood cell count
+I_BLOOD_WHITEBLOODCELL,WhiteBloodCell,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/767002,White blood cell count
+I_BLOOD_GLUCOSE,Glucose,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/434912009,Blood glucose concentration
+I_BLOOD_CHOLESTEROL,Cholesterol,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/365793008,Cholesterol level - finding
+I_BLOOD_TRIGLYCERIDES,Triglycerides,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/365795001,Triglyceride level - finding
+I_BLOOD_HDL,HDL,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/365791005,Lipid level - finding
+I_BLOOD_LDL,BloodMeasurement,LDL,http://snomed.info/sct/32506021000036107/version/20150531/id/365791005,Lipid level - finding
+I_BLOOD_IRON,BloodMeasurement,Iron,http://snomed.info/sct/32506021000036107/version/20150531/id/250216004,Serum iron measurement
+I_BLOOD_SODIUM,Sodium,BloodMeasurement,http://snomed.info/sct/32506021000036107/version/20150531/id/365761000,Sodium level - finding
+I_BLOOD_COLLECTIONTIME,CollectionTime,BloodObservable,http://snomed.info/sct/32506021000036107/version/20150531/id/168149003,Fluid sample collection time

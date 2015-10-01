@@ -16,21 +16,14 @@ import au.com.bytecode.opencsv.CSVReader;
  */
 public class CsvHelper {
 
-
-
-
-
-
-
-		
-		
+		//CSV resource file lcdcMAp
 		private static final String filePath="src/main/java/resources/CsvMap.csv";
 			
 
 	/*
 	 * return snomad uri for passed label 
 	 * */
-	    public static String getLastColumn(String label) 
+	    public static String getSnomedUri(String itemOid) 
 	    		throws FileNotFoundException{
 	    	String uri="";
 	       
@@ -51,8 +44,8 @@ public class CsvHelper {
 	     		while(!exit && it.hasNext()){
 
 	     				String[] str=it.next();
-	   			String s=str[1];
-	   				if (s.equals(label)){
+	   			String s=str[0];
+	   				if (s.equals(itemOid)){
 	   					 uri=str[3];
 	   					 exit=true;
 	   				  }
@@ -68,6 +61,93 @@ public class CsvHelper {
 	     return uri;
 	    }
 
+	    
+		/*
+		 * return label
+		 * Input ItemOid
+		 * 
+		 * */
+		    public static String getLabel(String itemOid) 
+		    		throws FileNotFoundException{
+		    	String label="";
+		       
+		       List<String[]> myEntries;
+			try {
+				
+				@SuppressWarnings("resource")
+				CSVReader reader = new CSVReader(new FileReader(filePath));
+				myEntries = reader.readAll();
+				
+				
+			       Iterator<String[]> it =myEntries.iterator();
+			       
+		      		Boolean exit=false;  //find uri exit 
+
+					
+
+		     		while(!exit && it.hasNext()){
+
+		     				String[] str=it.next();
+		   			String s=str[0];
+		   				if (s.equals(itemOid)){
+		   					 label=str[4];
+		   					 exit=true;
+		   				  }
+		   				}
+		     		
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		     return label;
+		    }
+		    
+		    
+		    
+			/*
+			 * return Domain 
+			 * input ItemOid
+			 * */
+			    public static String getDomain(String itemOid) 
+			    		throws FileNotFoundException{
+			    	String uri="";
+			       
+			       List<String[]> myEntries;
+				try {
+					
+					@SuppressWarnings("resource")
+					CSVReader reader = new CSVReader(new FileReader(filePath));
+					myEntries = reader.readAll();
+					
+					
+				       Iterator<String[]> it =myEntries.iterator();
+				       
+			      		Boolean exit=false;  //find uri exit 
+
+						
+
+			     		while(!exit && it.hasNext()){
+
+			     				String[] str=it.next();
+			   			String s=str[0];
+			   				if (s.equals(itemOid)){
+			   					 uri=str[2];
+			   					 exit=true;
+			   				  }
+			   				}
+			     		
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+
+
+			     return uri;
+			    }
+	    
+	    
 	}
 
 
