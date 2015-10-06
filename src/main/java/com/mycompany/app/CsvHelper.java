@@ -119,16 +119,11 @@ public class CsvHelper {
 					@SuppressWarnings("resource")
 					CSVReader reader = new CSVReader(new FileReader(filePath));
 					myEntries = reader.readAll();
-					
-					
 				       Iterator<String[]> it =myEntries.iterator();
-				       
+	       
 			      		Boolean exit=false;  //find uri exit 
 
-						
-
 			     		while(!exit && it.hasNext()){
-
 			     				String[] str=it.next();
 			   			String s=str[0];
 			   				if (s.equals(itemOid)){

@@ -2,6 +2,8 @@ package com.mycompany.app;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.OutputStream;
+
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFFormat;
 import com.hp.hpl.jena.query.Dataset;
@@ -89,6 +91,7 @@ public class DatabaseHelper {
 				String fileName = System.getProperty("user.dir")+"\\RDF_ModelMaker\\"+modelName+".ttl" ;
 				File file =new File(fileName);
 				FileOutputStream output = new FileOutputStream( file );
+				
 				RDFDataMgr.write(output, model, RDFFormat.TURTLE_BLOCKS);
 				 System.out.println("----------------------");
 					System.out.println("Model: "+modelName +" saved into Folder RDF_ModelMaker");
