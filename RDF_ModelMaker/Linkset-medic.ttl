@@ -1,70 +1,76 @@
 @prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#> .
 @prefix cardioblood:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
 @prefix snomed:  <http://snomed.info/sct/32506021000036107/version/20150531/id/> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix disco:  <http://rdf-vocabulary.ddialliance.org/discovery#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix amt:  <http://snomed.info/sct/900062011000036108/version/20150831/id/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco:   <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix amt:     <http://snomed.info/sct/900062011000036108/version/20150831/id/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
 @prefix cardiomedic:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#> .
-@prefix qb:  <http://purl.org/linked-data/cube#> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb:      <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
 @prefix snomedmod:  <http://snomed.info/sct/900000000000012004/version/20150831/id/> .
-@prefix dc:  <http://purl.org/dc/elements/1.1/> .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONNAME_2443>
-        skos:exactMatch  snomed:410942007 .
-
-snomed:410942007  rdfs:label  "Drug or medicament" ;
-        rdf:type    owl:NamedIndividual .
-
-snomedmod:260864003  rdfs:label  "Frequency" ;
-        rdf:type    owl:NamedIndividual .
-
-snomed:413946009  rdfs:label  "Date treatment started" ;
-        rdf:type    owl:NamedIndividual .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONROUTE>
-        skos:exactMatch  snomedmod:410675002 .
+      rdfs:subPropertyOf <http://snomed.info/sct/900000000000012004/version/20150831/id/410675002> .
 
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONSTARTDATE_6157>
-        skos:exactMatch  snomed:413946009 .
-
-snomed:413947000  rdfs:label  "Date treatment stopped" ;
-        rdf:type    owl:NamedIndividual .
-
-amt:30383011000036100
-        rdfs:label  "form" ;
-        rdf:type    owl:NamedIndividual .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEUNIT_2971>
-        skos:exactMatch  amt:700000471000036108 .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONENDDATE_2617>
-        skos:exactMatch  snomed:413947000 .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEFORM_3200>
-        skos:exactMatch  amt:30383011000036100 .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONCODE_1591>
-        skos:exactMatch  snomed:410942007 .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSE_1998>
-        skos:exactMatch  amt:712091000168102 .
-
-snomedmod:410675002  rdfs:label  "Route of administration" ;
-        rdf:type    owl:NamedIndividual .
-
-amt:700000471000036108
-        rdfs:label  "unit dose" ;
-        rdf:type    owl:NamedIndividual .
-
-amt:712091000168102  rdfs:label  "Drug dose" ;
-        rdf:type    owl:NamedIndividual .
+<http://snomed.info/sct/900062011000036108/version/20150831/id/700000471000036108>
+      a       owl:NamedIndividual ;
+      rdfs:label "unit dose" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONFREQ_7034>
-        skos:exactMatch  snomedmod:260864003 .
+      rdfs:subPropertyOf <http://snomed.info/sct/900000000000012004/version/20150831/id/260864003> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONCODE_1591>
+      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/410942007> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONSTARTDATE_6157>
+      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/413946009> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSE_1998>
+      rdfs:subPropertyOf <http://snomed.info/sct/900062011000036108/version/20150831/id/712091000168102> .
+
+<http://snomed.info/sct/900000000000012004/version/20150831/id/260864003>
+      a       owl:NamedIndividual ;
+      rdfs:label "Frequency" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONNAME_2443>
+      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/410942007> .
+
+<http://snomed.info/sct/32506021000036107/version/20150531/id/413947000>
+      a       owl:NamedIndividual ;
+      rdfs:label "Date treatment stopped" .
+
+<http://snomed.info/sct/32506021000036107/version/20150531/id/413946009>
+      a       owl:NamedIndividual ;
+      rdfs:label "Date treatment started" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEFORM_3200>
+      rdfs:subPropertyOf <http://snomed.info/sct/900062011000036108/version/20150831/id/30383011000036100> .
+
+<http://snomed.info/sct/900000000000012004/version/20150831/id/410675002>
+      a       owl:NamedIndividual ;
+      rdfs:label "Route of administration" .
+
+<http://snomed.info/sct/32506021000036107/version/20150531/id/410942007>
+      a       owl:NamedIndividual ;
+      rdfs:label "Drug or medicament" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONENDDATE_2617>
+      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/413947000> .
+
+<http://snomed.info/sct/900062011000036108/version/20150831/id/712091000168102>
+      a       owl:NamedIndividual ;
+      rdfs:label "Drug dose" .
+
+<http://snomed.info/sct/900062011000036108/version/20150831/id/30383011000036100>
+      a       owl:NamedIndividual ;
+      rdfs:label "form" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEUNIT_2971>
+      rdfs:subPropertyOf <http://snomed.info/sct/900062011000036108/version/20150831/id/700000471000036108> .

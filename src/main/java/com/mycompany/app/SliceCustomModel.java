@@ -7,7 +7,6 @@ import java.util.Set;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
-
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
@@ -101,8 +100,6 @@ public class SliceCustomModel {
 	 * Generate Slice by Theme
 	 *  
 	 * */
-	
-	
 	public static void sliceByTheme(ModelMaker mm,ArrayList<ItemDetail> itemDtos
 			,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
 			,ODMcomplexTypeDefinitionMetaDataVersion meta){

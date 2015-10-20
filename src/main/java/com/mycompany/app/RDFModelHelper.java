@@ -59,7 +59,7 @@ public class RDFModelHelper {
   public ModelMaker modelHandler(String filePath){
 
 		PrefixMapping pf=PrefixMapping.Factory.create();
-
+			//Default mapping for Models ,Added here to set modelFactory prefix for all the models 
 		pf.withDefaultMappings(PrefixMapping.Standard);
 		pf.setNsPrefix("lcdcodm", Odm.getURI());
 		pf.setNsPrefix("dc",  DC.getURI());	
@@ -77,21 +77,21 @@ public class RDFModelHelper {
 		     ModelMaker mm=ModelFactory.createMemModelMaker();
 		
 		     	
-		    //Unlarshal binding 
+		    //unmarshal binding 
 			JaxBinder myJax=new JaxBinder();
 			ODMcomplexTypeDefinitionClinicalData clinicalData=
 			myJax.getClinicalData(filePath);
 			ODMcomplexTypeDefinitionMetaDataVersion meta = JaxBinder.catchMetaData(filePath);
 	
-	    HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef = JaxBinder.catchItemDef(meta);
-        ArrayList<ItemDetail> itemDtos = myJax.makeItemsObjects(clinicalData,meta);
+			HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef = JaxBinder.catchItemDef(meta);
+			ArrayList<ItemDetail> itemDtos = myJax.makeItemsObjects(clinicalData,meta);
  
      	//Cardio Variables 
-      VariableCustomModel.generateVariable(itemDtos,itemDef,mm);
+        VariableCustomModel.generateVariable(itemDtos,itemDef,mm);
         CardioCustomModel.generateCardio(itemDtos,itemDef,mm);  
       
       //Observation Models 
-      ObservationCustomModel.createObservation(mm,itemDtos,itemDef,meta);
+      ObservationCustomModel.generateObservation(mm,itemDtos,itemDef,meta);
       //Slice Models 
       SliceCustomModel.sliceBySubject(mm, itemDtos, itemDef, meta);
       SliceCustomModel.sliceByTheme( mm,  itemDtos, itemDef, meta);

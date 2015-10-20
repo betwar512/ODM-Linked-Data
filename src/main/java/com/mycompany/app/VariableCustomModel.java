@@ -4,12 +4,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
-
-import com.hp.hpl.jena.datatypes.RDFDatatype;
-import com.hp.hpl.jena.datatypes.TypeMapper;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
@@ -31,7 +27,6 @@ public class VariableCustomModel {
 	  
 	  /*
 	   * Model Variable Vital 
-	   *  
 	   * Model Variable ,Model Linkset 
 	   * 
 	   * */
@@ -83,7 +78,7 @@ public class VariableCustomModel {
 					 model.add(stItem);
 					 model.add(stDatetype);
 				     model.add(stRepeat);
-				     model.add(stVarDef);
+				     model.add(stVarDef); 
 					 r.addProperty(DC.source,"cardio");
 					 r.addProperty(RDFS.comment, itemDef.getComment());
 					 r.addProperty(RDFS.isDefinedBy, UriCustomHelper.metaBase);
@@ -121,6 +116,7 @@ public class VariableCustomModel {
 		   	String snomedUri="";
 		   	String extLabel="";
 		   	
+		   	//Prefix setting for LinkSet file 
 		   	modelLs.setNsPrefix("snomed", Snomed.snomedUri);
 		   	modelLs.setNsPrefix("snomedmod", Snomed.snomedmodUri);
 		   	modelLs.setNsPrefix("amt", Snomed.amtUri);
@@ -137,7 +133,7 @@ public class VariableCustomModel {
 			}
 		   	if(snomedUri.length()>0){ //Check if snomed uri exist in lcdcMapping
 		  	Resource  namedIndv=modelLs.createResource(snomedUri,OWL2.NamedIndividual); //Resource nameIndivitual
-				linkSet.addProperty(Skos.exactMatch, namedIndv); //add nameIndividual Resource to llinkSet Resource
+				linkSet.addProperty(RDFS.subPropertyOf, namedIndv); //add nameIndividual Resource to llinkSet Resource
 			   	 namedIndv.addProperty(RDFS.label,extLabel);
 		  
 	    }

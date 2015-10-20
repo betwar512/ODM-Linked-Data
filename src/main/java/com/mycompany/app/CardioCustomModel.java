@@ -7,10 +7,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
-
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
@@ -31,7 +29,9 @@ public class CardioCustomModel {
 	
 	
 	  /*
-	   * Model to create vital-vitalSign
+	   * Cardio model 
+	   * Model name : Cardio-'rest of the name captures from theme'
+	   * 
 	   * 
 	   * */
 	  public static void generateCardio(ArrayList<ItemDetail> itemDtos
@@ -51,51 +51,64 @@ public class CardioCustomModel {
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
 			//	List<ODMcomplexTypeDefinitionRangeCheck> listRange=itemDef.getRangeCheck();
 
-
+					/*
+					 * gets the theme from the item name
+					 * ideally, the theme should be passed in
+					 * 
+					 * */
 				String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 
+				// have to be more generic 
 				String typeUri=UriCustomHelper.cardioBase+theme+"/def/cardio-"+theme;
 				 
+				//more geeric 
 				 model=mm.createModel("Cardio-"+theme);
 				
 				 Property themP=model.createProperty(UriCustomHelper.themeBase, theme);
+				 
 
 				  	//main uri 
 				String uri= typeUri +"#"+ itemDef.getName();
 				String itemOid=item.getItemOID();
-				//vital Resource
+				//vta
+				
+				// create a data type property resource for the theme concepts
 				Resource r=model.createResource(uri,OWL.DatatypeProperty);
-		
-					String range=itemDef.getDataType().toString();
 					
+					
+					//finding type of data from Range 
+					//If range exist check the type
+				//TODO: extend for all data 
+				
+				String range=itemDef.getDataType().toString();//range type in string format 
 					if(range.length()>0){
 					if(range.contains("INTEGER")){
 						r.addProperty(RDFS.range, XSD.integer);
 				
 					}else if(range.contains("FLOAT")){
 						r.addProperty(RDFS.range, XSD.xfloat);		
-					  }	
+					  }	else{//if none of these types then create with String 
+						r.addProperty(RDFS.range, XSD.xstring);
+					  }
 					}	
 							//pointing to Variable Def 
 				Property based=model.createProperty(UriCustomHelper.metaBase,"/"+itemOid);
-							//domain from CsvFile
-				
+							
+				//domain from CsvFile
 				try { 
 					
 					String domain=CsvHelper.getDomain(itemOidName);
 
-					if (domain.length()>0) //Check if domain exist in lcdcMap
+					if (null!= domain && !domain.isEmpty()) //Check if domain exist in lcdcMap
 					 r.addProperty(RDFS.domain, domain);
-					
-					
-				
+						
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				
 		
-				r.addProperty(RDFS.isDefinedBy, typeUri)
+			   r.addProperty(RDFS.isDefinedBy, typeUri)
 				.addProperty(RDFS.label, itemDef.getName())
 				.addProperty(RDFS.comment, itemDef.getComment())
 				.addProperty(DC.source, "cardio")

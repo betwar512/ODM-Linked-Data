@@ -7,7 +7,6 @@ import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 public class ItemDetail {
 
 	
-
 	public String subjectKey;
 	public String eventOid;
 	public String formOid;
@@ -70,6 +69,8 @@ public class ItemDetail {
 		return false;
 	}
 	
+	
+	//getter and setter 
 
 	public void setFormOid(String formOid) {
 		this.formOid = formOid;

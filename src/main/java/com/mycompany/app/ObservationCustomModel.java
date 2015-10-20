@@ -33,7 +33,7 @@ public class ObservationCustomModel {
 	   * Snomed added 
 	   * Subject changed to Resource 
 	   * */
-	  public static void createObservation
+	  public static void generateObservation
 	  (ModelMaker mm,ArrayList<ItemDetail> itemDtos 
 			  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
 			  ,ODMcomplexTypeDefinitionMetaDataVersion meta){
@@ -56,7 +56,7 @@ public class ObservationCustomModel {
 				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 obsUri=UriCustomHelper.obsBase+theme+"/phase/";
 				 model=mm.createModel("Observation-"+theme);
-				 //add snomed uri to model 
+				 //add snomed uri to model medication
 				 model.setNsPrefix("snomed", Snomed.snomedUri);
 				 
 				 Property themeP=model.createProperty(UriCustomHelper.themeBase, theme);

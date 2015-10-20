@@ -2,10 +2,8 @@ package com.mycompany.app;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.OutputStream;
 
-import org.apache.jena.riot.RDFDataMgr;
-import org.apache.jena.riot.RDFFormat;
+
 import com.hp.hpl.jena.query.Dataset;
 import com.hp.hpl.jena.query.ReadWrite;
 import com.hp.hpl.jena.rdf.model.Model;
@@ -26,7 +24,7 @@ public class DatabaseHelper {
    Dataset dataset=null;
 	
 	public DatabaseHelper(){
-		// dataset=TDBFactory.createDataset(databaseUri);
+	 dataset=TDBFactory.createDataset(databaseUri);
 		
 	}
 	
@@ -88,11 +86,13 @@ public class DatabaseHelper {
 			
 			try{
 		
-				String fileName = System.getProperty("user.dir")+"\\RDF_ModelMaker\\"+modelName+".ttl" ;
+				String fileName = System.getProperty("user.dir")+"/RDF_ModelMaker/"+modelName+".ttl" ;
+				System.out.println(fileName);
 				File file =new File(fileName);
 				FileOutputStream output = new FileOutputStream( file );
-				
-				RDFDataMgr.write(output, model, RDFFormat.TURTLE_BLOCKS);
+			
+				//RDFDataMgr.write(output, model,"TURTLE");
+				model.write(output,"TURTLE");
 				 System.out.println("----------------------");
 					System.out.println("Model: "+modelName +" saved into Folder RDF_ModelMaker");
 					 System.out.println("----------------------");

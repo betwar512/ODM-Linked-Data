@@ -1,168 +1,190 @@
 @prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#> .
 @prefix cardioblood:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix disco:  <http://rdf-vocabulary.ddialliance.org/discovery#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco:   <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
 @prefix cardiomedic:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#> .
-@prefix qb:  <http://purl.org/linked-data/cube#> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb:      <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
-@prefix dc:  <http://purl.org/dc/elements/1.1/> .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONNAME_2443>
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        lcdccore:variableDefinitionKey  "MedicationName"^^lcdccore:variabledefinitioncode ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        lcdcodm:dataType                "text"^^xsd:string ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> ;
-        lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONNAME_2443"^^lcdcodm:itemcode ;
-        rdfs:label                      "MedicationName" ;
-        lcdcodm:repeating               true ;
-        dc:source                       "cardio" ;
-        rdfs:comment                    "Standardized or dictionary-derived text description - in this case from the Australian Medicines Terminology. The sponsor is expected to provide the dictionary name, unique code identifer, terminology identifier and version used to map the terms" ;
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONROUTE>
-        rdf:type                        lcdccore:VariableDefinition ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> ;
-        lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONROUTE"^^lcdcodm:itemcode ;
-        lcdccore:variableDefinitionKey  "MedicationRoute"^^lcdccore:variabledefinitioncode ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
-        rdfs:label                      "MedicationRoute" ;
-        lcdcodm:repeating               true ;
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        rdfs:comment                    "Medication's route of administration. See CMROUTE." ;
-        lcdcodm:dataType                "text"^^xsd:string ;
-        dc:source                       "cardio" .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONSTARTDATE_6157>
-        lcdccore:variableDefinitionKey  "MedicationStartDate"^^lcdccore:variabledefinitioncode ;
-        lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONSTARTDATE_6157"^^lcdcodm:itemcode ;
-        lcdcodm:dataType                "date"^^xsd:string ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        lcdcodm:repeating               true ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
-        rdfs:label                      "MedicationStartDate" ;
-        dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> ;
-        rdfs:comment                    "Denotes the start date at which the medication was taken" .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEUNIT_2971>
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        rdfs:label                      "MedicationDoseUnit" ;
-        lcdcodm:repeating               true ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> ;
-        lcdccore:variableDefinitionKey  "MedicationDoseUnit"^^lcdccore:variabledefinitioncode ;
-        dc:source                       "cardio" ;
-        lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONDOSEUNIT_2971"^^lcdcodm:itemcode ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        lcdcodm:dataType                "text"^^xsd:string ;
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
-        rdfs:comment                    "Units for the MedicationDose.  Examples: ng, mg, or mg/kg." .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_ONTOLOGYVERSION_7814>
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        lcdccore:variableDefinitionKey  "OntologyVersion"^^lcdccore:variabledefinitioncode ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_UNGROUPED_9005"^^lcdcodm:itemgroupcode ;
-        lcdcodm:dataType                "text"^^xsd:string ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        lcdcodm:ItemOid                 "I_MEDIC_ONTOLOGYVERSION_7814"^^lcdcodm:itemcode ;
-        lcdcodm:repeating               false ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> ;
-        rdfs:comment                    "Version for the AMT ontology" ;
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        dc:source                       "cardio" ;
-        rdfs:label                      "OntologyVersion" .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONENDDATE_2617>
-        lcdcodm:repeating               true ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        dc:source                       "cardio" ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        lcdccore:variableDefinitionKey  "MedicationEndDate"^^lcdccore:variabledefinitioncode ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> ;
-        rdfs:label                      "MedicationEndDate" ;
-        lcdcodm:dataType                "date"^^xsd:string ;
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONENDDATE_2617"^^lcdcodm:itemcode ;
-        rdfs:comment                    "Denotes the date at which the patient ceased to take the medication. If the medication intake is still ongoing, this field can be left blank." .
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Medication's route of administration. See CMROUTE." ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "MedicationRoute" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "MedicationRoute"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_MEDICATIONROUTE"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "text"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "true"^^xsd:boolean .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEFORM_3200>
-        lcdccore:variableDefinitionKey  "MedicationDoseForm"^^lcdccore:variabledefinitioncode ;
-        dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> ;
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        rdfs:comment                    "Dose form for the medication. Examples: TABLET, LOTION." ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        lcdcodm:repeating               true ;
-        lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONDOSEFORM_3200"^^lcdcodm:itemcode ;
-        lcdcodm:dataType                "text"^^xsd:string ;
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
-        rdfs:label                      "MedicationDoseForm" .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONCODE_1591>
-        lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONCODE_1591"^^lcdcodm:itemcode ;
-        lcdccore:variableDefinitionKey  "MedicationCode"^^lcdccore:variabledefinitioncode ;
-        lcdcodm:dataType                "text"^^xsd:string ;
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        rdfs:comment                    "AMT Code for this medication" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> ;
-        rdfs:label                      "MedicationCode" ;
-        lcdcodm:repeating               true ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        dc:source                       "cardio" ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSE_1998>
-        lcdcodm:dataType                "float"^^xsd:string ;
-        rdfs:comment                    "Amount of medication taken." ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        lcdccore:variableDefinitionKey  "MedicationDose"^^lcdccore:variabledefinitioncode ;
-        lcdcodm:repeating               true ;
-        lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONDOSE_1998"^^lcdcodm:itemcode ;
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        dc:source                       "cardio" ;
-        rdfs:label                      "MedicationDose" ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> .
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Dose form for the medication. Examples: TABLET, LOTION." ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "MedicationDoseForm" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "MedicationDoseForm"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_MEDICATIONDOSEFORM_3200"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "text"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "true"^^xsd:boolean .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONFREQ_7034>
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        lcdccore:variableDefinitionKey  "MedicationFreq"^^lcdccore:variabledefinitioncode ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> ;
-        lcdcodm:repeating               true ;
-        rdfs:label                      "MedicationFreq" ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
-        rdfs:comment                    "Dose frequency per interval for the medication. Usually expressed as the number of repeated administrations of MedicationDose within a specific time period. Examples: BID (twice daily), Q12H (every 12 hours)." ;
-        lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONFREQ_7034"^^lcdcodm:itemcode ;
-        lcdcodm:dataType                "text"^^xsd:string .
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Dose frequency per interval for the medication. Usually expressed as the number of repeated administrations of MedicationDose within a specific time period. Examples: BID (twice daily), Q12H (every 12 hours)." ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "MedicationFreq" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "MedicationFreq"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_MEDICATIONFREQ_7034"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "text"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "true"^^xsd:boolean .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONENDDATE_2617>
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Denotes the date at which the patient ceased to take the medication. If the medication intake is still ongoing, this field can be left blank." ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "MedicationEndDate" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "MedicationEndDate"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_MEDICATIONENDDATE_2617"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "date"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "true"^^xsd:boolean .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONCODE_1591>
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "AMT Code for this medication" ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "MedicationCode" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "MedicationCode"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_MEDICATIONCODE_1591"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "text"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "true"^^xsd:boolean .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONSTARTDATE_6157>
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Denotes the start date at which the medication was taken" ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "MedicationStartDate" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "MedicationStartDate"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_MEDICATIONSTARTDATE_6157"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "date"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "true"^^xsd:boolean .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSE_1998>
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Amount of medication taken." ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "MedicationDose" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "MedicationDose"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_MEDICATIONDOSE_1998"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "float"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "true"^^xsd:boolean .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_ONTOLOGYVERSION_7814>
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Version for the AMT ontology" ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "OntologyVersion" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "OntologyVersion"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_ONTOLOGYVERSION_7814"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "text"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_UNGROUPED_9005"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "false"^^xsd:boolean .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_ONTOLOGYID_5156>
-        lcdcodm:dataType                "text"^^xsd:string ;
-        lcdccore:variableDefinitionKey  "OntologyID"^^lcdccore:variabledefinitioncode ;
-        lcdcodm:ItemOid                 "I_MEDIC_ONTOLOGYID_5156"^^lcdcodm:itemcode ;
-        dc:source                       "cardio" ;
-        rdf:type                        lcdccore:VariableDefinition ;
-        rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
-        rdfs:label                      "OntologyID" ;
-        lcdcodm:itemGroupOid            "IG_MEDIC_UNGROUPED_9005"^^lcdcodm:itemgroupcode ;
-        rdfs:comment                    "Unique ID for the AMT ontology" ;
-        lcdcodm:formOid                 "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
-        lcdcodm:repeating               false ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/medic> .
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Unique ID for the AMT ontology" ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "OntologyID" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "OntologyID"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_ONTOLOGYID_5156"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "text"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_UNGROUPED_9005"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "false"^^xsd:boolean .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONNAME_2443>
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Standardized or dictionary-derived text description - in this case from the Australian Medicines Terminology. The sponsor is expected to provide the dictionary name, unique code identifer, terminology identifier and version used to map the terms" ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "MedicationName" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "MedicationName"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_MEDICATIONNAME_2443"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "text"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "true"^^xsd:boolean .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEUNIT_2971>
+      a       lcdccore:VariableDefinition ;
+      rdfs:comment "Units for the MedicationDose.  Examples: ng, mg, or mg/kg." ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
+      rdfs:label "MedicationDoseUnit" ;
+      dc:source "cardio" ;
+      lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
+      lcdccore:variableDefinitionKey
+              "MedicationDoseUnit"^^lcdccore:variabledefinitioncode ;
+      lcdcodm:ItemOid "I_MEDIC_MEDICATIONDOSEUNIT_2971"^^lcdcodm:itemcode ;
+      lcdcodm:dataType "text"^^xsd:string ;
+      lcdcodm:formOid "F_MEDICATIONGR_V103"^^lcdcodm:formcode ;
+      lcdcodm:itemGroupOid
+              "IG_MEDIC_MEDICATIONS_1075"^^lcdcodm:itemgroupcode ;
+      lcdcodm:repeating "true"^^xsd:boolean .

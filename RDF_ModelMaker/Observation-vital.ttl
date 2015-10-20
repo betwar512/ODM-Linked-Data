@@ -1,898 +1,1307 @@
 @prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#> .
 @prefix cardioblood:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
 @prefix snomed:  <http://snomed.info/sct/32506021000036107/version/20150531/id/> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix disco:  <http://rdf-vocabulary.ddialliance.org/discovery#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco:   <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
 @prefix cardiomedic:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#> .
-@prefix qb:  <http://purl.org/linked-data/cube#> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb:      <http://purl.org/linked-data/cube#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
-@prefix dc:  <http://purl.org/dc/elements/1.1/> .
-
-cardiovitalsigns:bodypositionatreadings933-Lying
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Lying" ;
-        dc:identifier     "3" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_9>
-        cardiovitalsigns:HeartRate     73 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-RightUpperArm ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:SystolicBP    121 ;
-        cardiovitalsigns:DiastolicBP   79 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Lying ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:ReadingsTime  "10:25" .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_8>
-        cardiovitalsigns:SystolicBP    119 ;
-        cardiovitalsigns:ReadingsTime  "10:00" ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
-        cardiovitalsigns:HeartRate     92 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:DiastolicBP   79 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_9>
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Nurse ;
-        cardiovitalsigns:bmi           "24.22" ;
-        cardiovitalsigns:SystolicBP    130 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
-        cardiovitalsigns:Height        160 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:AbdominalCircumference  97 ;
-        cardiovitalsigns:ReadingsTime  "10:45" ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:Weight        62 ;
-        cardiovitalsigns:DiastolicBP   85 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        cardiovitalsigns:HeartRate     72 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_9>
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:SystolicBP    123 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        cardiovitalsigns:ReadingsTime  "10:10" ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Lying ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        cardiovitalsigns:HeartRate     74 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:DiastolicBP   80 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_9>
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:DiastolicBP   81 ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
-        cardiovitalsigns:HeartRate     76 ;
-        cardiovitalsigns:SystolicBP    122 ;
-        cardiovitalsigns:ReadingsTime  "10:30" ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_10>
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        cardiovitalsigns:SystolicBP    129 ;
-        cardiovitalsigns:ReadingsTime  "10:00" ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:DiastolicBP   70 ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:HeartRate     70 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_8>
-        cardiovitalsigns:HeartRate     92 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        cardiovitalsigns:bmi           "24.16" ;
-        cardiovitalsigns:SystolicBP    121 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:Height        175 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
-        cardiovitalsigns:AbdominalCircumference  88 ;
-        cardiovitalsigns:DiastolicBP   80 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftForearm ;
-        cardiovitalsigns:ReadingsTime  "10:20" ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        cardiovitalsigns:Weight        74 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_9>
-        cardiovitalsigns:AbdominalCircumference  97 ;
-        cardiovitalsigns:bmi           "24.22" ;
-        cardiovitalsigns:HeartRate     75 ;
-        cardiovitalsigns:DiastolicBP   84 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:Weight        62 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
-        cardiovitalsigns:SystolicBP    131 ;
-        cardiovitalsigns:ReadingsTime  "10:40" ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:Height        160 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_11>
-        cardiovitalsigns:SystolicBP    100 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
-        cardiovitalsigns:HeartRate     85 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTime  "10:10" ;
-        cardiovitalsigns:DiastolicBP   73 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        rdf:type                       lcdcobs:Observation .
-
-cardiovitalsigns:bodypartofreadings932-LeftForearm
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Left forearm" ;
-        dc:identifier     "1" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_10>
-        cardiovitalsigns:HeartRate     72 ;
-        cardiovitalsigns:ReadingsTime  "10:00" ;
-        cardiovitalsigns:DiastolicBP   72 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:SystolicBP    126 .
-
-cardiovitalsigns:readingstakenby936-Relative
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Relative" ;
-        dc:identifier     "2" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_11>
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        cardiovitalsigns:Weight        66 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:Height        137 ;
-        cardiovitalsigns:SystolicBP    115 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        cardiovitalsigns:bmi           "35.16" ;
-        cardiovitalsigns:ReadingsTime  "11:40" ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:AbdominalCircumference  110 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
-        cardiovitalsigns:HeartRate     84 ;
-        cardiovitalsigns:DiastolicBP   68 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_8>
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:DiastolicBP   78 ;
-        cardiovitalsigns:ReadingsTime  "10:05" ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:HeartRate     90 ;
-        cardiovitalsigns:SystolicBP    119 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_9>
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:SystolicBP    124 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        cardiovitalsigns:DiastolicBP   81 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:ReadingsTime  "10:30" ;
-        cardiovitalsigns:HeartRate     85 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_9>
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:HeartRate     72 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:DiastolicBP   80 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:SystolicBP    120 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
-        cardiovitalsigns:ReadingsTime  "09:55" .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_11>
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:DiastolicBP   74 ;
-        cardiovitalsigns:ReadingsTime  "09:30" ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:SystolicBP    94 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:HeartRate     86 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_8>
-        cardiovitalsigns:HeartRate     92 ;
-        cardiovitalsigns:Weight        75 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        cardiovitalsigns:AbdominalCircumference  90 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:SystolicBP    121 ;
-        cardiovitalsigns:ReadingsTime  "10:00" ;
-        cardiovitalsigns:DiastolicBP   79 ;
-        cardiovitalsigns:bmi           "24.49" ;
-        cardiovitalsigns:Height        175 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 
 cardiovitalsigns:bodypartofreadings932-RightUpperArm
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Right upper arm" ;
-        dc:identifier     "4" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_8>
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:SystolicBP    118 ;
-        cardiovitalsigns:DiastolicBP   76 ;
-        cardiovitalsigns:ReadingsTime  "09:30" ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:HeartRate     91 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_8>
-        cardiovitalsigns:HeartRate     93 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:DiastolicBP   81 ;
-        cardiovitalsigns:SystolicBP    120 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTime  "09:00" ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_9>
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:SystolicBP    125 ;
-        cardiovitalsigns:DiastolicBP   81 ;
-        cardiovitalsigns:ReadingsTime  "10:00" ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        cardiovitalsigns:HeartRate     76 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Standing .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_8>
-        cardiovitalsigns:HeartRate     93 ;
-        cardiovitalsigns:ReadingsTime  "10:00" ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        cardiovitalsigns:Height        175 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        cardiovitalsigns:bmi           "24.49" ;
-        cardiovitalsigns:AbdominalCircumference  90 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:SystolicBP    123 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:Weight        75 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:DiastolicBP   81 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_10>
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Lying ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-RightForearm ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:HeartRate     74 ;
-        cardiovitalsigns:ReadingsTime  "10:10" ;
-        cardiovitalsigns:DiastolicBP   70 ;
-        cardiovitalsigns:SystolicBP    127 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> .
-
-cardiovitalsigns:bodypartofreadings932-LeftUpperArm
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Left upper arm" ;
-        dc:identifier     "2" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-cardiovitalsigns:bodypartofreadings937-RightUpperArm
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Right upper arm" ;
-        dc:identifier     "4" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Right upper arm" ;
+      dc:identifier "4" ;
+      dc:source "cardio" .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_11>
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:ReadingsTime  "11:10" ;
-        cardiovitalsigns:AbdominalCircumference  110 ;
-        cardiovitalsigns:SystolicBP    150 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        cardiovitalsigns:bmi           "34.63" ;
-        cardiovitalsigns:Weight        65 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:DiastolicBP   80 ;
-        cardiovitalsigns:Height        137 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
-        cardiovitalsigns:HeartRate     84 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_10>
-        cardiovitalsigns:HeartRate     71 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:DiastolicBP   73 ;
-        cardiovitalsigns:ReadingsTime  "10:40" ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:SystolicBP    130 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        cardiovitalsigns:bmi           "32.41" ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
-        cardiovitalsigns:AbdominalCircumference  120 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        cardiovitalsigns:Height        173 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:Weight        97 .
-
-cardiovitalsigns:bodypositionatreadings933-Standing
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Standing" ;
-        dc:identifier     "2" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_8>
-        cardiovitalsigns:DiastolicBP   76 ;
-        cardiovitalsigns:SystolicBP    118 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        cardiovitalsigns:ReadingsTime  "10:00" ;
-        cardiovitalsigns:HeartRate     91 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_8>
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:HeartRate     90 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:ReadingsTime  "10:00" ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:DiastolicBP   76 ;
-        cardiovitalsigns:SystolicBP    119 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_11>
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:DiastolicBP   75 ;
-        cardiovitalsigns:HeartRate     84 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:SystolicBP    94 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:ReadingsTime  "09:20" ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_10>
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:ReadingsTime  "10:12" ;
-        cardiovitalsigns:DiastolicBP   70 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
-        cardiovitalsigns:HeartRate     71 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:SystolicBP    129 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient .
-
-cardiovitalsigns:bodypartofreadings937-LeftForearm
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Left forearm" ;
-        dc:identifier     "1" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_9>
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
-        cardiovitalsigns:ReadingsTime  "10:10" ;
-        cardiovitalsigns:HeartRate     80 ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:SystolicBP    121 ;
-        cardiovitalsigns:DiastolicBP   80 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_8>
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:HeartRate     90 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:DiastolicBP   77 ;
-        cardiovitalsigns:SystolicBP    119 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:ReadingsTime  "09:00" .
-
-cardiovitalsigns:bodypartofreadings932-RightForearm
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Right forearm" ;
-        dc:identifier     "3" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-cardiovitalsigns:bodypartofreadings937-LeftUpperArm
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Left upper arm" ;
-        dc:identifier     "2" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_10>
-        cardiovitalsigns:AbdominalCircumference  120 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        cardiovitalsigns:Weight        97 ;
-        cardiovitalsigns:bmi           "32.41" ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Nurse ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:DiastolicBP   70 ;
-        cardiovitalsigns:SystolicBP    128 ;
-        cardiovitalsigns:ReadingsTime  "10:30" ;
-        cardiovitalsigns:HeartRate     69 ;
-        cardiovitalsigns:Height        173 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_11>
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        cardiovitalsigns:SystolicBP    103 ;
-        cardiovitalsigns:DiastolicBP   74 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        cardiovitalsigns:HeartRate     84 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
-        cardiovitalsigns:ReadingsTime  "10:00" .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_11>
-        cardiovitalsigns:bmi           "32.61" ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:Height        139 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:AbdominalCircumference  117 ;
-        cardiovitalsigns:DiastolicBP   78 ;
-        cardiovitalsigns:ReadingsTime  "11:40" ;
-        cardiovitalsigns:HeartRate     86 ;
-        cardiovitalsigns:SystolicBP    126 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        cardiovitalsigns:Weight        63 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_11>
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTime  "09:00" ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-RightUpperArm ;
-        cardiovitalsigns:SystolicBP    95 ;
-        cardiovitalsigns:HeartRate     82 ;
-        cardiovitalsigns:DiastolicBP   72 .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_10>
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:SystolicBP    126 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:ReadingsTime  "10:10" ;
-        cardiovitalsigns:DiastolicBP   71 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
-        cardiovitalsigns:HeartRate     70 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> .
-
-cardiovitalsigns:readingstakenby931-Doctor
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Doctor" ;
-        dc:identifier     "1" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_8>
-        cardiovitalsigns:HeartRate     89 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:ReadingsTime  "09:45" ;
-        cardiovitalsigns:SystolicBP    117 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:DiastolicBP   75 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_9>
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Standing ;
-        cardiovitalsigns:ReadingsTime  "09:55" ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:HeartRate     79 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:DiastolicBP   82 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:SystolicBP    124 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_9>
-        cardiovitalsigns:HeartRate     80 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:SystolicBP    133 ;
-        cardiovitalsigns:DiastolicBP   84 ;
-        cardiovitalsigns:AbdominalCircumference  97 ;
-        cardiovitalsigns:Height        130 ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Standing ;
-        cardiovitalsigns:bmi           "38.46" ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:ReadingsTime  "09:50" ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        cardiovitalsigns:Weight        65 .
-
-cardiovitalsigns:bodypartofreadings937-RightForearm
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Right forearm" ;
-        dc:identifier     "3" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_11>
-        cardiovitalsigns:SystolicBP    101 ;
-        cardiovitalsigns:DiastolicBP   73 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTime  "09:50" ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        cardiovitalsigns:HeartRate     83 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_10>
-        cardiovitalsigns:ReadingsTime  "10:00" ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        cardiovitalsigns:DiastolicBP   72 ;
-        cardiovitalsigns:SystolicBP    129 ;
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        cardiovitalsigns:HeartRate     72 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_11>
-        cardiovitalsigns:Weight        67 ;
-        cardiovitalsigns:HeartRate     80 ;
-        cardiovitalsigns:bmi           "33.70" ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:Height        141 ;
-        cardiovitalsigns:ReadingsTime  "11:40" ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:DiastolicBP   69 ;
-        cardiovitalsigns:SystolicBP    105 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:AbdominalCircumference  114 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_10>
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        cardiovitalsigns:Weight        94 ;
-        cardiovitalsigns:bmi           "31.41" ;
-        cardiovitalsigns:Height        173 ;
-        cardiovitalsigns:AbdominalCircumference  95 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:DiastolicBP   71 ;
-        cardiovitalsigns:HeartRate     74 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:SystolicBP    128 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Doctor ;
-        cardiovitalsigns:ReadingsTime  "10:45" .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_11>
-        rdf:type                       lcdcobs:Observation ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Standing ;
-        cardiovitalsigns:DiastolicBP   76 ;
-        cardiovitalsigns:SystolicBP    97 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:HeartRate     83 ;
-        cardiovitalsigns:ReadingsTime  "09:52" .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_10>
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-RightUpperArm ;
-        cardiovitalsigns:SystolicBP    127 ;
-        cardiovitalsigns:DiastolicBP   72 ;
-        cardiovitalsigns:ReadingsTime  "10:35" ;
-        cardiovitalsigns:HeartRate     69 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Standing ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> .
-
-cardiovitalsigns:readingstakenby936-Patient
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Patient" ;
-        dc:identifier     "1" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_8>
-        cardiovitalsigns:SystolicBP    119 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
-        cardiovitalsigns:HeartRate     91 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:ReadingsTime  "09:45" ;
-        cardiovitalsigns:DiastolicBP   79 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_9>
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:DiastolicBP   80 ;
-        cardiovitalsigns:SystolicBP    123 ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsTime  "09:45" ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
-        cardiovitalsigns:HeartRate     78 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> .
-
-cardiovitalsigns:bodypositionatreadings938-Sitting
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Sitting" ;
-        dc:identifier     "1" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_8>
-        cardiovitalsigns:Weight        75 ;
-        cardiovitalsigns:Height        175 ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        cardiovitalsigns:HeartRate     94 ;
-        cardiovitalsigns:ReadingsTime  "09:40" ;
-        cardiovitalsigns:SystolicBP    123 ;
-        cardiovitalsigns:DiastolicBP   82 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:AbdominalCircumference  88 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Nurse ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
-        cardiovitalsigns:bmi           "24.49" .
-
-cardiovitalsigns:bodypositionatreadings938-Standing
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Standing" ;
-        dc:identifier     "2" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
-
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_11>
-        cardiovitalsigns:HeartRate     84 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:DiastolicBP   72 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        cardiovitalsigns:SystolicBP    100 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Relative ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsTime  "09:20" .
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              110 ;
+      cardiovitalsigns:DiastolicBP
+              80 ;
+      cardiovitalsigns:HeartRate
+              84 ;
+      cardiovitalsigns:Height
+              137 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "11:10" ;
+      cardiovitalsigns:SystolicBP
+              150 ;
+      cardiovitalsigns:Weight
+              65 ;
+      cardiovitalsigns:bmi
+              "34.63" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_10>
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
-        cardiovitalsigns:HeartRate     71 ;
-        cardiovitalsigns:ReadingsTime  "10:10" ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        cardiovitalsigns:SystolicBP    128 ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:DiastolicBP   71 .
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              71 ;
+      cardiovitalsigns:HeartRate
+              71 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:10" ;
+      cardiovitalsigns:SystolicBP
+              128 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
 
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_9>
-        cardiovitalsigns:DiastolicBP   83 ;
-        cardiovitalsigns:Weight        63 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTime  "10:20" ;
-        cardiovitalsigns:bmi           "24.61" ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Nurse ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-RightUpperArm ;
-        cardiovitalsigns:SystolicBP    129 ;
-        cardiovitalsigns:AbdominalCircumference  95 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
-        cardiovitalsigns:Height        160 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:HeartRate     70 .
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              76 ;
+      cardiovitalsigns:HeartRate
+              90 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              119 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
 
-cardiovitalsigns:bodypositionatreadings933-Sitting
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Sitting" ;
-        dc:identifier     "1" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              81 ;
+      cardiovitalsigns:HeartRate
+              76 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Standing ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              125 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:bodypartofreadings932-LeftForearm
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Left forearm" ;
+      dc:identifier "1" ;
+      dc:source "cardio" .
+
+cardiovitalsigns:bodypositionatreadings933-Lying
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Lying" ;
+      dc:identifier "3" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              70 ;
+      cardiovitalsigns:HeartRate
+              71 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:12" ;
+      cardiovitalsigns:SystolicBP
+              129 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              72 ;
+      cardiovitalsigns:HeartRate
+              82 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-RightUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "09:00" ;
+      cardiovitalsigns:SystolicBP
+              95 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              80 ;
+      cardiovitalsigns:HeartRate
+              72 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:55" ;
+      cardiovitalsigns:SystolicBP
+              120 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_10>
-        cardiovitalsigns:SystolicBP    128 ;
-        cardiovitalsigns:DiastolicBP   73 ;
-        cardiovitalsigns:HeartRate     75 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy931-Nurse ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
-        cardiovitalsigns:bmi           "31.74" ;
-        cardiovitalsigns:Height        173 ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsTime  "10:45" ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
-        cardiovitalsigns:AbdominalCircumference  115 ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
-        cardiovitalsigns:Weight        95 .
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              115 ;
+      cardiovitalsigns:DiastolicBP
+              73 ;
+      cardiovitalsigns:HeartRate
+              75 ;
+      cardiovitalsigns:Height
+              173 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Nurse ;
+      cardiovitalsigns:ReadingsTime
+              "10:45" ;
+      cardiovitalsigns:SystolicBP
+              128 ;
+      cardiovitalsigns:Weight
+              95 ;
+      cardiovitalsigns:bmi
+              "31.74" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
 
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_11>
-        cardiovitalsigns:DiastolicBP   75 ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
-        cardiovitalsigns:HeartRate     84 ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> ;
-        cardiovitalsigns:ReadingsTime  "09:20" ;
-        cardiovitalsigns:SystolicBP    98 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting .
+cardiovitalsigns:bodypartofreadings937-RightUpperArm
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Right upper arm" ;
+      dc:identifier "4" ;
+      dc:source "cardio" .
 
-<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_10>
-        lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
-        cardiovitalsigns:HeartRate     73 ;
-        rdf:type                       lcdcobs:Observation ;
-        cardiovitalsigns:ReadingsTakenBy  cardiovitalsigns:ReadingsTakenBy936-Patient ;
-        cardiovitalsigns:ReadingsBodyPosition  cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
-        cardiovitalsigns:DiastolicBP   70 ;
-        cardiovitalsigns:ReadingsBodyPart  cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
-        cardiovitalsigns:ReadingsTime  "09:50" ;
-        cardiovitalsigns:SystolicBP    127 ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/vital> .
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              88 ;
+      cardiovitalsigns:DiastolicBP
+              80 ;
+      cardiovitalsigns:HeartRate
+              92 ;
+      cardiovitalsigns:Height
+              175 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "10:20" ;
+      cardiovitalsigns:SystolicBP
+              121 ;
+      cardiovitalsigns:Weight
+              74 ;
+      cardiovitalsigns:bmi
+              "24.16" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
 
-cardiovitalsigns:readingstakenby931-Nurse
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Nurse" ;
-        dc:identifier     "2" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              74 ;
+      cardiovitalsigns:HeartRate
+              84 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              103 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              75 ;
+      cardiovitalsigns:HeartRate
+              89 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "09:45" ;
+      cardiovitalsigns:SystolicBP
+              117 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
 
 cardiovitalsigns:bodypositionatreadings938-Lying
-        dc:source         "cardio" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
-        dc:description    "Lying" ;
-        dc:identifier     "3" ;
-        rdf:type          skos:Concept ;
-        rdf:type          owl:Class .
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Lying" ;
+      dc:identifier "3" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              120 ;
+      cardiovitalsigns:DiastolicBP
+              70 ;
+      cardiovitalsigns:HeartRate
+              69 ;
+      cardiovitalsigns:Height
+              173 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Nurse ;
+      cardiovitalsigns:ReadingsTime
+              "10:30" ;
+      cardiovitalsigns:SystolicBP
+              128 ;
+      cardiovitalsigns:Weight
+              97 ;
+      cardiovitalsigns:bmi
+              "32.41" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              97 ;
+      cardiovitalsigns:DiastolicBP
+              84 ;
+      cardiovitalsigns:HeartRate
+              80 ;
+      cardiovitalsigns:Height
+              130 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Standing ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "09:50" ;
+      cardiovitalsigns:SystolicBP
+              133 ;
+      cardiovitalsigns:Weight
+              65 ;
+      cardiovitalsigns:bmi
+              "38.46" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:bodypositionatreadings938-Sitting
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Sitting" ;
+      dc:identifier "1" ;
+      dc:source "cardio" .
+
+cardiovitalsigns:bodypartofreadings932-RightForearm
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Right forearm" ;
+      dc:identifier "3" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              81 ;
+      cardiovitalsigns:HeartRate
+              85 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:30" ;
+      cardiovitalsigns:SystolicBP
+              124 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              117 ;
+      cardiovitalsigns:DiastolicBP
+              78 ;
+      cardiovitalsigns:HeartRate
+              86 ;
+      cardiovitalsigns:Height
+              139 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "11:40" ;
+      cardiovitalsigns:SystolicBP
+              126 ;
+      cardiovitalsigns:Weight
+              63 ;
+      cardiovitalsigns:bmi
+              "32.61" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:bodypartofreadings937-RightForearm
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Right forearm" ;
+      dc:identifier "3" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              70 ;
+      cardiovitalsigns:HeartRate
+              74 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-RightForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Lying ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "10:10" ;
+      cardiovitalsigns:SystolicBP
+              127 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              77 ;
+      cardiovitalsigns:HeartRate
+              90 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "09:00" ;
+      cardiovitalsigns:SystolicBP
+              119 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:readingstakenby936-Patient
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Patient" ;
+      dc:identifier "1" ;
+      dc:source "cardio" .
+
+cardiovitalsigns:readingstakenby931-Doctor
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Doctor" ;
+      dc:identifier "1" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              73 ;
+      cardiovitalsigns:HeartRate
+              85 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:10" ;
+      cardiovitalsigns:SystolicBP
+              100 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:bodypositionatreadings933-Standing
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Standing" ;
+      dc:identifier "2" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              110 ;
+      cardiovitalsigns:DiastolicBP
+              68 ;
+      cardiovitalsigns:HeartRate
+              84 ;
+      cardiovitalsigns:Height
+              137 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "11:40" ;
+      cardiovitalsigns:SystolicBP
+              115 ;
+      cardiovitalsigns:Weight
+              66 ;
+      cardiovitalsigns:bmi
+              "35.16" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              114 ;
+      cardiovitalsigns:DiastolicBP
+              69 ;
+      cardiovitalsigns:HeartRate
+              80 ;
+      cardiovitalsigns:Height
+              141 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "11:40" ;
+      cardiovitalsigns:SystolicBP
+              105 ;
+      cardiovitalsigns:Weight
+              67 ;
+      cardiovitalsigns:bmi
+              "33.70" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              80 ;
+      cardiovitalsigns:HeartRate
+              80 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "10:10" ;
+      cardiovitalsigns:SystolicBP
+              121 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              72 ;
+      cardiovitalsigns:HeartRate
+              72 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              129 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              95 ;
+      cardiovitalsigns:DiastolicBP
+              83 ;
+      cardiovitalsigns:HeartRate
+              70 ;
+      cardiovitalsigns:Height
+              160 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-RightUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Nurse ;
+      cardiovitalsigns:ReadingsTime
+              "10:20" ;
+      cardiovitalsigns:SystolicBP
+              129 ;
+      cardiovitalsigns:Weight
+              63 ;
+      cardiovitalsigns:bmi
+              "24.61" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              76 ;
+      cardiovitalsigns:HeartRate
+              91 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              118 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              88 ;
+      cardiovitalsigns:DiastolicBP
+              82 ;
+      cardiovitalsigns:HeartRate
+              94 ;
+      cardiovitalsigns:Height
+              175 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Nurse ;
+      cardiovitalsigns:ReadingsTime
+              "09:40" ;
+      cardiovitalsigns:SystolicBP
+              123 ;
+      cardiovitalsigns:Weight
+              75 ;
+      cardiovitalsigns:bmi
+              "24.49" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              75 ;
+      cardiovitalsigns:HeartRate
+              84 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:20" ;
+      cardiovitalsigns:SystolicBP
+              98 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              78 ;
+      cardiovitalsigns:HeartRate
+              90 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:05" ;
+      cardiovitalsigns:SystolicBP
+              119 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              81 ;
+      cardiovitalsigns:HeartRate
+              76 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:30" ;
+      cardiovitalsigns:SystolicBP
+              122 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              95 ;
+      cardiovitalsigns:DiastolicBP
+              71 ;
+      cardiovitalsigns:HeartRate
+              74 ;
+      cardiovitalsigns:Height
+              173 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "10:45" ;
+      cardiovitalsigns:SystolicBP
+              128 ;
+      cardiovitalsigns:Weight
+              94 ;
+      cardiovitalsigns:bmi
+              "31.41" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              71 ;
+      cardiovitalsigns:HeartRate
+              70 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:10" ;
+      cardiovitalsigns:SystolicBP
+              126 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:bodypositionatreadings933-Sitting
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Sitting" ;
+      dc:identifier "1" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              76 ;
+      cardiovitalsigns:HeartRate
+              91 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:30" ;
+      cardiovitalsigns:SystolicBP
+              118 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              76 ;
+      cardiovitalsigns:HeartRate
+              83 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Standing ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "09:52" ;
+      cardiovitalsigns:SystolicBP
+              97 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              82 ;
+      cardiovitalsigns:HeartRate
+              79 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Standing ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:55" ;
+      cardiovitalsigns:SystolicBP
+              124 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:readingstakenby936-Relative
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Relative" ;
+      dc:identifier "2" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              120 ;
+      cardiovitalsigns:DiastolicBP
+              73 ;
+      cardiovitalsigns:HeartRate
+              71 ;
+      cardiovitalsigns:Height
+              173 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "10:40" ;
+      cardiovitalsigns:SystolicBP
+              130 ;
+      cardiovitalsigns:Weight
+              97 ;
+      cardiovitalsigns:bmi
+              "32.41" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              79 ;
+      cardiovitalsigns:HeartRate
+              92 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              119 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              90 ;
+      cardiovitalsigns:DiastolicBP
+              79 ;
+      cardiovitalsigns:HeartRate
+              92 ;
+      cardiovitalsigns:Height
+              175 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              121 ;
+      cardiovitalsigns:Weight
+              75 ;
+      cardiovitalsigns:bmi
+              "24.49" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              70 ;
+      cardiovitalsigns:HeartRate
+              70 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              129 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              97 ;
+      cardiovitalsigns:DiastolicBP
+              84 ;
+      cardiovitalsigns:HeartRate
+              75 ;
+      cardiovitalsigns:Height
+              160 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "10:40" ;
+      cardiovitalsigns:SystolicBP
+              131 ;
+      cardiovitalsigns:Weight
+              62 ;
+      cardiovitalsigns:bmi
+              "24.22" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              72 ;
+      cardiovitalsigns:HeartRate
+              72 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              126 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:bodypartofreadings937-LeftForearm
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Left forearm" ;
+      dc:identifier "1" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              79 ;
+      cardiovitalsigns:HeartRate
+              73 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-RightUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Lying ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "10:25" ;
+      cardiovitalsigns:SystolicBP
+              121 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              80 ;
+      cardiovitalsigns:HeartRate
+              74 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Lying ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "10:10" ;
+      cardiovitalsigns:SystolicBP
+              123 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              81 ;
+      cardiovitalsigns:HeartRate
+              93 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "09:00" ;
+      cardiovitalsigns:SystolicBP
+              120 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              73 ;
+      cardiovitalsigns:HeartRate
+              83 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:50" ;
+      cardiovitalsigns:SystolicBP
+              101 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              70 ;
+      cardiovitalsigns:HeartRate
+              73 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:50" ;
+      cardiovitalsigns:SystolicBP
+              127 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              75 ;
+      cardiovitalsigns:HeartRate
+              84 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftForearm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:20" ;
+      cardiovitalsigns:SystolicBP
+              94 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:bodypartofreadings937-LeftUpperArm
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Left upper arm" ;
+      dc:identifier "2" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              79 ;
+      cardiovitalsigns:HeartRate
+              91 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:45" ;
+      cardiovitalsigns:SystolicBP
+              119 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              74 ;
+      cardiovitalsigns:HeartRate
+              86 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:30" ;
+      cardiovitalsigns:SystolicBP
+              94 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              97 ;
+      cardiovitalsigns:DiastolicBP
+              85 ;
+      cardiovitalsigns:HeartRate
+              72 ;
+      cardiovitalsigns:Height
+              160 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Nurse ;
+      cardiovitalsigns:ReadingsTime
+              "10:45" ;
+      cardiovitalsigns:SystolicBP
+              130 ;
+      cardiovitalsigns:Weight
+              62 ;
+      cardiovitalsigns:bmi
+              "24.22" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_9>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              80 ;
+      cardiovitalsigns:HeartRate
+              78 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Patient ;
+      cardiovitalsigns:ReadingsTime
+              "09:45" ;
+      cardiovitalsigns:SystolicBP
+              123 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_8>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:AbdominalCircumference
+              90 ;
+      cardiovitalsigns:DiastolicBP
+              81 ;
+      cardiovitalsigns:HeartRate
+              93 ;
+      cardiovitalsigns:Height
+              175 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart932-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition933-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy931-Doctor ;
+      cardiovitalsigns:ReadingsTime
+              "10:00" ;
+      cardiovitalsigns:SystolicBP
+              123 ;
+      cardiovitalsigns:Weight
+              75 ;
+      cardiovitalsigns:bmi
+              "24.49" ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_10>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              72 ;
+      cardiovitalsigns:HeartRate
+              69 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-RightUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Standing ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "10:35" ;
+      cardiovitalsigns:SystolicBP
+              127 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:bodypartofreadings932-LeftUpperArm
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Left upper arm" ;
+      dc:identifier "2" ;
+      dc:source "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_11>
+      a       lcdcobs:Observation ;
+      cardiovitalsigns:DiastolicBP
+              72 ;
+      cardiovitalsigns:HeartRate
+              84 ;
+      cardiovitalsigns:ReadingsBodyPart
+              cardiovitalsigns:ReadingsBodyPart937-LeftUpperArm ;
+      cardiovitalsigns:ReadingsBodyPosition
+              cardiovitalsigns:ReadingsBodyPosition938-Sitting ;
+      cardiovitalsigns:ReadingsTakenBy
+              cardiovitalsigns:ReadingsTakenBy936-Relative ;
+      cardiovitalsigns:ReadingsTime
+              "09:20" ;
+      cardiovitalsigns:SystolicBP
+              100 ;
+      lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
+      lcdccore:subject <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+      lcdccore:theme <http://purl.org/sstats/lcdc/id/theme/vital> .
+
+cardiovitalsigns:readingstakenby931-Nurse
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Nurse" ;
+      dc:identifier "2" ;
+      dc:source "cardio" .
+
+cardiovitalsigns:bodypositionatreadings938-Standing
+      a       skos:Concept , owl:Class ;
+      rdfs:isDefinedBy "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#" ;
+      dc:description "Standing" ;
+      dc:identifier "2" ;
+      dc:source "cardio" .

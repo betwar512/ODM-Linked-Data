@@ -27,9 +27,10 @@ public class JaxBinder {
 	/*
 	 * capture all the codeLists in metaData 
 	 * */
-	public static HashMap<String,ODMcomplexTypeDefinitionCodeList> catchCodeList(ODMcomplexTypeDefinitionMetaDataVersion metaData){
+	public static HashMap<String,ODMcomplexTypeDefinitionCodeList> 
+	catchCodeList(ODMcomplexTypeDefinitionMetaDataVersion metaData){
 	
-		List<ODMcomplexTypeDefinitionCodeList> codeLists=metaData.getCodeList();
+		List<ODMcomplexTypeDefinitionCodeList> codeLists=metaData.getCodeList(); //capture codeList
 		HashMap<String,ODMcomplexTypeDefinitionCodeList> hashMap=new HashMap<String ,ODMcomplexTypeDefinitionCodeList>();
 		for(ODMcomplexTypeDefinitionCodeList codeList:codeLists){
 			
@@ -45,7 +46,8 @@ public class JaxBinder {
 	/*
 	 * get hashMap for ItemGroupDef 
 	 * */
-	public static HashMap<String,ODMcomplexTypeDefinitionItemGroupDef> getItemGroupDef(ODMcomplexTypeDefinitionMetaDataVersion metaData){
+	public static HashMap<String,ODMcomplexTypeDefinitionItemGroupDef> 
+	getItemGroupDef(ODMcomplexTypeDefinitionMetaDataVersion metaData){
 		
 		HashMap<String,ODMcomplexTypeDefinitionItemGroupDef> itemMap=new HashMap<String,ODMcomplexTypeDefinitionItemGroupDef>();
 			List<ODMcomplexTypeDefinitionItemGroupDef> itemGroupDefs=metaData.getItemGroupDef();
@@ -56,11 +58,15 @@ public class JaxBinder {
 		return itemMap;	
 	}
 	
+	
 	//itemDefHash map with keys 
 	  /*
-	   * Using Map to seperate Keys and find the value later by using java HashMap method get(Key) later on 
+	   * Using Map to separate Keys and find the value later by using java HashMap method get(Key) 
+	   * 
+	   *
 	   * */
-	public static HashMap<String,ODMcomplexTypeDefinitionItemDef> catchItemDef(ODMcomplexTypeDefinitionMetaDataVersion metaData){
+	public static HashMap<String,ODMcomplexTypeDefinitionItemDef> 
+	catchItemDef(ODMcomplexTypeDefinitionMetaDataVersion metaData){
 		
 		HashMap<String,ODMcomplexTypeDefinitionItemDef> itemMap=new HashMap<String,ODMcomplexTypeDefinitionItemDef>();
 		List<ODMcomplexTypeDefinitionItemDef> itemDef=metaData.getItemDef();
@@ -79,7 +85,8 @@ public class JaxBinder {
 	
 	//returning metaData belong to study
 	//Static Method 
-	public static ODMcomplexTypeDefinitionMetaDataVersion catchMetaData(String inputFile){
+	public static ODMcomplexTypeDefinitionMetaDataVersion 
+	catchMetaData(String inputFile){
 		
 		ODMcomplexTypeDefinitionMetaDataVersion metaData = null;
 		if(inputFile.length()==0){
@@ -117,10 +124,13 @@ public class JaxBinder {
 	
 
 	/*
-	 *  Get for Object ClinicalData
-	 *
+	 * Input: ODM xml file
+	 * Capturing clinicalData from ODM
+	 * return: ClinicalData type: ODMcomplexTypeDefinitionClinicalData
+
 	 * */
-	public  ODMcomplexTypeDefinitionClinicalData getClinicalData(String inputFile){
+	public  ODMcomplexTypeDefinitionClinicalData 
+	getClinicalData(String inputFile){
 		
 		
 		ODMcomplexTypeDefinitionClinicalData clinical=new ODMcomplexTypeDefinitionClinicalData();
@@ -159,12 +169,14 @@ public class JaxBinder {
 	
 	
 		/*
-		 * List Customer Object ItemDetail Class
+		 * return : ArrayList Custom Objects Type:ItemDetail
 		 * input ClinicaData 
 		 * 
 		 * */
 	
-	public ArrayList<ItemDetail> makeItemsObjects(ODMcomplexTypeDefinitionClinicalData clinicalData,ODMcomplexTypeDefinitionMetaDataVersion metaData){
+	public ArrayList<ItemDetail> 
+	makeItemsObjects(ODMcomplexTypeDefinitionClinicalData clinicalData
+			,ODMcomplexTypeDefinitionMetaDataVersion metaData){
 	
 	//	HashMap<String,ArrayList<ItemDetail>> itemDetailList=new HashMap<String,ArrayList<ItemDetail>>();
 		
@@ -206,7 +218,7 @@ public class JaxBinder {
 			  if(repeatYesorNo.equals(YesOrNo.YES))
 				  repeat=true;
 			 
-			  //DTO Object
+			  //Data Object
 			  ItemDetail itemDto=new ItemDetail();
 			  //Set properties
 			  itemDto.subjectKey=subjectkey;
@@ -221,8 +233,8 @@ public class JaxBinder {
 
 
 		  }//ItemGroupData
-	  }//FormData
-	 }
+	    }//FormData
+	  }
 	}	
 
 	return itemDtos;
