@@ -8,6 +8,6 @@ The scope of this project is focused on Cardio study for 3 categories :
 •	Blood measurements 
 •	medications.
 
-  The system split each of the data about particular category into the Three linked files internally by ontology and also linkset to external ontology snomed.
+  The system split each of the data about particular category into the Three linked graphs internally by ontology and also linkset to external ontology snomed.
   Each generated file complement the related linked file in manner of ODM instruction.
 Each group includes 3 type of Model as smaller Graphs: Variable, Cardio, Observation.
