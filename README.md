@@ -4,9 +4,9 @@
  Design follows standard of CDISC and adopting the ODM information, also implement Ontology by leveraging vocabularies such as LcdcCore, LcdcOdm, Qb, etc .
   
 The scope of this project is focused on Cardio study for 3 categories :
-•	Vital signs
-•	Blood measurements 
-•	medications.
+* Vital signs
+* Blood measurements 
+* medications.
 
   The system split each of the data about particular category into the Three linked graphs internally by ontology and also linkset to external ontology snomed.
   Each generated file complement the related linked file in manner of ODM instruction.
@@ -17,7 +17,7 @@ Each group includes 3 type of Model as smaller Graphs: Variable, Cardio, Observa
 
 #Installation 
 
-#System dependencies:
+##System dependencies:##
 
 This code is compatible with Java 7+ 
 
