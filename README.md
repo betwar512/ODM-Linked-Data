@@ -33,7 +33,7 @@ To run this project please add all the dependencies first or use Maven ants to b
 (visit this link https://maven.apache.org  for more information about maven installation)
   Please be advised you need to have Apache Jena added into your environment path. Refer to Apache Jena documentation for more information.
 
- After installation you can run the Project as a stand alone JVM. Main function is placed in src/Java/mycompany/app.java file. User can insert ODM.xml file format by changing the file path in main function. All the Graphs are going to store into TDB (Triple store database) and also can be access as .ttl files in Model_Maker folder.
+ After installation you can run the Project as a stand alone JVM. Main function is placed in src/Java/mycompany/app.java file.  All the Graphs are going to store into TDB (Triple store database) and also can be access as .ttl files in Model_Maker folder.
 
   
     #System calling and functions:
@@ -43,7 +43,7 @@ In the java system RDFModelHelper class is the main caller for all the graphs ge
 For more information check the Java docs.
 
 
-     # Running Java application Main function:
+#Running Java application Main function:
 	
  Main function for this system contains String filePath, this variable provides the path to your ODM.xml file (Default file with controlled data is includes in resources folder, for testing), for using with different ODM format xml file change the String file path to your file path.
 
