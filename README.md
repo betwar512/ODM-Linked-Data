@@ -1,4 +1,4 @@
-# CSIRO-Project-
+# ODM linked data 
 
   Collection of semantic technology (RDFS,OWL2,SKOS) applied into the Graph to provide enriched mature and easy instruction data out of complex ODM object design .By this method technical researched data can be redden in detail and easy even by none technical person compare to ODM xml that have to apply extra layout by secondary system to be able to extract the information.
  Design follows standard of CDISC and adopting the ODM information, also implement Ontology by leveraging vocabularies such as LcdcCore, LcdcOdm, Qb, etc .
