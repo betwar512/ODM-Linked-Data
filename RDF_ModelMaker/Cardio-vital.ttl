@@ -23,7 +23,7 @@ cardiovitalsigns:ReadingsBodyPart
       dc:identifier "I_VITAL_READINGSBODYPART" , "I_VITAL_READINGSBODYPART_8890" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_READINGSBODYPART> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_READINGSBODYPART_8890> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPART> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPART_8890> .
 
 cardiovitalsigns:HeartRate
       a       owl:DatatypeProperty ;
@@ -35,7 +35,7 @@ cardiovitalsigns:HeartRate
       dc:identifier "I_VITAL_HEARTRATE_8662" , "I_VITAL_HEARTRATE_7515" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_HEARTRATE_7515> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_HEARTRATE_8662> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_HEARTRATE_7515> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_HEARTRATE_8662> .
 
 cardiovitalsigns:SystolicBP
       a       owl:DatatypeProperty ;
@@ -47,7 +47,7 @@ cardiovitalsigns:SystolicBP
       dc:identifier "I_VITAL_SYSTOLICBP_1335" , "I_VITAL_SYSTOLICBP_1220" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_SYSTOLICBP_1220> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_SYSTOLICBP_1335> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_SYSTOLICBP_1335> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_SYSTOLICBP_1220> .
 
 cardiovitalsigns:ReadingsTime
       a       owl:DatatypeProperty ;
@@ -59,7 +59,7 @@ cardiovitalsigns:ReadingsTime
       dc:identifier "I_VITAL_READINGSTIME" , "I_VITAL_READINGSTIME_1720" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_READINGSTIME> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_READINGSTIME_1720> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTIME> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTIME_1720> .
 
 cardiovitalsigns:DiastolicBP
       a       owl:DatatypeProperty ;
@@ -71,7 +71,7 @@ cardiovitalsigns:DiastolicBP
       dc:identifier "I_VITAL_DIASTOLICBP_4036" , "I_VITAL_DIASTOLICBP_37" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_DIASTOLICBP_37> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_DIASTOLICBP_4036> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_DIASTOLICBP_4036> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_DIASTOLICBP_37> .
 
 cardiovitalsigns:ReadingsTakenBy
       a       owl:DatatypeProperty ;
@@ -83,7 +83,7 @@ cardiovitalsigns:ReadingsTakenBy
       dc:identifier "I_VITAL_READINGSTAKENBY_4404" , "I_VITAL_READINGSTAKENBY" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_READINGSTAKENBY> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_READINGSTAKENBY_4404> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTAKENBY> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTAKENBY_4404> .
 
 cardiovitalsigns:Height
       a       owl:DatatypeProperty ;
@@ -95,7 +95,7 @@ cardiovitalsigns:Height
       dc:identifier "I_VITAL_HEIGHT_3150" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_HEIGHT_3150> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_HEIGHT_3150> .
 
 cardiovitalsigns:Weight
       a       owl:DatatypeProperty ;
@@ -107,7 +107,7 @@ cardiovitalsigns:Weight
       dc:identifier "I_VITAL_WEIGHT_6650" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_WEIGHT_6650> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_WEIGHT_6650> .
 
 cardiovitalsigns:ReadingsBodyPosition
       a       owl:DatatypeProperty ;
@@ -119,7 +119,7 @@ cardiovitalsigns:ReadingsBodyPosition
       dc:identifier "I_VITAL_READINGSBODYPOSITION" , "I_VITAL_READINGSBODYPOSITION_1915" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_READINGSBODYPOSITION> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_READINGSBODYPOSITION_1915> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPOSITION_1915> , <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPOSITION> .
 
 cardiovitalsigns:bmi
       a       owl:DatatypeProperty ;
@@ -131,7 +131,7 @@ cardiovitalsigns:bmi
       dc:identifier "I_VITAL_BMI_6271" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_BMI_6271> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_BMI_6271> .
 
 cardiovitalsigns:AbdominalCircumference
       a       owl:DatatypeProperty ;
@@ -143,4 +143,4 @@ cardiovitalsigns:AbdominalCircumference
       dc:identifier "I_VITAL_ABDOMINALCIRCUMFERENCE_5194" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/vital> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_VITAL_ABDOMINALCIRCUMFERENCE_5194> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_ABDOMINALCIRCUMFERENCE_5194> .

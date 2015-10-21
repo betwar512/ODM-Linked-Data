@@ -21,12 +21,13 @@ public class DatabaseHelper {
 
   static final	String databaseUri="Databases/";
   
-   Dataset dataset=null;
+   Dataset dataset;
 	
 	public DatabaseHelper(){
 	 dataset=TDBFactory.createDataset(databaseUri);
 		
 	}
+	
 	
 	/*
 	 * Close dataset 
@@ -35,6 +36,8 @@ public class DatabaseHelper {
 	public void closeCon(){
 		
 		dataset.close();
+		
+
 		
 		  System.out.println("Database connection closed");
 	}
@@ -65,8 +68,9 @@ public class DatabaseHelper {
 	public Model getModelByName(String name){
 		
 	
-	dataset.begin(ReadWrite.READ);	
+	dataset.begin(ReadWrite.WRITE);	
     Model model=dataset.getNamedModel(name);
+    
     	return model;
 	}
 	

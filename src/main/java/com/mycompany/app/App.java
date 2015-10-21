@@ -1,11 +1,15 @@
 package com.mycompany.app;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 import org.apache.log4j.BasicConfigurator;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.ReadWrite;
 import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
@@ -22,29 +26,37 @@ public class App
     public static void main( String[] args )
     {   	
     	
-    	//logger
-    	BasicConfigurator.configure();
-    //	DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
-    //	Date date = new Date();
-    //	String time=dateFormat.format(date); //2014/08/06 15:59:48
     	
-    //Helper class for RDF models	
-      RDFModelHelper modelHelper=new RDFModelHelper(); 	
+    BasicConfigurator.configure();//logger
+    //dateTime
+    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+    Date date = new Date();
+    String time=dateFormat.format(date); //2014/08/06 15:59:48	
+    
+    	
+      
+  	     //TODO Change the String to your file path 
     	String filePath="src/main/java/resources/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml";
   	
     	
-    	//Complete Graph include all 6 models 
+    	
+    	//Helper class for RDF models	
+        RDFModelHelper modelHelper=new RDFModelHelper(); 
+      
+        //Complete Graph include all 6 models 
     	//from ODM file 
-    //	ModelMaker mm=modelHelper.modelHandler(filePath);
+    	ModelMaker mm=modelHelper.modelHandler(filePath);
     		
     	//Triple store init
     	DatabaseHelper dbh=new DatabaseHelper();
   	
-    		//write to store
-    		//dbh.writeModel(mm);
-    		//write to file
-    		//dbh.saveToFile(mm);
     	
+    		//write to store
+    		dbh.writeModel(mm);
+    		//write to file
+    	//	dbh.saveToFile(mm);
+    	dbh.closeCon();
+    	System.out.println(time);
     		
     		/*
     		 String queryString =        
@@ -88,25 +100,32 @@ public class App
 
        System.out.println("Query on Model : ");
     // Model model=  mm.openModel("Cardio-vital");
-      Model model=dbh.getModelByName("Cardio-vital");
-  	 
+       
+       DatabaseHelper dbh2=new DatabaseHelper();
+       
+       //Model capture by modelName 
+      Model model=dbh2.getModelByName("Cardio-vital");
+      
      if(!model.isEmpty()){
         QueryExecution qe = QueryExecutionFactory.create(query, model);
        com.hp.hpl.jena.query.ResultSet results =  qe.execSelect();
         ResultSetFormatter.out(System.out, results, query);
         qe.close();
      }
-        
+     dbh2.closeCon();  
+     
+     DatabaseHelper dbh3=new DatabaseHelper();
+     dbh3.dataset.begin(ReadWrite.READ);
   //      Get name for all the Models in TDB
-        Iterator<String> it = dbh.dataset.listNames();
+        Iterator<String> it = dbh3.dataset.listNames();
          while(it.hasNext()){
     	  String name =it.next();
     	  System.out.println(name);
     	  
       }
-         
+         dbh3.dataset.end();
      	//close database
-         dbh.closeCon(); 
+         dbh3.closeCon();
         
      }
       

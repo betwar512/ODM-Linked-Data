@@ -15,4 +15,18 @@ public class UriCustomHelper {
 	
 	public static final String purl="http://purl.org/sstats/lcdc/id/";
 	
+	
+	/**/
+	public String generateCardioUri(String theme){
+		
+		
+		String uri= "";
+		
+		
+		
+		
+		return uri;
+		
+	}
+	
 }

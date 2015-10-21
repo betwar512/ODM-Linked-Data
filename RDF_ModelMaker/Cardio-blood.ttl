@@ -23,7 +23,7 @@ cardioblood:WhiteBloodCell
       dc:identifier "I_BLOOD_WHITEBLOODCELL" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_WHITEBLOODCELL> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_WHITEBLOODCELL> .
 
 cardioblood:CollectionTime
       a       owl:DatatypeProperty ;
@@ -35,7 +35,7 @@ cardioblood:CollectionTime
       dc:identifier "I_BLOOD_COLLECTIONTIME" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_COLLECTIONTIME> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_COLLECTIONTIME> .
 
 cardioblood:Glucose
       a       owl:DatatypeProperty ;
@@ -47,7 +47,7 @@ cardioblood:Glucose
       dc:identifier "I_BLOOD_GLUCOSE" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_GLUCOSE> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_GLUCOSE> .
 
 cardioblood:HDL
       a       owl:DatatypeProperty ;
@@ -59,7 +59,7 @@ cardioblood:HDL
       dc:identifier "I_BLOOD_HDL" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_HDL> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_HDL> .
 
 cardioblood:RedBloodCell
       a       owl:DatatypeProperty ;
@@ -71,7 +71,7 @@ cardioblood:RedBloodCell
       dc:identifier "I_BLOOD_REDBLOODCELL" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_REDBLOODCELL> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_REDBLOODCELL> .
 
 cardioblood:Sodium
       a       owl:DatatypeProperty ;
@@ -83,7 +83,7 @@ cardioblood:Sodium
       dc:identifier "I_BLOOD_SODIUM" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_SODIUM> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_SODIUM> .
 
 cardioblood:Iron
       a       owl:DatatypeProperty ;
@@ -95,7 +95,7 @@ cardioblood:Iron
       dc:identifier "I_BLOOD_IRON" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_IRON> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_IRON> .
 
 cardioblood:LDL
       a       owl:DatatypeProperty ;
@@ -107,7 +107,7 @@ cardioblood:LDL
       dc:identifier "I_BLOOD_LDL" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_LDL> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_LDL> .
 
 cardioblood:Triglycerides
       a       owl:DatatypeProperty ;
@@ -119,7 +119,7 @@ cardioblood:Triglycerides
       dc:identifier "I_BLOOD_TRIGLYCERIDES" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_TRIGLYCERIDES> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_TRIGLYCERIDES> .
 
 cardioblood:Cholesterol
       a       owl:DatatypeProperty ;
@@ -131,7 +131,7 @@ cardioblood:Cholesterol
       dc:identifier "I_BLOOD_CHOLESTEROL" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_CHOLESTEROL> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_CHOLESTEROL> .
 
 cardioblood:Haemoglobin
       a       owl:DatatypeProperty ;
@@ -143,4 +143,4 @@ cardioblood:Haemoglobin
       dc:identifier "I_BLOOD_HAEMOGLOBIN" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/blood> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_BLOOD_HAEMOGLOBIN> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_HAEMOGLOBIN> .

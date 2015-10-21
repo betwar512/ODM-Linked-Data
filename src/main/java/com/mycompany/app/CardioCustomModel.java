@@ -92,7 +92,7 @@ public class CardioCustomModel {
 					  }
 					}	
 							//pointing to Variable Def 
-				Property based=model.createProperty(UriCustomHelper.metaBase,"/"+itemOid);
+				Property based=model.createProperty(UriCustomHelper.metaBase,"#"+itemOid);
 							
 				//domain from CsvFile
 				try { 

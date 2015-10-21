@@ -23,7 +23,7 @@ cardiomedic:MedicationEndDate
       dc:identifier "I_MEDIC_MEDICATIONENDDATE_2617" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONENDDATE_2617> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONENDDATE_2617> .
 
 cardiomedic:MedicationCode
       a       owl:DatatypeProperty ;
@@ -35,7 +35,7 @@ cardiomedic:MedicationCode
       dc:identifier "I_MEDIC_MEDICATIONCODE_1591" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONCODE_1591> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONCODE_1591> .
 
 cardiomedic:OntologyVersion
       a       owl:DatatypeProperty ;
@@ -46,7 +46,7 @@ cardiomedic:OntologyVersion
       dc:identifier "I_MEDIC_ONTOLOGYVERSION_7814" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_ONTOLOGYVERSION_7814> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_ONTOLOGYVERSION_7814> .
 
 cardiomedic:OntologyID
       a       owl:DatatypeProperty ;
@@ -57,7 +57,7 @@ cardiomedic:OntologyID
       dc:identifier "I_MEDIC_ONTOLOGYID_5156" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_ONTOLOGYID_5156> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_ONTOLOGYID_5156> .
 
 cardiomedic:MedicationName
       a       owl:DatatypeProperty ;
@@ -69,7 +69,7 @@ cardiomedic:MedicationName
       dc:identifier "I_MEDIC_MEDICATIONNAME_2443" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONNAME_2443> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONNAME_2443> .
 
 cardiomedic:MedicationRoute
       a       owl:DatatypeProperty ;
@@ -81,7 +81,7 @@ cardiomedic:MedicationRoute
       dc:identifier "I_MEDIC_MEDICATIONROUTE" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONROUTE> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONROUTE> .
 
 cardiomedic:MedicationStartDate
       a       owl:DatatypeProperty ;
@@ -93,7 +93,7 @@ cardiomedic:MedicationStartDate
       dc:identifier "I_MEDIC_MEDICATIONSTARTDATE_6157" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONSTARTDATE_6157> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONSTARTDATE_6157> .
 
 cardiomedic:MedicationDoseForm
       a       owl:DatatypeProperty ;
@@ -105,7 +105,7 @@ cardiomedic:MedicationDoseForm
       dc:identifier "I_MEDIC_MEDICATIONDOSEFORM_3200" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONDOSEFORM_3200> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEFORM_3200> .
 
 cardiomedic:MedicationDoseUnit
       a       owl:DatatypeProperty ;
@@ -117,7 +117,7 @@ cardiomedic:MedicationDoseUnit
       dc:identifier "I_MEDIC_MEDICATIONDOSEUNIT_2971" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONDOSEUNIT_2971> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEUNIT_2971> .
 
 cardiomedic:MedicationFreq
       a       owl:DatatypeProperty ;
@@ -129,7 +129,7 @@ cardiomedic:MedicationFreq
       dc:identifier "I_MEDIC_MEDICATIONFREQ_7034" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONFREQ_7034> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONFREQ_7034> .
 
 cardiomedic:MedicationDose
       a       owl:DatatypeProperty ;
@@ -141,4 +141,4 @@ cardiomedic:MedicationDose
       dc:identifier "I_MEDIC_MEDICATIONDOSE_1998" ;
       dc:source "cardio" ;
       lcdccore:themeId <http://purl.org/sstats/lcdc/id/theme/medic> ;
-      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def/I_MEDIC_MEDICATIONDOSE_1998> .
+      lcdcodm:basedOn <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSE_1998> .
