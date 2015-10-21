@@ -4,6 +4,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.Scanner;
+
 import org.apache.log4j.BasicConfigurator;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
@@ -33,11 +35,15 @@ public class App
     Date date = new Date();
     String time=dateFormat.format(date); //2014/08/06 15:59:48	
     
-    	
-      
+    	System.out.println("Please Enter your file Path or push enter:");
+      Scanner sc=new Scanner(System.in);
+      String filePath="";
+    	   filePath=sc.nextLine();
+    	 sc.close(); 
+      if(filePath.length()==0){
   	     //TODO Change the String to your file path 
-    	String filePath="src/main/java/resources/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml";
-  	
+    		filePath="src/main/java/resources/odm1.3_clinical_ext_Full_study_extract_2015-05-22-162457368.xml";
+      }
     	
     	
     	//Helper class for RDF models	
@@ -55,7 +61,7 @@ public class App
     		dbh.writeModel(mm);
     		//write to file
     	//	dbh.saveToFile(mm);
-    	dbh.closeCon();
+    	
     	System.out.println(time);
     		
     		/*
@@ -101,10 +107,10 @@ public class App
        System.out.println("Query on Model : ");
     // Model model=  mm.openModel("Cardio-vital");
        
-       DatabaseHelper dbh2=new DatabaseHelper();
+//       DatabaseHelper dbh2=new DatabaseHelper();
        
        //Model capture by modelName 
-      Model model=dbh2.getModelByName("Cardio-vital");
+      Model model=dbh.getModelByName("Cardio-vital");
       
      if(!model.isEmpty()){
         QueryExecution qe = QueryExecutionFactory.create(query, model);
@@ -112,20 +118,20 @@ public class App
         ResultSetFormatter.out(System.out, results, query);
         qe.close();
      }
-     dbh2.closeCon();  
+//     dbh2.closeCon();  
      
-     DatabaseHelper dbh3=new DatabaseHelper();
-     dbh3.dataset.begin(ReadWrite.READ);
+//     DatabaseHelper dbh3=new DatabaseHelper();
+     dbh.dataset.begin(ReadWrite.READ);
   //      Get name for all the Models in TDB
-        Iterator<String> it = dbh3.dataset.listNames();
+        Iterator<String> it = dbh.dataset.listNames();
          while(it.hasNext()){
     	  String name =it.next();
     	  System.out.println(name);
     	  
       }
-         dbh3.dataset.end();
+         dbh.dataset.end();
      	//close database
-         dbh3.closeCon();
+         dbh.closeCon();
         
      }
       

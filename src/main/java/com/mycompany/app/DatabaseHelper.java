@@ -70,7 +70,7 @@ public class DatabaseHelper {
 	
 	dataset.begin(ReadWrite.WRITE);	
     Model model=dataset.getNamedModel(name);
-    
+    dataset.end();
     	return model;
 	}
 	
