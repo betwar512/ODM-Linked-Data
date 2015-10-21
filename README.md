@@ -43,9 +43,9 @@ In the java system RDFModelHelper class is the main caller for all the graphs ge
 For more information check the Java docs.
 
 
-#Running Java application Main function:
+#Running Java application:
 	
- Main function for this system contains String filePath, this variable provides the path to your ODM.xml file (Default file with controlled data is includes in resources folder, for testing), for using with different ODM format xml file change the String file path to your file path.
+ Main function for this system contains String filePath, this variable provides the path to your ODM.xml file (Default file with controlled data is included in resources folder, for testing), for using with different ODM format xml file change the String file path to your file path.
 
 You can find the main function in package com.mycompany.app . Please read the comments for more information.
 
