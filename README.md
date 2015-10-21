@@ -52,4 +52,6 @@ You can find the main function in package com.mycompany.app . Please read the co
  The generated files will be saved in Model_Maker folder with .ttl (RDF Turtle) format.
 
  Dataset handles by DatabaseHandler class and always should be only one instant of this class instantiated and disposed (closed) before creating a new instant.(Database concurrency)
- For more information about Apache Jena TDB please refer to this link https://jena.apache.org/documentation/tdb/
+ For more information about Apache Jena TDB please refer to this link (https://jena.apache.org/documentation/tdb/)
+ 
+### please refer to project wiki for more information.
