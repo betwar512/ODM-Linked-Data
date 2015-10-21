@@ -22,12 +22,12 @@ Each group includes 3 type of Model as smaller Graphs: Variable, Cardio, Observa
 This code is compatible with Java 7+ 
 
 Dependencies: 
-•	JaxB2: already include in Java sdk 7+
-•	Log4j: already include in Java sdk 7+
-•	Apache Jena Library version: 2.7.4 
-•	Apache Jena TDB  version: 2.7.4
-•	Apache maven: version 3+
-•	OpenCSV: version 2.3
+*	JaxB2: already include in Java sdk 7+
+*	Log4j: already include in Java sdk 7+
+*	Apache Jena Library version: 2.7.4 
+*	Apache Jena TDB  version: 2.7.4
+*	Apache maven: version 3+
+*	OpenCSV: version 2.3
 
 To run this project please add all the dependencies first or use Maven ants to build the project by running pom.xml file.(visit this link https://maven.apache.org  for more information about maven installation)
   Please be advised you need to have Apache Jena added into your environment path. Refer to Apache Jena documentation for more information.
