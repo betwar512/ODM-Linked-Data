@@ -39,7 +39,7 @@ To run this project please add all the dependencies first or use Maven ants to b
     #System calling and functions:
 
 *	RDFModelHelper class:
-In the java system RDFModelHelper class is the main caller for all the graphs generator functions. RdfModelHelper has a function called modelHandler that accepts path for ODM.xml file as a String and generate main graph containing all the of our graphs.
+In the java system RDFModelHelper class is the main caller for all the graphs generator functions. RdfModelHelper has a function called modelHandler that accepts path for ODM.xml file as a String and generate main graph containing all the of other graphs.
 For more information check the Java docs.
 
 
