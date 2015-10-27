@@ -7,6 +7,10 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 import org.apache.log4j.BasicConfigurator;
+import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+
+import com.hp.hpl.jena.graph.Graph;
+import com.hp.hpl.jena.query.Dataset;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
@@ -15,6 +19,7 @@ import com.hp.hpl.jena.query.ReadWrite;
 import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
+import com.hp.hpl.jena.sparql.core.DatasetGraph;
 import com.hp.hpl.jena.vocabulary.OWL2;
 
 /**
@@ -47,12 +52,15 @@ public class App
     	
     	
     	//Helper class for RDF models	
-        RDFModelHelper modelHelper=new RDFModelHelper(); 
+      RDFModelHelper modelHelper=new RDFModelHelper(); 
       
         //Complete Graph include all 6 models 
     	//from ODM file 
     	ModelMaker mm=modelHelper.modelHandler(filePath);
     		
+    		Model m=mm.openModel("Slice-Theme");
+    		m.write(System.out,"TURTLE");
+    	
     	//Triple store init
     	DatabaseHelper dbh=new DatabaseHelper();
   	
@@ -60,7 +68,7 @@ public class App
     		//write to store
     		dbh.writeModel(mm);
     		//write to file
-    	//	dbh.saveToFile(mm);
+    		dbh.saveToFile(mm);
     	
     	System.out.println(time);
     		
@@ -88,17 +96,28 @@ public class App
          "PREFIX lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#>" +
             "select * "+
             "where { ?vs a owl:DatatypeProperty ;"+
-        "lcdcodm:basedOn ?based ;"+
-        "rdfs:label ?label ;"+
-        "rdfs:domain ?domain ;"+
-        "lcdccore:themeId ?themeId ."+
-        "?themeId lcdccore:themeKey ?themeKey ."+
-        "?based lcdcodm:formOid ?form ;"+
-        "lcdcodm:itemGroupOid ?itemGroup ;"+
-        "lcdcodm:ItemOid ?item.} \n";
-      
+        " lcdcodm:basedOn ?based ; "+
+        " rdfs:label ?label ; "+
+        " rdfs:domain ?domain ; "+
+        " lcdccore:themeId ?themeId ."+
+        " ?themeId lcdccore:themeKey ?themeKey."+
+        " ?based lcdcodm:formOid ?form; "+
+        " lcdcodm:itemGroupOid ?itemGroup; "+
+        " lcdcodm:ItemOid ?item. } \n";
+       
+      String qu="select * where { { graph ?g {?s ?p ?o} } union {?s ?p ?o} } limit 1000";
 
-       Query query = QueryFactory.create(queryString2);
+      String q2= "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\n"+
+    	         "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"+
+    	         "PREFIX lcdcobs:<http://purl.org/sstats/lcdc/def/obs#>\n"+ 
+    	         "PREFIX cardiovitalsigns:<http://aehrc-ci.it.csiro.au/cardio/lcdc/vitalsigns/def/cardio-vitalsigns#>\n"+
+    	         "PREFIX lcdccore:<http://purl.org/sstats/lcdc/def/core#>\n"+
+    	         "PREFIX owl:<http://www.w3.org/2002/07/owl#>\n"+
+    	         "PREFIX lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#>\n"+
+    	         "select ?s ?subject ?sysBP where { ?s a lcdcobs:Observation ; lcdccore:subject ?subject ; lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ; cardiovitalsigns:SystolicBP ?sysBP . }";
+      
+      
+       Query query = QueryFactory.create(qu);
         System.out.println("----------------------");
         System.out.println("Query Result Sheet");
         System.out.println("----------------------");
@@ -110,35 +129,31 @@ public class App
 //       DatabaseHelper dbh2=new DatabaseHelper();
        
        //Model capture by modelName 
-      Model model=dbh.getModelByName("Cardio-vital");
+      Dataset model=dbh.dataset;
       
-     if(!model.isEmpty()){
+      
+      
+ //   Model grap=dbh.dataset.getDefaultModel();
+     model.begin(ReadWrite.WRITE);
         QueryExecution qe = QueryExecutionFactory.create(query, model);
        com.hp.hpl.jena.query.ResultSet results =  qe.execSelect();
         ResultSetFormatter.out(System.out, results, query);
-        qe.close();
-     }
-//     dbh2.closeCon();  
+      qe.close();
+     model.end();
+
      
-//     DatabaseHelper dbh3=new DatabaseHelper();
+
      dbh.dataset.begin(ReadWrite.READ);
-  //      Get name for all the Models in TDB
+     	//Get name for all the Models in TDB
         Iterator<String> it = dbh.dataset.listNames();
          while(it.hasNext()){
     	  String name =it.next();
     	  System.out.println(name);
     	  
-      }
-         dbh.dataset.end();
+         }
+     dbh.dataset.end();
      	//close database
          dbh.closeCon();
-        
-     }
-      
-      
-        
-        
-        
-
-    }
+    } 
+ }
 

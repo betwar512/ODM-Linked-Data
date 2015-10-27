@@ -59,7 +59,7 @@ public class CardioCustomModel {
 				String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 
 				// have to be more generic 
-				String typeUri=UriCustomHelper.cardioBase+theme+"/def/cardio-"+theme;
+				String typeUri=UriCustomHelper.generateCardioUri(theme);
 				 
 				//more geeric 
 				 model=mm.createModel("Cardio-"+theme);
@@ -68,7 +68,7 @@ public class CardioCustomModel {
 				 
 
 				  	//main uri 
-				String uri= typeUri +"#"+ itemDef.getName();
+				String uri= typeUri + itemDef.getName();
 				String itemOid=item.getItemOID();
 				//vta
 				

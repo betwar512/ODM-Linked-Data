@@ -44,7 +44,7 @@ public class ObservationCustomModel {
 			  	//ItemsDto typeData 
 			  String theme="";
 			  String baseUriType="http://purl.org/sstats/lcdc/id/";
-			  String obsUri=""; 	
+			 // String obsUri=""; 	
 			  String repeatKey=itemDto.itemRepeatKey;
 		
 			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
@@ -54,7 +54,7 @@ public class ObservationCustomModel {
 				
 		  String itemOidName=item.getItemOID();
 				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
-				 obsUri=UriCustomHelper.obsBase+theme+"/phase/";
+				// obsUri=UriCustomHelper.obsBase+theme+"/phase/";
 				 model=mm.createModel("Observation-"+theme);
 				 //add snomed uri to model medication
 				 model.setNsPrefix("snomed", Snomed.snomedUri);
@@ -66,7 +66,9 @@ public class ObservationCustomModel {
 				String subject="";
 				//Create observation uri 
 				Resource obs=null;
-			    String obsPhase=obsUri+ itemDto.eventOid+"/subject/"+itemDto.subjectKey; 
+				
+				String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey);
+			    //String obsPhase=obsUri+ itemDto.eventOid+"/subject/"+itemDto.subjectKey; 
 			    
 			    //Add groupKey if exist 
 			    if(itemDto.repeating)
@@ -94,7 +96,7 @@ public class ObservationCustomModel {
 				//Obs value
 				Literal value=null;
 
-				String cardioUri=UriCustomHelper.cardioBase+theme+"/def/cardio-"+theme+"#";
+				String cardioUri=UriCustomHelper.generateCardioUri(theme);
 
 				Property pr=model.createProperty(cardioUri,itemDef.getName());
 				

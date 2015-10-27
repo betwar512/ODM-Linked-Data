@@ -15,6 +15,9 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.OWL2;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Qb;
+import com.mycompany.app.lcdc.crossSection;
+import com.mycompany.app.lcdc.domainSlice;
+import com.mycompany.app.lcdc.timeSeries;
 
 /**
  * @author Abbas.h.Safaie
@@ -69,12 +72,13 @@ public class SliceCustomModel {
 						
 							//Create observation uri 
 							String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
-							String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
+							String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey);
+									//obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
 								//Adding Key
 							  if(itemDto.repeating)
 							    	obsPhase+="/key/"+itemDto.itemRepeatKey;
-							  
-							Resource r=model.createResource(UriCustomHelper.sliceBase+"cs-slice"+"/subject/"+subject,Qb.Slice);			
+							  model.setNsPrefix("crossSection", crossSection.getURI());
+							Resource r=model.createResource(UriCustomHelper.sliceBase+"cs-slice"+"/subject/"+subject,crossSection.SubjectSection);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
 							
@@ -125,14 +129,19 @@ public class SliceCustomModel {
 						
 							//get Theme
 							String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
-						    String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
+							String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey);
 							//Adding Key	
 						    if(itemDto.repeating)
 						    	obsPhase+="/key/"+itemDto.itemRepeatKey;
 
-							Resource r=model.createResource(UriCustomHelper.sliceBase+"ds-slice"+"/theme/"+theme,Qb.Slice);			
-							Property p=model.createProperty(obsPhase);	
+						    model.setNsPrefix("domainSlice", domainSlice.getURI());
+							Resource r=model.createResource(UriCustomHelper.sliceBase+"ds-slice"+"/theme/"+theme,domainSlice.ThemeSlice);			
+							 Property p=model.createProperty(obsPhase);
+							 
+							 
 							r.addProperty(Qb.observation, p);
+							
+							
 							
 							//Add them Resource NameINdevidual 
 							Resource themeResource=model.createResource(UriCustomHelper.purl+"theme/"+theme,OWL2.NamedIndividual);
@@ -179,13 +188,14 @@ public class SliceCustomModel {
 						
 							//get Theme
 							String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
-							
-						  String obsPhase=UriCustomHelper.obsBase+theme+"/phase/"+ phase+"/subject/"+itemDto.subjectKey;  
+							//Observation Uri
+							String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey); 
 							//Adding Key
 						  if(itemDto.repeating)
 						    	obsPhase+="/key/"+itemDto.itemRepeatKey;
 						  
-							Resource r=model.createResource(UriCustomHelper.sliceBase+"tc-slice"+"/phase/"+itemDto.eventOid,Qb.Slice);			
+						  model.setNsPrefix("timeSeries", timeSeries.getURI());
+							Resource r=model.createResource(UriCustomHelper.sliceBase+"tc-slice"+"/phase/"+itemDto.eventOid,timeSeries.PhaseSeries);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
 

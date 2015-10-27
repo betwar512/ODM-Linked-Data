@@ -172,8 +172,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
  */
 
 
-
-
+  
 public class Odm {
     /** <p>The ontology model that holds the vocabulary terms</p> */
     private static OntModel m_model = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, null );

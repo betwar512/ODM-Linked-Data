@@ -1,90 +1,80 @@
-@prefix lcdcodm:  <http://purl.org/sstats/lcdc/def/odm#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix cardiovitalsigns:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#> .
-@prefix cardioblood:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
-@prefix snomed:  <http://snomed.info/sct/32506021000036107/version/20150531/id/> .
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix disco:   <http://rdf-vocabulary.ddialliance.org/discovery#> .
-@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
-@prefix amt:     <http://snomed.info/sct/900062011000036108/version/20150831/id/> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix lcdcobs:  <http://purl.org/sstats/lcdc/def/obs#> .
-@prefix cardiomedic:  <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#> .
-@prefix qb:      <http://purl.org/linked-data/cube#> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix lcdccore:  <http://purl.org/sstats/lcdc/def/core#> .
-@prefix snomedmod:  <http://snomed.info/sct/900000000000012004/version/20150831/id/> .
-@prefix dc:      <http://purl.org/dc/elements/1.1/> .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_CHOLESTEROL>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/365793008> .
-
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_GLUCOSE>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/434912009> .
-
-<http://snomed.info/sct/32506021000036107/version/20150531/id/434912009>
-      a       owl:NamedIndividual ;
-      rdfs:label "Blood glucose concentration" .
+@prefix lcdcodm: <http://purl.org/sstats/lcdc/def/odm#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix cardiovitalsigns: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#> .
+@prefix cardioblood: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
+@prefix snomed: <http://snomed.info/sct/32506021000036107/version/20150531/id/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco: <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix amt:   <http://snomed.info/sct/900062011000036108/version/20150831/id/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcdcobs: <http://purl.org/sstats/lcdc/def/obs#> .
+@prefix cardiomedic: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lcdccore: <http://purl.org/sstats/lcdc/def/core#> .
+@prefix snomedmod: <http://snomed.info/sct/900000000000012004/version/20150831/id/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_TRIGLYCERIDES>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/365795001> .
+        rdfs:subPropertyOf  snomed:365795001 .
 
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_COLLECTIONTIME>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/168149003> .
-
-<http://snomed.info/sct/32506021000036107/version/20150531/id/250216004>
-      a       owl:NamedIndividual ;
-      rdfs:label "Serum iron measurement" .
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_GLUCOSE>
+        rdfs:subPropertyOf  snomed:434912009 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_HDL>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/365791005> .
+        rdfs:subPropertyOf  snomed:365791005 .
 
-<http://snomed.info/sct/32506021000036107/version/20150531/id/365795001>
-      a       owl:NamedIndividual ;
-      rdfs:label "Triglyceride level - finding" .
-
-<http://snomed.info/sct/32506021000036107/version/20150531/id/14089001>
-      a       owl:NamedIndividual ;
-      rdfs:label "Red blood cell count" .
-
-<http://snomed.info/sct/32506021000036107/version/20150531/id/365791005>
-      a       owl:NamedIndividual ;
-      rdfs:label "Lipid level - finding" .
+snomed:250216004  a  owl:NamedIndividual ;
+        rdfs:label  "Serum iron measurement" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_HAEMOGLOBIN>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/416766001> .
+        rdfs:subPropertyOf  snomed:416766001 .
 
-<http://snomed.info/sct/32506021000036107/version/20150531/id/168149003>
-      a       owl:NamedIndividual ;
-      rdfs:label "Fluid sample collection time" .
+snomed:365795001  a  owl:NamedIndividual ;
+        rdfs:label  "Triglyceride level - finding" .
 
-<http://snomed.info/sct/32506021000036107/version/20150531/id/365793008>
-      a       owl:NamedIndividual ;
-      rdfs:label "Cholesterol level - finding" .
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_COLLECTIONTIME>
+        rdfs:subPropertyOf  snomed:168149003 .
 
-<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_WHITEBLOODCELL>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/767002> .
+snomed:168149003  a  owl:NamedIndividual ;
+        rdfs:label  "Fluid sample collection time" .
+
+snomed:434912009  a  owl:NamedIndividual ;
+        rdfs:label  "Blood glucose concentration" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_SODIUM>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/365761000> .
+        rdfs:subPropertyOf  snomed:365761000 .
+
+snomed:14089001  a  owl:NamedIndividual ;
+        rdfs:label  "Red blood cell count" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_LDL>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/365791005> .
+        rdfs:subPropertyOf  snomed:365791005 .
+
+snomed:416766001  a  owl:NamedIndividual ;
+        rdfs:label  "Quantity of haemoglobin in erythrocyte" .
+
+snomed:365761000  a  owl:NamedIndividual ;
+        rdfs:label  "Sodium level - finding" .
+
+snomed:365793008  a  owl:NamedIndividual ;
+        rdfs:label  "Cholesterol level - finding" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_WHITEBLOODCELL>
+        rdfs:subPropertyOf  snomed:767002 .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_CHOLESTEROL>
+        rdfs:subPropertyOf  snomed:365793008 .
+
+snomed:365791005  a  owl:NamedIndividual ;
+        rdfs:label  "Lipid level - finding" .
+
+snomed:767002  a    owl:NamedIndividual ;
+        rdfs:label  "White blood cell count" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_REDBLOODCELL>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/14089001> .
-
-<http://snomed.info/sct/32506021000036107/version/20150531/id/416766001>
-      a       owl:NamedIndividual ;
-      rdfs:label "Quantity of haemoglobin in erythrocyte" .
-
-<http://snomed.info/sct/32506021000036107/version/20150531/id/767002>
-      a       owl:NamedIndividual ;
-      rdfs:label "White blood cell count" .
+        rdfs:subPropertyOf  snomed:14089001 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_BLOOD_IRON>
-      rdfs:subPropertyOf <http://snomed.info/sct/32506021000036107/version/20150531/id/250216004> .
-
-<http://snomed.info/sct/32506021000036107/version/20150531/id/365761000>
-      a       owl:NamedIndividual ;
-      rdfs:label "Sodium level - finding" .
+        rdfs:subPropertyOf  snomed:250216004 .

@@ -3,10 +3,13 @@ package com.mycompany.app;
 import java.io.File;
 import java.io.FileOutputStream;
 
+import org.apache.jena.riot.RDFDataMgr;
+import org.apache.jena.riot.RDFFormat;
 
 import com.hp.hpl.jena.query.Dataset;
 import com.hp.hpl.jena.query.ReadWrite;
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
@@ -75,6 +78,18 @@ public class DatabaseHelper {
 	}
 	
 	
+	public Model getMainModel(){
+		
+		
+		Model mainModel =ModelFactory.createDefaultModel();
+		dataset.begin(ReadWrite.WRITE);
+				
+		dataset.end();
+		
+		return mainModel;
+	}
+	
+	
 	/*
 	 * save modelMaker Models into files 
 	 * 
@@ -96,7 +111,8 @@ public class DatabaseHelper {
 				FileOutputStream output = new FileOutputStream( file );
 			
 				//RDFDataMgr.write(output, model,"TURTLE");
-				model.write(output,"TURTLE");
+				//model.write(output,"TURTLE");
+				RDFDataMgr.write(output, model, RDFFormat.TURTLE_PRETTY);
 				 System.out.println("----------------------");
 					System.out.println("Model: "+modelName +" saved into Folder RDF_ModelMaker");
 					 System.out.println("----------------------");
