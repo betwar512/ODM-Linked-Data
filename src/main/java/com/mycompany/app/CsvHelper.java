@@ -17,7 +17,7 @@ import au.com.bytecode.opencsv.CSVReader;
 public class CsvHelper {
 
 		//CSV resource file lcdcMAp
-		private static final String filePath="src/main/java/resources/CsvMap.csv";
+		private static final String filePath="src/main/java/resources/lcdcMapping-v1.0.csv";
 			
 
 	/*
@@ -127,20 +127,55 @@ public class CsvHelper {
 			     				String[] str=it.next();
 			   			String s=str[0];
 			   				if (s.equals(itemOid)){
-			   					 uri=str[2];
+			   					 uri=str[3];
 			   					 exit=true;
 			   				  }
-			   				}
+			   			}
 			     		
-				} catch (IOException e) {
+			} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				}
-				
-
-
+		}
 			     return uri;
-			    }
+	}
+				/*
+				 * return Domain 
+				 * input ItemOid
+				 *
+				 * */
+				    public static String getTheme(String itemOid) 
+				    		throws FileNotFoundException{
+				    	String uri="";
+				       
+				       List<String[]> myEntries;
+					try {
+						
+						@SuppressWarnings("resource")
+						CSVReader reader = new CSVReader(new FileReader(filePath));
+						myEntries = reader.readAll();
+					       Iterator<String[]> it =myEntries.iterator();
+		       
+				      		Boolean exit=false;  //find uri exit 
+
+				     		while(!exit && it.hasNext()){
+				     				String[] str=it.next();
+				     				//TODO : change it to proper column 
+				   			String s=str[0];
+				   				if (s.equals(itemOid)){
+				   					 uri=str[2];
+				   					 exit=true;
+				   				  }
+				   				}
+				     		
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					
+
+
+				     return uri;
+				    }
 	    
 	    
 	}

@@ -49,16 +49,25 @@ public class VariableCustomModel {
 
 				String itemOidName=item.getItemOID();
 				
+				//Find itemDef belong to OpenClinica Item 
+				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
+				//Get theme Mapped CSV file  
 				
-				//Get them type data 
-				String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+				
+				String theme="";
+				try {
+					theme=CsvHelper.getTheme(itemOidName);
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				//=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				String modelName=StringCustomHelper.modelName(StringCustomHelper.getVariablemodel(),theme);
 				 model=mm.createModel(modelName);
 				 
 				  Property themP=model.createProperty(UriCustomHelper.getThemebase(), theme);
 				
-		     	//Find itemDef belong to OpenClinica Item 
-				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
+		     	
 				String uri=UriCustomHelper.generateVariableDef(itemOidName);
 				
 				Resource r=model.createResource(uri,LcdcCore.VariableDefinition);

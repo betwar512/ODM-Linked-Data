@@ -1,13 +1,13 @@
 @prefix lcdcodm: <http://purl.org/sstats/lcdc/def/odm#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix cardiovitalsigns: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#> .
+@prefix cardiovitalsigns: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/VitalSign/def/cardio-VitalSign#> .
 @prefix cardioblood: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix disco: <http://rdf-vocabulary.ddialliance.org/discovery#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix lcdcobs: <http://purl.org/sstats/lcdc/def/obs#> .
-@prefix cardiomedic: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#> .
+@prefix cardiomedic: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#> .
 @prefix qb:    <http://purl.org/linked-data/cube#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix lcdccore: <http://purl.org/sstats/lcdc/def/core#> .
@@ -19,7 +19,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "LDL" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "LDL"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_LDL"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -33,7 +33,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "Cholesterol" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "Cholesterol"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_CHOLESTEROL"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -47,7 +47,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "Haemoglobin" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "Haemoglobin"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_HAEMOGLOBIN"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;
@@ -61,7 +61,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "WhiteBloodCell" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "WhiteBloodCell"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_WHITEBLOODCELL"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -75,7 +75,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "Iron" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "Iron"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_IRON"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -89,7 +89,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "Triglycerides" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "Triglycerides"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_TRIGLYCERIDES"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -103,7 +103,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "CollectionTime" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "CollectionTime"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_COLLECTIONTIME"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -117,7 +117,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "HDL" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "HDL"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_HDL"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -131,7 +131,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "Glucose" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "Glucose"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_GLUCOSE"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -145,7 +145,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "RedBloodCell" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "RedBloodCell"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_REDBLOODCELL"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -159,7 +159,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "Sodium" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/blood> ;
+        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Blood> ;
         lcdccore:variableDefinitionKey  "Sodium"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_BLOOD_SODIUM"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;

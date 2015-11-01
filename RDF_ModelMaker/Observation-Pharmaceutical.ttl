@@ -1,0 +1,568 @@
+@prefix lcdcodm: <http://purl.org/sstats/lcdc/def/odm#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix cardiovitalsigns: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/VitalSign/def/cardio-VitalSign#> .
+@prefix cardioblood: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
+@prefix snomed: <http://snomed.info/sct/32506021000036107/version/20150531/id/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco: <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcdcobs: <http://purl.org/sstats/lcdc/def/obs#> .
+@prefix cardiomedic: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lcdccore: <http://purl.org/sstats/lcdc/def/core#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_10>
+        a                            lcdcobs:Observation ;
+        cardiomedic:OntologyID       "900062011000036108" ;
+        cardiomedic:OntologyVersion  "20150131" ;
+        lcdccore:phase               <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject             <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+        lcdccore:theme               <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationDoseForm681-Patch
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "patch" ;
+        dc:identifier     "8" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC4/subject/SS_11>
+        a                            lcdcobs:Observation ;
+        cardiomedic:OntologyID       "900062011000036108" ;
+        cardiomedic:OntologyVersion  "20150331" ;
+        lcdccore:phase               <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
+        lcdccore:subject             <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme               <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationDoseForm681-Tablet
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "tablet" ;
+        dc:identifier     "1" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationRoute683-Inhalation
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "inhalation" ;
+        dc:identifier     "7" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_9/key/1>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:12941011000036106 ;
+        cardiomedic:MedicationDose      "10" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationEndDate   "2015-04-01" ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Aricept 5 mg tablet: film-coated, 28" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2015-01-05" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC4/subject/SS_11/key/1>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:35681000036100 ;
+        cardiomedic:MedicationDose      "10" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Lipitor 10 mg tablet: film-coated, 10" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2015-02-01" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationRoute683-Intraocular
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "intraocular" ;
+        dc:identifier     "5" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseForm681-Powder
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "powder" ;
+        dc:identifier     "11" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_10/key/2>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:35681000036100 ;
+        cardiomedic:MedicationDose      "1" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Tablet ;
+        cardiomedic:MedicationEndDate   "2015-03-15" ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Lipitor 10 mg tablet: film-coated, 10" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2015-03-05" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationRoute683-Intraperiteoneal
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "intraperiteoneal" ;
+        dc:identifier     "9" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseUnit680-InternationalUnit
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "International Unit" ;
+        dc:identifier     "5" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_11/key/3>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:76785011000036101 ;
+        cardiomedic:MedicationDose      "1" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Tablet ;
+        cardiomedic:MedicationEndDate   "2015-04-24" ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Ostelin-1000 25 microgram capsule: soft, 250" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2014-11-30" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_10/key/1>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:20503011000036102 ;
+        cardiomedic:MedicationDose      "75" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationEndDate   "2015-04-24" ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Plavix 75 mg tablet: film-coated, 28, blister pack" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2015-02-02" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationDoseUnit680-Millilitre
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "millilitre" ;
+        dc:identifier     "3" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseForm681-Aerosol
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "aerosol" ;
+        dc:identifier     "5" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseUnit680-Tablet
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "tablet" ;
+        dc:identifier     "6" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicFreq682-Daily
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "daily" ;
+        dc:identifier     "1" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC3/subject/SS_11>
+        a                            lcdcobs:Observation ;
+        cardiomedic:OntologyID       "900062011000036108" ;
+        cardiomedic:OntologyVersion  "20150331" ;
+        lcdccore:phase               <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
+        lcdccore:subject             <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme               <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationRoute683-Transdermal
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "transdermal" ;
+        dc:identifier     "4" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseUnit680-Milligram
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "milligram" ;
+        dc:identifier     "1" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationRoute683-Oral
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "oral" ;
+        dc:identifier     "1" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseForm681-Ointment
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "ointment" ;
+        dc:identifier     "3" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_11/key/2>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:21091011000036106 ;
+        cardiomedic:MedicationDose      "1" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Tablet ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Amohexal 250 mg capsule: hard, 20, blister pack" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2001-04-01" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC3/subject/SS_11/key/3>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:72081000036101 ;
+        cardiomedic:MedicationDose      "50" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Astrix 100 mg capsule: enteric, 28" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2014-07-01" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationRoute683-Topical
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "topical" ;
+        dc:identifier     "2" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_8/key/2>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:139321000036102 ;
+        cardiomedic:MedicationDose      "1" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Tablet ;
+        cardiomedic:MedicationEndDate   "2015-03-12" ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-EveryOtherDay ;
+        cardiomedic:MedicationName      "Tamsulosin Hydrochloride SR (Sandoz) 400 microgram tablet: modified release, 10" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2015-03-05" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationRoute683-Subcutaneous
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "subcutaneous" ;
+        dc:identifier     "3" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseForm681-Spray
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "spray" ;
+        dc:identifier     "6" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationRoute683-Intralesion
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "intralesion" ;
+        dc:identifier     "8" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseForm681-Suppository
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "suppository" ;
+        dc:identifier     "4" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseForm681-Suspension
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "suspension" ;
+        dc:identifier     "7" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicFreq682-ThreeTimesADay
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "three times a day" ;
+        dc:identifier     "3" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_9>
+        a                            lcdcobs:Observation ;
+        cardiomedic:OntologyID       "900062011000036108" ;
+        cardiomedic:OntologyVersion  "20150131" ;
+        lcdccore:phase               <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject             <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+        lcdccore:theme               <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicFreq682-Unknown
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "unknown" ;
+        dc:identifier     "8" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_11/key/1>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:36805011000036107 ;
+        cardiomedic:MedicationDose      "35" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Actonel Combi D (4 x 35 mg tablets, 24 x sachets), 1 pack" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2014-04-30" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC3/subject/SS_11/key/2>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:929655011000036100 ;
+        cardiomedic:MedicationDose      "10" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Nexium 10 mg granules: enteric-coated, 30 sachets" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "1995-03-01" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_9/key/3>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:76601011000036106 ;
+        cardiomedic:MedicationDose      "1500" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Glucosamine (Blackmores) 500 mg tablet: film-coated, 90" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2014-02-24" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_8/key/1>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:41832011000036106 ;
+        cardiomedic:MedicationDose      "5" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationEndDate   "2015-03-30" ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Fosamax 5 mg tablet: uncoated, 8" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2015-02-01" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationRoute683-Nasal
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "nasal" ;
+        dc:identifier     "10" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationRoute683-Intramuscular
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "intramuscular" ;
+        dc:identifier     "6" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationRoute683-Vaginal
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "vaginal" ;
+        dc:identifier     "11" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_11>
+        a                            lcdcobs:Observation ;
+        cardiomedic:OntologyID       "900062011000036108" ;
+        cardiomedic:OntologyVersion  "20150331" ;
+        lcdccore:phase               <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject             <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme               <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationDoseForm681-Gas
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "gas" ;
+        dc:identifier     "9" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseUnit680-Capsule
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "capsule" ;
+        dc:identifier     "7" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_8>
+        a                            lcdcobs:Observation ;
+        cardiomedic:OntologyID       "900062011000036108" ;
+        cardiomedic:OntologyVersion  "20150131" ;
+        lcdccore:phase               <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject             <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
+        lcdccore:theme               <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationDoseUnit680-Microgram
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "microgram" ;
+        dc:identifier     "2" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicFreq682-TwiceDaily
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "twice daily" ;
+        dc:identifier     "2" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseUnit680-Gram
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "gram" ;
+        dc:identifier     "4" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicFreq682-EveryMonth
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "every month" ;
+        dc:identifier     "6" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicFreq682-AsNeeded
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "as needed" ;
+        dc:identifier     "7" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC3/subject/SS_11/key/1>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:35681000036100 ;
+        cardiomedic:MedicationDose      "1" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Tablet ;
+        cardiomedic:MedicationEndDate   "2015-05-10" ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Lipitor 10 mg tablet: film-coated, 10" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2015-02-11" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationRoute683-Rectal
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "rectal" ;
+        dc:identifier     "12" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_9/key/2>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:76753011000036109 ;
+        cardiomedic:MedicationDose      "1000" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Capsule ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Fishaphos 1 g capsule: soft, 100" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "2014-02-24" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicFreq682-EveryOtherDay
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "every other day" ;
+        dc:identifier     "5" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseForm681-Cream
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "cream" ;
+        dc:identifier     "10" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicFreq682-FourTimesDaily
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "four times daily" ;
+        dc:identifier     "4" ;
+        dc:source         "cardio" .
+
+<http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC4/subject/SS_11/key/2>
+        a                               lcdcobs:Observation ;
+        cardiomedic:MedicationCode      snomed:929655011000036100 ;
+        cardiomedic:MedicationDose      "10" ;
+        cardiomedic:MedicationDoseForm  cardiomedic:MedicationDoseForm681-Powder ;
+        cardiomedic:MedicationDoseUnit  cardiomedic:MedicationDoseUnit680-Milligram ;
+        cardiomedic:MedicationFreq      cardiomedic:MedicationFreq682-Daily ;
+        cardiomedic:MedicationName      "Nexium 10 mg granules: enteric-coated, 30 sachets" ;
+        cardiomedic:MedicationRoute     cardiomedic:MedicationRoute683-Rectal ;
+        cardiomedic:MedicationStartDate
+                "1995-04-11" ;
+        lcdccore:phase                  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
+        lcdccore:subject                <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> .
+
+cardiomedic:MedicationDoseForm681-Capsule
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "capsule" ;
+        dc:identifier     "2" ;
+        dc:source         "cardio" .
+
+cardiomedic:MedicationDoseUnit680-Puff
+        a                 skos:Concept , owl:Class ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        dc:description    "puff" ;
+        dc:identifier     "8" ;
+        dc:source         "cardio" .

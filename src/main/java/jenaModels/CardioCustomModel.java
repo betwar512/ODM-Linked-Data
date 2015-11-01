@@ -61,8 +61,15 @@ public class CardioCustomModel {
 					 * ideally, the theme should be passed in
 					 * 
 					 * */
-				String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
-				 
+				String theme="";//=StringCustomHelper.groupType(itemOidName).toLowerCase();
+//				//theme from  mapping file 
+				try {
+					 theme=CsvHelper.getTheme(itemOidName);
+				} catch (FileNotFoundException e2) {
+					// TODO Auto-generated catch block
+					e2.printStackTrace();
+				}
+				
 				// have to be more generic:Changed
 				String typeUri=UriCustomHelper.generateCardioUri(theme);
 				 String modelName=StringCustomHelper.modelName(StringCustomHelper.getCardiomodel(), theme);

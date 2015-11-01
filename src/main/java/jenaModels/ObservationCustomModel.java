@@ -4,6 +4,7 @@ package jenaModels;
  *
  */
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,6 +19,7 @@ import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
 import com.mycompany.app.CodeListDecoder;
+import com.mycompany.app.CsvHelper;
 import com.mycompany.app.ItemDetail;
 import com.mycompany.app.StringCustomHelper;
 import com.mycompany.app.UriCustomHelper;
@@ -57,16 +59,27 @@ public class ObservationCustomModel {
 				
 				
 		  String itemOidName=item.getItemOID();
-				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+		  
+		  ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
+				// theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+				 //theme mapped
+				 try {
+					 //TODO fix it ,its not proper method 
+					theme=CsvHelper.getTheme(itemOidName);
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				 
 				// model name 
 				 String modelName=StringCustomHelper.modelName(StringCustomHelper.getObservationmodel(),theme);
 				 model=mm.createModel(modelName);
 				 //add snomed uri to model medication
 				 model.setNsPrefix("snomed", Snomed.snomedUri);
 				 
-				 Property themeP=model.createProperty(UriCustomHelper.getThemebase(), theme);
+				 Property themeP=model.createProperty(UriCustomHelper.getThemebase(),theme);
 				  
-				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
+				
 			    //String Uri phase subject 
 				String	phase= UriCustomHelper.generatePhase(itemDto.eventOid);
 				String	subject= UriCustomHelper.generateSubject(itemDto.subjectKey);

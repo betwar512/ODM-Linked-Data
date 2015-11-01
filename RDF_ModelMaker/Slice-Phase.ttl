@@ -1,13 +1,13 @@
 @prefix lcdcodm: <http://purl.org/sstats/lcdc/def/odm#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix cardiovitalsigns: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vital/def/cardio-vital#> .
+@prefix cardiovitalsigns: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/VitalSign/def/cardio-VitalSign#> .
 @prefix cardioblood: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix disco: <http://rdf-vocabulary.ddialliance.org/discovery#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix lcdcobs: <http://purl.org/sstats/lcdc/def/obs#> .
-@prefix cardiomedic: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#> .
+@prefix cardiomedic: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#> .
 @prefix qb:    <http://purl.org/linked-data/cube#> .
 @prefix timeSeries: <http://purl.org/sstats/lcdc/def/time-series#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -24,17 +24,17 @@
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_CLINIC1>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC1/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_8/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_8/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC1/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_10/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_10/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_11/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_11/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC1/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_9/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC1/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_9/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_11/key/3> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_9/key/3> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC1/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC1/subject/SS_11> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_9/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_8/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_9/key/3> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_9/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_11/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC1/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_11/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC1/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC1/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_11/key/3> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC1/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC1/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC1/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_8/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC1/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_10/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC1/subject/SS_10/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC1/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_HOME2>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME2/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME2/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME2/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME2/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME2/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_HOME8>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME8/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME8/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME8/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME8/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME8/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> .
 
 <http://purl.org/sstats/lcdc/id/phase/SE_HOME2>
@@ -47,12 +47,12 @@
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_HOME1>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME1/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME1/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME1/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME1/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME1/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_HOME7>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME7/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME7/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME7/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME7/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME7/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> .
 
 <http://purl.org/sstats/lcdc/id/phase/SE_HOME1>
@@ -69,7 +69,7 @@
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_HOME6>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME6/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME6/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME6/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME6/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME6/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> .
 
 <http://purl.org/sstats/lcdc/id/phase/SE_HOME6>
@@ -78,7 +78,7 @@
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_CLINIC4>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC4/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC4/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC4/subject/SS_11/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC4/subject/SS_11/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC4/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC4/subject/SS_11> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC4/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC4/subject/SS_11/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC4/subject/SS_11/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC4/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC4/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC4/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC4/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC4/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC4/subject/SS_11> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> .
 
 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3>
@@ -87,7 +87,7 @@
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_HOME5>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME5/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME5/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME5/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME5/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME5/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> .
 
 <http://purl.org/sstats/lcdc/id/phase/SE_HOME5>
@@ -96,7 +96,7 @@
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_CLINIC3>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC3/subject/SS_11/key/3> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC3/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC3/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC3/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC3/subject/SS_11/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/medic/phase/SE_CLINIC3/subject/SS_11/key/1> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC3/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC3/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC3/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC3/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC3/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC3/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC3/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC3/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC3/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC3/subject/SS_11/key/3> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC3/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC3/subject/SS_11/key/2> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC3/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC3/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Pharmaceutical/phase/SE_CLINIC3/subject/SS_11/key/1> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> .
 
 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2>
@@ -105,7 +105,7 @@
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_HOME4>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME4/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME4/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME4/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME4/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME4/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> .
 
 <http://purl.org/sstats/lcdc/id/phase/SE_HOME4>
@@ -114,7 +114,7 @@
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_CLINIC2>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC2/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC2/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC2/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_CLINIC2/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/blood/phase/SE_CLINIC2/subject/SS_11> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC2/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC2/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC2/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/Blood/phase/SE_CLINIC2/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC2/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC2/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC2/subject/SS_10> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC2/subject/SS_11> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> .
 
 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1>
@@ -123,10 +123,10 @@
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_HOME3>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME3/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME3/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME3/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME3/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME3/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/tc-slice/phase/SE_HOME9>
         a               timeSeries:PhaseSeries ;
-        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/vital/phase/SE_HOME9/subject/SS_10> ;
+        qb:observation  <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME9/subject/SS_8> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME9/subject/SS_9> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME9/subject/SS_11> , <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME9/subject/SS_10> ;
         lcdccore:phase  <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> .

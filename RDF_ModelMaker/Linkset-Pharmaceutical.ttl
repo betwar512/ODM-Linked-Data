@@ -1,0 +1,47 @@
+@prefix lcdcodm: <http://purl.org/sstats/lcdc/def/odm#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix cardiovitalsigns: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/VitalSign/def/cardio-VitalSign#> .
+@prefix cardioblood: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/blood/def/cardio-blood#> .
+@prefix snomed: <http://snomed.info/sct/32506021000036107/version/20150531/id/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix disco: <http://rdf-vocabulary.ddialliance.org/discovery#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix amt:   <http://snomed.info/sct/900062011000036108/version/20150831/id/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcdcobs: <http://purl.org/sstats/lcdc/def/obs#> .
+@prefix cardiomedic: <http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lcdccore: <http://purl.org/sstats/lcdc/def/core#> .
+@prefix snomedmod: <http://snomed.info/sct/900000000000012004/version/20150831/id/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONNAME_2443>
+        rdfs:subPropertyOf  <Observables> .
+
+<Observables>  a    owl:NamedIndividual ;
+        rdfs:label  "http://snomed.info/sct/900000000000012004/version/20150831/id/410675002" , " http://snomed.info/sct/900000000000012004/version/20150831/id/260864003" , "http://snomed.info/sct/900062011000036108/version/20150831/id/30383011000036100" , "http://snomed.info/sct/900062011000036108/version/20150831/id/700000471000036108" , "http://snomed.info/sct/900062011000036108/version/20150831/id/712091000168102" , "http://snomed.info/sct/32506021000036107/version/20150531/id/413947000" , "http://snomed.info/sct/32506021000036107/version/20150531/id/413946009" , "http://snomed.info/sct/32506021000036107/version/20150531/id/410942007" .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONROUTE>
+        rdfs:subPropertyOf  <Observables> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONSTARTDATE_6157>
+        rdfs:subPropertyOf  <Observables> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEUNIT_2971>
+        rdfs:subPropertyOf  <Observables> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONENDDATE_2617>
+        rdfs:subPropertyOf  <Observables> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEFORM_3200>
+        rdfs:subPropertyOf  <Observables> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONCODE_1591>
+        rdfs:subPropertyOf  <Observables> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSE_1998>
+        rdfs:subPropertyOf  <Observables> .
+
+<http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONFREQ_7034>
+        rdfs:subPropertyOf  <Observables> .

@@ -11,7 +11,7 @@ public class UriCustomHelper {
 	private static final String metaBase="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
 	
 
-	public static final String sliceBase="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/";
+	private static final String sliceBase="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/";
 	
 	private static final String themeBase="http://purl.org/sstats/lcdc/id/theme/";
 	
@@ -76,6 +76,30 @@ public class UriCustomHelper {
 		
 	}
 	
+	/*
+	 * Slice dc uri 
+	 * */
+	public static String csSliceUri(String subject){
+		
+		
+	return	sliceBase+"cs-slice"+"/subject/"+subject;
+		
+		
+	}
+	/*
+	 * slice : domain slice 
+	 * */
+	public static String dsSliceUri(String theme){
+		return sliceBase+"ds-slice"+"/theme/"+theme;
+	}
+	
+	/*
+	 * 
+	 * */
+	public static String tcSliceUri(String phase){
+		return sliceBase+"tc-slice"+"/phase/"+phase;
+	}
+	
 	//generate Subject Purl Uri
 	public static final String generateSubject(String subjectKey){
 			
@@ -98,5 +122,6 @@ public class UriCustomHelper {
 		return uri+"/key/"+key;
 		
 	}
+	
 
 }

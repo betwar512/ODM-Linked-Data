@@ -36,7 +36,6 @@ public class typeChecker {
 		default: r= XSD.xstring;
 			break;
 		 }
-		
 		return r;
 
 	}
@@ -60,11 +59,11 @@ public class typeChecker {
 			break;
 		case  "FLOAT":data=XSDDatatype.XSDfloat;
 			break;
-		case "DATE":data=XSDDatatype.XSDdate;
+		case  "DATE":data=XSDDatatype.XSDdate;
 			break;
-		case "TEXT":data=XSDDatatype.XSDstring;
+		case  "TEXT":data=XSDDatatype.XSDstring;
 		break;
-		default: data=XSDDatatype.XSDstring;
+		default:data=XSDDatatype.XSDstring;
 			break;
 		 }
 		

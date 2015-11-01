@@ -1,5 +1,6 @@
 package jenaModels;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -13,6 +14,7 @@ import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.OWL2;
+import com.mycompany.app.CsvHelper;
 import com.mycompany.app.ItemDetail;
 import com.mycompany.app.StringCustomHelper;
 import com.mycompany.app.UriCustomHelper;
@@ -52,6 +54,7 @@ public class SliceCustomModel {
 	
 	/*
 	 * Generate Slice Model from qb  Subject  
+	 * 
 	 * */
 	public static void sliceBySubject(ModelMaker mm,ArrayList<ItemDetail> itemDtos
 			,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
@@ -74,23 +77,28 @@ public class SliceCustomModel {
 							String itemOidName=item.getItemOID();
 						
 							//Create observation uri 
-							String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+							String theme="";
+							try {
+								theme = CsvHelper.getTheme(itemOidName);
+							} catch (FileNotFoundException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}//StringCustomHelper.groupType(itemOidName).toLowerCase();
 							String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey);
 									//obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
 								//Adding Key
 							  if(itemDto.repeating)
-							    	obsPhase+="/key/"+itemDto.itemRepeatKey;
+							    	obsPhase=UriCustomHelper.addKey(obsPhase, itemDto.itemRepeatKey);//"/key/"+itemDto.itemRepeatKey;
+							  
 							  model.setNsPrefix("crossSection", crossSection.getURI());
-							Resource r=model.createResource(UriCustomHelper.sliceBase+"cs-slice"+"/subject/"+subject,crossSection.SubjectSection);			
+							Resource r=model.createResource(UriCustomHelper.csSliceUri(subject),crossSection.SubjectSection);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
 							
-							//Resource for Subject 
-												
+							//Resource for Subject 							
 							Resource subjectResource=model.createResource(UriCustomHelper.generateSubject(subject),OWL2.NamedIndividual);
 						    Literal resourceLit=model.createTypedLiteral(subject,LcdcCore.subjectcode.getURI());
-							subjectResource.addProperty(LcdcCore.themeId,resourceLit);
-								
+							subjectResource.addProperty(LcdcCore.subjectKey,resourceLit);					
 							//Add subject to slice 
 							r.addProperty(LcdcCore.subject, subjectResource);
 							
@@ -121,30 +129,34 @@ public class SliceCustomModel {
 			  
 			  List<ItemDetail> listPhases=groupBySubject.get(subject);
 			  
-			  
-			  
 			  for (ItemDetail itemDto : listPhases) { 
-	
 					//  String definedBy=UriCustomHelper.rdfDefinition(itemDto.itemGroupOid);
 						List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
 						for (ODMcomplexTypeDefinitionItemData item : itemList) {  
 							String itemOidName=item.getItemOID();
 						
 							//get Theme
-							String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+							String theme="";
+							try {
+								theme = CsvHelper.getTheme(itemOidName);
+							} catch (FileNotFoundException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+									//StringCustomHelper.groupType(itemOidName).toLowerCase();
 							String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey);
 							//Adding Key	
 						    if(itemDto.repeating)
-						    	obsPhase+="/key/"+itemDto.itemRepeatKey;
+						    	//obsPhase+="/key/"+itemDto.itemRepeatKey;
+						    obsPhase=UriCustomHelper.addKey(obsPhase, itemDto.itemRepeatKey);
 
 						    model.setNsPrefix("domainSlice", domainSlice.getURI());
-							Resource r=model.createResource(UriCustomHelper.sliceBase+"ds-slice"+"/theme/"+theme,domainSlice.ThemeSlice);			
+							Resource r=model.createResource(UriCustomHelper.dsSliceUri(theme),domainSlice.ThemeSlice);			
 							 Property p=model.createProperty(obsPhase);
 							 
 							 
 							r.addProperty(Qb.observation, p);
-							
-							
+													
 							
 							//Add them Resource NameINdevidual 
 							Resource themeResource=model.createResource(UriCustomHelper.generateTheme(theme),OWL2.NamedIndividual);
@@ -178,9 +190,7 @@ public class SliceCustomModel {
 		  for (String subject:key){
 			  
 			  List<ItemDetail> listPhases=groupBySubject.get(subject);
-			  
-			  
-			  
+  
 			  for (ItemDetail itemDto : listPhases) { 
 				  		
 				  String phase=itemDto.eventOid;
@@ -190,15 +200,21 @@ public class SliceCustomModel {
 							String itemOidName=item.getItemOID();
 						
 							//get Theme
-							String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+							String theme="";
+							try {
+								theme = CsvHelper.getTheme(itemOidName);
+							} catch (FileNotFoundException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}//StringCustomHelper.groupType(itemOidName).toLowerCase();
 							//Observation Uri
 							String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey); 
 							//Adding Key
 						  if(itemDto.repeating)
-						    	obsPhase+="/key/"+itemDto.itemRepeatKey;
+						    	obsPhase=UriCustomHelper.addKey(obsPhase, itemDto.itemRepeatKey);
 						  
 						  model.setNsPrefix("timeSeries", timeSeries.getURI());
-							Resource r=model.createResource(UriCustomHelper.sliceBase+"tc-slice"+"/phase/"+itemDto.eventOid,timeSeries.PhaseSeries);			
+							Resource r=model.createResource(UriCustomHelper.tcSliceUri(itemDto.eventOid),timeSeries.PhaseSeries);			
 							Property p=model.createProperty(obsPhase);	
 							r.addProperty(Qb.observation, p);
 
