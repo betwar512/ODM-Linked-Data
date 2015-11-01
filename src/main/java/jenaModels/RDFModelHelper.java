@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package jenaModels;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -9,6 +9,8 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.shared.PrefixMapping;
 import com.hp.hpl.jena.vocabulary.DC;
+import com.mycompany.app.ItemDetail;
+import com.mycompany.app.JaxBinder;
 import com.mycompany.app.lcdc.Cardioblood;
 import com.mycompany.app.lcdc.Cardiomedic;
 import com.mycompany.app.lcdc.Cardiovitalsigns;

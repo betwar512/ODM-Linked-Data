@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.mycompany.app;
+package jenaModels;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -17,6 +17,11 @@ import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.OWL;
 import com.hp.hpl.jena.vocabulary.RDFS;
 import com.hp.hpl.jena.vocabulary.XSD;
+import com.mycompany.app.CsvHelper;
+import com.mycompany.app.ItemDetail;
+import com.mycompany.app.StringCustomHelper;
+import com.mycompany.app.UriCustomHelper;
+import com.mycompany.app.typeChecker;
 import com.mycompany.app.lcdc.Disco;
 import com.mycompany.app.lcdc.LcdcCore;
 
@@ -81,16 +86,32 @@ public class CardioCustomModel {
 				//TODO: extend for all data 
 				
 				String range=itemDef.getDataType().toString();//range type in string format 
-					if(!range.isEmpty()){  //if not empty
-					if(range.contains("INTEGER")){
-						r.addProperty(RDFS.range, XSD.integer);
 				
-					}else if(range.contains("FLOAT")){
-						r.addProperty(RDFS.range, XSD.xfloat);		
-					  }	else{//if none of these types then create with String 
-						r.addProperty(RDFS.range, XSD.xstring);
-					  }
-					}	
+			//	System.out.println(range);
+//					if(!range.isEmpty()){  //if not empty
+//					if(range.contains("INTEGER")){
+//						r.addProperty(RDFS.range, XSD.integer);
+//				
+//					}else if(range.contains("FLOAT")){
+//						r.addProperty(RDFS.range, XSD.xfloat);		
+//					  }	else{//if none of these types then create with String 
+//						r.addProperty(RDFS.range, XSD.xstring);
+//					  }
+//					}	
+//					
+					
+					try {
+						Resource typeRangeResource=typeChecker.rangeResourcetype(range);
+						r.addProperty(RDFS.range, typeRangeResource);
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					
+					
+					
+					
+					
 							//pointing to Variable Def 
 				Property based=model.createProperty(UriCustomHelper.generateVariableDef(itemOid));
 							

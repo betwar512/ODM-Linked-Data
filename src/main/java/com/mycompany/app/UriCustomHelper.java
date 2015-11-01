@@ -86,6 +86,13 @@ public class UriCustomHelper {
     String	themeUri=purl+"theme/"+theme;	
 		return themeUri;
 		
-	}	
+	}
+	
+	//add key to uri 
+	public static final String addKey(String uri,String key){
+		
+		return uri+"/key/"+key;
+		
+	}
 
 }

@@ -19,6 +19,8 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.vocabulary.OWL2;
 
+import jenaModels.RDFModelHelper;
+
 /**
  * @author Abbas.h.Safaie
  * A.safaie@y7mail.com

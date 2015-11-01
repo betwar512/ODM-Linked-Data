@@ -31,7 +31,7 @@ cardiomedic:MedicationEndDate
         rdfs:domain       "PharmaceuticalObservable" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#" ;
         rdfs:label        "MedicationEndDate" ;
-        rdfs:range        xsd:string ;
+        rdfs:range        xsd:date ;
         dc:identifier     "I_MEDIC_MEDICATIONENDDATE_2617" ;
         dc:source         "cardio" ;
         lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/medic> ;
@@ -125,7 +125,7 @@ cardiomedic:MedicationStartDate
         rdfs:domain       "PharmaceuticalObservable" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/medic/def/cardio-medic#" ;
         rdfs:label        "MedicationStartDate" ;
-        rdfs:range        xsd:string ;
+        rdfs:range        xsd:date ;
         dc:identifier     "I_MEDIC_MEDICATIONSTARTDATE_6157" ;
         dc:source         "cardio" ;
         lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/medic> ;

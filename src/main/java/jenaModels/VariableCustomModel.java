@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package jenaModels;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -16,6 +16,10 @@ import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.OWL2;
 import com.hp.hpl.jena.vocabulary.RDFS;
+import com.mycompany.app.CsvHelper;
+import com.mycompany.app.ItemDetail;
+import com.mycompany.app.StringCustomHelper;
+import com.mycompany.app.UriCustomHelper;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Odm;
 import com.mycompany.app.lcdc.Skos;

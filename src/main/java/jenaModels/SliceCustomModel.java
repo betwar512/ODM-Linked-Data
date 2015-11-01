@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package jenaModels;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,6 +13,9 @@ import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.OWL2;
+import com.mycompany.app.ItemDetail;
+import com.mycompany.app.StringCustomHelper;
+import com.mycompany.app.UriCustomHelper;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Qb;
 import com.mycompany.app.lcdc.crossSection;

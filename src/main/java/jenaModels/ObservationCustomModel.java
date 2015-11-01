@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package jenaModels;
 /**
  * @author Abbas H Safaie
  *
@@ -17,6 +17,11 @@ import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.Statement;
+import com.mycompany.app.CodeListDecoder;
+import com.mycompany.app.ItemDetail;
+import com.mycompany.app.StringCustomHelper;
+import com.mycompany.app.UriCustomHelper;
+import com.mycompany.app.typeChecker;
 import com.mycompany.app.lcdc.LcdcCore;
 import com.mycompany.app.lcdc.Obs;
 import com.mycompany.app.lcdc.Snomed;
@@ -54,7 +59,7 @@ public class ObservationCustomModel {
 		  String itemOidName=item.getItemOID();
 				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				// model name 
-				 String modelName=StringCustomHelper.modelName(StringCustomHelper.getObservationmodel(), theme);
+				 String modelName=StringCustomHelper.modelName(StringCustomHelper.getObservationmodel(),theme);
 				 model=mm.createModel(modelName);
 				 //add snomed uri to model medication
 				 model.setNsPrefix("snomed", Snomed.snomedUri);
@@ -72,7 +77,8 @@ public class ObservationCustomModel {
 			    
 			    //Add groupKey if exist 
 			    if(itemDto.repeating)
-			    	obsPhase+="/key/"+repeatKey;
+			    	obsPhase=UriCustomHelper.addKey(obsPhase,repeatKey);
+			    	//obsPhase+="/key/"+repeatKey;
 					
 
 			    //String Uri phase subject 
@@ -110,23 +116,30 @@ public class ObservationCustomModel {
 					model.add(medicationSnomed);
 			
 				}else{//not medicationCode 
+	
 				
-				
-				if(itemDef.getCodeListRef() == null){ //Check if codeList reference exist 
-				
+				if(itemDef.getCodeListRef() == null){ //Check if codeList reference exist 			
 				if(!itemDef.getRangeCheck().isEmpty()){//check if item had rangeChceck or not (RangeCheck type integer or float)
 					
-					String range=itemDef.getDataType().toString(); //compare String 
-					if(range.contains("INTEGER")){
-					value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDinteger);
 					
-					}else if(range.contains("FLOAT")){
-						
-						value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDfloat);
-					}else{//if none of these types then create with String 
-							
-						value=model.createTypedLiteral(item.getValue());
-					}		
+					//get dataType for value 
+					String range=itemDef.getDataType().toString(); //compare String 	
+					XSDDatatype rangeDatatype= typeChecker.rangeDatatype(range);
+					value=model.createTypedLiteral(item.getValue(),rangeDatatype);
+					
+					//Moved to typeChecker class 
+//					if(range.contains("INTEGER")){
+//					value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDinteger);
+//					
+//					}else if(range.contains("FLOAT")){
+//						
+//						value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDfloat);
+//					}else{//if none of these types then create with String 
+//							
+//						value=model.createTypedLiteral(item.getValue());
+//					}	
+					
+					
 					Statement stVal=model.createStatement(obs,pr,value);
 					model.add(stVal);
 				}else{//Range check null add property 
