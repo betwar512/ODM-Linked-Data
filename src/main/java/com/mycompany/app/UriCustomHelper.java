@@ -8,13 +8,34 @@ public class UriCustomHelper {
 	
 	private static final String obsBase="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/";
 	
-	public static final String metaBase="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
+	private static final String metaBase="http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def";
 	
+
 	public static final String sliceBase="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/";
 	
 	public static final String themeBase="http://purl.org/sstats/lcdc/id/theme/";
 	
-	public static final String purl="http://purl.org/sstats/lcdc/id/";
+	private static final String purl="http://purl.org/sstats/lcdc/id/";
+	
+	
+	
+	
+	public static String getMetabase() {
+		return metaBase;
+	}
+	
+	
+	/*
+	 * input itemOid 
+	 * output: variable uri for passed theme 
+	 * 
+	 * */
+	public static final String generateVariableDef(String itemOid){
+		
+		String uri=metaBase+"#"+ itemOid;
+		
+		return uri;
+	}
 	
 	
 	/*
@@ -41,5 +62,30 @@ public class UriCustomHelper {
 	return uri;
 	}
 	
+	
+	//generate phase Purl Uri
+	public static final String generatePhase(String eventOid){
+		
+		String phase=purl+"phase/"+eventOid;
+ 	
+		return phase;
+		
+	}
+	
+	//generate Subject Purl Uri
+	public static final String generateSubject(String subjectKey){
+			
+    String	subjectUri=purl+"subject/"+subjectKey;	
+		return subjectUri;
+		
+	}
+	
+	//generate Theme Purl Uri 
+	public static final String generateTheme(String theme){
+			
+    String	themeUri=purl+"theme/"+theme;	
+		return themeUri;
+		
+	}	
 
 }

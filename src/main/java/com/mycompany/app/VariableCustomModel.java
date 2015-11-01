@@ -47,13 +47,15 @@ public class VariableCustomModel {
 				
 				
 				//Get them type data 
-				String  theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
-				 model=mm.createModel("Variable-"+theme);
+				String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
+				String modelName=StringCustomHelper.modelName(StringCustomHelper.getVariablemodel(),theme);
+				 model=mm.createModel(modelName);
+				 
 				  Property themP=model.createProperty(UriCustomHelper.themeBase, theme);
 				
 		     	//Find itemDef belong to OpenClinica Item 
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
-				String uri=UriCustomHelper.metaBase+ "#" + itemOidName;
+				String uri=UriCustomHelper.generateVariableDef(itemOidName);
 				
 				Resource r=model.createResource(uri,LcdcCore.VariableDefinition);
 							
@@ -81,7 +83,7 @@ public class VariableCustomModel {
 				     model.add(stVarDef); 
 					 r.addProperty(DC.source,"cardio");
 					 r.addProperty(RDFS.comment, itemDef.getComment());
-					 r.addProperty(RDFS.isDefinedBy, UriCustomHelper.metaBase);
+					 r.addProperty(RDFS.isDefinedBy, UriCustomHelper.getMetabase());
 				   	 r.addProperty(RDFS.label, itemDef.getName()); //label
 				   	 r.addProperty(LcdcCore.variableDefinitionKey,valuevarDef);
 				   	 r.addProperty(LcdcCore.themeId, themP);
@@ -111,8 +113,8 @@ public class VariableCustomModel {
 	   * 
 	   * */
 	  private static void linkSet(String uri,String itemOid,String theme,ModelMaker mm){
-		
-		  Model  modelLs=mm.createModel("Linkset-"+theme);
+		String modelName=StringCustomHelper.modelName(StringCustomHelper.getLinksetmodel(), theme);
+		  Model  modelLs=mm.createModel(modelName);
 		   	String snomedUri="";
 		   	String extLabel="";
 		   	

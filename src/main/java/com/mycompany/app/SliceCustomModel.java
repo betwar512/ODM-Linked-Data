@@ -84,7 +84,7 @@ public class SliceCustomModel {
 							
 							//Resource for Subject 
 												
-							Resource subjectResource=model.createResource(UriCustomHelper.purl+"subject/"+subject,OWL2.NamedIndividual);
+							Resource subjectResource=model.createResource(UriCustomHelper.generateSubject(subject),OWL2.NamedIndividual);
 						    Literal resourceLit=model.createTypedLiteral(subject,LcdcCore.subjectcode.getURI());
 							subjectResource.addProperty(LcdcCore.themeId,resourceLit);
 								
@@ -144,7 +144,7 @@ public class SliceCustomModel {
 							
 							
 							//Add them Resource NameINdevidual 
-							Resource themeResource=model.createResource(UriCustomHelper.purl+"theme/"+theme,OWL2.NamedIndividual);
+							Resource themeResource=model.createResource(UriCustomHelper.generateTheme(theme),OWL2.NamedIndividual);
 						    Literal resourceLit=model.createTypedLiteral(theme,LcdcCore.themecode.getURI());
 							themeResource.addProperty(LcdcCore.themeKey,resourceLit);
 								
@@ -200,7 +200,7 @@ public class SliceCustomModel {
 							r.addProperty(Qb.observation, p);
 
 							//Add Phase Resource NameINdevidual 
-							Resource phaseResource=model.createResource(UriCustomHelper.purl+"phase/"+phase,OWL2.NamedIndividual);
+							Resource phaseResource=model.createResource(UriCustomHelper.generatePhase(phase),OWL2.NamedIndividual);
 						    Literal resourceLit=model.createTypedLiteral(phase,LcdcCore.phasecode.getURI());
 						    phaseResource.addProperty(LcdcCore.phaseKey,resourceLit);		
 							//Add theme to slice 

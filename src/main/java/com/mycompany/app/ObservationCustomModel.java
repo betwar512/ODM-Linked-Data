@@ -43,7 +43,6 @@ public class ObservationCustomModel {
 		  for (ItemDetail itemDto : itemDtos) { 
 			  	//ItemsDto typeData 
 			  String theme="";
-			  String baseUriType="http://purl.org/sstats/lcdc/id/";
 			 // String obsUri=""; 	
 			  String repeatKey=itemDto.itemRepeatKey;
 		
@@ -54,8 +53,9 @@ public class ObservationCustomModel {
 				
 		  String itemOidName=item.getItemOID();
 				 theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
-				// obsUri=UriCustomHelper.obsBase+theme+"/phase/";
-				 model=mm.createModel("Observation-"+theme);
+				// model name 
+				 String modelName=StringCustomHelper.modelName(StringCustomHelper.getObservationmodel(), theme);
+				 model=mm.createModel(modelName);
 				 //add snomed uri to model medication
 				 model.setNsPrefix("snomed", Snomed.snomedUri);
 				 
@@ -77,8 +77,9 @@ public class ObservationCustomModel {
 
 			    //String Uri phase subject 
 			    
-			    	phase=baseUriType+"phase/"+itemDto.eventOid;
-			    	subject=baseUriType+"subject/"+itemDto.subjectKey;
+			    
+			    	phase=UriCustomHelper.generatePhase(itemDto.eventOid);
+			    	subject= UriCustomHelper.generateSubject(itemDto.subjectKey);
 			    	
 			  // resources Subject Phase	
 			    	

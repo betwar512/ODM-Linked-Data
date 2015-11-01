@@ -60,9 +60,9 @@ public class CardioCustomModel {
 				 
 				// have to be more generic 
 				String typeUri=UriCustomHelper.generateCardioUri(theme);
-				 
+				 String modelName=StringCustomHelper.modelName(StringCustomHelper.getCardiomodel(), theme);
 				//more geeric 
-				 model=mm.createModel("Cardio-"+theme);
+				 model=mm.createModel(modelName);
 				
 				 Property themP=model.createProperty(UriCustomHelper.themeBase, theme);
 				 
@@ -81,7 +81,7 @@ public class CardioCustomModel {
 				//TODO: extend for all data 
 				
 				String range=itemDef.getDataType().toString();//range type in string format 
-					if(range.length()>0){
+					if(!range.isEmpty()){  //if not empty
 					if(range.contains("INTEGER")){
 						r.addProperty(RDFS.range, XSD.integer);
 				
@@ -92,7 +92,7 @@ public class CardioCustomModel {
 					  }
 					}	
 							//pointing to Variable Def 
-				Property based=model.createProperty(UriCustomHelper.metaBase,"#"+itemOid);
+				Property based=model.createProperty(UriCustomHelper.generateVariableDef(itemOid));
 							
 				//domain from CsvFile
 				try { 

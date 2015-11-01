@@ -7,9 +7,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 import org.apache.log4j.BasicConfigurator;
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 
-import com.hp.hpl.jena.graph.Graph;
 import com.hp.hpl.jena.query.Dataset;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
@@ -19,7 +17,6 @@ import com.hp.hpl.jena.query.ReadWrite;
 import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
-import com.hp.hpl.jena.sparql.core.DatasetGraph;
 import com.hp.hpl.jena.vocabulary.OWL2;
 
 /**
