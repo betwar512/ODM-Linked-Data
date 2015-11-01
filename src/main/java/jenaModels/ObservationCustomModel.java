@@ -64,44 +64,30 @@ public class ObservationCustomModel {
 				 //add snomed uri to model medication
 				 model.setNsPrefix("snomed", Snomed.snomedUri);
 				 
-				 Property themeP=model.createProperty(UriCustomHelper.themeBase, theme);
+				 Property themeP=model.createProperty(UriCustomHelper.getThemebase(), theme);
 				  
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
-				String phase="";
-				String subject="";
-				//Create observation uri 
-				Resource obs=null;
-				
+			    //String Uri phase subject 
+				String	phase= UriCustomHelper.generatePhase(itemDto.eventOid);
+				String	subject= UriCustomHelper.generateSubject(itemDto.subjectKey);
 				String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey);
 			    //String obsPhase=obsUri+ itemDto.eventOid+"/subject/"+itemDto.subjectKey; 
 			    
 			    //Add groupKey if exist 
 			    if(itemDto.repeating)
-			    	obsPhase=UriCustomHelper.addKey(obsPhase,repeatKey);
 			    	//obsPhase+="/key/"+repeatKey;
-					
+			    	obsPhase=UriCustomHelper.addKey(obsPhase,repeatKey);
 
-			    //String Uri phase subject 
-			    
-			    
-			    	phase=UriCustomHelper.generatePhase(itemDto.eventOid);
-			    	subject= UriCustomHelper.generateSubject(itemDto.subjectKey);
-			    	
-			  // resources Subject Phase	
-			    	
+			  // resources Subject Phase	 	
 					Resource subjectResource=model.createResource(subject);
 					Resource phaseResource=model.createResource(phase);
 					
-				 obs=model.createResource(obsPhase,Obs.OBSERVATION);//Observation resource
-				 
-				 
-				 
+					
+					Resource obs=model.createResource(obsPhase,Obs.OBSERVATION);//Observation resource
+
 				 obs.addProperty(LcdcCore.phase, phaseResource)
 				 	   .addProperty(LcdcCore.subject, subjectResource)
 				 	   		.addProperty(LcdcCore.theme, themeP);
-				 
-				//Obs value
-				Literal value=null;
 
 				String cardioUri=UriCustomHelper.generateCardioUri(theme);
 
@@ -119,42 +105,35 @@ public class ObservationCustomModel {
 	
 				
 				if(itemDef.getCodeListRef() == null){ //Check if codeList reference exist 			
-				if(!itemDef.getRangeCheck().isEmpty()){//check if item had rangeChceck or not (RangeCheck type integer or float)
+				if(!itemDef.getRangeCheck().isEmpty()){//check if item had rangeChceck or not
 					
 					
 					//get dataType for value 
 					String range=itemDef.getDataType().toString(); //compare String 	
 					XSDDatatype rangeDatatype= typeChecker.rangeDatatype(range);
-					value=model.createTypedLiteral(item.getValue(),rangeDatatype);
-					
+					//Obs value
+					Literal value=model.createTypedLiteral(item.getValue(),rangeDatatype);				
 					//Moved to typeChecker class 
 //					if(range.contains("INTEGER")){
-//					value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDinteger);
-//					
-//					}else if(range.contains("FLOAT")){
-//						
+//					value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDinteger);					
+//					}else if(range.contains("FLOAT")){						
 //						value=model.createTypedLiteral(item.getValue(),XSDDatatype.XSDfloat);
-//					}else{//if none of these types then create with String 
-//							
+//					}else{//if none of these types then create with String 							
 //						value=model.createTypedLiteral(item.getValue());
 //					}	
 					
 					
 					Statement stVal=model.createStatement(obs,pr,value);
 					model.add(stVal);
-				}else{//Range check null add property 
-		
-					obs.addProperty(pr,item.getValue());
-						
+				}else{//Range check null add property 	
+					obs.addProperty(pr,item.getValue());			
 					}
 				}else{//code list exist 
 					
 					String codeListOid=itemDef.getCodeListRef().getCodeListOID();
 					String decode=CodeListDecoder.codeListValue(codeListOid,item.getValue(),meta);
-					String coCl[]=codeListOid.split("_");
-					String codeNumber=coCl[coCl.length-1];
-					String cardioVaitalProperty=itemDef.getName()+codeNumber+"-"+decode;
-					Property pr2=model.createProperty(cardioUri,cardioVaitalProperty);
+					String propertyUri=CodeListDecoder.codeListProperty(codeListOid, itemDef.getName(), decode);
+					Property pr2=model.createProperty(cardioUri,propertyUri);
 					obs.addProperty(pr,pr2);
 					//CodeList 
 					CodeListDecoder.codeListRdf(cardioUri, codeListOid, meta, model);

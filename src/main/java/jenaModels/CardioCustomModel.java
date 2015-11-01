@@ -1,4 +1,5 @@
 /**
+ * @author Abbas.H.Safaie
  * 
  */
 package jenaModels;
@@ -16,7 +17,6 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.OWL;
 import com.hp.hpl.jena.vocabulary.RDFS;
-import com.hp.hpl.jena.vocabulary.XSD;
 import com.mycompany.app.CsvHelper;
 import com.mycompany.app.ItemDetail;
 import com.mycompany.app.StringCustomHelper;
@@ -63,13 +63,13 @@ public class CardioCustomModel {
 					 * */
 				String theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 
-				// have to be more generic 
+				// have to be more generic:Changed
 				String typeUri=UriCustomHelper.generateCardioUri(theme);
 				 String modelName=StringCustomHelper.modelName(StringCustomHelper.getCardiomodel(), theme);
 				//more geeric 
 				 model=mm.createModel(modelName);
 				
-				 Property themP=model.createProperty(UriCustomHelper.themeBase, theme);
+				 Property themP=model.createProperty(UriCustomHelper.getThemebase(), theme);
 				 
 
 				  	//main uri 
@@ -85,8 +85,9 @@ public class CardioCustomModel {
 					//If range exist check the type
 				//TODO: extend for all data 
 				
-				String range=itemDef.getDataType().toString();//range type in string format 
-				
+				String range=itemDef.getDataType().toString();//range type in string format				
+
+	
 			//	System.out.println(range);
 //					if(!range.isEmpty()){  //if not empty
 //					if(range.contains("INTEGER")){
@@ -107,11 +108,7 @@ public class CardioCustomModel {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
-					
-					
-					
-					
-					
+
 							//pointing to Variable Def 
 				Property based=model.createProperty(UriCustomHelper.generateVariableDef(itemOid));
 							

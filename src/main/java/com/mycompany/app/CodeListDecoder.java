@@ -1,5 +1,5 @@
 /**
- * 
+ * @author Abbas.H.Safaie
  */
 package com.mycompany.app;
 
@@ -36,7 +36,6 @@ public class CodeListDecoder {
 		 HashMap<String,ODMcomplexTypeDefinitionCodeList> hashMap= JaxBinder.catchCodeList(metaData);  
 		 ODMcomplexTypeDefinitionCodeList codeList=hashMap.get(codeListOid); 
 		 List<ODMcomplexTypeDefinitionCodeListItem>  codeL=codeList.getCodeListItem();
-		
 		 	for(ODMcomplexTypeDefinitionCodeListItem item:codeL){		
 		 		if(item.getCodedValue().contains(code)){
 		 			String decodeVal=  item.getDecode().getTranslatedText().get(0).getValue();  
@@ -49,8 +48,18 @@ public class CodeListDecoder {
 		 return decode;
 	  }
 	  
-	
-	
+	/*
+	 * codelist property with decoder
+	 * return: String 
+	 * args : String codeListOid,String itemDefName,String decode
+	 * */
+	public static String codeListProperty(String codeListOid,String itemDefName,String decode){
+		
+		String coCl[]=codeListOid.split("_");
+		String codeNumber=coCl[coCl.length-1];
+		String property=itemDefName+codeNumber+"-"+decode;
+		return property;
+	}
 	
 	/*
    * Generate RDf CodeList 
@@ -64,25 +73,19 @@ public class CodeListDecoder {
 	
 	  public static void codeListRdf(String base_Uri,String codeListOid,ODMcomplexTypeDefinitionMetaDataVersion metaData,Model model){
 	
-		//  final String base_Uri="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns";
-		  
+		//  final String base_Uri="http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/vitalsigns/def/cardio-vitalsigns";  
 		  HashMap<String,ODMcomplexTypeDefinitionCodeList> hashMap= JaxBinder.catchCodeList(metaData);  
 			 ODMcomplexTypeDefinitionCodeList codeList=hashMap.get(codeListOid); 
-			 List<ODMcomplexTypeDefinitionCodeListItem>  codeL=codeList.getCodeListItem();
-			  
+			 List<ODMcomplexTypeDefinitionCodeListItem>  codeL=codeList.getCodeListItem();	  
 			 //number belong to codeList 
 			String codeListName=codeList.getName().replaceAll("\\s","");
 			 String oids[]=codeList.getOID().split("_");
-			 String oid=oids[oids.length-1];
-			 
+			 String oid=oids[oids.length-1];	 
 			 //Each code inside codeList 
 			  for(ODMcomplexTypeDefinitionCodeListItem item:codeL){	  
 				String decodeVal=  item.getDecode().getTranslatedText().get(0).getValue();
-				  
-
 					//value of Decode Capitalized no white space
 			String decodeValCap=WordUtils.capitalizeFully(decodeVal).replaceAll("\\s","");
-  
 			//Resource and properties 
 			Resource codeResource =model.createResource(base_Uri+codeListName+oid+"-"+decodeValCap,OWL.Class);	
 			codeResource.addProperty(RDF.type,Skos.Concept);

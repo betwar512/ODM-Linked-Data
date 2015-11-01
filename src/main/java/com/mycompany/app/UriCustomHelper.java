@@ -13,8 +13,12 @@ public class UriCustomHelper {
 
 	public static final String sliceBase="http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/";
 	
-	public static final String themeBase="http://purl.org/sstats/lcdc/id/theme/";
+	private static final String themeBase="http://purl.org/sstats/lcdc/id/theme/";
 	
+	public static String getThemebase() {
+		return themeBase;
+	}
+
 	private static final String purl="http://purl.org/sstats/lcdc/id/";
 	
 	

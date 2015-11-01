@@ -55,7 +55,7 @@ public class VariableCustomModel {
 				String modelName=StringCustomHelper.modelName(StringCustomHelper.getVariablemodel(),theme);
 				 model=mm.createModel(modelName);
 				 
-				  Property themP=model.createProperty(UriCustomHelper.themeBase, theme);
+				  Property themP=model.createProperty(UriCustomHelper.getThemebase(), theme);
 				
 		     	//Find itemDef belong to OpenClinica Item 
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
