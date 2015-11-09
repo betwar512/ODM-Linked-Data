@@ -1,0 +1,4 @@
+ItemOID,ItemLabel,Theme,Domain,ExternalId,ExternalLabel
+I_VITAL_SYSTOLICBP_1335,SystolicBP,VitalSign,Findings,http://snomed.info/sct/32506021000036107/version/20150531/id/271649006,systolic blood pressure
+I_VITAL_DIASTOLICBP_37,DiastolicBP,VitalSign,Findings,http://snomed.info/sct/32506021000036107/version/20150531/id/271650006,Diastolic blood pressure
+I_VITAL_HEARTRATE_7515,HeartRate,VitalSign,Findings,http://snomed.info/sct/32506021000036107/version/20150531/id/364075005,Heart rate
