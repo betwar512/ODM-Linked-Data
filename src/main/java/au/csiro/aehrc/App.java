@@ -19,6 +19,7 @@ import com.hp.hpl.jena.query.ReadWrite;
 import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
+import com.hp.hpl.jena.tdb.TDB;
 import com.hp.hpl.jena.vocabulary.OWL2;
 
 
@@ -35,6 +36,7 @@ public class App
     	
     	
     BasicConfigurator.configure();//logger
+    TDB.getContext().set(TDB.symUnionDefaultGraph,true);
     //dateTime
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
     Date date = new Date();
@@ -64,9 +66,13 @@ public class App
     	//Triple store init
     	DatabaseHelper dbh=new DatabaseHelper();
   	
+    	Model t=mm.createDefaultModel();
+    		
+    	
+    	t.write(System.out);
     	
     		//write to store
-    		dbh.writeModel(mm);
+    	//	dbh.writeModel(mm);
     		//write to file
     		dbh.saveToFile(mm);
     	
@@ -120,7 +126,7 @@ public class App
     	         "select ?s ?subject ?sysBP where { ?s a lcdcobs:Observation ; lcdccore:subject ?subject ; lcdccore:phase <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ; cardiovitalsigns:SystolicBP ?sysBP . }";
       
       
-       Query query = QueryFactory.create(qu);
+       Query query = QueryFactory.create(queryString2);
         System.out.println("----------------------");
         System.out.println("Query Result Sheet");
         System.out.println("----------------------");
@@ -132,17 +138,18 @@ public class App
 //       DatabaseHelper dbh2=new DatabaseHelper();
        
        //Model capture by modelName 
-      Dataset model=dbh.dataset;
-      
+      Dataset dataset=dbh.dataset;
+     
       
       
  //   Model grap=dbh.dataset.getDefaultModel();
-     model.begin(ReadWrite.WRITE);
-        QueryExecution qe = QueryExecutionFactory.create(query, model);
+     dataset.begin(ReadWrite.WRITE);
+     Model union= dataset.getNamedModel("urn:x-arq:UnionGraph");
+        QueryExecution qe = QueryExecutionFactory.create(query, union);
        com.hp.hpl.jena.query.ResultSet results =  qe.execSelect();
         ResultSetFormatter.out(System.out, results, query);
       qe.close();
-     model.end();
+     dataset.end();
 
      
 

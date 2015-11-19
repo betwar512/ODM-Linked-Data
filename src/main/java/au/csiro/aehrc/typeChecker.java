@@ -1,5 +1,4 @@
 package au.csiro.aehrc;
-
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.XSD;
@@ -15,11 +14,11 @@ public class typeChecker {
 	 * Input : range String
 	 * output: Resource : xsd.dataType 
 	 * */
-	public static Resource rangeResourcetype(String range) throws Exception{
+	public static Resource rangeResourcetype(String range){
 		
 		
 		if(range.isEmpty()){
-			throw new Exception("range is empty ,Exception rangeType method");
+			
 		}
 		
 		Resource r=null;

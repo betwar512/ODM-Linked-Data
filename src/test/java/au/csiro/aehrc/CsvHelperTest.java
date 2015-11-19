@@ -1,8 +1,6 @@
 package au.csiro.aehrc;
 
-import java.util.List;
 
-import au.csiro.aehrc.utils.CsvLcdc;
 import junit.framework.TestCase;
 
 public class CsvHelperTest extends TestCase {
@@ -19,18 +17,18 @@ public class CsvHelperTest extends TestCase {
 		super.tearDown();
 	}
 
-	public final void testExtractCsv() {
-//		fail("Not yet implemented"); // TODO
-		CsvHelper helper = new CsvHelper();
-		List<CsvLcdc> results = helper.extractCsv(filename);
-		
-		for(CsvLcdc result: results) {
-			String itemOid = result.getItemOid();
-			String itemLabel = result.getItemLabel();
-			
-			System.out.println(itemOid + "\t" + itemLabel);
-		}
-		
-	}
+//	public final void testExtractCsv() {
+////		fail("Not yet implemented"); // TODO
+//		CsvHelper helper = new CsvHelper();
+//		List<CsvLcdc> results = helper.extractCsv(filename);
+//		
+//		for(CsvLcdc result: results) {
+//			String itemOid = result.getItemOid();
+//			String itemLabel = result.getItemLabel();
+//			
+//			System.out.println(itemOid + "\t" + itemLabel);
+//		}
+//		
+//	}
 
 }

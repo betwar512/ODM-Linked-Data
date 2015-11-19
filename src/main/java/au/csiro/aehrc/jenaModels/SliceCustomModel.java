@@ -1,6 +1,4 @@
 package au.csiro.aehrc.jenaModels;
-
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -8,17 +6,14 @@ import java.util.Set;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
-
 import au.csiro.aehrc.CsvHelper;
-import au.csiro.aehrc.ItemDetail;
-import au.csiro.aehrc.StringCustomHelper;
 import au.csiro.aehrc.UriCustomHelper;
 import au.csiro.aehrc.app.lcdc.LcdcCore;
 import au.csiro.aehrc.app.lcdc.Qb;
 import au.csiro.aehrc.app.lcdc.crossSection;
 import au.csiro.aehrc.app.lcdc.domainSlice;
 import au.csiro.aehrc.app.lcdc.timeSeries;
-
+import au.csiro.aehrc.utils.ItemDetail;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
@@ -60,9 +55,9 @@ public class SliceCustomModel {
 	 * */
 	public static void sliceBySubject(ModelMaker mm,ArrayList<ItemDetail> itemDtos
 			,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
-			,ODMcomplexTypeDefinitionMetaDataVersion meta){
+			,ODMcomplexTypeDefinitionMetaDataVersion meta,CsvHelper csvHlp){
 		  Model model=mm.createModel("Slice-Subject");	
-		
+
 		  HashMap<String, List<ItemDetail>> groupBySubject=groupBySubjectKey(itemDtos);
 	
 		  	Set<String> key=groupBySubject.keySet();
@@ -79,13 +74,8 @@ public class SliceCustomModel {
 							String itemOidName=item.getItemOID();
 						
 							//Create observation uri 
-							String theme="";
-							try {
-								theme = CsvHelper.getTheme(itemOidName);
-							} catch (FileNotFoundException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}//StringCustomHelper.groupType(itemOidName).toLowerCase();
+							String theme = csvHlp.getTheme(itemOidName);
+							
 							String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey);
 									//obsBase+theme+"/phase/"+ itemDto.eventOid+"/subject/"+itemDto.subjectKey;  
 								//Adding Key
@@ -119,7 +109,7 @@ public class SliceCustomModel {
 	 * */
 	public static void sliceByTheme(ModelMaker mm,ArrayList<ItemDetail> itemDtos
 			,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
-			,ODMcomplexTypeDefinitionMetaDataVersion meta){
+			,ODMcomplexTypeDefinitionMetaDataVersion meta,CsvHelper csvHlp){
 		  Model model=mm.createModel("Slice-Theme");	
 		
 		  
@@ -138,13 +128,8 @@ public class SliceCustomModel {
 							String itemOidName=item.getItemOID();
 						
 							//get Theme
-							String theme="";
-							try {
-								theme = CsvHelper.getTheme(itemOidName);
-							} catch (FileNotFoundException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
+							String theme = csvHlp.getTheme(itemOidName);
+							
 									//StringCustomHelper.groupType(itemOidName).toLowerCase();
 							String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey);
 							//Adding Key	
@@ -182,7 +167,7 @@ public class SliceCustomModel {
 	
 	public static void sliceByPhase(ModelMaker mm,ArrayList<ItemDetail> itemDtos
 			,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
-			,ODMcomplexTypeDefinitionMetaDataVersion meta){
+			,ODMcomplexTypeDefinitionMetaDataVersion meta,CsvHelper csvHlp){
 		  Model model=mm.createModel("Slice-Phase");	
 	
 		  HashMap<String, List<ItemDetail>> groupBySubject=groupBySubjectKey(itemDtos);
@@ -202,13 +187,8 @@ public class SliceCustomModel {
 							String itemOidName=item.getItemOID();
 						
 							//get Theme
-							String theme="";
-							try {
-								theme = CsvHelper.getTheme(itemOidName);
-							} catch (FileNotFoundException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}//StringCustomHelper.groupType(itemOidName).toLowerCase();
+							String theme = csvHlp.getTheme(itemOidName);
+							
 							//Observation Uri
 							String obsPhase=UriCustomHelper.generateObservationUri(theme, itemDto.eventOid, itemDto.subjectKey); 
 							//Adding Key

@@ -17,31 +17,55 @@
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONNAME_2443>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:410942007 .
 
-<Observables>  a    owl:NamedIndividual ;
-        rdfs:label  "http://snomed.info/sct/900000000000012004/version/20150831/id/410675002" , " http://snomed.info/sct/900000000000012004/version/20150831/id/260864003" , "http://snomed.info/sct/900062011000036108/version/20150831/id/30383011000036100" , "http://snomed.info/sct/900062011000036108/version/20150831/id/700000471000036108" , "http://snomed.info/sct/900062011000036108/version/20150831/id/712091000168102" , "http://snomed.info/sct/32506021000036107/version/20150531/id/413947000" , "http://snomed.info/sct/32506021000036107/version/20150531/id/413946009" , "http://snomed.info/sct/32506021000036107/version/20150531/id/410942007" .
+snomed:410942007  a  owl:NamedIndividual ;
+        rdfs:label  "MedicationCode" , "MedicationName" .
+
+snomed:413946009  a  owl:NamedIndividual ;
+        rdfs:label  "MedicationStartDate" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONROUTE>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomedmod:410675002 .
+
+< http://snomed.info/sct/900000000000012004/version/20150831/id/260864003>
+        a           owl:NamedIndividual ;
+        rdfs:label  "MedicationFreq" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONSTARTDATE_6157>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:413946009 .
+
+snomed:413947000  a  owl:NamedIndividual ;
+        rdfs:label  "MedicationEndDate" .
+
+amt:30383011000036100
+        a           owl:NamedIndividual ;
+        rdfs:label  "MedicationDoseForm" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEUNIT_2971>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  amt:700000471000036108 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONENDDATE_2617>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:413947000 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEFORM_3200>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  amt:30383011000036100 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONCODE_1591>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:410942007 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSE_1998>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  amt:712091000168102 .
+
+snomedmod:410675002  a  owl:NamedIndividual ;
+        rdfs:label  "MedicationRoute" .
+
+amt:700000471000036108
+        a           owl:NamedIndividual ;
+        rdfs:label  "MedicationDoseUnit" .
+
+amt:712091000168102  a  owl:NamedIndividual ;
+        rdfs:label  "MedicationDose" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONFREQ_7034>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  < http://snomed.info/sct/900000000000012004/version/20150831/id/260864003> .

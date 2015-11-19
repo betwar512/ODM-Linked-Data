@@ -1,21 +1,18 @@
 package au.csiro.aehrc.jenaModels;
 
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
-
 import au.csiro.aehrc.CsvHelper;
-import au.csiro.aehrc.ItemDetail;
 import au.csiro.aehrc.StringCustomHelper;
 import au.csiro.aehrc.UriCustomHelper;
 import au.csiro.aehrc.app.lcdc.LcdcCore;
 import au.csiro.aehrc.app.lcdc.Odm;
 import au.csiro.aehrc.app.lcdc.Skos;
 import au.csiro.aehrc.app.lcdc.Snomed;
-
+import au.csiro.aehrc.utils.ItemDetail;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
@@ -39,7 +36,7 @@ public class VariableCustomModel {
 	  public static void generateVariable
 	  (ArrayList<ItemDetail> itemDtos
 			  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
-			  ,ModelMaker mm){
+			  ,ModelMaker mm , CsvHelper csvHlp){
 		  //model for variable 
 		  Model model=null;
 		
@@ -56,13 +53,8 @@ public class VariableCustomModel {
 				//Get theme Mapped CSV file  
 				
 				
-				String theme="";
-				try {
-					theme=CsvHelper.getTheme(itemOidName);
-				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				String 	theme=csvHlp.getTheme(itemOidName);
+				
 				//=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				String modelName=StringCustomHelper.modelName(StringCustomHelper.getVariablemodel(),theme);
 				 model=mm.createModel(modelName);
@@ -111,7 +103,7 @@ public class VariableCustomModel {
 					//================================================================================
 			  
 			 
-				   	linkSet(uri,itemOidName,theme,mm);
+				   	linkSet(uri,itemOidName,theme,mm,csvHlp);
 
   	 
 			    }//i
@@ -127,8 +119,11 @@ public class VariableCustomModel {
 	   * Gets called inside variable generator method ,(Having similar object pattern)
 	   * 
 	   * */
-	  private static void linkSet(String uri,String itemOid,String theme,ModelMaker mm){
-		String modelName=StringCustomHelper.modelName(StringCustomHelper.getLinksetmodel(), theme);
+	  private static void linkSet(String uri,String itemOid,String theme,ModelMaker mm,CsvHelper csvHlp){
+		  
+		String modelName=StringCustomHelper
+				.modelName(StringCustomHelper.getLinksetmodel(), theme);
+		
 		  Model  modelLs=mm.createModel(modelName);
 		   	String snomedUri="";
 		   	String extLabel="";
@@ -141,13 +136,10 @@ public class VariableCustomModel {
 		   	//Resource linkSet 
 		   	Resource linkSet=modelLs.createResource(uri);
 		
-		   	try {
-				 snomedUri=CsvHelper.getSnomedUri(itemOid); //matched snomedUri 
-				 extLabel = CsvHelper.getLabel(itemOid);
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		  
+				 snomedUri=csvHlp.getSnomedUri(itemOid); //matched snomedUri 
+				 extLabel = csvHlp.getLabel(itemOid);
+			
 		   	if(snomedUri.length()>0){ //Check if snomed uri exist in lcdcMapping
 		  	Resource  namedIndv=modelLs.createResource(snomedUri,OWL2.NamedIndividual); //Resource nameIndivitual
 				linkSet.addProperty(RDFS.subPropertyOf, namedIndv); //add nameIndividual Resource to llinkSet Resource

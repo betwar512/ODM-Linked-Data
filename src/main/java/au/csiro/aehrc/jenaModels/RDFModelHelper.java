@@ -1,4 +1,5 @@
 package au.csiro.aehrc.jenaModels;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -6,7 +7,7 @@ import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionClinicalData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
 
-import au.csiro.aehrc.ItemDetail;
+import au.csiro.aehrc.CsvHelper;
 import au.csiro.aehrc.JaxBinder;
 import au.csiro.aehrc.app.lcdc.Cardioblood;
 import au.csiro.aehrc.app.lcdc.Cardiomedic;
@@ -17,6 +18,7 @@ import au.csiro.aehrc.app.lcdc.Obs;
 import au.csiro.aehrc.app.lcdc.Odm;
 import au.csiro.aehrc.app.lcdc.Qb;
 import au.csiro.aehrc.app.lcdc.Skos;
+import au.csiro.aehrc.utils.ItemDetail;
 
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
@@ -78,28 +80,34 @@ public class RDFModelHelper {
 		
 		ModelFactory.setDefaultModelPrefixes(pf);
 		
-		     ModelMaker mm=ModelFactory.createMemModelMaker();
+	 ModelMaker mm=ModelFactory.createMemModelMaker();
 		
-		     	
+		     	mm.createDefaultModel();
 		    //unmarshal binding 
-			JaxBinder myJax=new JaxBinder();
+			JaxBinder myJax=new JaxBinder(filePath);
 			ODMcomplexTypeDefinitionClinicalData clinicalData=
-			myJax.getClinicalData(filePath);
-			ODMcomplexTypeDefinitionMetaDataVersion meta = JaxBinder.catchMetaData(filePath);
+			myJax.getClinicalData();
+			ODMcomplexTypeDefinitionMetaDataVersion meta = myJax.catchMetaData();
 	
 			HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDef = JaxBinder.catchItemDef(meta);
 			ArrayList<ItemDetail> itemDtos = myJax.makeItemsObjects(clinicalData,meta);
- 
+				CsvHelper csvHlp=null;
+				try {
+					csvHlp = new CsvHelper();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
      	//Cardio Variables 
-        VariableCustomModel.generateVariable(itemDtos,itemDef,mm);
-        CardioCustomModel.generateCardio(itemDtos,itemDef,mm);  
+        VariableCustomModel.generateVariable(itemDtos,itemDef,mm,csvHlp);
+        CardioCustomModel.generateCardio(itemDtos,itemDef,mm,csvHlp);  
       
       //Observation Models 
-      ObservationCustomModel.generateObservation(mm,itemDtos,itemDef,meta);
+      ObservationCustomModel.generateObservation(mm,itemDtos,itemDef,meta,csvHlp);
       //Slice Models 
-      SliceCustomModel.sliceBySubject(mm, itemDtos, itemDef, meta);
-      SliceCustomModel.sliceByTheme( mm,  itemDtos, itemDef, meta);
-      SliceCustomModel.sliceByPhase( mm,  itemDtos, itemDef, meta);
+      SliceCustomModel.sliceBySubject(mm, itemDtos, itemDef, meta,csvHlp);
+      SliceCustomModel.sliceByTheme( mm,  itemDtos, itemDef, meta,csvHlp);
+      SliceCustomModel.sliceByPhase( mm,  itemDtos, itemDef, meta,csvHlp);
       
   	return mm;
 	  

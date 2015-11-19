@@ -13,101 +13,7 @@
 @prefix lcdccore: <http://purl.org/sstats/lcdc/def/core#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-cardiomedic:MedicationStartDate
-        a                 owl:DatatypeProperty ;
-        rdfs:comment      "Denotes the start date at which the medication was taken" ;
-        rdfs:domain       "Observables" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
-        rdfs:label        "MedicationStartDate" ;
-        rdfs:range        xsd:date ;
-        dc:identifier     "I_MEDIC_MEDICATIONSTARTDATE_6157" ;
-        dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
-        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONSTARTDATE_6157> .
-
-cardiomedic:MedicationDoseForm
-        a                 owl:DatatypeProperty ;
-        rdfs:comment      "Dose form for the medication. Examples: TABLET, LOTION." ;
-        rdfs:domain       "Observables" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
-        rdfs:label        "MedicationDoseForm" ;
-        rdfs:range        xsd:string ;
-        dc:identifier     "I_MEDIC_MEDICATIONDOSEFORM_3200" ;
-        dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
-        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEFORM_3200> .
-
-cardiomedic:MedicationDoseUnit
-        a                 owl:DatatypeProperty ;
-        rdfs:comment      "Units for the MedicationDose.  Examples: ng, mg, or mg/kg." ;
-        rdfs:domain       "Observables" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
-        rdfs:label        "MedicationDoseUnit" ;
-        rdfs:range        xsd:string ;
-        dc:identifier     "I_MEDIC_MEDICATIONDOSEUNIT_2971" ;
-        dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
-        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEUNIT_2971> .
-
-cardiomedic:MedicationEndDate
-        a                 owl:DatatypeProperty ;
-        rdfs:comment      "Denotes the date at which the patient ceased to take the medication. If the medication intake is still ongoing, this field can be left blank." ;
-        rdfs:domain       "Observables" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
-        rdfs:label        "MedicationEndDate" ;
-        rdfs:range        xsd:date ;
-        dc:identifier     "I_MEDIC_MEDICATIONENDDATE_2617" ;
-        dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
-        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONENDDATE_2617> .
-
-cardiomedic:OntologyVersion
-        a                 owl:DatatypeProperty ;
-        rdfs:comment      "Version for the AMT ontology" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
-        rdfs:label        "OntologyVersion" ;
-        rdfs:range        xsd:string ;
-        dc:identifier     "I_MEDIC_ONTOLOGYVERSION_7814" ;
-        dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
-        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_ONTOLOGYVERSION_7814> .
-
-cardiomedic:MedicationRoute
-        a                 owl:DatatypeProperty ;
-        rdfs:comment      "Medication's route of administration. See CMROUTE." ;
-        rdfs:domain       "Observables" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
-        rdfs:label        "MedicationRoute" ;
-        rdfs:range        xsd:string ;
-        dc:identifier     "I_MEDIC_MEDICATIONROUTE" ;
-        dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
-        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONROUTE> .
-
-cardiomedic:MedicationFreq
-        a                 owl:DatatypeProperty ;
-        rdfs:comment      "Dose frequency per interval for the medication. Usually expressed as the number of repeated administrations of MedicationDose within a specific time period. Examples: BID (twice daily), Q12H (every 12 hours)." ;
-        rdfs:domain       "Observables" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
-        rdfs:label        "MedicationFreq" ;
-        rdfs:range        xsd:string ;
-        dc:identifier     "I_MEDIC_MEDICATIONFREQ_7034" ;
-        dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
-        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONFREQ_7034> .
-
-cardiomedic:OntologyID
-        a                 owl:DatatypeProperty ;
-        rdfs:comment      "Unique ID for the AMT ontology" ;
-        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
-        rdfs:label        "OntologyID" ;
-        rdfs:range        xsd:string ;
-        dc:identifier     "I_MEDIC_ONTOLOGYID_5156" ;
-        dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
-        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_ONTOLOGYID_5156> .
-
-cardiomedic:MedicationDose
+cardiomedic:medicationdose
         a                 owl:DatatypeProperty ;
         rdfs:comment      "Amount of medication taken." ;
         rdfs:domain       "Observables" ;
@@ -116,22 +22,22 @@ cardiomedic:MedicationDose
         rdfs:range        xsd:float ;
         dc:identifier     "I_MEDIC_MEDICATIONDOSE_1998" ;
         dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSE_1998> .
 
-cardiomedic:MedicationName
+cardiomedic:medicationstartdate
         a                 owl:DatatypeProperty ;
-        rdfs:comment      "Standardized or dictionary-derived text description - in this case from the Australian Medicines Terminology. The sponsor is expected to provide the dictionary name, unique code identifer, terminology identifier and version used to map the terms" ;
+        rdfs:comment      "Denotes the start date at which the medication was taken" ;
         rdfs:domain       "Observables" ;
         rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
-        rdfs:label        "MedicationName" ;
-        rdfs:range        xsd:string ;
-        dc:identifier     "I_MEDIC_MEDICATIONNAME_2443" ;
+        rdfs:label        "MedicationStartDate" ;
+        rdfs:range        xsd:date ;
+        dc:identifier     "I_MEDIC_MEDICATIONSTARTDATE_6157" ;
         dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
-        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONNAME_2443> .
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
+        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONSTARTDATE_6157> .
 
-cardiomedic:MedicationCode
+cardiomedic:medicationcode
         a                 owl:DatatypeProperty ;
         rdfs:comment      "AMT Code for this medication" ;
         rdfs:domain       "Observables" ;
@@ -140,5 +46,99 @@ cardiomedic:MedicationCode
         rdfs:range        xsd:string ;
         dc:identifier     "I_MEDIC_MEDICATIONCODE_1591" ;
         dc:source         "cardio" ;
-        lcdccore:themeId  <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONCODE_1591> .
+
+cardiomedic:medicationdoseform
+        a                 owl:DatatypeProperty ;
+        rdfs:comment      "Dose form for the medication. Examples: TABLET, LOTION." ;
+        rdfs:domain       "Observables" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        rdfs:label        "MedicationDoseForm" ;
+        rdfs:range        xsd:string ;
+        dc:identifier     "I_MEDIC_MEDICATIONDOSEFORM_3200" ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
+        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEFORM_3200> .
+
+cardiomedic:medicationenddate
+        a                 owl:DatatypeProperty ;
+        rdfs:comment      "Denotes the date at which the patient ceased to take the medication. If the medication intake is still ongoing, this field can be left blank." ;
+        rdfs:domain       "Observables" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        rdfs:label        "MedicationEndDate" ;
+        rdfs:range        xsd:date ;
+        dc:identifier     "I_MEDIC_MEDICATIONENDDATE_2617" ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
+        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONENDDATE_2617> .
+
+cardiomedic:medicationdoseunit
+        a                 owl:DatatypeProperty ;
+        rdfs:comment      "Units for the MedicationDose.  Examples: ng, mg, or mg/kg." ;
+        rdfs:domain       "Observables" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        rdfs:label        "MedicationDoseUnit" ;
+        rdfs:range        xsd:string ;
+        dc:identifier     "I_MEDIC_MEDICATIONDOSEUNIT_2971" ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
+        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONDOSEUNIT_2971> .
+
+cardiomedic:ontologyversion
+        a                 owl:DatatypeProperty ;
+        rdfs:comment      "Version for the AMT ontology" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        rdfs:label        "OntologyVersion" ;
+        rdfs:range        xsd:string ;
+        dc:identifier     "I_MEDIC_ONTOLOGYVERSION_7814" ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
+        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_ONTOLOGYVERSION_7814> .
+
+cardiomedic:medicationroute
+        a                 owl:DatatypeProperty ;
+        rdfs:comment      "Medication's route of administration. See CMROUTE." ;
+        rdfs:domain       "Observables" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        rdfs:label        "MedicationRoute" ;
+        rdfs:range        xsd:string ;
+        dc:identifier     "I_MEDIC_MEDICATIONROUTE" ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
+        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONROUTE> .
+
+cardiomedic:ontologyid
+        a                 owl:DatatypeProperty ;
+        rdfs:comment      "Unique ID for the AMT ontology" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        rdfs:label        "OntologyID" ;
+        rdfs:range        xsd:string ;
+        dc:identifier     "I_MEDIC_ONTOLOGYID_5156" ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
+        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_ONTOLOGYID_5156> .
+
+cardiomedic:medicationfreq
+        a                 owl:DatatypeProperty ;
+        rdfs:comment      "Dose frequency per interval for the medication. Usually expressed as the number of repeated administrations of MedicationDose within a specific time period. Examples: BID (twice daily), Q12H (every 12 hours)." ;
+        rdfs:domain       "Observables" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        rdfs:label        "MedicationFreq" ;
+        rdfs:range        xsd:string ;
+        dc:identifier     "I_MEDIC_MEDICATIONFREQ_7034" ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
+        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONFREQ_7034> .
+
+cardiomedic:medicationname
+        a                 owl:DatatypeProperty ;
+        rdfs:comment      "Standardized or dictionary-derived text description - in this case from the Australian Medicines Terminology. The sponsor is expected to provide the dictionary name, unique code identifer, terminology identifier and version used to map the terms" ;
+        rdfs:domain       "Observables" ;
+        rdfs:isDefinedBy  "http://aehrc-ci.it.csiro.au/cardio/lcdc/clinical/Pharmaceutical/def/cardio-Pharmaceutical#" ;
+        rdfs:label        "MedicationName" ;
+        rdfs:range        xsd:string ;
+        dc:identifier     "I_MEDIC_MEDICATIONNAME_2443" ;
+        dc:source         "cardio" ;
+        lcdccore:themeId  <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
+        lcdcodm:basedOn   <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_MEDIC_MEDICATIONNAME_2443> .

@@ -19,7 +19,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "MedicationName" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "MedicationName"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONNAME_2443"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -33,7 +33,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "MedicationRoute" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "MedicationRoute"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONROUTE"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -47,7 +47,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "MedicationStartDate" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "MedicationStartDate"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONSTARTDATE_6157"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "date"^^xsd:string ;
@@ -61,7 +61,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "MedicationDoseUnit" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "MedicationDoseUnit"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONDOSEUNIT_2971"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -75,7 +75,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "OntologyVersion" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "OntologyVersion"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_ONTOLOGYVERSION_7814"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -89,7 +89,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "MedicationEndDate" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "MedicationEndDate"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONENDDATE_2617"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "date"^^xsd:string ;
@@ -103,7 +103,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "MedicationDoseForm" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "MedicationDoseForm"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONDOSEFORM_3200"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -117,7 +117,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "MedicationCode" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "MedicationCode"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONCODE_1591"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -131,7 +131,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "MedicationDose" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "MedicationDose"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONDOSE_1998"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -145,7 +145,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "MedicationFreq" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "MedicationFreq"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_MEDICATIONFREQ_7034"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -159,7 +159,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "OntologyID" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/Pharmaceutical> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/Pharmaceutical> ;
         lcdccore:variableDefinitionKey  "OntologyID"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_MEDIC_ONTOLOGYID_5156"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;

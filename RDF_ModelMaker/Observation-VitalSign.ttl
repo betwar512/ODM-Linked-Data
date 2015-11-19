@@ -32,8 +32,8 @@
         cardiovitalsigns:Weight        66 ;
         cardiovitalsigns:bmi           "35.16" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC3/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -53,8 +53,8 @@
         cardiovitalsigns:Weight        95 ;
         cardiovitalsigns:bmi           "31.74" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypartofreadings937-RightForearm
         a                 skos:Concept , owl:Class ;
@@ -76,8 +76,8 @@ cardiovitalsigns:bodypartofreadings937-RightForearm
         cardiovitalsigns:ReadingsTime  "10:10" ;
         cardiovitalsigns:SystolicBP    127 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME3/subject/SS_11>
         a                              lcdcobs:Observation ;
@@ -92,8 +92,8 @@ cardiovitalsigns:bodypartofreadings937-RightForearm
         cardiovitalsigns:ReadingsTime  "10:00" ;
         cardiovitalsigns:SystolicBP    103 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypositionatreadings933-Sitting
         a                 skos:Concept , owl:Class ;
@@ -120,8 +120,8 @@ cardiovitalsigns:bodypositionatreadings933-Sitting
         cardiovitalsigns:Weight        75 ;
         cardiovitalsigns:bmi           "24.49" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME7/subject/SS_11>
         a                              lcdcobs:Observation ;
@@ -136,8 +136,8 @@ cardiovitalsigns:bodypositionatreadings933-Sitting
         cardiovitalsigns:ReadingsTime  "09:00" ;
         cardiovitalsigns:SystolicBP    95 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME8/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -152,8 +152,8 @@ cardiovitalsigns:bodypositionatreadings933-Sitting
         cardiovitalsigns:ReadingsTime  "10:10" ;
         cardiovitalsigns:SystolicBP    126 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypartofreadings937-RightUpperArm
         a                 skos:Concept , owl:Class ;
@@ -175,8 +175,8 @@ cardiovitalsigns:bodypartofreadings937-RightUpperArm
         cardiovitalsigns:ReadingsTime  "09:55" ;
         cardiovitalsigns:SystolicBP    124 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME1/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -191,8 +191,8 @@ cardiovitalsigns:bodypartofreadings937-RightUpperArm
         cardiovitalsigns:ReadingsTime  "10:00" ;
         cardiovitalsigns:SystolicBP    119 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME7/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -207,8 +207,8 @@ cardiovitalsigns:bodypartofreadings937-RightUpperArm
         cardiovitalsigns:ReadingsTime  "10:00" ;
         cardiovitalsigns:SystolicBP    118 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME6/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -223,8 +223,8 @@ cardiovitalsigns:bodypartofreadings937-RightUpperArm
         cardiovitalsigns:ReadingsTime  "10:10" ;
         cardiovitalsigns:SystolicBP    121 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC2/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -244,8 +244,8 @@ cardiovitalsigns:bodypartofreadings937-RightUpperArm
         cardiovitalsigns:Weight        97 ;
         cardiovitalsigns:bmi           "32.41" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypositionatreadings933-Lying
         a                 skos:Concept , owl:Class ;
@@ -274,8 +274,8 @@ cardiovitalsigns:bodypositionatreadings938-Standing
         cardiovitalsigns:ReadingsTime  "09:50" ;
         cardiovitalsigns:SystolicBP    101 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME3/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -290,8 +290,8 @@ cardiovitalsigns:bodypositionatreadings938-Standing
         cardiovitalsigns:ReadingsTime  "10:00" ;
         cardiovitalsigns:SystolicBP    129 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypartofreadings932-LeftForearm
         a                 skos:Concept , owl:Class ;
@@ -320,8 +320,8 @@ cardiovitalsigns:bodypartofreadings932-RightUpperArm
         cardiovitalsigns:ReadingsTime  "09:52" ;
         cardiovitalsigns:SystolicBP    97 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypositionatreadings938-Sitting
         a                 skos:Concept , owl:Class ;
@@ -343,8 +343,8 @@ cardiovitalsigns:bodypositionatreadings938-Sitting
         cardiovitalsigns:ReadingsTime  "10:35" ;
         cardiovitalsigns:SystolicBP    127 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC4/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -364,8 +364,8 @@ cardiovitalsigns:bodypositionatreadings938-Sitting
         cardiovitalsigns:Weight        65 ;
         cardiovitalsigns:bmi           "38.46" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME5/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -380,8 +380,8 @@ cardiovitalsigns:bodypositionatreadings938-Sitting
         cardiovitalsigns:ReadingsTime  "09:45" ;
         cardiovitalsigns:SystolicBP    119 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:readingstakenby931-Nurse
         a                 skos:Concept , owl:Class ;
@@ -403,8 +403,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "09:45" ;
         cardiovitalsigns:SystolicBP    123 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME6/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -419,8 +419,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "09:45" ;
         cardiovitalsigns:SystolicBP    117 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME2/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -435,8 +435,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "10:10" ;
         cardiovitalsigns:SystolicBP    128 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME1/subject/SS_11>
         a                              lcdcobs:Observation ;
@@ -451,8 +451,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "09:20" ;
         cardiovitalsigns:SystolicBP    100 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME5/subject/SS_11>
         a                              lcdcobs:Observation ;
@@ -467,8 +467,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "09:20" ;
         cardiovitalsigns:SystolicBP    98 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME6/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -483,8 +483,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "09:50" ;
         cardiovitalsigns:SystolicBP    127 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME6> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC4/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -504,8 +504,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:Weight        75 ;
         cardiovitalsigns:bmi           "24.49" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC1/subject/SS_11>
         a                              lcdcobs:Observation ;
@@ -525,8 +525,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:Weight        65 ;
         cardiovitalsigns:bmi           "34.63" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC3/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -546,8 +546,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:Weight        63 ;
         cardiovitalsigns:bmi           "24.61" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME4/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -562,8 +562,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "10:00" ;
         cardiovitalsigns:SystolicBP    119 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME3/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -578,8 +578,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "10:10" ;
         cardiovitalsigns:SystolicBP    123 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME9/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -594,8 +594,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "10:30" ;
         cardiovitalsigns:SystolicBP    122 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME1/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -610,8 +610,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "10:00" ;
         cardiovitalsigns:SystolicBP    129 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME5/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -626,8 +626,8 @@ cardiovitalsigns:readingstakenby931-Nurse
         cardiovitalsigns:ReadingsTime  "10:00" ;
         cardiovitalsigns:SystolicBP    126 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME5> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypartofreadings932-LeftUpperArm
         a                 skos:Concept , owl:Class ;
@@ -654,8 +654,8 @@ cardiovitalsigns:bodypartofreadings932-LeftUpperArm
         cardiovitalsigns:Weight        97 ;
         cardiovitalsigns:bmi           "32.41" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC3/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -675,8 +675,8 @@ cardiovitalsigns:bodypartofreadings932-LeftUpperArm
         cardiovitalsigns:Weight        74 ;
         cardiovitalsigns:bmi           "24.16" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC4/subject/SS_11>
         a                              lcdcobs:Observation ;
@@ -696,8 +696,8 @@ cardiovitalsigns:bodypartofreadings932-LeftUpperArm
         cardiovitalsigns:Weight        63 ;
         cardiovitalsigns:bmi           "32.61" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC2/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -717,8 +717,8 @@ cardiovitalsigns:bodypartofreadings932-LeftUpperArm
         cardiovitalsigns:Weight        62 ;
         cardiovitalsigns:bmi           "24.22" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME3/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -733,8 +733,8 @@ cardiovitalsigns:bodypartofreadings932-LeftUpperArm
         cardiovitalsigns:ReadingsTime  "09:30" ;
         cardiovitalsigns:SystolicBP    118 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME3> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME9/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -749,8 +749,8 @@ cardiovitalsigns:bodypartofreadings932-LeftUpperArm
         cardiovitalsigns:ReadingsTime  "09:00" ;
         cardiovitalsigns:SystolicBP    120 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypositionatreadings933-Standing
         a                 skos:Concept , owl:Class ;
@@ -772,8 +772,8 @@ cardiovitalsigns:bodypositionatreadings933-Standing
         cardiovitalsigns:ReadingsTime  "09:30" ;
         cardiovitalsigns:SystolicBP    94 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME2/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -788,8 +788,8 @@ cardiovitalsigns:bodypositionatreadings933-Standing
         cardiovitalsigns:ReadingsTime  "10:00" ;
         cardiovitalsigns:SystolicBP    125 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME8/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -804,8 +804,8 @@ cardiovitalsigns:bodypositionatreadings933-Standing
         cardiovitalsigns:ReadingsTime  "10:25" ;
         cardiovitalsigns:SystolicBP    121 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypartofreadings932-RightForearm
         a                 skos:Concept , owl:Class ;
@@ -853,8 +853,8 @@ cardiovitalsigns:bodypartofreadings937-LeftUpperArm
         cardiovitalsigns:Weight        67 ;
         cardiovitalsigns:bmi           "33.70" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC3> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC4/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -874,8 +874,8 @@ cardiovitalsigns:bodypartofreadings937-LeftUpperArm
         cardiovitalsigns:Weight        94 ;
         cardiovitalsigns:bmi           "31.41" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC4> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:readingstakenby936-Patient
         a                 skos:Concept , owl:Class ;
@@ -902,8 +902,8 @@ cardiovitalsigns:readingstakenby936-Patient
         cardiovitalsigns:Weight        75 ;
         cardiovitalsigns:bmi           "24.49" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC2> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME4/subject/SS_11>
         a                              lcdcobs:Observation ;
@@ -918,8 +918,8 @@ cardiovitalsigns:readingstakenby936-Patient
         cardiovitalsigns:ReadingsTime  "10:10" ;
         cardiovitalsigns:SystolicBP    100 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME4> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_CLINIC1/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -939,8 +939,8 @@ cardiovitalsigns:readingstakenby936-Patient
         cardiovitalsigns:Weight        62 ;
         cardiovitalsigns:bmi           "24.22" ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_CLINIC1> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME8/subject/SS_11>
         a                              lcdcobs:Observation ;
@@ -955,8 +955,8 @@ cardiovitalsigns:readingstakenby936-Patient
         cardiovitalsigns:ReadingsTime  "09:20" ;
         cardiovitalsigns:SystolicBP    94 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_11> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_11> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME9/subject/SS_10>
         a                              lcdcobs:Observation ;
@@ -971,8 +971,8 @@ cardiovitalsigns:readingstakenby936-Patient
         cardiovitalsigns:ReadingsTime  "10:12" ;
         cardiovitalsigns:SystolicBP    129 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME9> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_10> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_10> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME2/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -985,8 +985,8 @@ cardiovitalsigns:readingstakenby936-Patient
         cardiovitalsigns:ReadingsTime  "09:00" ;
         cardiovitalsigns:SystolicBP    119 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME2> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME8/subject/SS_8>
         a                              lcdcobs:Observation ;
@@ -1001,8 +1001,8 @@ cardiovitalsigns:readingstakenby936-Patient
         cardiovitalsigns:ReadingsTime  "10:05" ;
         cardiovitalsigns:SystolicBP    119 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME8> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_8> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_8> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:bodypositionatreadings938-Lying
         a                 skos:Concept , owl:Class ;
@@ -1024,8 +1024,8 @@ cardiovitalsigns:bodypositionatreadings938-Lying
         cardiovitalsigns:ReadingsTime  "10:30" ;
         cardiovitalsigns:SystolicBP    124 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME1> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/20150713/theme/VitalSign/phase/SE_HOME7/subject/SS_9>
         a                              lcdcobs:Observation ;
@@ -1040,8 +1040,8 @@ cardiovitalsigns:bodypositionatreadings938-Lying
         cardiovitalsigns:ReadingsTime  "09:55" ;
         cardiovitalsigns:SystolicBP    120 ;
         lcdccore:phase                 <http://purl.org/sstats/lcdc/id/phase/SE_HOME7> ;
-        lcdccore:subject               <http://purl.org/sstats/lcdc/id/subject/SS_9> ;
-        lcdccore:theme                 <http://purl.org/sstats/lcdc/id/theme/VitalSign> .
+        lcdccore:subject               <http://aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/subject/SS_9> ;
+        lcdccore:theme                 <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> .
 
 cardiovitalsigns:readingstakenby931-Doctor
         a                 skos:Concept , owl:Class ;

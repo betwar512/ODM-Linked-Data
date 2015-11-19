@@ -17,61 +17,88 @@
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPART>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:38866009 .
+
+snomed:410669006  a  owl:NamedIndividual ;
+        rdfs:label  "ReadingsTime" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPOSITION>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:397155001 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_ABDOMINALCIRCUMFERENCE_5194>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:396552003 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTIME_1720>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:410669006 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_SYSTOLICBP_1335>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:271649006 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTAKENBY>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:125676002 .
 
-<Observables>  a    owl:NamedIndividual ;
-        rdfs:label  "http://snomed.info/sct/32506021000036107/version/20150531/id/397155001" , "http://snomed.info/sct/32506021000036107/version/20150531/id/38866009" , "http://snomed.info/sct/32506021000036107/version/20150531/id/125676002" , "http://snomed.info/sct/32506021000036107/version/20150531/id/410669006" .
+snomed:397155001  a  owl:NamedIndividual ;
+        rdfs:label  "ReadingsBodyPosition" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_SYSTOLICBP_1220>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:271649006 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTIME>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:410669006 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPART_8890>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:38866009 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_HEARTRATE_8662>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:364075005 .
+
+snomed:60621009  a  owl:NamedIndividual ;
+        rdfs:label  "bmi" .
+
+snomed:396552003  a  owl:NamedIndividual ;
+        rdfs:label  "AbdominalCircumference" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSTAKENBY_4404>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:125676002 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_DIASTOLICBP_37>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:271650006 .
+
+snomed:271650006  a  owl:NamedIndividual ;
+        rdfs:label  "DiastolicBP" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_READINGSBODYPOSITION_1915>
-        rdfs:subPropertyOf  <Observables> .
+        rdfs:subPropertyOf  snomed:397155001 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_BMI_6271>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:60621009 .
 
-<Findings>  a       owl:NamedIndividual ;
-        rdfs:label  "http://snomed.info/sct/32506021000036107/version/20150531/id/396552003" , "http://snomed.info/sct/32506021000036107/version/20150531/id/60621009" , "http://snomed.info/sct/32506021000036107/version/20150531/id/27113001" , "http://snomed.info/sct/32506021000036107/version/20150531/id/50373000" , "http://snomed.info/sct/32506021000036107/version/20150531/id/364075005" , "http://snomed.info/sct/32506021000036107/version/20150531/id/271650006" , "http://snomed.info/sct/32506021000036107/version/20150531/id/271649006" .
+snomed:364075005  a  owl:NamedIndividual ;
+        rdfs:label  "HeartRate" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_HEIGHT_3150>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:50373000 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_DIASTOLICBP_4036>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:271650006 .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_HEARTRATE_7515>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:364075005 .
+
+snomed:271649006  a  owl:NamedIndividual ;
+        rdfs:label  "SystolicBP" .
+
+snomed:50373000  a  owl:NamedIndividual ;
+        rdfs:label  "Height" .
+
+snomed:38866009  a  owl:NamedIndividual ;
+        rdfs:label  "ReadingsBodyPart" .
+
+snomed:125676002  a  owl:NamedIndividual ;
+        rdfs:label  "ReadingsTakenBy" .
+
+snomed:27113001  a  owl:NamedIndividual ;
+        rdfs:label  "Weight" .
 
 <http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def#I_VITAL_WEIGHT_6650>
-        rdfs:subPropertyOf  <Findings> .
+        rdfs:subPropertyOf  snomed:27113001 .

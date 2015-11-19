@@ -4,21 +4,18 @@
  */
 package au.csiro.aehrc.jenaModels;
 
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
-
 import au.csiro.aehrc.CsvHelper;
-import au.csiro.aehrc.ItemDetail;
 import au.csiro.aehrc.StringCustomHelper;
 import au.csiro.aehrc.UriCustomHelper;
 import au.csiro.aehrc.typeChecker;
 import au.csiro.aehrc.app.lcdc.Disco;
 import au.csiro.aehrc.app.lcdc.LcdcCore;
-
+import au.csiro.aehrc.utils.ItemDetail;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelMaker;
 import com.hp.hpl.jena.rdf.model.Property;
@@ -43,96 +40,47 @@ public class CardioCustomModel {
 	   * */
 	  public static void generateCardio(ArrayList<ItemDetail> itemDtos
 			  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
-			  ,ModelMaker mm){
+			  ,ModelMaker mm,CsvHelper csvHlp){
 		  
 		  Model model=null;
-	
+		 
 		  for (ItemDetail itemDto : itemDtos) { 	
-
-	
 			List<ODMcomplexTypeDefinitionItemData> itemList=itemDto.items;
 			for (ODMcomplexTypeDefinitionItemData item : itemList) {  
-				String itemOidName=item.getItemOID();
-			
+				String itemOidName=item.getItemOID();	
 		     	//Find itemDef belong to OpenClinica Item 
 				ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
-			//	List<ODMcomplexTypeDefinitionRangeCheck> listRange=itemDef.getRangeCheck();
-
 					/*
 					 * gets the theme from the item name
 					 * ideally, the theme should be passed in
 					 * 
 					 * */
-				String theme="";//=StringCustomHelper.groupType(itemOidName).toLowerCase();
-//				//theme from  mapping file 
-				try {
-					 theme=CsvHelper.getTheme(itemOidName);
-				} catch (FileNotFoundException e2) {
-					// TODO Auto-generated catch block
-					e2.printStackTrace();
-				}
-				
+				String theme=csvHlp.getTheme(itemOidName);
+	
 				// have to be more generic:Changed
 				String typeUri=UriCustomHelper.generateCardioUri(theme);
 				 String modelName=StringCustomHelper.modelName(StringCustomHelper.getCardiomodel(), theme);
 				//more geeric 
-				 model=mm.createModel(modelName);
-				
+				 model=mm.createModel(modelName);	
 				 Property themP=model.createProperty(UriCustomHelper.getThemebase(), theme);
-				 
-
 				  	//main uri 
-				String uri= typeUri + itemDef.getName();
-				String itemOid=item.getItemOID();
-				//vta
-				
+				String uri= typeUri + itemDef.getName().toLowerCase();
+				String itemOid=item.getItemOID();	
 				// create a data type property resource for the theme concepts
 				Resource r=model.createResource(uri,OWL.DatatypeProperty);
-					
-					
-					//finding type of data from Range 
-					//If range exist check the type
-				//TODO: extend for all data 
-				
-				String range=itemDef.getDataType().toString();//range type in string format				
-
-	
-			//	System.out.println(range);
-//					if(!range.isEmpty()){  //if not empty
-//					if(range.contains("INTEGER")){
-//						r.addProperty(RDFS.range, XSD.integer);
-//				
-//					}else if(range.contains("FLOAT")){
-//						r.addProperty(RDFS.range, XSD.xfloat);		
-//					  }	else{//if none of these types then create with String 
-//						r.addProperty(RDFS.range, XSD.xstring);
-//					  }
-//					}	
-//					
-					
-					try {
+			    	String range=itemDef.getDataType().toString();//range type in string format				
 						Resource typeRangeResource=typeChecker.rangeResourcetype(range);
 						r.addProperty(RDFS.range, typeRangeResource);
-					} catch (Exception e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
 
-							//pointing to Variable Def 
-				Property based=model.createProperty(UriCustomHelper.generateVariableDef(itemOid));
-							
-				//domain from CsvFile
-				try { 
-					
-					String domain=CsvHelper.getDomain(itemOidName);
+				//pointing to Variable Def 
+				Property based=model.createProperty(UriCustomHelper.generateVariableDef(itemOid));					
+				//domain from CsvFile	
+					String domain=csvHlp.getDomain(itemOidName);
 
 					if (null!= domain && !domain.isEmpty()) //Check if domain exist in lcdcMap
 					 r.addProperty(RDFS.domain, domain);
 						
-				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+			
 				
 		
 			   r.addProperty(RDFS.isDefinedBy, typeUri)

@@ -19,7 +19,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "ReadingsBodyPart" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "ReadingsBodyPart"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_READINGSBODYPART"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -33,7 +33,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "ReadingsBodyPosition" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "ReadingsBodyPosition"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_READINGSBODYPOSITION"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -47,7 +47,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "AbdominalCircumference" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "AbdominalCircumference"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_ABDOMINALCIRCUMFERENCE_5194"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;
@@ -61,7 +61,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "ReadingsTime" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "ReadingsTime"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_READINGSTIME_1720"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -75,7 +75,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "SystolicBP" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "SystolicBP"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_SYSTOLICBP_1335"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;
@@ -89,7 +89,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "ReadingsTakenBy" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "ReadingsTakenBy"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_READINGSTAKENBY"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -103,7 +103,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "SystolicBP" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "SystolicBP"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_SYSTOLICBP_1220"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;
@@ -117,7 +117,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "ReadingsTime" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "ReadingsTime"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_READINGSTIME"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -131,7 +131,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "ReadingsBodyPart" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "ReadingsBodyPart"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_READINGSBODYPART_8890"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -145,7 +145,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "HeartRate" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "HeartRate"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_HEARTRATE_8662"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;
@@ -159,7 +159,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "ReadingsTakenBy" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "ReadingsTakenBy"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_READINGSTAKENBY_4404"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -173,7 +173,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "DiastolicBP" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "DiastolicBP"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_DIASTOLICBP_37"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;
@@ -187,7 +187,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "ReadingsBodyPosition" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "ReadingsBodyPosition"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_READINGSBODYPOSITION_1915"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "text"^^xsd:string ;
@@ -201,7 +201,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "bmi" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "bmi"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_BMI_6271"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "float"^^xsd:string ;
@@ -215,7 +215,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "Height" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "Height"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_HEIGHT_3150"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;
@@ -229,7 +229,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "DiastolicBP" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "DiastolicBP"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_DIASTOLICBP_4036"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;
@@ -243,7 +243,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "HeartRate" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "HeartRate"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_HEARTRATE_7515"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;
@@ -257,7 +257,7 @@
         rdfs:isDefinedBy                "http://aehrc-ci.it.csiro.au/cardio/lcdc/id/variable-def" ;
         rdfs:label                      "Weight" ;
         dc:source                       "cardio" ;
-        lcdccore:themeId                <http://purl.org/sstats/lcdc/id/theme/VitalSign> ;
+        lcdccore:themeId                <aehrc-ci.it.csiro.au/dataset/cardio/lcdc/id/theme/VitalSign> ;
         lcdccore:variableDefinitionKey  "Weight"^^lcdccore:variabledefinitioncode ;
         lcdcodm:ItemOid                 "I_VITAL_WEIGHT_6650"^^lcdcodm:itemcode ;
         lcdcodm:dataType                "integer"^^xsd:string ;

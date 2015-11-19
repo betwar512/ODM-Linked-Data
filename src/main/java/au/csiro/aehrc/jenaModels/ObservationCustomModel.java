@@ -4,24 +4,22 @@ package au.csiro.aehrc.jenaModels;
  *
  */
 
-import java.io.FileNotFoundException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemData;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionItemDef;
 import org.cdisc.ns.odm.v1.ODMcomplexTypeDefinitionMetaDataVersion;
-
 import au.csiro.aehrc.CodeListDecoder;
 import au.csiro.aehrc.CsvHelper;
-import au.csiro.aehrc.ItemDetail;
 import au.csiro.aehrc.StringCustomHelper;
 import au.csiro.aehrc.UriCustomHelper;
 import au.csiro.aehrc.typeChecker;
 import au.csiro.aehrc.app.lcdc.LcdcCore;
 import au.csiro.aehrc.app.lcdc.Obs;
 import au.csiro.aehrc.app.lcdc.Snomed;
-
+import au.csiro.aehrc.utils.ItemDetail;
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
@@ -45,9 +43,8 @@ public class ObservationCustomModel {
 	  public static void generateObservation
 	  (ModelMaker mm,ArrayList<ItemDetail> itemDtos 
 			  ,HashMap<String,ODMcomplexTypeDefinitionItemDef> itemDefs
-			  ,ODMcomplexTypeDefinitionMetaDataVersion meta){
+			  ,ODMcomplexTypeDefinitionMetaDataVersion meta,CsvHelper csvHlp) {
 		  Model model=null;
-	
 		  
 		  for (ItemDetail itemDto : itemDtos) { 
 			  	//ItemsDto typeData 
@@ -65,13 +62,10 @@ public class ObservationCustomModel {
 		  ODMcomplexTypeDefinitionItemDef itemDef=itemDefs.get(itemOidName);
 				// theme=StringCustomHelper.groupType(itemOidName).toLowerCase();
 				 //theme mapped
-				 try {
-					 //TODO fix it ,its not proper method 
-					theme=CsvHelper.getTheme(itemOidName);
-				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+			
+				
+					theme=csvHlp.getTheme(itemOidName);
+			
 				 
 				// model name 
 				 String modelName=StringCustomHelper.modelName(StringCustomHelper.getObservationmodel(),theme);

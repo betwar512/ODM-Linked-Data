@@ -8,6 +8,8 @@ import java.util.List;
 import javax.xml.bind.*;
 import org.cdisc.ns.odm.v1.*;
 
+import au.csiro.aehrc.utils.ItemDetail;
+
 
 
 /**
@@ -18,8 +20,33 @@ import org.cdisc.ns.odm.v1.*;
 public class JaxBinder {
 
 	
-
+	 private org.cdisc.ns.odm.v1.ODM odm;
 	
+	 
+	 
+	 
+		public JaxBinder(String inputFile){
+			
+			if(inputFile.length()==0){
+				throw new EmptyStackException();
+			}
+			
+			try{
+				org.cdisc.ns.odm.v1.ObjectFactory factory=new org.cdisc.ns.odm.v1.ObjectFactory();
+				
+				JAXBContext myJaxb=JAXBContext.newInstance
+						(factory.getClass());
+			    Unmarshaller u = 
+			            myJaxb.createUnmarshaller();
+			  odm=(ODM) u.unmarshal(new File(inputFile));
+			    System.out.println("odm created");
+			    }catch(JAXBException e){
+			    	e.printStackTrace();
+			    	}
+		}
+		
+	 
+	 
 	 //================================================================================
 	// MetaData 
    //================================================================================
@@ -82,37 +109,17 @@ public class JaxBinder {
 		
 	}
 	
+
+	
+	
 	
 	//returning metaData belong to study
 	//Static Method 
-	public static ODMcomplexTypeDefinitionMetaDataVersion 
-	catchMetaData(String inputFile){
+	public  ODMcomplexTypeDefinitionMetaDataVersion 
+	catchMetaData( ){
 		
-		ODMcomplexTypeDefinitionMetaDataVersion metaData = null;
-		if(inputFile.length()==0){
-			throw new EmptyStackException();
-		}
+		ODMcomplexTypeDefinitionMetaDataVersion metaData = odm.getStudy().get(0).getMetaDataVersion().get(0);
 		
-		try{
-			
-			org.cdisc.ns.odm.v1.ObjectFactory factory=new org.cdisc.ns.odm.v1.ObjectFactory();
-			
-			JAXBContext myJaxb=JAXBContext.newInstance
-					(factory.getClass());
-		    Unmarshaller u = 
-		            myJaxb.createUnmarshaller();
-		    org.cdisc.ns.odm.v1.ODM o=(ODM) u.unmarshal(new File(inputFile));
-		    System.out.println("o created");
-		   List<ODMcomplexTypeDefinitionStudy> study=o.getStudy();	
-		   
-			metaData=study.get(0).getMetaDataVersion().get(0);
-			
-		    }catch(JAXBException e){
-		    	e.printStackTrace();
-		    
-		   
-		    	}
-
 		return metaData;
 	}
 	
@@ -129,40 +136,10 @@ public class JaxBinder {
 	 * return: ClinicalData type: ODMcomplexTypeDefinitionClinicalData
 
 	 * */
-	public  ODMcomplexTypeDefinitionClinicalData 
-	getClinicalData(String inputFile){
+	public  ODMcomplexTypeDefinitionClinicalData getClinicalData(){
 		
-		
-		ODMcomplexTypeDefinitionClinicalData clinical=new ODMcomplexTypeDefinitionClinicalData();
-		
-		if(inputFile.length()==0){
-			
-			  throw new EmptyStackException();
-		} else {
-			
-			try{
-			
-				org.cdisc.ns.odm.v1.ObjectFactory factory=new org.cdisc.ns.odm.v1.ObjectFactory();
-			//	org.openclinica.ns.odm_ext_v130.v3.ObjectFactory factory2=new org.openclinica.ns.odm_ext_v130.v3.ObjectFactory();
-				
-				JAXBContext myJaxb=JAXBContext.newInstance
-						(factory.getClass());
-				
-			    Unmarshaller u = 
-			            myJaxb.createUnmarshaller();
+	ODMcomplexTypeDefinitionClinicalData clinical=odm.getClinicalData().get(0);
 
-			    org.cdisc.ns.odm.v1.ODM o=(ODM) u.unmarshal(new File(inputFile));
-			    System.out.println("o created");
-			   List<ODMcomplexTypeDefinitionClinicalData> clinicalData=o.getClinicalData();
-			   
-			   clinical=clinicalData.get(0);
-				
-	           }catch(JAXBException e){
-	        	   
-	           
-	        	   e.printStackTrace();   
-	         }
-		}
 	return clinical;
 	}
 	
@@ -178,7 +155,7 @@ public class JaxBinder {
 	makeItemsObjects(ODMcomplexTypeDefinitionClinicalData clinicalData
 			,ODMcomplexTypeDefinitionMetaDataVersion metaData){
 	
-	//	HashMap<String,ArrayList<ItemDetail>> itemDetailList=new HashMap<String,ArrayList<ItemDetail>>();
+	
 		
 		HashMap<String,ODMcomplexTypeDefinitionItemGroupDef> itemGroupDefs=getItemGroupDef(metaData);	
 		
